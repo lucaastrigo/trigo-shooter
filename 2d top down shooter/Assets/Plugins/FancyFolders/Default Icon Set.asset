@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf7c3d43ec73ba49890281b036fe488, type: 3}
+  m_Name: Default Icon Set
+  m_EditorClassIdentifier: 
+  Android:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_android_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_android_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_android_small.png
+  Animation:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_animations_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_animations_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_animations_small.png
+  Audio:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_audio_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_audio_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_audio_small.png
+  Script:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_csharp_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_csharp_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_csharp_small.png
+  Font:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_font_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_font_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_font_small.png
+  IOS:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_apple_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_apple_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_apple_small.png
+  Linux:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_linux_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_linux_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_linux_small.png
+  Lock:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_lock_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_lock_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_lock_small.png
+  MacOS:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_apple_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_apple_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_apple_small.png
+  Material:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_material_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_material_large
+      1.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_material_small.png
+  Mesh:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_mesh_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_mesh_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_mesh_small.png
+  Music:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_music_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_music_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_music_small.png
+  Texture:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_picture_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_picture_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_picture_small.png
+  Plugin:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_plugin_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_plugin_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_plugin_small.png
+  Prefab:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_prefab_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_prefab_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_prefab_small.png
+  Resource:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_resources_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_resources_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_resources_small.png
+  Extension:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_save_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_save_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_save_small.png
+  Steam:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_steam_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_steam_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_steam_small.png
+  Text:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_text_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_text_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_text_small.png
+  Trash:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_trash_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_trash_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_trash_small.png
+  Scene:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_unity_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_unity_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_unity_small.png
+  Unlock:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_unlock_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_unlock_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_unlock_small.png
+  WebGL:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_webgl_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_webgl_large
+      1.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_webgl_small.png
+  Windows:
+    _largeHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_windows_large.png
+    _smallHiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_windows_small_hi.png
+    _largeLoDpi: 
+    _smallLoDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Icons/icon_windows_small.png
+  _customIcons: []
+  MiniError:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/console.erroricon.sml.png
+    _loDpi: 
+  MiniWarning:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/console.warnicon.sml.png
+    _loDpi: 
+  MiniVcsConflict:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Mini Icons/cancel.png
+    _loDpi: 
+  MiniVcsModified:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Mini Icons/pencil.png
+    _loDpi: 
+  MiniVcsAdded:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Mini Icons/plus.png
+    _loDpi: 
+  MiniAudioClip:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/AudioClip
+      Icon.png
+    _loDpi: 
+  MiniScript:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/cs Script
+      Icon.png
+    _loDpi: 
+  MiniMesh:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/Mesh Icon.png
+    _loDpi: 
+  MiniPrefab:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/Prefab
+      Icon.png
+    _loDpi: 
+  MiniTexture:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/RenderTexture
+      Icon.png
+    _loDpi: 
+  MiniScene:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/SceneAsset
+      Icon.png
+    _loDpi: 
+  MiniShader:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/Shader
+      Icon.png
+    _loDpi: 
+  MiniText:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/TextAsset
+      Icon.png
+    _loDpi: 
+  MiniMaterial:
+    _hiDpi: Assets/Plugins/FancyFolders/Editor/EditorResources/Unity Icons/Material
+      Icon.png
+    _loDpi: 

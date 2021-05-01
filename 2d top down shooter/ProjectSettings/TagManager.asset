@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Weapon
+  - Enemy
+  - Wall
+  - Chest
+  - Text
+  - Explosive Bullet
+  - Bullet
+  - Enemy Bullet
+  - Boss
+  - Health Kit
+  - Ammo Kit
+  - Indestructible Wall
+  - Particle
+  - Value Storage
+  - Skill Storage
+  - Skill
+  - Skill Panel
+  - Friction Floor
+  - Skill Button
+  - Portal
+  - SpawnPoint
+  - Rooms
+  - Skill Object
+  - Door
+  - Room
+  - AA
+  - AAT
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Destroyable
+  - Ignorable
+  - Weapon
+  - Wall
+  - Player
+  - Enemy
+  - Bullet
+  - Enemy Bullet
+  - Indestructable
+  - 
+  - Destroyer
+  - 
+  - 
+  - 
+  - 
+  - Room
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Shield
+  - Camera
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

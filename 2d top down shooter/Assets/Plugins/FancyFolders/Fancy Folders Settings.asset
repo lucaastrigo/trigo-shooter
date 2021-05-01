@@ -1,0 +1,4596 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce4a56f5e6dd81c48887da46adac49ec, type: 3}
+  m_Name: Fancy Folders Settings
+  m_EditorClassIdentifier: 
+  _icons: {fileID: 11400000, guid: 70af071db906493458d2a9b85ee4848a, type: 2}
+  _hideSeparators: 1
+  _useCustomSeparatorColor: 0
+  _separatorColor: {r: 1, g: 0, b: 0, a: 1}
+  _useCustomTextColor: 0
+  _detailsTextColor: {r: 0.9245283, g: 0.8852795, b: 0.8852795, a: 1}
+  _defaultFileFormatString: 
+  _defaultDirFormatString: 
+  _fileSettings:
+  - _formatString: 
+    _guid:
+      _guid: 000f30a247525c644900289d9810c040
+  - _formatString: 
+    _guid:
+      _guid: 007000db5ce95ef4eb4ca17b541d6fbe
+  - _formatString: 
+    _guid:
+      _guid: 00b6a24eff37a5b419f26aa968b869ff
+  - _formatString: 
+    _guid:
+      _guid: 01c39f8564e0fe44cb240b6c91015a34
+  - _formatString: 
+    _guid:
+      _guid: 0242e382089778242a2379aa1da88232
+  - _formatString: 
+    _guid:
+      _guid: 024d2953bfa0db8458f580a91a2d555e
+  - _formatString: 
+    _guid:
+      _guid: 02a0c6a883f0e774e9b0da49d1dc603a
+  - _formatString: 
+    _guid:
+      _guid: 02c01f487f323f541886cbe3e6671b33
+  - _formatString: 
+    _guid:
+      _guid: 030f343712eef064abe2db17e3b61afa
+  - _formatString: 
+    _guid:
+      _guid: 031a8d42fec73b247bd40a9224b4e606
+  - _formatString: 
+    _guid:
+      _guid: 0333fd91dcdc93a44b4e56d85f018579
+  - _formatString: 
+    _guid:
+      _guid: 03bd52c54e3903a4cb4c984260b2eb9c
+  - _formatString: 
+    _guid:
+      _guid: 0404392fc2e3d9447af293b88d285be4
+  - _formatString: 
+    _guid:
+      _guid: 043f21ed8085ba64e9043562f53c4714
+  - _formatString: 
+    _guid:
+      _guid: 046a7b59787ccec45ab8b8f481eba1ac
+  - _formatString: 
+    _guid:
+      _guid: 048a6d958a7305c48b919bf83791f3dd
+  - _formatString: 
+    _guid:
+      _guid: 0503e3236c6860243bf88bbf57851905
+  - _formatString: 
+    _guid:
+      _guid: 053f47aeea1bd4845b60782fd2a42fc3
+  - _formatString: 
+    _guid:
+      _guid: 054b05e4567596b4d84eb9ac43e0ce6d
+  - _formatString: 
+    _guid:
+      _guid: 055deeed07c63c94b9546c01ac1f020b
+  - _formatString: 
+    _guid:
+      _guid: 0586550549d727743ae56dfc402114ea
+  - _formatString: 
+    _guid:
+      _guid: 058d19e3d00573347afce6c24a6f961f
+  - _formatString: 
+    _guid:
+      _guid: 06122c6eea2a3964393f1c19447fe52e
+  - _formatString: 
+    _guid:
+      _guid: 063909339f3bed1439184949886844aa
+  - _formatString: 
+    _guid:
+      _guid: 06fc4d6eca2085a48b41bc2dcc1ab5b8
+  - _formatString: 
+    _guid:
+      _guid: 07534e6d87becb04da99bd763dba758a
+  - _formatString: 
+    _guid:
+      _guid: 0790c49965e79f448ab0eac7f8992809
+  - _formatString: 
+    _guid:
+      _guid: 07b26bce6f3dd3347a8e3dea663fc66c
+  - _formatString: 
+    _guid:
+      _guid: 086414e62d29c904cb032e617f621e49
+  - _formatString: 
+    _guid:
+      _guid: 0884ee38e8796c54e94f534e84cc7aa2
+  - _formatString: 
+    _guid:
+      _guid: 089375f8e77f7b7469c84ac3352f5fc0
+  - _formatString: 
+    _guid:
+      _guid: 08cc8fd4a345386468c16a577f384f32
+  - _formatString: 
+    _guid:
+      _guid: 0908f5e7567263c4da37fbc12103a459
+  - _formatString: 
+    _guid:
+      _guid: 094ed65f914f5464c849c2bfc35c1b6f
+  - _formatString: 
+    _guid:
+      _guid: 0971cc44796c399438bc566b73f4bde5
+  - _formatString: 
+    _guid:
+      _guid: 0a7598903cadf0c4baf4a59a8bb00d18
+  - _formatString: 
+    _guid:
+      _guid: 0a8e2f0845993544ba1810f44c031cea
+  - _formatString: 
+    _guid:
+      _guid: 0ab7a36e1ac99cd499c11c7bc53343a2
+  - _formatString: 
+    _guid:
+      _guid: 0ad449fbcc12e1e459701caf47649421
+  - _formatString: 
+    _guid:
+      _guid: 0c9f502cfc7f6eb4abf98e06497a54ee
+  - _formatString: 
+    _guid:
+      _guid: 0ca9761bf66988d47a1d032a71d2d001
+  - _formatString: 
+    _guid:
+      _guid: 0cb9ca21fed2f1c409f56a67dd00e928
+  - _formatString: 
+    _guid:
+      _guid: 0cbd5f8e200c0c9499c1745fcabee859
+  - _formatString: 
+    _guid:
+      _guid: 0cd3ffbc11dbf694c8a884738ba21f9b
+  - _formatString: 
+    _guid:
+      _guid: 0d3e4fbf29377a4459d0fb308da4f64e
+  - _formatString: 
+    _guid:
+      _guid: 0e6753fce0d4bb44fa17e85a1e81590b
+  - _formatString: 
+    _guid:
+      _guid: 0e783293ad4629b4abb8f2f32f6da02a
+  - _formatString: 
+    _guid:
+      _guid: 0e8fb4983eff7af4486a46b722dcfb3b
+  - _formatString: 
+    _guid:
+      _guid: 0ebaa1afe281bfe40a0bf5f1c5273544
+  - _formatString: 
+    _guid:
+      _guid: 0ec68f5a742b47940a677881aa8739a6
+  - _formatString: 
+    _guid:
+      _guid: 0f06eddc46baa9c4a970785b0e4a562c
+  - _formatString: 
+    _guid:
+      _guid: 0f135455fbfa6244eafae179a95d9be6
+  - _formatString: 
+    _guid:
+      _guid: 0f1b638cb8a869249a88bea473aa19f8
+  - _formatString: 
+    _guid:
+      _guid: 0f29276ca4e829a4390215c0f7d8b9aa
+  - _formatString: 
+    _guid:
+      _guid: 0fd43ae3bb3b8814fbaa6fcf791376eb
+  - _formatString: 
+    _guid:
+      _guid: 0ff2d7db2ea82784ca2695384060ac06
+  - _formatString: 
+    _guid:
+      _guid: 10eed06f2b3e4dc4e85fd563027f3c44
+  - _formatString: 
+    _guid:
+      _guid: 111cca7b7730ed745bdd15b924d9da51
+  - _formatString: 
+    _guid:
+      _guid: 11a08619d7663fe47a7c46391d80dc96
+  - _formatString: 
+    _guid:
+      _guid: 11ad9b5da5e6d46488602dfa8730dee8
+  - _formatString: 
+    _guid:
+      _guid: 11db7d2e820157d4f8ab536a9c2fe100
+  - _formatString: 
+    _guid:
+      _guid: 11f5378717f026f4b95e03d882f4de57
+  - _formatString: 
+    _guid:
+      _guid: 11fb51b079052664aa7b952dc8bf4bec
+  - _formatString: 
+    _guid:
+      _guid: 127ca9feccb667643bb8fac336147c76
+  - _formatString: 
+    _guid:
+      _guid: 128e987d567d4e2c824d754223b3f3b0
+  - _formatString: 
+    _guid:
+      _guid: 131e3b96fb106b54280da8ef7c6c88e9
+  - _formatString: 
+    _guid:
+      _guid: 1342a147e7b083a4db1032f4567e1b1b
+  - _formatString: 
+    _guid:
+      _guid: 13ca9bbeca13d6f42a3f86469a23bf51
+  - _formatString: 
+    _guid:
+      _guid: 14e475a1e8a88804099eb67b59757bf4
+  - _formatString: 
+    _guid:
+      _guid: 154cd46e54d801b4ea4951784c34b0ea
+  - _formatString: 
+    _guid:
+      _guid: 15584fe906b043949ad357d606ad4101
+  - _formatString: 
+    _guid:
+      _guid: 1634938252795fe4182d83c6a53bd680
+  - _formatString: 
+    _guid:
+      _guid: 16ae79b210d596e469c2410d1522e64b
+  - _formatString: 
+    _guid:
+      _guid: 17703d2532b2d3741bceb5851af0e8a7
+  - _formatString: 
+    _guid:
+      _guid: 17788a25b52e023458ab2d39f25c0dda
+  - _formatString: 
+    _guid:
+      _guid: 17a46b3d1f95b3d4d914a2a6bd18d041
+  - _formatString: 
+    _guid:
+      _guid: 187f13bf9f7398f4bb9cc09c3727abd1
+  - _formatString: 
+    _guid:
+      _guid: 19b77c18e6aa66a4c950d6d072aa892c
+  - _formatString: 
+    _guid:
+      _guid: 19f73c819ad8e434ba7a7ed41147ec34
+  - _formatString: 
+    _guid:
+      _guid: 1a252c70804aa5545944b25ecc5f596a
+  - _formatString: 
+    _guid:
+      _guid: 1a25c8f350355ad46b14781a763d4f41
+  - _formatString: 
+    _guid:
+      _guid: 1ac31f5c4bed9d34e93b509b9b1ec476
+  - _formatString: 
+    _guid:
+      _guid: 1b74321abcbaf3a449aa0f48e67e046f
+  - _formatString: 
+    _guid:
+      _guid: 1b8d251f9af63b746bf2f7ffe00ebb9b
+  - _formatString: 
+    _guid:
+      _guid: 1baec1e41421849469d4aafe83370a30
+  - _formatString: 
+    _guid:
+      _guid: 1c21bc4d35a696a44b304b2b6a4b6bb8
+  - _formatString: 
+    _guid:
+      _guid: 1c51d4a426315b14aa6f4aac87c74268
+  - _formatString: 
+    _guid:
+      _guid: 1ca1b435de4fe0d46af3ffde3ed2ee0d
+  - _formatString: 
+    _guid:
+      _guid: 1cf1d6def03e4d6419799a2078354fa1
+  - _formatString: 
+    _guid:
+      _guid: 1dba5fc08152ecc4dbbdb666de986919
+  - _formatString: 
+    _guid:
+      _guid: 1e3b057af24249748ff873be7fafee47
+  - _formatString: 
+    _guid:
+      _guid: 1f0f2c882585eee469f66d59fc6cdc45
+  - _formatString: 
+    _guid:
+      _guid: 1f56248b8f493064a923424e2754dbc1
+  - _formatString: 
+    _guid:
+      _guid: 1f59ffd32fea6584d994be8866081152
+  - _formatString: 
+    _guid:
+      _guid: 1f7885c589ec0b34aa2f7e4aee6555c8
+  - _formatString: 
+    _guid:
+      _guid: 1f79565152039a042afa44e884434406
+  - _formatString: 
+    _guid:
+      _guid: 1f85a04e4da4d3e479fff279bc7faae8
+  - _formatString: 
+    _guid:
+      _guid: 1fc50cf9ad3dc8a46b2a0673ba3f82ea
+  - _formatString: 
+    _guid:
+      _guid: 1fe1856e19f3d594cb1cb105e8058d14
+  - _formatString: 
+    _guid:
+      _guid: 2002701a73b27b64ba0f883df1c4b53b
+  - _formatString: 
+    _guid:
+      _guid: 2019caeaee533ce41b2eb6f01235b324
+  - _formatString: 
+    _guid:
+      _guid: 205b9285529af82418c24adffbc8b71f
+  - _formatString: 
+    _guid:
+      _guid: 215b183b235d1a449ae341734a6374b2
+  - _formatString: 
+    _guid:
+      _guid: 21afae76d83cd4a459ece2ba30fb837c
+  - _formatString: 
+    _guid:
+      _guid: 225a2b7705b996f44ae482ce3b0bd39f
+  - _formatString: 
+    _guid:
+      _guid: 2298ed9effe0d6b49a96206b6b5d5bd1
+  - _formatString: 
+    _guid:
+      _guid: 232f4ea718683654ea06faab46916894
+  - _formatString: 
+    _guid:
+      _guid: 2362049b2a89e684fbadd441b3d50b4c
+  - _formatString: 
+    _guid:
+      _guid: 23edf25792a3f7741bcc1e6ac1407c14
+  - _formatString: 
+    _guid:
+      _guid: 2412f846f97863e4bac6c84a215ea053
+  - _formatString: 
+    _guid:
+      _guid: 24b58b19a4307dd48815ed85500cab91
+  - _formatString: 
+    _guid:
+      _guid: 2549cbd431034f64b8c503ed5fbe1b9a
+  - _formatString: 
+    _guid:
+      _guid: 256d9029a28d03943b08f49616231c72
+  - _formatString: 
+    _guid:
+      _guid: 256e21bf076ed334398e49246c0cf8c7
+  - _formatString: 
+    _guid:
+      _guid: 2584c93a34d30ff46b5850431cf6345b
+  - _formatString: 
+    _guid:
+      _guid: 26981c3d44a9a6e4f96959d09406a53b
+  - _formatString: 
+    _guid:
+      _guid: 26e2c559f0524814bb17cfd65572d6d6
+  - _formatString: 
+    _guid:
+      _guid: 2770c12f4be21de41a00eda4b170bf7c
+  - _formatString: 
+    _guid:
+      _guid: 27ab48db11aee234a9f7e3317ac73610
+  - _formatString: 
+    _guid:
+      _guid: 27fedc18844e9e64c8f9edd3ec2aade7
+  - _formatString: 
+    _guid:
+      _guid: 281a760a2ee31bb48be48e760b840c9b
+  - _formatString: 
+    _guid:
+      _guid: 28be6bc9aa261bc4881786af95332cb5
+  - _formatString: 
+    _guid:
+      _guid: 29254dc6a62cb6c47b8d41d177270d77
+  - _formatString: 
+    _guid:
+      _guid: 296d24fdd5506274d95d57d691377bdc
+  - _formatString: 
+    _guid:
+      _guid: 29796d75667ed2d40b65f7e5f12043bf
+  - _formatString: 
+    _guid:
+      _guid: 2b0592dd003f0f641a1ed160fa99d5fc
+  - _formatString: 
+    _guid:
+      _guid: 2b610ff806774d046afb9bc6cfefb81d
+  - _formatString: 
+    _guid:
+      _guid: 2b61d2e51119c0a419c1d593c1a3f86f
+  - _formatString: 
+    _guid:
+      _guid: 2bf34c06fb6321149be82ddf5064b3f7
+  - _formatString: 
+    _guid:
+      _guid: 2c180520d573ae7478e36a292a125639
+  - _formatString: 
+    _guid:
+      _guid: 2cc4ed60b4beae141a15236af84d5457
+  - _formatString: 
+    _guid:
+      _guid: 2d4f7a54542e91f41823db53f9afc8bc
+  - _formatString: 
+    _guid:
+      _guid: 2d9b63a31de4f4c44ada57bec2bcd5b7
+  - _formatString: 
+    _guid:
+      _guid: 2df90e6a787301f4b8350f5b3ecac408
+  - _formatString: 
+    _guid:
+      _guid: 2e498d1c8094910479dc3e1b768306a4
+  - _formatString: 
+    _guid:
+      _guid: 2e66969597827f24b830d78dcc1bcad6
+  - _formatString: 
+    _guid:
+      _guid: 2eb0e0fec8824f74e9644f481512fecf
+  - _formatString: 
+    _guid:
+      _guid: 2eb9d4526bc5a084387d60e47a6c37da
+  - _formatString: 
+    _guid:
+      _guid: 2f2ff01dc44b2b946b744f905e8c81be
+  - _formatString: 
+    _guid:
+      _guid: 2f9091367e1a4884e987a43faafb61b6
+  - _formatString: 
+    _guid:
+      _guid: 3113184d2fb619d45bf1a9506d20d236
+  - _formatString: 
+    _guid:
+      _guid: 3169c540a94f61a4da5ed93c039e823d
+  - _formatString: 
+    _guid:
+      _guid: 31dc2b080128009479f6c7e2d25c6c31
+  - _formatString: 
+    _guid:
+      _guid: 32096f66fb4c798408ec5da442cebe0f
+  - _formatString: 
+    _guid:
+      _guid: 3229a16b1c850a747ae94f60b2aa3a78
+  - _formatString: 
+    _guid:
+      _guid: 32435fbe53c1f7247aaa11f55217d540
+  - _formatString: 
+    _guid:
+      _guid: 3288c2114aaa6fe47807f9bb691008c9
+  - _formatString: 
+    _guid:
+      _guid: 32f8f5bda1107e14faf1820b490353e0
+  - _formatString: 
+    _guid:
+      _guid: 3311b077feb62f74c9ed887f6a7ad20d
+  - _formatString: 
+    _guid:
+      _guid: 3312ebc8d0e988f43950de98fc44c351
+  - _formatString: 
+    _guid:
+      _guid: 346003424abad00478245adeeae8c396
+  - _formatString: 
+    _guid:
+      _guid: 3466f9d49d069c5498d61f99eb337e2d
+  - _formatString: 
+    _guid:
+      _guid: 353ee8e94cb3dc4498eb4ec7499f15ec
+  - _formatString: 
+    _guid:
+      _guid: 356f82778540abe4f972a745d9da0b91
+  - _formatString: 
+    _guid:
+      _guid: 356fe22382b61d142a64b9def0577bc3
+  - _formatString: 
+    _guid:
+      _guid: 358e1632d53877a41b9d246081b8c0bc
+  - _formatString: 
+    _guid:
+      _guid: 35ccedcf6fbfa9848ba3460267120266
+  - _formatString: 
+    _guid:
+      _guid: 35e0d27de8053704883a7e783106dff6
+  - _formatString: 
+    _guid:
+      _guid: 35ffbad537d805442b0a41cd060f92f4
+  - _formatString: 
+    _guid:
+      _guid: 3618c140be7499f4d877dad7fe1ca6df
+  - _formatString: 
+    _guid:
+      _guid: 36459ff693f6ff042b56c8ef797f77a7
+  - _formatString: 
+    _guid:
+      _guid: 3722ea198bbab954bbb614b946ec8828
+  - _formatString: 
+    _guid:
+      _guid: 37f0a13dc18d3b84d931de03482cded7
+  - _formatString: 
+    _guid:
+      _guid: 381dcb09d5029d14897e55f98031fca5
+  - _formatString: 
+    _guid:
+      _guid: 38c02168527fa3048a07ca216a621ae6
+  - _formatString: 
+    _guid:
+      _guid: 38c3970979126824e92881dbaa427964
+  - _formatString: 
+    _guid:
+      _guid: 3930632f4be1da049834abb14d316397
+  - _formatString: 
+    _guid:
+      _guid: 3997e2241185407d80309a82f9148466
+  - _formatString: 
+    _guid:
+      _guid: 39c200e83cc7a2b449b9d831673b2d2e
+  - _formatString: 
+    _guid:
+      _guid: 3a7dfdaef80a60d4681344984a91afce
+  - _formatString: 
+    _guid:
+      _guid: 3b144837f43e6c24b884428fa4cbec3c
+  - _formatString: 
+    _guid:
+      _guid: 3b5bb5ec1b537c042b2961ef7cc13b98
+  - _formatString: 
+    _guid:
+      _guid: 3b783dfa54c4d7e48b20fcc64460942c
+  - _formatString: 
+    _guid:
+      _guid: 3bb2c43b41d39204d962cb4cf4b24f00
+  - _formatString: 
+    _guid:
+      _guid: 3bb595501a6a2404faab7a3d30013915
+  - _formatString: 
+    _guid:
+      _guid: 3bb7e42c87ee93442b85bc1d107f1cf3
+  - _formatString: 
+    _guid:
+      _guid: 3bbc38552f51fce48a77bba92197d70d
+  - _formatString: 
+    _guid:
+      _guid: 3bf63d3e61be6eb4e9de16eccb8f1379
+  - _formatString: 
+    _guid:
+      _guid: 3d020bad2669d4c4d9eb621887e3f801
+  - _formatString: 
+    _guid:
+      _guid: 3d08fa22f4b93314894b0b4be231260e
+  - _formatString: 
+    _guid:
+      _guid: 3d46f352f495976419c2f010049a0dac
+  - _formatString: 
+    _guid:
+      _guid: 3d5daf68c97290047bf56f41f481a994
+  - _formatString: 
+    _guid:
+      _guid: 3d92c44f79fc70a4db33b814cd94b62a
+  - _formatString: 
+    _guid:
+      _guid: 3dc63d854948fa542ab7b4482c3ea8db
+  - _formatString: 
+    _guid:
+      _guid: 3ef3fb2c7bb8766459f8f3c3b343fb1c
+  - _formatString: 
+    _guid:
+      _guid: 3f5b5dff67a942289a9defa416b206f3
+  - _formatString: 
+    _guid:
+      _guid: 407bc68d299748449bbf7f48ee690f8d
+  - _formatString: 
+    _guid:
+      _guid: 4108cc48a95df8e4ea482a610a674134
+  - _formatString: 
+    _guid:
+      _guid: 41b2d24f4a764dc449b9493f0cf5018d
+  - _formatString: 
+    _guid:
+      _guid: 41d0dc699516e564aafb7480aac7bf9d
+  - _formatString: 
+    _guid:
+      _guid: 42434c63ac2757c4e8e2b12ec5a1afe6
+  - _formatString: 
+    _guid:
+      _guid: 42e525de636d3ba46a504bb8b2ea5c0e
+  - _formatString: 
+    _guid:
+      _guid: 4330c9a513476964bab2c1d52b3e2de5
+  - _formatString: 
+    _guid:
+      _guid: 434b9978380bd2148a8016556b5104de
+  - _formatString: 
+    _guid:
+      _guid: 4498e72f588c7d3489b4862c3d5d06e9
+  - _formatString: 
+    _guid:
+      _guid: 44d9ef94a523ebb46a5a00f15593e9df
+  - _formatString: 
+    _guid:
+      _guid: 44f9b38cfa77a084698c5d1fb56d5c52
+  - _formatString: 
+    _guid:
+      _guid: 453392a743d03784285dc1bb0288cee0
+  - _formatString: 
+    _guid:
+      _guid: 45618cf90a80b7d4bbca93bea3f1ee37
+  - _formatString: 
+    _guid:
+      _guid: 459f1cffce984cc4894a3d961ea134a6
+  - _formatString: 
+    _guid:
+      _guid: 45ce5d9e4bdf091428b5dd48a4fbe691
+  - _formatString: 
+    _guid:
+      _guid: 4628e202c3fd3434c8450598054b42d2
+  - _formatString: 
+    _guid:
+      _guid: 46bcc9100a245f142a9717f94ac83148
+  - _formatString: 
+    _guid:
+      _guid: 46eae91a7ba11bc4abc61a5c2e9c9fc7
+  - _formatString: 
+    _guid:
+      _guid: 47032f16d2f479b46b173147e64d36ab
+  - _formatString: 
+    _guid:
+      _guid: 473103878e11e1345a763e486077ecc0
+  - _formatString: 
+    _guid:
+      _guid: 478647c04a18f88448eb8b5ed9de5085
+  - _formatString: 
+    _guid:
+      _guid: 47e6c2fdd63949c43b98f5078a5701e6
+  - _formatString: 
+    _guid:
+      _guid: 482c48e0210276848a66ddb9af00f6ae
+  - _formatString: 
+    _guid:
+      _guid: 48baeec82ad4af14a8e5b6d6e61a99ee
+  - _formatString: 
+    _guid:
+      _guid: 48bb5f55d8670e349b6e614913f9d910
+  - _formatString: 
+    _guid:
+      _guid: 49106127c545508449583e23e46c687c
+  - _formatString: 
+    _guid:
+      _guid: 4997623daada2384fbd0c1d7f2dc63e1
+  - _formatString: 
+    _guid:
+      _guid: 49fa86207cf819f4b8aaa70413b1d78d
+  - _formatString: 
+    _guid:
+      _guid: 4a58d3a4a13feff44b049fa44962ab9d
+  - _formatString: 
+    _guid:
+      _guid: 4af53432305f8a44e86bdae192833856
+  - _formatString: 
+    _guid:
+      _guid: 4b169b325f6623e4ba54e570e47f9c38
+  - _formatString: 
+    _guid:
+      _guid: 4b366f1c587d52145b3844139011f90f
+  - _formatString: 
+    _guid:
+      _guid: 4b69e3d4d7140484ca54a7c35cceba59
+  - _formatString: 
+    _guid:
+      _guid: 4c229ba328a70144dbc1ae470ede0cb3
+  - _formatString: 
+    _guid:
+      _guid: 4c28648c2eb2dc14a8aa6f07b200e1b8
+  - _formatString: 
+    _guid:
+      _guid: 4d048b1072b32f64aad9556a76784ecc
+  - _formatString: 
+    _guid:
+      _guid: 4d0ba615f42896c45a347c5062830e60
+  - _formatString: 
+    _guid:
+      _guid: 4d0ef4d7d84603c48961e8bd7525f425
+  - _formatString: 
+    _guid:
+      _guid: 4d664d5c14048db4eadcbee262b7adbf
+  - _formatString: 
+    _guid:
+      _guid: 4d6bdb6b14a3bbc48b9154b31aad8a63
+  - _formatString: 
+    _guid:
+      _guid: 4e1f2982612609c408e95aa58b170636
+  - _formatString: 
+    _guid:
+      _guid: 4e4f078c4120d5e47b721e21d552da81
+  - _formatString: 
+    _guid:
+      _guid: 4eeb25b0b41e78a46b0ce2d3ddf651a2
+  - _formatString: 
+    _guid:
+      _guid: 4f172cce9f2aa9a428bd13645d71abec
+  - _formatString: 
+    _guid:
+      _guid: 4fc102ff863f80d41a1fe9bd202d54de
+  - _formatString: 
+    _guid:
+      _guid: 504975b57505348479837b0cf34a6866
+  - _formatString: 
+    _guid:
+      _guid: 5067547babdd7eb48969c4ced24f3103
+  - _formatString: 
+    _guid:
+      _guid: 506a313c53ed8fe4b8f8905923a01e4e
+  - _formatString: 
+    _guid:
+      _guid: 507155965d1e55444ba3089694a20b5f
+  - _formatString: 
+    _guid:
+      _guid: 50c3dd1e4fe57ec489fb6b57633d49fb
+  - _formatString: 
+    _guid:
+      _guid: 50d565c0ae37cfb49a141716783c147a
+  - _formatString: 
+    _guid:
+      _guid: 5111d253905d43e48b482ebb987b062a
+  - _formatString: 
+    _guid:
+      _guid: 51161f97bd9aa3b438391d7e1a47f9ee
+  - _formatString: 
+    _guid:
+      _guid: 5116720e3a84c5242ac002b1c076e958
+  - _formatString: 
+    _guid:
+      _guid: 5138dfac9d2dcd7479173fab53590752
+  - _formatString: 
+    _guid:
+      _guid: 51c4bc46df71c924399496fe267702f3
+  - _formatString: 
+    _guid:
+      _guid: 5201ad82ba4c50e4d89b398190b09b62
+  - _formatString: 
+    _guid:
+      _guid: 522e744ea8c6fb14ebbad6b1780f1682
+  - _formatString: 
+    _guid:
+      _guid: 52785ffc85950be4ebe1147e82147252
+  - _formatString: 
+    _guid:
+      _guid: 52c38638208436744b83c9bc572fec17
+  - _formatString: 
+    _guid:
+      _guid: 531aa33c831575d46b53e4ccac93974f
+  - _formatString: 
+    _guid:
+      _guid: 5367f392218caca43a311ecbe083acfa
+  - _formatString: 
+    _guid:
+      _guid: 539d9d2afed991c4293735a8ab4e63f4
+  - _formatString: 
+    _guid:
+      _guid: 540d2fa5aceea464eb7e7686fdbf41cc
+  - _formatString: 
+    _guid:
+      _guid: 543669b2977a145428848df8db67d50e
+  - _formatString: 
+    _guid:
+      _guid: 544174824c9e0954481222dee0d2ce63
+  - _formatString: 
+    _guid:
+      _guid: 5477772ca56b0d24487df818782119be
+  - _formatString: 
+    _guid:
+      _guid: 54f7309d06fccc44885bd84f7dfa3316
+  - _formatString: 
+    _guid:
+      _guid: 54f759693b38a734caec64e68d952780
+  - _formatString: 
+    _guid:
+      _guid: 5542a3c71a5008f4d811fbe69051cd83
+  - _formatString: 
+    _guid:
+      _guid: 554d61b75216a5847af6bd19559c89f3
+  - _formatString: 
+    _guid:
+      _guid: 569b744e597f84a41b65d5d64e34507b
+  - _formatString: 
+    _guid:
+      _guid: 56f4eb367cb7bc546b33873ec0d68355
+  - _formatString: 
+    _guid:
+      _guid: 570daa1cfd8acb242adaf6d74c7cd3f9
+  - _formatString: 
+    _guid:
+      _guid: 57fda516500c6564f95d61d2ee1f9751
+  - _formatString: 
+    _guid:
+      _guid: 599359241f7f009419048e71cd954723
+  - _formatString: 
+    _guid:
+      _guid: 59c4da46acfdd3c488dcf05b2ab6a032
+  - _formatString: 
+    _guid:
+      _guid: 5a340fabd403cd948bb25a4c1a53feb5
+  - _formatString: 
+    _guid:
+      _guid: 5a3738e359114934591c36a89c36833e
+  - _formatString: 
+    _guid:
+      _guid: 5b78ed0a993e98f4c814494de98f61b8
+  - _formatString: 
+    _guid:
+      _guid: 5c71b4ec8da56f7418e4320d4962ae8c
+  - _formatString: 
+    _guid:
+      _guid: 5c9737901976b4d4e8765f2bc7979619
+  - _formatString: 
+    _guid:
+      _guid: 5cc223ccd72a7a04a9c4a3b3ff8406d2
+  - _formatString: 
+    _guid:
+      _guid: 5d17697e5ac6d6e41af294c6ec34975a
+  - _formatString: 
+    _guid:
+      _guid: 5d8b037b6f5b7734d916439cfb700837
+  - _formatString: 
+    _guid:
+      _guid: 5da95e74cafc96e45b6ebba2233b2d37
+  - _formatString: 
+    _guid:
+      _guid: 5de725f630e694042baaf6b92b8a852d
+  - _formatString: 
+    _guid:
+      _guid: 5f35d189e98c36e499a96c18b2a34283
+  - _formatString: 
+    _guid:
+      _guid: 5f96ac7272a42e640a4d83fd16525a37
+  - _formatString: 
+    _guid:
+      _guid: 5fef06bd2120ae7458f6a6fbb4425b00
+  - _formatString: 
+    _guid:
+      _guid: 5ff39d8d238c4984291dbfc15358e364
+  - _formatString: 
+    _guid:
+      _guid: 5ff70694b8f4edf4a868a85a28d6a538
+  - _formatString: 
+    _guid:
+      _guid: 5ff99ca29da4afd49a0887df1133f41a
+  - _formatString: 
+    _guid:
+      _guid: 60775100e4629d44f87708ca62d3f330
+  - _formatString: 
+    _guid:
+      _guid: 60adbea6812705f40856ca294bde6b8f
+  - _formatString: 
+    _guid:
+      _guid: 6144951b6214ae84ea899f69723e68be
+  - _formatString: 
+    _guid:
+      _guid: 616adf7dbfbb3f24a8085ec9a62be4d9
+  - _formatString: 
+    _guid:
+      _guid: 616cfe7a0eda7224780bace9ccb5b12a
+  - _formatString: 
+    _guid:
+      _guid: 6180ce82669860f4da76866b36fe8ca5
+  - _formatString: 
+    _guid:
+      _guid: 61f002d0c5b9623429bfbef43357d394
+  - _formatString: 
+    _guid:
+      _guid: 62086d43726b67b4e805083468643719
+  - _formatString: 
+    _guid:
+      _guid: 62507a39ce11f2e48a5e610a9bfac1c9
+  - _formatString: 
+    _guid:
+      _guid: 627d4f6257d80224ca6fb2ae5f1f624c
+  - _formatString: 
+    _guid:
+      _guid: 62ceb96895ead604281f502afe6c02aa
+  - _formatString: 
+    _guid:
+      _guid: 62d0f45b005e94140b519c48cb225aa7
+  - _formatString: 
+    _guid:
+      _guid: 63248d7dc2bfca24c9e15983ae0e09b3
+  - _formatString: 
+    _guid:
+      _guid: 639bccf69ba9d784bbd9f0a448de6547
+  - _formatString: 
+    _guid:
+      _guid: 63ac1740acfd04a449bd352b95567fbe
+  - _formatString: 
+    _guid:
+      _guid: 63b1a89a76595a3419aeab1ab075cf44
+  - _formatString: 
+    _guid:
+      _guid: 63ba0c3c51fea6349b656410f8d0eced
+  - _formatString: 
+    _guid:
+      _guid: 63cd6a27c2cc0c340b4152a9246cbc56
+  - _formatString: 
+    _guid:
+      _guid: 640979968370fbc44863f4b0c8c01ab2
+  - _formatString: 
+    _guid:
+      _guid: 642486995c31c16488a397c932da09ab
+  - _formatString: 
+    _guid:
+      _guid: 642ad0ada8c92424a82fe84ab6d99459
+  - _formatString: 
+    _guid:
+      _guid: 6458b305f1982834c83cedf51e48eb63
+  - _formatString: 
+    _guid:
+      _guid: 64db5e59b8944d749bb332a1bb77ad32
+  - _formatString: 
+    _guid:
+      _guid: 64f02e6554528974a9a9a18ab0d3ac6f
+  - _formatString: 
+    _guid:
+      _guid: 6561707b75063f04e898095392bf9760
+  - _formatString: 
+    _guid:
+      _guid: 65a2e50ae2424cf44bdf7643a3f18695
+  - _formatString: 
+    _guid:
+      _guid: 65f41f550ea6fde4a94bac50c3dcef0d
+  - _formatString: 
+    _guid:
+      _guid: 667c3d1c6b193db4ead96640840fffb3
+  - _formatString: 
+    _guid:
+      _guid: 66b0902b06f4fcf409ee487982080b52
+  - _formatString: 
+    _guid:
+      _guid: 66b62b8654aff6945a8cef8255411972
+  - _formatString: 
+    _guid:
+      _guid: 66e7bca85aaf21f4c805c1aae3885d79
+  - _formatString: 
+    _guid:
+      _guid: 67ae4f69f4af57041a3abaacaa62ab3c
+  - _formatString: 
+    _guid:
+      _guid: 6854ded2984c4e542afe7ebe143e86ce
+  - _formatString: 
+    _guid:
+      _guid: 685fdad799d52a749b063a62abfe494e
+  - _formatString: 
+    _guid:
+      _guid: 68e6db2ebdc24f95958faec2be5558d6
+  - _formatString: 
+    _guid:
+      _guid: 68f571ec491d772408557b4476cd8df6
+  - _formatString: 
+    _guid:
+      _guid: 692ef58839c6a604bb809a6c255bf6ed
+  - _formatString: 
+    _guid:
+      _guid: 69c95487345dd80488725b6cb0df7704
+  - _formatString: 
+    _guid:
+      _guid: 69ca930bd0a67644699e00872e512d18
+  - _formatString: 
+    _guid:
+      _guid: 6a229a052e4a0db4facfd43c391a0b53
+  - _formatString: 
+    _guid:
+      _guid: 6a2f85da9823e6e4a9207b782c568852
+  - _formatString: 
+    _guid:
+      _guid: 6a3d31bc8b2635b4e9c5896d2d9c6bcb
+  - _formatString: 
+    _guid:
+      _guid: 6a9de8d95a6a53b4994736916de54a70
+  - _formatString: 
+    _guid:
+      _guid: 6abfb4982794ed247b7500393da2cc83
+  - _formatString: 
+    _guid:
+      _guid: 6b38a42ce49fc1942a608d7ba4de161b
+  - _formatString: 
+    _guid:
+      _guid: 6b5ed6a641a09a448b5b97b3a7c74232
+  - _formatString: 
+    _guid:
+      _guid: 6bab340d980b4d34b8499a972d17ab41
+  - _formatString: 
+    _guid:
+      _guid: 6d2e4eea30000744598065d3f342e302
+  - _formatString: 
+    _guid:
+      _guid: 6d33e7d612ca5be4fb3d022f916f6e05
+  - _formatString: 
+    _guid:
+      _guid: 6dbdae2159ddf83479b0605bff7b64f1
+  - _formatString: 
+    _guid:
+      _guid: 6dff282449847354dbf3c831a13b6b28
+  - _formatString: 
+    _guid:
+      _guid: 6e5233b462b9fba468b1c969b8c647b2
+  - _formatString: 
+    _guid:
+      _guid: 6e59c59b81ab47f9b6ec5781fa725d2c
+  - _formatString: 
+    _guid:
+      _guid: 6e5e604e586437b4dbeab227089a99c1
+  - _formatString: 
+    _guid:
+      _guid: 6f1744a35d66db34cb2ec9fa6d4785b9
+  - _formatString: 
+    _guid:
+      _guid: 6f2b030b6bad21140a3e17f78812f39c
+  - _formatString: 
+    _guid:
+      _guid: 6ffb15d8451cacd43aae245a554046a1
+  - _formatString: ' '
+    _guid:
+      _guid: 70af071db906493458d2a9b85ee4848a
+  - _formatString: 
+    _guid:
+      _guid: 70d397041ebc5d34e947faf7f52330a4
+  - _formatString: 
+    _guid:
+      _guid: 70eea8d01b3118945961dbbcd660fea6
+  - _formatString: 
+    _guid:
+      _guid: 70f7142aaf681e84e9dcfd4d9cb8d7aa
+  - _formatString: 
+    _guid:
+      _guid: 7123ce4963b2a0b429cab6df6356ea6b
+  - _formatString: 
+    _guid:
+      _guid: 713dfa05e7d315148a342dd38547fc8e
+  - _formatString: 
+    _guid:
+      _guid: 71a4d8cd2b0e790499696b617ffa9772
+  - _formatString: 
+    _guid:
+      _guid: 71ac5a928de12a045a8145cd95271ce6
+  - _formatString: 
+    _guid:
+      _guid: 71d379d9bc6909d4baa777f2bb7d67a7
+  - _formatString: 
+    _guid:
+      _guid: 71d80b5c4e2915b47bc0dfdf78bd835d
+  - _formatString: 
+    _guid:
+      _guid: 71e42128b5cbd7b4fa0c971539ac960c
+  - _formatString: 
+    _guid:
+      _guid: 72031f4ab180836419c6771b87bd1b54
+  - _formatString: 
+    _guid:
+      _guid: 726ffbf0008fb054a9efd69347ee8cb8
+  - _formatString: 
+    _guid:
+      _guid: 72a6ce95115239a44917863751f947c4
+  - _formatString: 
+    _guid:
+      _guid: 72f0bd924f524cd4491e9109ba0443ad
+  - _formatString: 
+    _guid:
+      _guid: 73619d9130b4687418a7d5585bf72e7d
+  - _formatString: 
+    _guid:
+      _guid: 73abfee712e44a24aa1cb03ff4852a66
+  - _formatString: 
+    _guid:
+      _guid: 73bdebe2fc3b79f4999e6bbd5d58d06b
+  - _formatString: 
+    _guid:
+      _guid: 745910d288f41c54d9d209ea2d7f453c
+  - _formatString: 
+    _guid:
+      _guid: 7484f79d8b39ede4bb273dab8d0c64a5
+  - _formatString: 
+    _guid:
+      _guid: 7491edaa263135744813d7f7e7c789b7
+  - _formatString: 
+    _guid:
+      _guid: 74b2246fd49445c48aec35a2f28775d0
+  - _formatString: 
+    _guid:
+      _guid: 75a6ad587b06d104b8337369cb1a41cc
+  - _formatString: 
+    _guid:
+      _guid: 75b528d57e34e8c40b22634714fadef3
+  - _formatString: 
+    _guid:
+      _guid: 75e97390a943f1f46adcf2d7e3d4d912
+  - _formatString: 
+    _guid:
+      _guid: 7617c008f3818594080abfbb5b4621ed
+  - _formatString: 
+    _guid:
+      _guid: 765119eb0df411d459cfe944c5ea00d0
+  - _formatString: 
+    _guid:
+      _guid: 7686798adc432db4e831d579eaf392f3
+  - _formatString: 
+    _guid:
+      _guid: 76a322b414821854997652da976ce0e5
+  - _formatString: 
+    _guid:
+      _guid: 771b19b7ab6669845813dc23c3a8ff0c
+  - _formatString: 
+    _guid:
+      _guid: 776c60e170e319845a859d6682a24315
+  - _formatString: 
+    _guid:
+      _guid: 782b85614df30114ab12acefd025b11d
+  - _formatString: 
+    _guid:
+      _guid: 78519d59f4e255944b045d7319c61fae
+  - _formatString: 
+    _guid:
+      _guid: 785ee4f465f7acb4faf92954eeec4029
+  - _formatString: 
+    _guid:
+      _guid: 789345b0219079244974d4124de91cc2
+  - _formatString: 
+    _guid:
+      _guid: 78a2f10edabdcb047a76bf53f6436150
+  - _formatString: 
+    _guid:
+      _guid: 79459efec17a4d00a321bdcc27bbc385
+  - _formatString: 
+    _guid:
+      _guid: 797cb2bedbf2f4948a1f4f5ddc2decbb
+  - _formatString: 
+    _guid:
+      _guid: 79e6d5629fc15c64d9e376475d88b950
+  - _formatString: 
+    _guid:
+      _guid: 79fc845c96d9aa342a212e26a1a37ba5
+  - _formatString: 
+    _guid:
+      _guid: 7a5290fd9d694ef42ae767fb032d7618
+  - _formatString: 
+    _guid:
+      _guid: 7acba5a8336bdbf4899611596b468306
+  - _formatString: 
+    _guid:
+      _guid: 7b51af4b40122ba40a942b9aa8f127ff
+  - _formatString: 
+    _guid:
+      _guid: 7b935fa1d0493504792ed4726083d013
+  - _formatString: 
+    _guid:
+      _guid: 7c30763b617fa3740a5dd2b4f373f95e
+  - _formatString: 
+    _guid:
+      _guid: 7c4b2d75c9d5d8049b18c1cd63780261
+  - _formatString: 
+    _guid:
+      _guid: 7c5b63e2a46b5e741a1648c6209ccd95
+  - _formatString: 
+    _guid:
+      _guid: 7ca6341ecba8cd9479de3db47e0b97ef
+  - _formatString: 
+    _guid:
+      _guid: 7cda122416b98704e9f1cc4e0f1aaa33
+  - _formatString: 
+    _guid:
+      _guid: 7cfe89628ac5b0346bcb369164013ba1
+  - _formatString: 
+    _guid:
+      _guid: 7cfeef8f5b8c09043ab880ff0cd78684
+  - _formatString: 
+    _guid:
+      _guid: 7d0d42020c8da914ab24acb37c301631
+  - _formatString: 
+    _guid:
+      _guid: 7d264dc74c21027408208667bad01a70
+  - _formatString: 
+    _guid:
+      _guid: 7db17e8f598f19d4aa3dc6b4262d8c00
+  - _formatString: 
+    _guid:
+      _guid: 7dd7bcac535f5754294a581d5d4c8256
+  - _formatString: 
+    _guid:
+      _guid: 7dfc894d699504f4c9558ded68352bef
+  - _formatString: 
+    _guid:
+      _guid: 7e17e6e5360b4884794587bc1fc4d212
+  - _formatString: 
+    _guid:
+      _guid: 7efaa449dc61ae44396de7654e09cd2c
+  - _formatString: 
+    _guid:
+      _guid: 7f3b985adb059184bbdce71d5c4bee66
+  - _formatString: 
+    _guid:
+      _guid: 7f9327b0ea321de4ca79e4118bfcf524
+  - _formatString: 
+    _guid:
+      _guid: 7fbfc872edc589f448e52822dd27817c
+  - _formatString: 
+    _guid:
+      _guid: 7fc2a8622d0bc794da9b2f85aa3bbc3d
+  - _formatString: 
+    _guid:
+      _guid: 7ff62f76bf98fa343961251aa1e7013b
+  - _formatString: 
+    _guid:
+      _guid: 8014286b36a2967428d6e5d635059040
+  - _formatString: 
+    _guid:
+      _guid: 807fe4345fe01824281ab1e484083165
+  - _formatString: 
+    _guid:
+      _guid: 80961fb2e282a7747a723230255d5797
+  - _formatString: 
+    _guid:
+      _guid: 80ee7c776f34a81419f97320559405ec
+  - _formatString: 
+    _guid:
+      _guid: 8212d25317086ef459e5abfce6afb246
+  - _formatString: 
+    _guid:
+      _guid: 82604c9a06dd5a74393bff23cde0b70c
+  - _formatString: 
+    _guid:
+      _guid: 82615452f466021448e92e9acba46093
+  - _formatString: 
+    _guid:
+      _guid: 82796225fa6df9949813df330ab8aa61
+  - _formatString: 
+    _guid:
+      _guid: 828e1464cb25d4b4fbf01427cbddcce4
+  - _formatString: 
+    _guid:
+      _guid: 8347189ef7c58bf4289f2ea7d3ccf341
+  - _formatString: 
+    _guid:
+      _guid: 8392f99ff123e114cba235933e4592e2
+  - _formatString: 
+    _guid:
+      _guid: 83eabe225c52f3d4b983580fc3f481cf
+  - _formatString: 
+    _guid:
+      _guid: 845a164e8615d51488e0d3b57ad8a88e
+  - _formatString: 
+    _guid:
+      _guid: 850be362ac52ad049ac0b712540a7350
+  - _formatString: 
+    _guid:
+      _guid: 85187c2149c549c5b33f0cdb02836b17
+  - _formatString: 
+    _guid:
+      _guid: 85ce388205d57a746a1223098a2ddb6d
+  - _formatString: 
+    _guid:
+      _guid: 85f34ef812d22d543844e7b70363d0ff
+  - _formatString: 
+    _guid:
+      _guid: 86096e10366a81c41921dac21e3bf41c
+  - _formatString: 
+    _guid:
+      _guid: 865c0e9ea8a42804d915534e1f920371
+  - _formatString: 
+    _guid:
+      _guid: 8670cb63119bca8419587e4ec34d0ad6
+  - _formatString: 
+    _guid:
+      _guid: 86a10889184f6384ba023afb4632a439
+  - _formatString: 
+    _guid:
+      _guid: 86bb1364592518040a0ad0c21450ff38
+  - _formatString: 
+    _guid:
+      _guid: 86c57a541cc96b14fb13be69c06c298f
+  - _formatString: 
+    _guid:
+      _guid: 87f12811f6fa69044bd7aa76d9823128
+  - _formatString: 
+    _guid:
+      _guid: 88057bd3aadc6b843b119a599ad7af64
+  - _formatString: 
+    _guid:
+      _guid: 8920e4f96a3f5484eb97415e94782aa9
+  - _formatString: 
+    _guid:
+      _guid: 89d1848e0e756744cb0c6c5771cc9eb3
+  - _formatString: 
+    _guid:
+      _guid: 89df7648798f5ff4cb11eaddffd3a864
+  - _formatString: 
+    _guid:
+      _guid: 8aada67fac06525489532baefeb1eb1b
+  - _formatString: 
+    _guid:
+      _guid: 8ad9d5126ed66d246a97ff538afbac0b
+  - _formatString: 
+    _guid:
+      _guid: 8b04c1903e8d276428ab36c9dcdb9cdf
+  - _formatString: 
+    _guid:
+      _guid: 8b8307f2b53bd374694f36c3211c2b18
+  - _formatString: 
+    _guid:
+      _guid: 8bacaf207f552144fb437adb723a7760
+  - _formatString: 
+    _guid:
+      _guid: 8bc864b5b7182a242a74292b7d9a03ea
+  - _formatString: 
+    _guid:
+      _guid: 8bd41bcc71e8e854298291c3de9e2d15
+  - _formatString: 
+    _guid:
+      _guid: 8c214abebb1bc794b81aa024c7419f6a
+  - _formatString: 
+    _guid:
+      _guid: 8c969f65d1204fb4595e51265031c784
+  - _formatString: 
+    _guid:
+      _guid: 8cb20e753c5ec51419ea53fae4324323
+  - _formatString: 
+    _guid:
+      _guid: 8d384e00bc59e5f4789003be7c5f962b
+  - _formatString: 
+    _guid:
+      _guid: 8d3da8998f3125746bc6077d44f7bff4
+  - _formatString: 
+    _guid:
+      _guid: 8dd1a676e08ea264db9361067705eb9c
+  - _formatString: 
+    _guid:
+      _guid: 8dfdd6ed5862ef947a4546f2a5c5aedb
+  - _formatString: 
+    _guid:
+      _guid: 8e0c68586a078f244a65d58fd9d54a0c
+  - _formatString: 
+    _guid:
+      _guid: 8e5c8c9498b246242ae976fa1573a7fc
+  - _formatString: 
+    _guid:
+      _guid: 8e810a3c18f1a644b980e75b5074034d
+  - _formatString: 
+    _guid:
+      _guid: 8ed4d5f4ce4bad04fa10d3e53c131c2b
+  - _formatString: 
+    _guid:
+      _guid: 8f05276190cf498a8153f6cbe761d4e6
+  - _formatString: 
+    _guid:
+      _guid: 8f2dbd2660562e64fa95dba8c4b106c8
+  - _formatString: 
+    _guid:
+      _guid: 8f586378b4e144a9851e7b34d9b748ee
+  - _formatString: 
+    _guid:
+      _guid: 8f82029af0eadfc44ac6976a7a4e0b97
+  - _formatString: 
+    _guid:
+      _guid: 8f9eb2757fc86d248a21bc5b03087dc0
+  - _formatString: 
+    _guid:
+      _guid: 8fb97c0e08c7b7146a31ccea0c2bbe76
+  - _formatString: 
+    _guid:
+      _guid: 8fda385ff4d2ea844a64ff863176fb43
+  - _formatString: 
+    _guid:
+      _guid: 900a506f98e6d2945b5023042e37a54d
+  - _formatString: 
+    _guid:
+      _guid: 9037a318c6c6589498aa27808767bd14
+  - _formatString: 
+    _guid:
+      _guid: 905e82573334ced45997361a2d50cd81
+  - _formatString: 
+    _guid:
+      _guid: 90fd44db81f35df43ae9d9a0f2d507c3
+  - _formatString: 
+    _guid:
+      _guid: 915ffb440ae8ffa48ad283c63255fb83
+  - _formatString: 
+    _guid:
+      _guid: 91cf22bf1b78c394abdd49f18c47d68f
+  - _formatString: 
+    _guid:
+      _guid: 91d9d67126f94cb4db0f961896b0ef85
+  - _formatString: 
+    _guid:
+      _guid: 935aa1f303ef50043a60c571eb3577b1
+  - _formatString: 
+    _guid:
+      _guid: 9412370450ce1ab46a094c39734e9e74
+  - _formatString: 
+    _guid:
+      _guid: 94afa8d21e764134c933a514b2aaa6a8
+  - _formatString: 
+    _guid:
+      _guid: 9516b650cd36b5f4e82abc7a14010545
+  - _formatString: 
+    _guid:
+      _guid: 952375914500de444bb7dad1db958e41
+  - _formatString: 
+    _guid:
+      _guid: 95a01ccdbb03d9c4a8b506a4536b27e1
+  - _formatString: 
+    _guid:
+      _guid: 95d65f92a143a4e4782d601993032d49
+  - _formatString: 
+    _guid:
+      _guid: 95d7b14391cc6d444ac63dbbdacd056c
+  - _formatString: 
+    _guid:
+      _guid: 9659df4df953f744798e286ef05c37e2
+  - _formatString: 
+    _guid:
+      _guid: 96d6d15cecbc1f640aea462df07f2e4a
+  - _formatString: 
+    _guid:
+      _guid: 97a2a965268f1cf43b5c619ad01d4a46
+  - _formatString: 
+    _guid:
+      _guid: 97d74821f2489384289fe7113a3a4f17
+  - _formatString: 
+    _guid:
+      _guid: 98b5a67cd3d4cc4449709c1a55e7ceb4
+  - _formatString: 
+    _guid:
+      _guid: 98e6109d84fca9b46930c1c21ee720b4
+  - _formatString: 
+    _guid:
+      _guid: 998ad26c7155a2347acb10ab419e6ad7
+  - _formatString: 
+    _guid:
+      _guid: 99aea703975b67e4b974316fc2a5f1f4
+  - _formatString: 
+    _guid:
+      _guid: 9a935b3a886e2bc47baaa2cfdf676273
+  - _formatString: 
+    _guid:
+      _guid: 9aa884b286e79ae45af748fbc7c89ef2
+  - _formatString: 
+    _guid:
+      _guid: 9aea2061414871a44b88ad841e43b387
+  - _formatString: 
+    _guid:
+      _guid: 9b13c0ac3eb255645aa84b0c00070a7e
+  - _formatString: 
+    _guid:
+      _guid: 9c46d3a47398a6f47a15874c7da30eef
+  - _formatString: 
+    _guid:
+      _guid: 9c684ef858ff5424e904e4dae4fb12dd
+  - _formatString: 
+    _guid:
+      _guid: 9cef06ef13e955e4f8c88be20ea84542
+  - _formatString: 
+    _guid:
+      _guid: 9d59ac03ed6e27a4d91dff2e69c6beac
+  - _formatString: 
+    _guid:
+      _guid: 9d5ae6fe4d5b97442b9f20bc25190e32
+  - _formatString: 
+    _guid:
+      _guid: 9d5af8cb7fa9994459fe9923dce68b4c
+  - _formatString: 
+    _guid:
+      _guid: 9da2b77aad593da49b2d885479e12853
+  - _formatString: 
+    _guid:
+      _guid: 9e15ab5904990294082536856b0fa131
+  - _formatString: 
+    _guid:
+      _guid: 9e516fabf15aed54799fb4b9d2c55c5d
+  - _formatString: 
+    _guid:
+      _guid: 9e7c27029b7fb7c4db2a41fe611ac46f
+  - _formatString: 
+    _guid:
+      _guid: 9ebbaf3d5d874ae4795c16b8b36a5179
+  - _formatString: 
+    _guid:
+      _guid: 9f4699a3d9e509b4096422993a134dfb
+  - _formatString: 
+    _guid:
+      _guid: 9fb4c4d5c92c40648804b9a1f80e6978
+  - _formatString: 
+    _guid:
+      _guid: 9fbe000c5660a0746b552404b9896678
+  - _formatString: 
+    _guid:
+      _guid: 9fe5888f8638b104f9e3573d13129d11
+  - _formatString: 
+    _guid:
+      _guid: a0087cf2716a8ca458655fb89d098816
+  - _formatString: 
+    _guid:
+      _guid: a02a7d8c237544f1962732b55a9aebf1
+  - _formatString: 
+    _guid:
+      _guid: a1141d01bc756ba46806fd74a91c6934
+  - _formatString: 
+    _guid:
+      _guid: a1260c74caca87745bc334e00231b581
+  - _formatString: 
+    _guid:
+      _guid: a169671a4eb4f834db76912253647d66
+  - _formatString: 
+    _guid:
+      _guid: a1df0e0467a20de4f8805e892a6b00d4
+  - _formatString: 
+    _guid:
+      _guid: a217a36dda7e15c4cb6e7dc641490858
+  - _formatString: 
+    _guid:
+      _guid: a2adeb2ecac1a1c4d9e5161369d2ef3d
+  - _formatString: 
+    _guid:
+      _guid: a2b8fcd08f869984f85e086ab32ed3a8
+  - _formatString: 
+    _guid:
+      _guid: a33b569b1b6f04d429d86d544b51e009
+  - _formatString: 
+    _guid:
+      _guid: a36758ae51a5c6e46bcfabc7c36b310b
+  - _formatString: 
+    _guid:
+      _guid: a3a772678ecb5ca4b8dbb5e5a37e553f
+  - _formatString: 
+    _guid:
+      _guid: a3bbd64af4792cd48b530f1ce68c45e9
+  - _formatString: 
+    _guid:
+      _guid: a45f9cb5fbb3bb648abc4c392194647a
+  - _formatString: 
+    _guid:
+      _guid: a47ef526e8b3aa8479d592b971d02d28
+  - _formatString: 
+    _guid:
+      _guid: a4b2aa32e4ba44242a1111092806cf12
+  - _formatString: 
+    _guid:
+      _guid: a53bcc38a7220df47a7fca62c0940a2a
+  - _formatString: 
+    _guid:
+      _guid: a5d19dd8104bbef4694b0ee7c43559bb
+  - _formatString: 
+    _guid:
+      _guid: a5f5deaafcb07c14a939fa139eeaedd7
+  - _formatString: 
+    _guid:
+      _guid: a6086972517621d4a9efad83d25049d8
+  - _formatString: 
+    _guid:
+      _guid: a6104e55b25427141b4120981ea631e9
+  - _formatString: 
+    _guid:
+      _guid: a6207c946a9d6bf418c8b38fec7c5b67
+  - _formatString: 
+    _guid:
+      _guid: a64baaeb20c1842449c3cb647a363752
+  - _formatString: 
+    _guid:
+      _guid: a701316b2aa61b849943abee42751fd2
+  - _formatString: 
+    _guid:
+      _guid: a72b512be14f4124c9b4a0ed92896729
+  - _formatString: 
+    _guid:
+      _guid: a75bb3629a85e85448c28a775f12eb68
+  - _formatString: 
+    _guid:
+      _guid: a77ae4c308d82314aa2aae89e6b83879
+  - _formatString: 
+    _guid:
+      _guid: a7b94701a4255d849b0a377da6e39b4d
+  - _formatString: 
+    _guid:
+      _guid: a81422dfbbb49574e816f83d83d85640
+  - _formatString: 
+    _guid:
+      _guid: a822e44ab4f9b5044a88353b3a56ed0c
+  - _formatString: 
+    _guid:
+      _guid: a8f999deedb7e114facdf349a257f48d
+  - _formatString: 
+    _guid:
+      _guid: a964083ce8d1db2458393dd98ed207d7
+  - _formatString: 
+    _guid:
+      _guid: a9c0d2456a0e24a47ac81ccce2ff3fb7
+  - _formatString: 
+    _guid:
+      _guid: aa5158ca7de7ba646afcb2973ee456d1
+  - _formatString: 
+    _guid:
+      _guid: aa9845a666cb7e4438bab453e9f1ed17
+  - _formatString: 
+    _guid:
+      _guid: aae8e457bc7707a41b716078bfa49754
+  - _formatString: 
+    _guid:
+      _guid: aaf2d599a9e4f7645bf57a06167856ef
+  - _formatString: 
+    _guid:
+      _guid: ab2695345f8ced3409403608fc977c95
+  - _formatString: 
+    _guid:
+      _guid: abd167668e8403745ac0efb8227b8885
+  - _formatString: 
+    _guid:
+      _guid: ac29ffb91db4109459667ef22d206b15
+  - _formatString: 
+    _guid:
+      _guid: ac5c5d76d192f564c8cb211e89e2a782
+  - _formatString: 
+    _guid:
+      _guid: ac8edab0bfb899d4f9ac7fa797ae4816
+  - _formatString: 
+    _guid:
+      _guid: accd030f68dc2294eb792c1e284e3efd
+  - _formatString: 
+    _guid:
+      _guid: ad9e900c6ccd0da418a93174708ad5d0
+  - _formatString: 
+    _guid:
+      _guid: ae395b6fef61ba940b9a97f6d8abe89f
+  - _formatString: 
+    _guid:
+      _guid: ae54049f29e710a42bcfe78924e1e921
+  - _formatString: 
+    _guid:
+      _guid: ae61920bec261f84399a2beeb17c66fc
+  - _formatString: 
+    _guid:
+      _guid: ae6bd4b1e79f4be4f915731fa76faff3
+  - _formatString: 
+    _guid:
+      _guid: aea5b1eb1d5d7fc4c9d5faf4316d1ce6
+  - _formatString: 
+    _guid:
+      _guid: af12c782edc6b134a9fe2f32308c9c94
+  - _formatString: 
+    _guid:
+      _guid: af72c77086e8df24b8f39dc87a0a9434
+  - _formatString: 
+    _guid:
+      _guid: af82c34e014e1de4aa1d77dc6c16509c
+  - _formatString: 
+    _guid:
+      _guid: afabc5c107ab3704fbf91e41dac78785
+  - _formatString: 
+    _guid:
+      _guid: afb34d1b151280140bc778fdc5ac1897
+  - _formatString: 
+    _guid:
+      _guid: afea7f6961bcdd342b9a0ba9f20c05f2
+  - _formatString: 
+    _guid:
+      _guid: b08f82688c3b785458dbcc4a5f68831c
+  - _formatString: 
+    _guid:
+      _guid: b0944fcb77fb57c4bb596bf392db4257
+  - _formatString: 
+    _guid:
+      _guid: b0b4d3ba52cc26144b0546722c511b82
+  - _formatString: 
+    _guid:
+      _guid: b0fb185194c502c45aa876d8f425cf9d
+  - _formatString: 
+    _guid:
+      _guid: b16145ca740e4bc4c808d6b336ef5b6f
+  - _formatString: 
+    _guid:
+      _guid: b29aba051d70d6f43a26cba2c8d4db0e
+  - _formatString: 
+    _guid:
+      _guid: b2be391b7e0c47b4fb35a1de58aa6ea8
+  - _formatString: 
+    _guid:
+      _guid: b2def3cd8c44dcc43a8b0c64539a4fc9
+  - _formatString: 
+    _guid:
+      _guid: b37477024c1658646b1523a6beda830b
+  - _formatString: 
+    _guid:
+      _guid: b38fad3f665e00646b84bb7ce62dd9a0
+  - _formatString: 
+    _guid:
+      _guid: b3e24241b552b73488b27483e63459db
+  - _formatString: 
+    _guid:
+      _guid: b41e796a145ddbe4b9e3a31551e20ce0
+  - _formatString: 
+    _guid:
+      _guid: b45f6baa90fc9964ba3000e30b74107b
+  - _formatString: 
+    _guid:
+      _guid: b4b6edebabc6e8b41b7226bb7e6236ac
+  - _formatString: 
+    _guid:
+      _guid: b5318a618563f8046964e1250afd5986
+  - _formatString: 
+    _guid:
+      _guid: b6204791a76f8f84d89f81d37144df6a
+  - _formatString: 
+    _guid:
+      _guid: b63b122e654f11147aa8c241bbf52ff3
+  - _formatString: 
+    _guid:
+      _guid: b67f712c02dfa2f43a1dfe954f4ca735
+  - _formatString: 
+    _guid:
+      _guid: b7143b78c5519c647a157cf171ef479b
+  - _formatString: 
+    _guid:
+      _guid: b7d1deb70e952554e85d4f9d0a1c2382
+  - _formatString: 
+    _guid:
+      _guid: b8170e3ba530c7749b8a44d22f057040
+  - _formatString: 
+    _guid:
+      _guid: b823a68863bf1344eacee87549d47f97
+  - _formatString: 
+    _guid:
+      _guid: b84b580cdcc393949b9add0483ea1302
+  - _formatString: 
+    _guid:
+      _guid: b87f0ddecec908f418212da0a7e896f7
+  - _formatString: 
+    _guid:
+      _guid: b89050ef61147f14c9deeffa598d83e8
+  - _formatString: 
+    _guid:
+      _guid: b8c22e7ba72ec2841be93f2be63c63ee
+  - _formatString: 
+    _guid:
+      _guid: b90b4aa0eac442647ac889d8fbd6835a
+  - _formatString: 
+    _guid:
+      _guid: b96316c9f454bf34492d0a754cc42582
+  - _formatString: 
+    _guid:
+      _guid: b99e4b20755d54343a614764eaf49713
+  - _formatString: 
+    _guid:
+      _guid: b9c68dc568accdc42ba94bec999b4fff
+  - _formatString: 
+    _guid:
+      _guid: ba7d37b7bd8428f43a553e69aef09f99
+  - _formatString: 
+    _guid:
+      _guid: baa170fa09deec84cb265f7cab8747f7
+  - _formatString: 
+    _guid:
+      _guid: badac03c1d5c8bd4981b1acf7381c4f6
+  - _formatString: 
+    _guid:
+      _guid: baf0960efbdbed246bdbcef09ccd4cf2
+  - _formatString: 
+    _guid:
+      _guid: bb5477143693cfd4b80234bc89fc2ec9
+  - _formatString: 
+    _guid:
+      _guid: bbb207fb38249cb419e14d7845cabaae
+  - _formatString: 
+    _guid:
+      _guid: bc1ede39bf3643ee8e493720e4259791
+  - _formatString: 
+    _guid:
+      _guid: bcee4b1ddea180a48b54f35a440311d6
+  - _formatString: 
+    _guid:
+      _guid: bd0d1497fd09cac4893696216da80ff5
+  - _formatString: 
+    _guid:
+      _guid: bd36ec0ae99ff2e48aa7d741044cc033
+  - _formatString: 
+    _guid:
+      _guid: bd507e7043a0fbe41b4b79a4061e3522
+  - _formatString: 
+    _guid:
+      _guid: bdb2723818a84684eac6785c785e6678
+  - _formatString: 
+    _guid:
+      _guid: bdd8bd4bfdc7d044f89bdc07263fac34
+  - _formatString: 
+    _guid:
+      _guid: bddb390597383fc4f876e3ca157ecee3
+  - _formatString: 
+    _guid:
+      _guid: bdfe6b6217bff5c4e83b2cb8e512b143
+  - _formatString: 
+    _guid:
+      _guid: be9681a8d2282af4d9c9f04d5a84fcfd
+  - _formatString: 
+    _guid:
+      _guid: bec9b9be0fffba647a6e396726b23760
+  - _formatString: 
+    _guid:
+      _guid: bf294b2f8ebfec248b08404b419c5a2c
+  - _formatString: 
+    _guid:
+      _guid: bf41c9d7a5fbf5047a99bdcd50d57c94
+  - _formatString: 
+    _guid:
+      _guid: bf598e609b839674888e2bd18daf77d8
+  - _formatString: 
+    _guid:
+      _guid: bf8fde4a0a52da84e8542775ea474801
+  - _formatString: 
+    _guid:
+      _guid: c02d099d79f5ec144ba2d0cedad82af4
+  - _formatString: 
+    _guid:
+      _guid: c05029681d454b940a5fd6eeee8343da
+  - _formatString: 
+    _guid:
+      _guid: c0c24c322845ec2468f1db5f0923dd8e
+  - _formatString: 
+    _guid:
+      _guid: c0ff018d94984a94f98e888fd6906224
+  - _formatString: 
+    _guid:
+      _guid: c16db21d1b4b60d4b820f2a80e86587c
+  - _formatString: 
+    _guid:
+      _guid: c194d315eea4efc4f8aaec5c42f4bf0f
+  - _formatString: 
+    _guid:
+      _guid: c1b3607d691136847bd3da0e2160817a
+  - _formatString: 
+    _guid:
+      _guid: c1b75c137b8b9314c9cded4f366cf08d
+  - _formatString: 
+    _guid:
+      _guid: c1e7cce25848be049801d3c2cfe6cf74
+  - _formatString: 
+    _guid:
+      _guid: c201bda481583c047a43ba37843a0557
+  - _formatString: 
+    _guid:
+      _guid: c2b79e7d8f354aea86f14051d02d3ff8
+  - _formatString: 
+    _guid:
+      _guid: c2f569d4e5689a5449f58125e4e8f76b
+  - _formatString: 
+    _guid:
+      _guid: c358c786b83ec4c4a80967a6e720c42b
+  - _formatString: 
+    _guid:
+      _guid: c3765e360be6afa4aba45e7a5763c63b
+  - _formatString: 
+    _guid:
+      _guid: c3b4ed99a683f9844becdbc33a8c2064
+  - _formatString: 
+    _guid:
+      _guid: c407e02065893674d97a391d33634436
+  - _formatString: 
+    _guid:
+      _guid: c408735c1667ca34f994a6b98f7fe7e4
+  - _formatString: 
+    _guid:
+      _guid: c41005c129ba4d66911b75229fd70b45
+  - _formatString: 
+    _guid:
+      _guid: c44923f0ffc17d64aa2493d3d0ea13e6
+  - _formatString: 
+    _guid:
+      _guid: c462c542eb5c37d45b3fd31f72186134
+  - _formatString: 
+    _guid:
+      _guid: c49bea37ed8269349bd5671cf5205d3c
+  - _formatString: 
+    _guid:
+      _guid: c4c8e99f35dbd4a4999c051eec8b0158
+  - _formatString: 
+    _guid:
+      _guid: c4f0de2d86521a84eb63830a753fe89a
+  - _formatString: 
+    _guid:
+      _guid: c503280b051f2a345a79190c2713fe27
+  - _formatString: 
+    _guid:
+      _guid: c5311bf7c8897904aabc6b0cd75208b3
+  - _formatString: 
+    _guid:
+      _guid: c53cd073bae0c2e479957f913ac9645a
+  - _formatString: 
+    _guid:
+      _guid: c55906d2729a34a4799dd26c737cd0f1
+  - _formatString: 
+    _guid:
+      _guid: c56cb052321e76445a0fee4da483d389
+  - _formatString: 
+    _guid:
+      _guid: c577f813c4d5b154b851b6bfb6e62757
+  - _formatString: 
+    _guid:
+      _guid: c57c055860d30d9458c6034129afea36
+  - _formatString: 
+    _guid:
+      _guid: c64de146e2cdcdc4d978ea2e73769222
+  - _formatString: 
+    _guid:
+      _guid: c6555649230ea1547a1410846b0af20d
+  - _formatString: 
+    _guid:
+      _guid: c75a31a43968c9f4b840c6f28d072a86
+  - _formatString: 
+    _guid:
+      _guid: c770fdfb02c4fee4f9d09951af2be9bb
+  - _formatString: 
+    _guid:
+      _guid: c7c5bd53e6e729e4aa3d91633ae5629f
+  - _formatString: 
+    _guid:
+      _guid: c7d6f95425fca8b43a9d12e8c31681b5
+  - _formatString: 
+    _guid:
+      _guid: c7f5d294d3060fa479f74ee83028c1eb
+  - _formatString: 
+    _guid:
+      _guid: c8932b1ddf5ce6d4b9937471462475a2
+  - _formatString: 
+    _guid:
+      _guid: c8bb11724ac209d42a3216cc2ab5fc47
+  - _formatString: 
+    _guid:
+      _guid: c8ec3dc70be15c241a5f67eb3fa73099
+  - _formatString: 
+    _guid:
+      _guid: c8ed2f12601a2284388e727531610301
+  - _formatString: 
+    _guid:
+      _guid: c912181858af371419cedc74e8afb24b
+  - _formatString: 
+    _guid:
+      _guid: c947238f21805c248bebd409e3d6e050
+  - _formatString: 
+    _guid:
+      _guid: c9c9046702e129b45aebfcb1ba8b0803
+  - _formatString: 
+    _guid:
+      _guid: c9dc989aa9869714ea1932fbcf2f2e95
+  - _formatString: 
+    _guid:
+      _guid: c9ec2f3356763544d96f5afb513fbdeb
+  - _formatString: 
+    _guid:
+      _guid: ca0fc5f5df95a53459a0bb84777dcd89
+  - _formatString: 
+    _guid:
+      _guid: ca4d65cfd32dfa742bf8948cd8ed89ea
+  - _formatString: 
+    _guid:
+      _guid: ca6baec8a59d35645b437e91c9d1c32f
+  - _formatString: 
+    _guid:
+      _guid: cb78426c44829ab4ea4d3d4caecc01f3
+  - _formatString: 
+    _guid:
+      _guid: cb7ec1342e25bf2498ca621ba4a4adfd
+  - _formatString: 
+    _guid:
+      _guid: cba903b67f0ea4f4a94c98cd5b2ff46c
+  - _formatString: 
+    _guid:
+      _guid: cbe27437f0f495a4ea3ec763ac96ebff
+  - _formatString: 
+    _guid:
+      _guid: cbfef714ac5729846b62d3940313c16d
+  - _formatString: 
+    _guid:
+      _guid: cc2001556ac0b9440bd80a56376cebc7
+  - _formatString: 
+    _guid:
+      _guid: cc6d88cf876f7eb4daca9e0de35d14e6
+  - _formatString: 
+    _guid:
+      _guid: ccbabbcca95a726449a7903a8f943fdf
+  - _formatString: 
+    _guid:
+      _guid: ccc00bc6fa97be94b98609b83f1cec45
+  - _formatString: 
+    _guid:
+      _guid: cdf6e045c3855474e98a15a7e6d02d37
+  - _formatString: 
+    _guid:
+      _guid: ce183ac107cf20e4b9e2a3767360a8e7
+  - _formatString: 
+    _guid:
+      _guid: ce4a56f5e6dd81c48887da46adac49ec
+  - _formatString: 
+    _guid:
+      _guid: cf81c85f95fe47e1a27f6ae460cf182c
+  - _formatString: 
+    _guid:
+      _guid: d07759457e07815499f805cef678a5c5
+  - _formatString: 
+    _guid:
+      _guid: d088926ca8d23434fab2a2e222deb2c3
+  - _formatString: 
+    _guid:
+      _guid: d105e04886d81214884ab44c701d4fda
+  - _formatString: 
+    _guid:
+      _guid: d130a8cefab92654d8dd7bff5e8e6722
+  - _formatString: 
+    _guid:
+      _guid: d13eee86928e8af40a2129444bae3ef5
+  - _formatString: 
+    _guid:
+      _guid: d1414bc9fd4e5f34e8303cd6e8e0f281
+  - _formatString: 
+    _guid:
+      _guid: d1521d13408755b419596f1980cd9362
+  - _formatString: 
+    _guid:
+      _guid: d18cba9476a0a2e418bfc0db1001656f
+  - _formatString: 
+    _guid:
+      _guid: d1981edf2b7bad345ad869bf820e66ea
+  - _formatString: 
+    _guid:
+      _guid: d1be202aead49834d95b96b8e7bdd4b8
+  - _formatString: 
+    _guid:
+      _guid: d23964fa0c9dbb24e86d30ca89e31592
+  - _formatString: 
+    _guid:
+      _guid: d273174afe5181a4bb21d1f9789afa03
+  - _formatString: 
+    _guid:
+      _guid: d28e11f37bf71db4bbd9f1d0e9b6fb74
+  - _formatString: 
+    _guid:
+      _guid: d2a778f6086f4fb43ae9967e6dd0312c
+  - _formatString: 
+    _guid:
+      _guid: d2f27c13a51f42a4ca047e1072eef791
+  - _formatString: 
+    _guid:
+      _guid: d315bd8f455a3e3419e3c4d5a908bc9d
+  - _formatString: 
+    _guid:
+      _guid: d3b54c5acb6f8fe41b54f8ffe5e02179
+  - _formatString: 
+    _guid:
+      _guid: d3bd1e1acf9ab9c439014d26166a4add
+  - _formatString: 
+    _guid:
+      _guid: d48602fd5e023e547b01bba0f4e1be0b
+  - _formatString: 
+    _guid:
+      _guid: d4bc65042ae5f214cb468b1092a7c37e
+  - _formatString: 
+    _guid:
+      _guid: d4f11b1a1d4e0854f8f3e05ad2a2d5ec
+  - _formatString: 
+    _guid:
+      _guid: d4fe8082272727d4fa4b05a9647d14ce
+  - _formatString: 
+    _guid:
+      _guid: d5003d809e3de50488f9f7b9bf54a06f
+  - _formatString: 
+    _guid:
+      _guid: d50112c4d99155547a74c9feb2231974
+  - _formatString: 
+    _guid:
+      _guid: d53252b5158b529449d3dafbbb281ed6
+  - _formatString: 
+    _guid:
+      _guid: d546ad2e1a70d164ea7a0ce8259b9a12
+  - _formatString: 
+    _guid:
+      _guid: d5654d4139cc5e347a5f28088287fa5d
+  - _formatString: 
+    _guid:
+      _guid: d57c044f9d942e446894c91a623614f1
+  - _formatString: 
+    _guid:
+      _guid: d614e476543b0a748a826b72c61a0ef7
+  - _formatString: 
+    _guid:
+      _guid: d6967e40907cfd84ca4260192008dd11
+  - _formatString: 
+    _guid:
+      _guid: d6a741086146d2546a176f1c70e8717c
+  - _formatString: 
+    _guid:
+      _guid: d6fa1d6cee8e8db4b81a9e4ec0789ba7
+  - _formatString: 
+    _guid:
+      _guid: d7732522375c4c7449b45fabb0ce66eb
+  - _formatString: 
+    _guid:
+      _guid: d81e5bd7d601f0a40a7c1f7cf03b4953
+  - _formatString: 
+    _guid:
+      _guid: d82c1b31c7e74239bff1220585707d2b
+  - _formatString: 
+    _guid:
+      _guid: d84315d58a6357549beb77e0b37ba856
+  - _formatString: 
+    _guid:
+      _guid: d8b1275f01f259e49b222307423fcb8c
+  - _formatString: 
+    _guid:
+      _guid: d915240ae79b12642a3f84b8653b9522
+  - _formatString: 
+    _guid:
+      _guid: d92ac41616d251e4c8fa1c95822461de
+  - _formatString: 
+    _guid:
+      _guid: d930090c0cd643c7b55f19a38538c162
+  - _formatString: 
+    _guid:
+      _guid: da2fceb2ea9e2024b8d902e2bcdc676b
+  - _formatString: 
+    _guid:
+      _guid: da6a63dbd2027e84683aa687ae36a642
+  - _formatString: 
+    _guid:
+      _guid: da70560ae5a29434ebbd2594a36d59da
+  - _formatString: 
+    _guid:
+      _guid: da724a098eee67245b035713aa6e8521
+  - _formatString: 
+    _guid:
+      _guid: da91a5243a592054593defd203d2366e
+  - _formatString: 
+    _guid:
+      _guid: daf7c3d43ec73ba49890281b036fe488
+  - _formatString: 
+    _guid:
+      _guid: db0b2b4ac2659344292bcc96b8d64f8d
+  - _formatString: 
+    _guid:
+      _guid: db5ba6a2c64fc9e47a7989b3b5bca2fe
+  - _formatString: 
+    _guid:
+      _guid: db68cf34164941646accd7ad2c09de4f
+  - _formatString: 
+    _guid:
+      _guid: dba702c1282b130489e50ea2f2b5ca83
+  - _formatString: 
+    _guid:
+      _guid: dbfd93649dd1f97489ef5dde298043f3
+  - _formatString: 
+    _guid:
+      _guid: dc2a634a72183934bb2f6f80f86e9fe9
+  - _formatString: 
+    _guid:
+      _guid: dc5a0e4c8fa91f349b1bc3a2645a5c9a
+  - _formatString: 
+    _guid:
+      _guid: dd0d5face07833d4db8eb2770c801dfb
+  - _formatString: 
+    _guid:
+      _guid: dd4785166a204f74da819bc6412f3b9d
+  - _formatString: 
+    _guid:
+      _guid: dd82aa4a2fdeaea438a29d4e2647fc17
+  - _formatString: 
+    _guid:
+      _guid: dd89cf5b9246416f84610a006f916af7
+  - _formatString: 
+    _guid:
+      _guid: ddc5a63d80a463e43b89d00570a8cc41
+  - _formatString: 
+    _guid:
+      _guid: de375faa79513344bbb0bd66e72ecf2d
+  - _formatString: 
+    _guid:
+      _guid: debf6c524de481348a3d6e89ab66bd1c
+  - _formatString: 
+    _guid:
+      _guid: dedb1fc9eabd5c04aaccdbbcaf6f82b7
+  - _formatString: 
+    _guid:
+      _guid: dfa2dc45a0b6f4b49b0df3f225551307
+  - _formatString: 
+    _guid:
+      _guid: dffef66376be4fa480fb02b19edbe903
+  - _formatString: 
+    _guid:
+      _guid: e048be04abc198f44afde40ec67e260a
+  - _formatString: 
+    _guid:
+      _guid: e0f4a15b65df16d4b82300f7cf874875
+  - _formatString: 
+    _guid:
+      _guid: e126f8cd20bbe404ead3d70b28f3341b
+  - _formatString: 
+    _guid:
+      _guid: e1691e24b05d3b340b96d092c4bdaf01
+  - _formatString: 
+    _guid:
+      _guid: e20ccf3ce5edab345befffcdf3a87a7a
+  - _formatString: 
+    _guid:
+      _guid: e213885d82a5bc74b8debeb0a8475831
+  - _formatString: 
+    _guid:
+      _guid: e2214b27ba819f64eaec4644911e1b27
+  - _formatString: 
+    _guid:
+      _guid: e2a163dc85a74f74680d076811e291a2
+  - _formatString: 
+    _guid:
+      _guid: e2a3656b91c1e204abf2c63cde4ef887
+  - _formatString: 
+    _guid:
+      _guid: e2a7ee65d48d099428cd9fddbdd7dc6d
+  - _formatString: 
+    _guid:
+      _guid: e2b30304f9dd7284b957ba295c1aa5b5
+  - _formatString: 
+    _guid:
+      _guid: e3265ab4bf004d28a9537516768c1c75
+  - _formatString: 
+    _guid:
+      _guid: e38c2b12a6e34f14c9b6cfe9234a913f
+  - _formatString: 
+    _guid:
+      _guid: e3b2fad0058a37648bc5e0d3b69e916a
+  - _formatString: 
+    _guid:
+      _guid: e3cf78e1a37ea214fbe149730c520d81
+  - _formatString: 
+    _guid:
+      _guid: e3e3fbf35327643418318915150b081d
+  - _formatString: 
+    _guid:
+      _guid: e41f8928a608dc945af1f4e1a5068bbc
+  - _formatString: 
+    _guid:
+      _guid: e42790e18aa61e443865af85cc80753d
+  - _formatString: 
+    _guid:
+      _guid: e485093b95f46fb4dbb1cb5313dec3a8
+  - _formatString: 
+    _guid:
+      _guid: e4a24485c61ba0c429216459c71f873d
+  - _formatString: 
+    _guid:
+      _guid: e4fec7ffa12608947a03f4826f658b30
+  - _formatString: 
+    _guid:
+      _guid: e5021865be1c85a40912a471d5b489fb
+  - _formatString: 
+    _guid:
+      _guid: e5057f2352562da45a255cf3cd558b7d
+  - _formatString: 
+    _guid:
+      _guid: e51f1dc027983724a93aac5480fd77d4
+  - _formatString: 
+    _guid:
+      _guid: e53531e84dbf4cb4fbca748b61eac203
+  - _formatString: 
+    _guid:
+      _guid: e54778b168127014c9f334ca65be4485
+  - _formatString: 
+    _guid:
+      _guid: e58f8a8771a9e2b43bf63c6f746197ef
+  - _formatString: 
+    _guid:
+      _guid: e5c979c06083c38428a14b7673adfbb0
+  - _formatString: 
+    _guid:
+      _guid: e6244758c063c724ab48b7fd2736b592
+  - _formatString: 
+    _guid:
+      _guid: e6645a88330b2aa499960c6cbca0611d
+  - _formatString: 
+    _guid:
+      _guid: e6f0578fe48308540a2d00370bc7dd93
+  - _formatString: 
+    _guid:
+      _guid: e6f1da4c55ebc384d808701a86a96849
+  - _formatString: 
+    _guid:
+      _guid: e7285cf97cf3dca44ba7d40c5b01f167
+  - _formatString: 
+    _guid:
+      _guid: e73a58f6e2794ae7b1b7e50b7fb811b0
+  - _formatString: 
+    _guid:
+      _guid: e8277e8a6ca88c942ab98ebdf03a82f9
+  - _formatString: 
+    _guid:
+      _guid: e856e3274182fd949838127f4a01a96e
+  - _formatString: 
+    _guid:
+      _guid: e86cc67c650caf84d9cd181975d8d19a
+  - _formatString: 
+    _guid:
+      _guid: e9980c8b435b78c408ea7ce01f6e78e1
+  - _formatString: 
+    _guid:
+      _guid: ea18f82b9d767894093169d67257840b
+  - _formatString: 
+    _guid:
+      _guid: ea66f303425d0e14faf68642608e178d
+  - _formatString: 
+    _guid:
+      _guid: ea775e53df76e654bb49ad04cee307c2
+  - _formatString: 
+    _guid:
+      _guid: eb4631087852ed145862810e263a6cd4
+  - _formatString: 
+    _guid:
+      _guid: eb54e9c3b01ec2149b92fab6cc20ceea
+  - _formatString: 
+    _guid:
+      _guid: ebaef44c6655ccf488672cdb4b23175b
+  - _formatString: 
+    _guid:
+      _guid: ebb6fc579a925d54f9aa4223cb8a03ba
+  - _formatString: 
+    _guid:
+      _guid: ebf17139976f62845923d9e1cac2a829
+  - _formatString: 
+    _guid:
+      _guid: ebf3c34b4f9e5a84883887bafe78b782
+  - _formatString: 
+    _guid:
+      _guid: ec56b1823fa96e749873016f12b832dc
+  - _formatString: 
+    _guid:
+      _guid: ecaab24aba0181c48be4bd11420cc4ca
+  - _formatString: 
+    _guid:
+      _guid: ed308c5f6e62f044e99dcc629eb4af2c
+  - _formatString: 
+    _guid:
+      _guid: edabc0357a68b464099ab9aa784b9a26
+  - _formatString: 
+    _guid:
+      _guid: ee40393913573954f9c80bb6b11bc9d9
+  - _formatString: 
+    _guid:
+      _guid: ee5ddd7156f61ed41b016a2c07be8d9d
+  - _formatString: 
+    _guid:
+      _guid: ef21ec01361041642ba39cc15a17739f
+  - _formatString: 
+    _guid:
+      _guid: eff2ec18fae73a641b530bd00af573a3
+  - _formatString: 
+    _guid:
+      _guid: f0589a65138b97c4dabe3a057f6744b0
+  - _formatString: 
+    _guid:
+      _guid: f0c4ad3d792aa9d48a039618e336e06d
+  - _formatString: 
+    _guid:
+      _guid: f12c30d3ed40d6249a59ba921af5050c
+  - _formatString: 
+    _guid:
+      _guid: f12c8c08ff563104580a71b014de4823
+  - _formatString: 
+    _guid:
+      _guid: f22a69fb9b6d1064a83f34ce2b2f65a1
+  - _formatString: 
+    _guid:
+      _guid: f2a35ea6bd909d94b98055175b60481e
+  - _formatString: 
+    _guid:
+      _guid: f2eb3cc5ddde1f848aec2142b4eba648
+  - _formatString: 
+    _guid:
+      _guid: f30aea9ae9ed19a43b109b635b2c40a6
+  - _formatString: 
+    _guid:
+      _guid: f33adeec93ecea54ba6025679c59640b
+  - _formatString: 
+    _guid:
+      _guid: f3602baa61f44bc4a8737d7b2eb2a1b5
+  - _formatString: 
+    _guid:
+      _guid: f40369c8dc749b644a098ce8c38704ee
+  - _formatString: 
+    _guid:
+      _guid: f47d84da74efb2244beb211f65a34f7f
+  - _formatString: 
+    _guid:
+      _guid: f4b0d701b2c31044eb496f464802a74c
+  - _formatString: 
+    _guid:
+      _guid: f5059868c4b35f94ea3befe80a962878
+  - _formatString: 
+    _guid:
+      _guid: f5729ee338c2d3443b8214a49360e3da
+  - _formatString: 
+    _guid:
+      _guid: f584c0bf9e97a654e8f6198ef8605a36
+  - _formatString: 
+    _guid:
+      _guid: f5c3e95ca7fda334697ae7516e8533a5
+  - _formatString: 
+    _guid:
+      _guid: f5d515ef0926eff4eb3f1673e82a1869
+  - _formatString: 
+    _guid:
+      _guid: f63da84aa21a7db41baa6231fddee5e5
+  - _formatString: 
+    _guid:
+      _guid: f6b77ad89476fd74aa4aa38db0a71852
+  - _formatString: 
+    _guid:
+      _guid: f7386de59c68e1d438d47ac14185d058
+  - _formatString: 
+    _guid:
+      _guid: f73c3116cc1d91d4580a6939adc413a5
+  - _formatString: 
+    _guid:
+      _guid: f73f2768f7fc32e408fe7b4e98cf2581
+  - _formatString: 
+    _guid:
+      _guid: f7ada0af4f174f0694ca6a487b8f543d
+  - _formatString: 
+    _guid:
+      _guid: f805673d917ea4f4d8752f7a403117d5
+  - _formatString: 
+    _guid:
+      _guid: f87722b45a5ec9e4e8ca1782453ffd0f
+  - _formatString: 
+    _guid:
+      _guid: f952c082cb03451daed3ee968ac6c63e
+  - _formatString: 
+    _guid:
+      _guid: f97a4ba6c78539f4e8e66d20575ccaa4
+  - _formatString: 
+    _guid:
+      _guid: f9868f3a0c1c9924d8cadc6e88e05187
+  - _formatString: 
+    _guid:
+      _guid: f9fe5a94c8890fc468892ddfd2a4a9a7
+  - _formatString: 
+    _guid:
+      _guid: fa0d7a006803d1c419134ffdabeac067
+  - _formatString: 
+    _guid:
+      _guid: fa227d2cbcb037c4ca50e2e5e8f8e490
+  - _formatString: 
+    _guid:
+      _guid: fa82aeae33e28df4aa74d86d39f43d68
+  - _formatString: 
+    _guid:
+      _guid: faa0981ccc45965488de6df7f38532e3
+  - _formatString: 
+    _guid:
+      _guid: fade42e8bc714b018fac513c043d323b
+  - _formatString: 
+    _guid:
+      _guid: fb0d29f3201937c4da6a862ae3766258
+  - _formatString: 
+    _guid:
+      _guid: fc0390dd21b7c6845a289126b936dfcf
+  - _formatString: 
+    _guid:
+      _guid: fc42a61ee9f80614488356263c541bc3
+  - _formatString: 
+    _guid:
+      _guid: fcba3f6771a0fd34083a9d8626d8e900
+  - _formatString: 
+    _guid:
+      _guid: fcc006f3a8935b24ba8119273f833bf5
+  - _formatString: 
+    _guid:
+      _guid: fd2fdbd753a127f4086f8d048780492c
+  - _formatString: 
+    _guid:
+      _guid: fd917813f4ef72e4aac531c3004491db
+  - _formatString: 
+    _guid:
+      _guid: fe1c6a45c440bbe459d977ee12e827c6
+  - _formatString: 
+    _guid:
+      _guid: fe3386b4efcb78d47ab30c20ee7184c9
+  - _formatString: 
+    _guid:
+      _guid: fe393ace9b354375a9cb14cdbbc28be4
+  - _formatString: 
+    _guid:
+      _guid: ff10fe5ae96fb4b40b27420a1c81aa60
+  - _formatString: 
+    _guid:
+      _guid: ff51d35cd931b2d4d8d91c98d3fc6b42
+  - _formatString: 
+    _guid:
+      _guid: ffae93263328ab54aae231763a19cbb6
+  - _formatString: 
+    _guid:
+      _guid: fffe457a7e882e64aa4a9f1d669136e9
+  _dirSettings:
+  - _formatString: 
+    _guid:
+      _guid: 00000000000000001000000000000000
+    _r: 0
+    _g: 0
+    _b: 0
+    _a: 1
+    _fr: 0.41176474
+    _fg: 0.13725491
+    _fb: 0.65882355
+    _fa: 1
+    _overlayIcon: 16
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 01ce236ce66bc754dacc01bccd0ad51d
+    _r: 1
+    _g: 0
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 21
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 0221e5c901357ea46886e0901a5c2218
+    _r: 1
+    _g: 0
+    _b: 0.5
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 23
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 0528648a47375f34da6bdb1c3708a2d4
+    _r: 0.75
+    _g: 0
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 069a598db7ac40140b460f79041101ca
+    _r: 0.98823535
+    _g: 0.49803925
+    _b: 0.121568635
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 09dfb9ee2aa533343aa2fd406384c517
+    _r: 0.40771613
+    _g: 0.12771448
+    _b: 0.6603774
+    _a: 1
+    _fr: 0.75892144
+    _fg: 0.612985
+    _fb: 0.8962264
+    _fa: 1
+    _overlayIcon: 17
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 0b88a2a2381c04d4a92a5132ee326dad
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 0b9086ea3ab662543b4b2189dbd97b99
+    _r: 0.6627451
+    _g: 0.18039216
+    _b: 0.69803923
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 0c56ecf0b59a4284e853a3fcd2ed1620
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 0e5b62c3222fa164f87bcf840678b354
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 142bc91f13294eb4eb6a59a37955a94f
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 1c8e6c636e31aa84a9f81aff7c85fe1d
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 22ca91dc781d21245ba7f3e9acb9e51d
+    _r: 0.1254902
+    _g: 0.7372549
+    _b: 0.08235294
+    _a: 1
+    _fr: 0.7803922
+    _fg: 0.9843138
+    _fb: 0.76470596
+    _fa: 1
+    _overlayIcon: 5
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 2341d21cfc8f80943a7f15ae241f4ae5
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 235ced73b153d844ebaf13dc97144367
+    _r: 0.9921569
+    _g: 0.5254902
+    _b: 0.16862746
+    _a: 1
+    _fr: 1
+    _fg: 0.7843138
+    _fb: 0.627451
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 243e06394e614e5d99fab26083b707fa
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 2542f685ed1070d42b10db0d281f5c70
+    _r: 0
+    _g: 1
+    _b: 0.25
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 10
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 259666cf14b71f74e84b82e992036485
+    _r: 0.7169812
+    _g: 0
+    _b: 0.028073061
+    _a: 1
+    _fr: 1
+    _fg: 0.514151
+    _fb: 0.53567594
+    _fa: 1
+    _overlayIcon: 2
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 25f893d49eade584798ed044bdeea75e
+    _r: 0
+    _g: 0.735849
+    _b: 0.27510196
+    _a: 1
+    _fr: 0.4669811
+    _fg: 1
+    _fb: 0.66578275
+    _fa: 1
+    _overlayIcon: 10
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 2b80211a2441af240b9bdb44428a67bd
+    _r: 0.07450982
+    _g: 0.5519244
+    _b: 0.7372549
+    _a: 1
+    _fr: 0.7647059
+    _fg: 0.9363467
+    _fb: 0.9843137
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 2c99297a6e9736742a87f2c8852a68b0
+    _r: 0.015686275
+    _g: 0.14509805
+    _b: 0.4901961
+    _a: 1
+    _fr: 0.27058825
+    _fg: 0.46274513
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 21
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 2d8f65e65bf999d4e94584f373f045f0
+    _r: 0.015686275
+    _g: 0.5176471
+    _b: 0.79215693
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 2e0b6ae574d8d3d4990a07e2aaef2169
+    _r: 0
+    _g: 0.12941118
+    _b: 0.48235294
+    _a: 1
+    _fr: 0.2688679
+    _fg: 0.4638987
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 11
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 33ddf337d05b7cf40beac0c1da3d4bba
+    _r: 0.007843138
+    _g: 0.13725491
+    _b: 0.48627454
+    _a: 1
+    _fr: 0.27058825
+    _fg: 0.46274513
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 14
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 3454b4209f82c9c4da5e6c68ae52d62b
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 35f84159bbab9a24db255691d5135c84
+    _r: 0.5686275
+    _g: 0.2509804
+    _b: 0.007843138
+    _a: 1
+    _fr: 0.9058824
+    _fg: 0.4156863
+    _fb: 0.039215688
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 36489545ac274f4d8030baab8b7ccf3a
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 37c67ce00e47a164dad809eeae4c4c2d
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 388aaaa284f4731419eb838a60a00c3a
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 43125b872daf9144ab0d310adbd6df5e
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 442c4dd48f2e42c9beb446fd8df6c8a7
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 45f6c5306b23d774994447c50cbf3122
+    _r: 1
+    _g: 0
+    _b: 0.75
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 22
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 46698ad5d16a6aa4d9aaf3ff955fa2af
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 489c3edbc2bb40944a3dc4cd7b55b540
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 48ebd40d61b397a48a1898d40476cc54
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 4945e2f3b272e5748ac5107be0e853a7
+    _r: 0
+    _g: 0.5
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 4aecb92fff08436c8303b10eab8da368
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 4afb06dc4a6bc904d9ca70110369be94
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 4b2cf72d4c87bf54ab59149dbc30557d
+    _r: 0.9568628
+    _g: 0.5372549
+    _b: 0.21568629
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 4eda1592126af8641953e59e8814360c
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 50e830257151f3d469722a6b119df34e
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 512a49d95c0c4332bdd98131869c23c9
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 541828ea2a128b24aabfd859f48fc04f
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 54c3348faa4db8b48afa7666f79a5fdc
+    _r: 0.5686275
+    _g: 0.2509804
+    _b: 0.007843138
+    _a: 1
+    _fr: 0.8313726
+    _fg: 0.3803922
+    _fb: 0.03137255
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 54f700464f46bbf4cb4f6726061583ae
+    _r: 0
+    _g: 1
+    _b: 0.75
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 12
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 57bf158ccc98a5c42bdf768f02b8213a
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 5942ac56753de3f4ab70b1620471d0f6
+    _r: 1
+    _g: 0.48708668
+    _b: 0.0990566
+    _a: 1
+    _fr: 1
+    _fg: 0.72994655
+    _fb: 0.5235849
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 59b20e196a04c874eb879850e4ee37a6
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: ' (Asset Source Code)'
+    _guid:
+      _guid: 5ac0cd1d4bd010b4ab524b5802c2c890
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 5e62a559da3775840a28c99d5258c1a3
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 623c0bb6ae4b3974ab11aa76fcef4dac
+    _r: 0.25
+    _g: 0
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 18
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 636780f4f49768540b31d86b3ca1580c
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 639980c057cab044ebf5bbfa56541570
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 63c72bd764ea30146b0d6fbfa86f60e2
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 65f4e55d2e4914d489eecabccb80b43d
+    _r: 0.25
+    _g: 1
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 66d584fc835d3c041999bc661fb0ff6c
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 67bd095a86fb8d84283650322b5ec42d
+    _r: 0
+    _g: 1
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 9
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 683e1d61455f5a34cb0a389ba61b65bd
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 69393460342d9a14ca4b224d0f4a2e58
+    _r: 0.735849
+    _g: 0.58607286
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 0.8573287
+    _fb: 0.5058824
+    _fa: 1
+    _overlayIcon: 22
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 69a55a6482a40b144ab2aa1a6e91b21c
+    _r: 1
+    _g: 0
+    _b: 0.25
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 24
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 69a9450c5dda9ec44b423ec5bc38dd00
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 6ab70aee4d56447429c680537fbf93ed
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 6d804fea236a25247a685ae5de06b546
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 731f1baa9d144a9897cb1d341c2092b8
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 73955951245be9847bdcd977875877dc
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 74bbbaa917056374d8b21b3321b32ff3
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 764f0b67d38e1b941a9aa4dfa43eaa47
+    _r: 0
+    _g: 0.75
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 14
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 765ecc54c6f0e7047a81313a1694df6e
+    _r: 0.9843138
+    _g: 0.53333336
+    _b: 0.18431373
+    _a: 1
+    _fr: 1
+    _fg: 0.77647066
+    _fb: 0.6156863
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 7768db43fec46b146aeb82c47ff3a4dc
+    _r: 0.9960785
+    _g: 0.4901961
+    _b: 0.10588236
+    _a: 1
+    _fr: 1
+    _fg: 0.7294118
+    _fb: 0.5254902
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 77808ad40b0d67343a22f67140471cd7
+    _r: 0.9490197
+    _g: 0.54509807
+    _b: 0.23137257
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 799ba0497ae30cc48aa3e9ca18ecf308
+    _r: 0.9960785
+    _g: 0.52156866
+    _b: 0.16078432
+    _a: 1
+    _fr: 1
+    _fg: 0.7861893
+    _fb: 0.6273585
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 7b295188bd16c8b4a86c259bbb58db6a
+    _r: 0.9450981
+    _g: 0.54901963
+    _b: 0.2392157
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 7e38be0cc47ff1741b701ec4be8b8e7d
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 7e715c574bbda774e98fc1dd4f12697a
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 7e8f276c00b95864b8932687d3c7d539
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 8009f0feb78319547a1239220b2f7ab1
+    _r: 0.023529414
+    _g: 0.4784314
+    _b: 0.79215693
+    _a: 1
+    _fr: 0.5921569
+    _fg: 0.8000001
+    _fb: 0.94117653
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 80694ae2485d10a4d92c3c48001ac8d1
+    _r: 1
+    _g: 0.5
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 3
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 807b46ce256f3e24c82480866962c261
+    _r: 0
+    _g: 0
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 17
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 8422bc7f5e9c3fa4cbd80ca67d6a5127
+    _r: 0.9921569
+    _g: 0.5254902
+    _b: 0.16862746
+    _a: 1
+    _fr: 1
+    _fg: 0.77647066
+    _fb: 0.6156863
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 86f1a9ea50e723d44a8acce65c443390
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 8a9f1130c7aec804db0609f09c4028af
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 8c7e1e0c4fa9ca34085265a9d5681f39
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 8e7e8f5a82a3a134e91c54efd2274ea9
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 8ec2cdd7f894bda4b892b43528da2f90
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 8ed976feb5eba004bb592d2888d65135
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 8fb2d82bd30669a4b9c35d3cb16e29a9
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 919853cae1a25ff49880806378a64c44
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 931730c35c1c0284092a898e2555900d
+    _r: 0.5
+    _g: 0
+    _b: 0.07839441
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 94c68d214000b254dac409cc1e771d21
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 969f8f23ca7671c4b97230671079a775
+    _r: 0.9921569
+    _g: 0.49411768
+    _b: 0.1137255
+    _a: 1
+    _fr: 0.9921569
+    _fg: 0.49411768
+    _fb: 0.1137255
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 987a6506281e5c840a521b7a53fb7b0f
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 988a12b738f31b94dbdcd075517ba0ee
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 988a9530f740d5545a883ee4da9c62ff
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 98e06578e28e69647b3be9d4dcae073b
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 9968acd91ae727d4e960acaccef61137
+    _r: 0
+    _g: 0.7924528
+    _b: 0.7924528
+    _a: 1
+    _fr: 0.8160377
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 99f836c9cb9345dba2e72c4a1f2d0695
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: 9c3b8b449357a4045ba7c854c7fddb3b
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: 9de31b65030c0d8418beb633d89d14c9
+    _r: 0
+    _g: 1
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 13
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: a3454e37247a6b2479e3516a69403d13
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: a3b73b02cffc29b4fa43fd824c3fd42e
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: a4e21115626440545b6e35e7b03ec129
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: a5d4755c3fad34340b08f2fa2e6d6a6f
+    _r: 1
+    _g: 0.25
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 2
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: a6057e7d84a438c4c85084334b20cac1
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: a620f6a1193850141a43447178372f58
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: a65caa6c4bc59124fb4121b7063939df
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: a945b82d215ff2e418c3a2ec5bbee537
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: a98ca9ec25198b242b52af31fd65a497
+    _r: 0.015686275
+    _g: 0.47450984
+    _b: 0.79215693
+    _a: 1
+    _fr: 0.5921569
+    _fg: 0.8000001
+    _fb: 0.94117653
+    _fa: 1
+    _overlayIcon: 10
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: a9e6a973ecfb44847bb5d7df0c9dfd44
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: adfe42b6fbf9b0f44a10dec51d6dad4e
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: ae60009f16ff8cd41822e0156682dd7a
+    _r: 0.5
+    _g: 0
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 19
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: b292db740b72a0146909d3b32fc571f8
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: b29af8af68857724fb554846ebc7ce87
+    _r: 0.95294124
+    _g: 0.5411765
+    _b: 0.22352943
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: b3cd87c174eee3b4ab287c2261e18895
+    _r: 0.5
+    _g: 1
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 7
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: b3fb54cde1b9a294ba383767e1855c99
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: b43d14011b94902458f9ac22ecc3c420
+    _r: 0.75
+    _g: 1
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 6
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: b51bb19a0e325a54eab1fa4dd929b31c
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: b84145cb0a3ebaa46aab35ccd4c196c0
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: bcd2ad42b702ae1479351499aaa063dd
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: bcfa48ec6c09c1b49a7e70ad59ec6129
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: bcfb4ac762912a74ead0f8b4147b7ef5
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: bfcc69744007f894aa25a180d076c388
+    _r: 1
+    _g: 0.75
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 4
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: c201bda481583c047a43ba37843a0557
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: c3e8fde17fd560744aaec76ea59decda
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: c3f8cc9aeeab6f44fb7f3ca834e58660
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: c4e483991eea73a409d26cc1abc93633
+    _r: 0.6627451
+    _g: 0.18823531
+    _b: 0.69803923
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: c593e9397ade67e4bbaa6fa520e983b8
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: c77875d353cb9284a89beddbf20d4760
+    _r: 0
+    _g: 0.7169812
+    _b: 0.5775094
+    _a: 1
+    _fr: 0.8156863
+    _fg: 1
+    _fb: 0.94759315
+    _fa: 1
+    _overlayIcon: 13
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: c798011324ba8f741883080a7e2be3ab
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: cb31085e5db18064fa8258202e4667d1
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: cb6106c90565f4847b9e3d11a320b1b7
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: d0603b6d5186471b96c778c3949c7ce2
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: d067a2bc427408e40a8b7b6d15b54e67
+    _r: 0.015686275
+    _g: 0.69803923
+    _b: 0.79215693
+    _a: 1
+    _fr: 0.7411765
+    _fg: 0.9607844
+    _fb: 0.9803922
+    _fa: 1
+    _overlayIcon: 11
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: d28d15f8c6ec34241b2c982fdf5d45fd
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: d2c45ec12a5f4277b42e612779212560
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: d4b035badf7ffae4ab720f5ba45d91db
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: d4f456f8d7942f64ba90e1db31cb25e8
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: dbe3989992e67af45ab9bc26b3c80fe2
+    _r: 1
+    _g: 0.4273501
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 8
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: dcc42749db1ff654b87ab3690faac94f
+    _r: 0.98823535
+    _g: 0.5294118
+    _b: 0.1764706
+    _a: 1
+    _fr: 1
+    _fg: 0.77647066
+    _fb: 0.6156863
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: e085da063e7310f49b0e19c51135cf44
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: e20e874cc1594f746aa19bbf0a2378c1
+    _r: 0.0029369832
+    _g: 0.038281735
+    _b: 0.20754719
+    _a: 1
+    _fr: 0.66042185
+    _fg: 0.7039842
+    _fb: 0.9150943
+    _fa: 1
+    _overlayIcon: 16
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: e76efdb5eabc70d418f3a2d0f9eec0e8
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: e7775f43095402344ac0c8688f5c7720
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: e9515f06bbeaaa34abf36150a0857c37
+    _r: 1
+    _g: 0
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 1
+    _customOverlayIconId: 
+  - _formatString: ' <--- Look In Here!'
+    _guid:
+      _guid: eb366482563cf13448cfad59a3919d20
+    _r: 0.13679248
+    _g: 0.8573024
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: ed84f12532539d54a84af8715eeb4dab
+    _r: 0.6320754
+    _g: 0.18783373
+    _b: 0.5528854
+    _a: 1
+    _fr: 0.97017765
+    _fg: 0.5990566
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 3
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: ee106f2877a4df84a9b437607d4c8d4b
+    _r: 0.003921569
+    _g: 0.13333334
+    _b: 0.48235297
+    _a: 1
+    _fr: 0.27058825
+    _fg: 0.46274513
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: ee5c601e9b3d3854e8b0fb4975163d87
+    _r: 0.48235294
+    _g: 0.023529414
+    _b: 0.08235294
+    _a: 1
+    _fr: 0.9528302
+    _fg: 0.35506406
+    _fb: 0.41952893
+    _fa: 1
+    _overlayIcon: 11
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: f3e1928133becf94aafca90d52db51b5
+    _r: 0.11307406
+    _g: 0.7264151
+    _b: 0.4215498
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: f4d98a30463457e4fa0daa7d54736da3
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: f54d1bd14bd3ca042bd867b519fee8cc
+    _r: 1
+    _g: 0.7609758
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 0.8980236
+    _fb: 0.48584908
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: f556cac6c6d3f124b9e29076118be67e
+    _r: 0.7176471
+    _g: 0.31722155
+    _b: 0.007843156
+    _a: 1
+    _fr: 0.96862745
+    _fg: 0.73889303
+    _fb: 0.45490193
+    _fa: 1
+    _overlayIcon: 20
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: f6b497b9dd3e21b44ac6abec35f1c6ce
+    _r: 0
+    _g: 1
+    _b: 0.5
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 11
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: f7dda3ba441e547419e31d48064acffd
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: fb5efafeb50cad041bc91b8ddfd98684
+    _r: 0.45490196
+    _g: 0.5176471
+    _b: 0.5176471
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: fbde2646532a7c742810bc37c1e86403
+    _r: 1
+    _g: 1
+    _b: 0
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 5
+    _customOverlayIconId: 
+  - _formatString: ' '
+    _guid:
+      _guid: fbfd1cf878ceaa04097738b4f41d3ff8
+    _r: 0
+    _g: 0.25
+    _b: 1
+    _a: 1
+    _fr: 1
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 16
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: fdc1a8ef7502ed540b98fe09879952b4
+    _r: 0.007843138
+    _g: 0.79215693
+    _b: 0.79215693
+    _a: 1
+    _fr: 0.81568635
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 0
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: fe7701c176a20fe49b71632edb55d94a
+    _r: 0
+    _g: 0.7924528
+    _b: 0.7924528
+    _a: 1
+    _fr: 0.8160377
+    _fg: 1
+    _fb: 1
+    _fa: 1
+    _overlayIcon: 15
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: ff18002497c1ced4c86d199c157d6b84
+    _r: 0.007843138
+    _g: 0.69803923
+    _b: 0.79215693
+    _a: 1
+    _fr: 0.7411765
+    _fg: 0.9607844
+    _fb: 0.9803922
+    _fa: 1
+    _overlayIcon: 11
+    _customOverlayIconId: 
+  - _formatString: 
+    _guid:
+      _guid: ff8d68a088b067b4badc52e582501881
+    _r: 0.74509805
+    _g: 0.015686275
+    _b: 0.07450981
+    _a: 1
+    _fr: 1
+    _fg: 0.60784316
+    _fb: 0.646748
+    _fa: 1
+    _overlayIcon: 2
+    _customOverlayIconId: 
+  _maxIconCount: 5
+  _showStatusIcon: 1
+  _selectionOutline: 0
+  _useCustomSelectionOutlineColor: 0
+  _selectionOutlineColor: {r: 0.3966093, g: 1, b: 0, a: 1}

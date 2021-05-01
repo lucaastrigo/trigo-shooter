@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!162 &1
+EditorUserSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 4
+  m_ConfigSettings:
+    RecentlyUsedScenePath-0:
+      value: 22424703114646680e0b0227036c7a1e12572b292926237e38271427fb
+      flags: 0
+    RecentlyUsedScenePath-1:
+      value: 224247031146466b1f0b0a231230103d170757192f2d28353e66313ce0e22d76f7e93ffdfe
+      flags: 0
+    RecentlyUsedScenePath-2:
+      value: 22424703114646680e0b0227036c78111b1258192f2d28353e663a21e3f63121e3f532a9b5742a323016f6
+      flags: 0
+    RecentlyUsedScenePath-3:
+      value: 22424703114646680e0b0227036c6b3525233d0f090d68252320092a
+      flags: 0
+    RecentlyUsedScenePath-4:
+      value: 22424703114646680e0b0227036c72111f1958072926337e38271427fb
+      flags: 0
+    RecentlyUsedScenePath-5:
+      value: 22424703114646680e0b0227036c6d3f393a580d090603020c1d3201a2b1740cc7d402a7f234362820
+      flags: 0
+    RecentlyUsedScenePath-6:
+      value: 22424703114646680e0b0227036c78111b1258192f2d28353e663a21e3f63121e3f532a9b6742a323016f6
+      flags: 0
+    RecentlyUsedScenePath-7:
+      value: 22424703114646680e0b0227036c78111b1258192f2d28353e663921e3f7362aebe331eca92f31352d1b
+      flags: 0
+    RecentlyUsedScenePath-8:
+      value: 22424703114646680e0b0227036c731f1415016439262f2434
+      flags: 0
+    RecentlyUsedScenePath-9:
+      value: 22424703114646680e0b0227036c78111b1258192f2d28353e663a21e3f63121e3f532a7f234362820
+      flags: 0
+    UnityEditor.ShaderGraph.FloatingWindowsLayout2:
+      value: 181344140043005e1a220d3b1f364b524c0c5a27130c293326201334cee5322ca0bd30e8eb293a707b0fd0180b3d0a36fc0d3d04e649500d1002ee0b5dbd1d2c27c00ad113cb1e10e41f1addc80993b9848685a488a7a5d5e1f7afe0fdeae1f6e1f0a9d4acaeefc5beeda4e0f99689948d88bafbffcfd3c2f888ca91a69188878984cb8695c5c19983d9f3dbecc0bab9dfe3a69a94a692a9929f8eb64cb2b66f73732ae0a7fabbbf99b66e887b7e83a47771923b2d9e9d998cde3d81abaa9e8c4993979c72948ad93b8a5f8b6403226e5e636d477e516c6d57466a584e6835317f776a2a64397a170620224b5e4f705c444d1a4d3c2b494478651a5171021b165c65345d46531b0d1160396154717273677659643055727f794d7e4d2ffd7b76ee3027f2e027d929e8f8e507e73036eaf3b5a2114e10444a5959ad5d928c5601809d429997544f0104
+      flags: 0
+    UnityRemoteDevice:
+      value: 225f4d46245b0d4902070862342649191512
+      flags: 0
+    vcSharedLogLevel:
+      value: 0d5e400f0650
+      flags: 0
+  m_VCAutomaticAdd: 1
+  m_VCDebugCom: 0
+  m_VCDebugCmd: 0
+  m_VCDebugOut: 0
+  m_SemanticMergeMode: 2
+  m_VCShowFailedCheckout: 1
+  m_VCOverwriteFailedCheckoutAssets: 1
+  m_VCProjectOverlayIcons: 1
+  m_VCHierarchyOverlayIcons: 1
+  m_VCOtherOverlayIcons: 1
+  m_VCAllowAsyncUpdate: 0

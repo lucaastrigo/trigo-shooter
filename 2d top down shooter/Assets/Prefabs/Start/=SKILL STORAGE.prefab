@@ -1,0 +1,1324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1169922693427232826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8573700076835437315}
+  - component: {fileID: 1260856850750165861}
+  - component: {fileID: 6222079117171705707}
+  m_Layer: 0
+  m_Name: Freeze
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8573700076835437315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169922693427232826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260856850750165861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169922693427232826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 1
+  hasCooldown: 1
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &6222079117171705707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169922693427232826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e7bca85aaf21f4c805c1aae3885d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freezeTime: 5
+  cooldown: 60
+  time: 0
+  cooltime: 0
+--- !u!1 &1213533295941172980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6425053058779459830}
+  - component: {fileID: 2910334011935989634}
+  - component: {fileID: 8274800716711416046}
+  m_Layer: 0
+  m_Name: Reinforced Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6425053058779459830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213533295941172980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2910334011935989634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213533295941172980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8274800716711416046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213533295941172980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5ae6fe4d5b97442b9f20bc25190e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageIncreased: 0.75
+  _damageIncreased: 0
+  skill: {fileID: 0}
+--- !u!1 &1540969989120916350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7238319193173547542}
+  - component: {fileID: 4063056020232146581}
+  - component: {fileID: 2733760239117551158}
+  m_Layer: 0
+  m_Name: Explosion Gift
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7238319193173547542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540969989120916350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4063056020232146581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540969989120916350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 1
+  hasCooldown: 1
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &2733760239117551158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540969989120916350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539d9d2afed991c4293735a8ab4e63f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 12
+  explosionGift: {fileID: 7735762891502926963, guid: 27ab48db11aee234a9f7e3317ac73610,
+    type: 3}
+--- !u!1 &1750587027724332033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1245676177600225420}
+  - component: {fileID: 8440754614366987608}
+  - component: {fileID: 8945542714927547824}
+  m_Layer: 0
+  m_Name: Ghost Bullets
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1245676177600225420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750587027724332033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8440754614366987608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750587027724332033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8945542714927547824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750587027724332033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b1275f01f259e49b222307423fcb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skill: {fileID: 0}
+--- !u!1 &3756583157628512255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8406608214693001743}
+  - component: {fileID: 3903857680509408901}
+  - component: {fileID: 5937532169396874142}
+  m_Layer: 0
+  m_Name: Bubble Shield
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8406608214693001743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3756583157628512255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3903857680509408901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3756583157628512255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 1
+  hasCooldown: 1
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &5937532169396874142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3756583157628512255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7d1deb70e952554e85d4f9d0a1c2382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 30
+  bubbleTime: 5
+--- !u!1 &4753324016348978825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2801222460736622128}
+  - component: {fileID: 2879370484103298764}
+  - component: {fileID: 7157578393625147355}
+  m_Layer: 0
+  m_Name: Wider Muzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2801222460736622128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753324016348978825}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2879370484103298764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753324016348978825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &7157578393625147355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753324016348978825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6fa1d6cee8e8db4b81a9e4ec0789ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeIncrease: 1
+  _sizeIncrease: 0
+  skill: {fileID: 0}
+--- !u!1 &8467677085335187545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677085335187546}
+  - component: {fileID: 8467677085335187544}
+  - component: {fileID: 8467677085335187547}
+  m_Layer: 0
+  m_Name: Exposed
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677085335187546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677085335187545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677085335187544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677085335187545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677085335187547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677085335187545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debf6c524de481348a3d6e89ab66bd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthDecrease: 0.25
+  _healthDecrease: 0
+  skill: {fileID: 0}
+--- !u!1 &8467677085705268029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677085705268028}
+  - component: {fileID: 8467677085705268030}
+  - component: {fileID: 8467677085705268031}
+  m_Layer: 0
+  m_Name: Healthier
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677085705268028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677085705268029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677085705268030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677085705268029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677085705268031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677085705268029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86cc67c650caf84d9cd181975d8d19a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newHealth: 14
+  bigHealthChest: {fileID: 6519317851321095162, guid: 6b38a42ce49fc1942a608d7ba4de161b,
+    type: 3}
+--- !u!1 &8467677086211149128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086211149131}
+  - component: {fileID: 8467677086211149130}
+  m_Layer: 0
+  m_Name: Bullet Destroyer Skill ======
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086211149131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086211149128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086211149130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086211149128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 1
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!1 &8467677086238448796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086238448799}
+  - component: {fileID: 8467677086238448798}
+  - component: {fileID: 8467677086238448769}
+  m_Layer: 0
+  m_Name: Fast Hands
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086238448799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086238448796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086238448798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086238448796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677086238448769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086238448796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26981c3d44a9a6e4f96959d09406a53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRateIncrease: 0.3
+  weapon: {fileID: 0}
+  skill: {fileID: 0}
+--- !u!1 &8467677086247985013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086247985015}
+  - component: {fileID: 8467677086247985012}
+  m_Layer: 0
+  m_Name: =SKILL STORAGE
+  m_TagString: Skill Storage
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086247985015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086247985013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8467677086957709205}
+  - {fileID: 8467677086490839710}
+  - {fileID: 8406608214693001743}
+  - {fileID: 7238319193173547542}
+  - {fileID: 8467677085335187546}
+  - {fileID: 8467677086910735083}
+  - {fileID: 8467677086238448799}
+  - {fileID: 8573700076835437315}
+  - {fileID: 1245676177600225420}
+  - {fileID: 8467677085705268028}
+  - {fileID: 8467677086745357257}
+  - {fileID: 8467677086926919640}
+  - {fileID: 6425053058779459830}
+  - {fileID: 8467677086739038271}
+  - {fileID: 8467677087062032162}
+  - {fileID: 8467677086339144071}
+  - {fileID: 8467677087261300910}
+  - {fileID: 2801222460736622128}
+  - {fileID: 8467677086211149131}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086247985012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086247985013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6204791a76f8f84d89f81d37144df6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skills:
+  - {fileID: 8467677086957709207}
+  - {fileID: 8467677086490839680}
+  - {fileID: 3903857680509408901}
+  - {fileID: 4063056020232146581}
+  - {fileID: 8467677085335187544}
+  - {fileID: 8467677086910735082}
+  - {fileID: 8467677086238448798}
+  - {fileID: 1260856850750165861}
+  - {fileID: 8440754614366987608}
+  - {fileID: 8467677085705268030}
+  - {fileID: 8467677086745357259}
+  - {fileID: 8467677086926919642}
+  - {fileID: 2910334011935989634}
+  - {fileID: 8467677086739038270}
+  - {fileID: 8467677087062032165}
+  - {fileID: 8467677086339144070}
+  - {fileID: 8467677087261300944}
+  - {fileID: 2879370484103298764}
+  skillObjects:
+  - {fileID: 7592976019122312856, guid: d088926ca8d23434fab2a2e222deb2c3, type: 3}
+  - {fileID: 7908886960632513410, guid: aa5158ca7de7ba646afcb2973ee456d1, type: 3}
+  - {fileID: 4197416677724741537, guid: fb0d29f3201937c4da6a862ae3766258, type: 3}
+  - {fileID: 4197416677724741537, guid: 11a08619d7663fe47a7c46391d80dc96, type: 3}
+  - {fileID: 1322626530216312251, guid: d2f27c13a51f42a4ca047e1072eef791, type: 3}
+  - {fileID: 5480247324312914387, guid: 4b366f1c587d52145b3844139011f90f, type: 3}
+  - {fileID: 650496808253319970, guid: a3bbd64af4792cd48b530f1ce68c45e9, type: 3}
+  - {fileID: 6376425279983719997, guid: b45f6baa90fc9964ba3000e30b74107b, type: 3}
+  - {fileID: 6712742023171517578, guid: 000f30a247525c644900289d9810c040, type: 3}
+  - {fileID: 3426070610673491461, guid: edabc0357a68b464099ab9aa784b9a26, type: 3}
+  - {fileID: 4197416677724741537, guid: 1f56248b8f493064a923424e2754dbc1, type: 3}
+  - {fileID: 5622235740085437349, guid: afb34d1b151280140bc778fdc5ac1897, type: 3}
+  - {fileID: 6712742023171517578, guid: ee40393913573954f9c80bb6b11bc9d9, type: 3}
+  - {fileID: 1483375155137206047, guid: 0cb9ca21fed2f1c409f56a67dd00e928, type: 3}
+  - {fileID: 6712742023171517578, guid: 8c214abebb1bc794b81aa024c7419f6a, type: 3}
+  - {fileID: 7990835958755640288, guid: f9fe5a94c8890fc468892ddfd2a4a9a7, type: 3}
+  - {fileID: 6376425279983719997, guid: 11db7d2e820157d4f8ab536a9c2fe100, type: 3}
+  - {fileID: 6712742023171517578, guid: 785ee4f465f7acb4faf92954eeec4029, type: 3}
+--- !u!1 &8467677086339144068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086339144071}
+  - component: {fileID: 8467677086339144070}
+  - component: {fileID: 8467677086339144073}
+  m_Layer: 0
+  m_Name: Sixth Sense
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086339144071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086339144068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086339144070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086339144068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677086339144073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086339144068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dff282449847354dbf3c831a13b6b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedDecrease: 0.25
+  _speedDecrease: 0
+  skill: {fileID: 0}
+--- !u!1 &8467677086490839711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086490839710}
+  - component: {fileID: 8467677086490839680}
+  - component: {fileID: 8467677086490839681}
+  m_Layer: 0
+  m_Name: Bloodlust
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086490839710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086490839711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086490839680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086490839711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677086490839681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086490839711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e783293ad4629b4abb8f2f32f6da02a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthUpRate: 10
+  _healthUpRate: 0
+  skill: {fileID: 0}
+--- !u!1 &8467677086739038268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086739038271}
+  - component: {fileID: 8467677086739038270}
+  - component: {fileID: 8467677086739038241}
+  m_Layer: 0
+  m_Name: Scavenger
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086739038271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086739038268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086739038270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086739038268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677086739038241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086739038268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff70694b8f4edf4a868a85a28d6a538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropRateIncrease: 2.5
+  increase: 0
+  skill: {fileID: 0}
+--- !u!1 &8467677086745357254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086745357257}
+  - component: {fileID: 8467677086745357259}
+  - component: {fileID: 5330809418409004502}
+  m_Layer: 0
+  m_Name: Leaf Dash
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086745357257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086745357254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086745357259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086745357254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 1
+  hasCooldown: 1
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &5330809418409004502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086745357254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d0dc699516e564aafb7480aac7bf9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leafDashDamage: 1
+  dashSpeed: 2.5
+  dashCooldown: 2
+  timeBtw: 0.1
+  hitLayer:
+    serializedVersion: 2
+    m_Bits: 67584
+  enemiesLayer:
+    serializedVersion: 2
+    m_Bits: 8192
+  leafRange: {x: 1.75, y: 1.75}
+  leafFX: {fileID: 3375865884550540848, guid: 915ffb440ae8ffa48ad283c63255fb83, type: 3}
+  dashFX: {fileID: 3375865884550540848, guid: 7c30763b617fa3740a5dd2b4f373f95e, type: 3}
+  material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!1 &8467677086910735080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086910735083}
+  - component: {fileID: 8467677086910735082}
+  - component: {fileID: 8467677086910735085}
+  m_Layer: 0
+  m_Name: Extra Holster
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086910735083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086910735080}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086910735082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086910735080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677086910735085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086910735080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6a63dbd2027e84683aa687ae36a642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skill: {fileID: 0}
+--- !u!1 &8467677086926919641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086926919640}
+  - component: {fileID: 8467677086926919642}
+  - component: {fileID: 8467677086926919643}
+  m_Layer: 0
+  m_Name: Long Legs
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086926919640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086926919641}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086926919642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086926919641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677086926919643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086926919641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f06eddc46baa9c4a970785b0e4a562c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skill: {fileID: 0}
+--- !u!1 &8467677086957709202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677086957709205}
+  - component: {fileID: 8467677086957709207}
+  - component: {fileID: 8467677086957709204}
+  m_Layer: 0
+  m_Name: Ammo Expert
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677086957709205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086957709202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677086957709207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086957709202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677086957709204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677086957709202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec9b9be0fffba647a6e396726b23760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoUpRate: 17.5
+  _ammoUpRate: 0
+  skill: {fileID: 0}
+--- !u!1 &8467677087062032163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677087062032162}
+  - component: {fileID: 8467677087062032165}
+  - component: {fileID: 8467677087062032164}
+  m_Layer: 0
+  m_Name: Sharpshooter
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677087062032162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677087062032163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677087062032165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677087062032163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 0
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &8467677087062032164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677087062032163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec68f5a742b47940a677881aa8739a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accuracyIncrease: 0.05
+  weapon: {fileID: 0}
+  skill: {fileID: 0}
+--- !u!1 &8467677087261300911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8467677087261300910}
+  - component: {fileID: 8467677087261300944}
+  - component: {fileID: 2363254143696823192}
+  m_Layer: 0
+  m_Name: Speedster
+  m_TagString: Skill
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8467677087261300910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677087261300911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8467677086247985015}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8467677087261300944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677087261300911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55906d2729a34a4799dd26c737cd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkill: 1
+  hasCooldown: 0
+  skillOn: 0
+  skilled: 0
+  unskilled: 0
+  cooldown: 0
+--- !u!114 &2363254143696823192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467677087261300911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8014286b36a2967428d6e5d635059040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSpeed: 6
