@@ -319,6 +319,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82615452f466021448e92e9acba46093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionArea: {fileID: 1562086375212030144, guid: cc2001556ac0b9440bd80a56376cebc7,
+  explosionArea: {fileID: 1562086375212030144, guid: c7ce5eec3e94abb4c8994ef4942c78d9,
     type: 3}
-  color: {r: 0.21067812, g: 0.003737978, b: 0.44705883, a: 0.7294118}

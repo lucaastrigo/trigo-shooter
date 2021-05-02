@@ -97,7 +97,9 @@ public class BulletScript : MonoBehaviour
     {
         if (GetComponent<Explosive>() != null)
         {
-            Instantiate(GetComponent<Explosive>().explosionArea, transform.position, Quaternion.identity);
+            GameObject explo = GetComponent<Explosive>().explosionArea;
+            GameObject explos = Instantiate(explo, transform.position, Quaternion.identity);
+            explos.transform.localScale = new Vector3(explosionRange, explosionRange, explosionRange);
         }
 
         Camera.main.GetComponent<CameraScript>().Shake(shakeMag, shakeDur);

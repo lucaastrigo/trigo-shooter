@@ -7813,7 +7813,7 @@ MonoBehaviour:
   - {fileID: 4678899246454836219, guid: f5059868c4b35f94ea3befe80a962878, type: 3}
   - {fileID: 4678899246454836219, guid: c8ed2f12601a2284388e727531610301, type: 3}
   - {fileID: 4678899246454836219, guid: 7617c008f3818594080abfbb5b4621ed, type: 3}
-  - {fileID: 4678899246454836219, guid: 8b80b843e7ca7dc41a960d72a704bb45, type: 3}
+  - {fileID: 4678899246454836219, guid: 570daa1cfd8acb242adaf6d74c7cd3f9, type: 3}
   weaponChest: {fileID: 889807431351308184, guid: f2eb3cc5ddde1f848aec2142b4eba648,
     type: 3}
   healthChest: {fileID: 1114838512330552965, guid: d6967e40907cfd84ca4260192008dd11,

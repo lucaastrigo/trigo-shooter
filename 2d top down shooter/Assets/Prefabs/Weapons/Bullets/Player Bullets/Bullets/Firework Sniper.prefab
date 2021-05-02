@@ -158,7 +158,7 @@ MonoBehaviour:
   speedMod: 1
   lifetime: 2
   colorTime: 0.2
-  explosionRange: 0
+  explosionRange: 0.5
   shakeMag: 0
   shakeDur: 0
   freezePercent: 0
@@ -181,9 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82615452f466021448e92e9acba46093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionArea: {fileID: 1562086375212030144, guid: cc2001556ac0b9440bd80a56376cebc7,
+  explosionArea: {fileID: 1562086375212030144, guid: 34820f0bc443ec84db27cf8b59076d52,
     type: 3}
-  color: {r: 1, g: 0.8588236, b: 0.23137257, a: 0.7294118}
 --- !u!96 &5856470964608000417
 TrailRenderer:
   serializedVersion: 2

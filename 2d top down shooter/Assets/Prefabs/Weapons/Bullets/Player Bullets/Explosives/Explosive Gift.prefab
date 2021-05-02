@@ -183,3 +183,4 @@ MonoBehaviour:
   explosionArea: {fileID: 1562086375212030144, guid: cc2001556ac0b9440bd80a56376cebc7,
     type: 3}
   color: {r: 0.054901965, g: 0.13333334, b: 0.49411768, a: 0.7294118}
+  size: 1.5

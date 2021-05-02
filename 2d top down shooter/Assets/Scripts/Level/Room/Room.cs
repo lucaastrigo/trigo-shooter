@@ -9,7 +9,7 @@ public class Room : MonoBehaviour
     
     public enum roomType
     {
-        start, wave, boss, chest
+        start, wave, boss, chest, special
     }
 
     public roomType thisRoom;
@@ -32,6 +32,7 @@ public class Room : MonoBehaviour
     [HideInInspector] public int numOfWaves;
     [HideInInspector] public bool spawned;
     public bool opened;
+    bool onTrigger;
     GameObject[] enemiesLeft;
 
     private void Start()
@@ -41,31 +42,38 @@ public class Room : MonoBehaviour
 
     void Update()
     {
-        enemiesLeft = GameObject.FindGameObjectsWithTag("Enemy");
-
-        if(enemiesLeft.Length == 0)
+        if(thisRoom != roomType.special)
         {
-            if(numOfWaves > 0)
+            enemiesLeft = GameObject.FindGameObjectsWithTag("Enemy");
+
+            if (enemiesLeft.Length == 0)
             {
-                SpawnWave();
+                if (numOfWaves > 0)
+                {
+                    SpawnWave();
+                }
+                else
+                {
+                    for (int i = 0; i < door.Length; i++)
+                    {
+                        door[i].SetActive(false);
+                    }
+
+                    background.SetActive(false);
+                }
             }
-            else
+
+            if (enemiesLeft.Length > 0)
             {
                 for (int i = 0; i < door.Length; i++)
                 {
-                    door[i].SetActive(false);
+                    door[i].SetActive(true);
                 }
-
-                background.SetActive(false);
             }
         }
-        
-        if(enemiesLeft.Length > 0)
+        else
         {
-            for (int i = 0; i < door.Length; i++)
-            {
-                door[i].SetActive(true);
-            }
+            background.SetActive(!onTrigger);
         }
 
         if (opened)
@@ -89,7 +97,32 @@ public class Room : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            background.SetActive(true);
+            if(thisRoom != roomType.special)
+            {
+                background.SetActive(true);
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if(thisRoom == roomType.special)
+            {
+                onTrigger = true;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if(thisRoom == roomType.special)
+            {
+                onTrigger = false;
+            }
         }
     }
 }

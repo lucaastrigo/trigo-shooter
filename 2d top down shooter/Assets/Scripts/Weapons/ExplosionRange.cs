@@ -4,8 +4,19 @@ using UnityEngine;
 
 public class ExplosionRange : MonoBehaviour
 {
-    public void DestroyRange()
+    public float destroySpeed;
+
+    private void Update()
     {
-        Destroy(gameObject);
+        Vector3 size = transform.localScale;
+        size.x -= destroySpeed * Time.deltaTime;
+        size.y = size.x;
+
+        transform.localScale = size;
+
+        if(size.x <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
