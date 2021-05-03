@@ -219,7 +219,6 @@ public class Weapon : MonoBehaviour
         }
     }
 
-
     void Shoot()
     {
         Quaternion spread = new Quaternion(0, 0, muzzle.rotation.z + Random.Range(-1f, 1f) * (1 - accuracy), muzzle.rotation.w);

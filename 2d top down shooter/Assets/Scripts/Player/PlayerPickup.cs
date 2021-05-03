@@ -145,6 +145,8 @@ public class PlayerPickup : MonoBehaviour
         equippedWeapon.GetComponent<BoxCollider2D>().enabled = true;
         disequippedWeapon.GetComponent<Weapon>().playerWeapon = false;
         disequippedWeapon.GetComponent<Weapon>().onOff = false;
+
+        disequippedWeapon.GetComponent<Weapon>().weaponIndex = -1;
     }
 
     void SecondWeapon(Weapon secondWeapon)
