@@ -16,6 +16,8 @@ public class ValueStorage : MonoBehaviour
     public int healthValue;
     public int maxHealthValue;
 
+    public int coinValue;
+
     public List<int> WeaponAmmo = new List<int>();
 
     private void Awake()
@@ -36,6 +38,7 @@ public class ValueStorage : MonoBehaviour
         value.maxHealthValue = 10;
         value.weaponValue = "PISTOL";
         value.secondWeaponValue = "PISTOL";
+        value.coinValue = 0;
 
         for (int i = 0; i <= WeaponAmmo.Count - 1; i++)
         {

@@ -36,7 +36,7 @@ public class BubbleShieldAbility : MonoBehaviour
         {
             if (skill.skillOn)
             {
-                if (Input.GetKey(KeyCode.Mouse1))
+                if (Input.GetKey(KeyCode.Space))
                 {
                     if (can)
                     {

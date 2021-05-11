@@ -28,7 +28,7 @@ public class SpeedsterAbility : MonoBehaviour
                     skill.skilled = true;
                 }
 
-                if (Input.GetKey(KeyCode.Mouse1))
+                if (Input.GetKey(KeyCode.Space))
                 {
                     player.GetComponent<PlayerMovement>().speed = newSpeed;
 

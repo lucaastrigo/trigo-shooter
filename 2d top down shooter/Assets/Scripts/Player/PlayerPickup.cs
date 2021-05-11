@@ -128,12 +128,19 @@ public class PlayerPickup : MonoBehaviour
         equippedWeapon.GetComponent<Weapon>().onOff = true;
         equippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 6;
 
+
+        equippedWeapon.GetComponent<Weapon>().weaponIndex = gunIndex;
+        valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Insert(gunIndex, 1000);
+        gunIndex++;
+
+        /*
         if (equippedWeapon.GetComponent<Weapon>().weaponIndex == -1)
         {
             equippedWeapon.GetComponent<Weapon>().weaponIndex = gunIndex;
             valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Insert(gunIndex, 1000);
             gunIndex++;
         }
+        */
     }
 
     void DisequipWeapon(Weapon weaponToDisequip)

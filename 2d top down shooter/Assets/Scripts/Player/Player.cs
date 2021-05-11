@@ -139,35 +139,40 @@ public class Player : MonoBehaviour
         SceneManager.LoadScene("Lobby");
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Room"))
-        {
-            if(collision.GetComponent<Room>().thisRoom == Room.roomType.wave && !collision.GetComponent<Room>().spawned)
-            {
-                collision.GetComponent<Room>().numOfWaves = Random.Range(1, 4);
-
-                if (collision.GetComponent<Room>().numOfWaves > 0)
-                {
-                    for (int i = 0; i < collision.GetComponent<Room>().door.Length; i++)
-                    {
-                        collision.GetComponent<Room>().door[i].SetActive(true);
-                    }
-
-                    collision.GetComponent<Room>().SpawnWave();
-                }
-            }
-
-            collision.GetComponent<Room>().opened = true;
-        }
-    }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Portal"))
         {
             time = 0;
             playerIndicator.GetComponent<TMP_Text>().text = null;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(GetComponentInChildren<PlayerPlunger>() != null)
+        {
+            for (int i = 0; i < GetComponentInChildren<PlayerPlunger>().layers.Length; i++)
+            {
+                if (collision.gameObject.layer == GetComponentInChildren<PlayerPlunger>().layers[i])
+                {
+                    GetComponentInChildren<PlayerPlunger>().Unhook();
+                }
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (GetComponentInChildren<PlayerPlunger>() != null)
+        {
+            for (int i = 0; i < GetComponentInChildren<PlayerPlunger>().layers.Length; i++)
+            {
+                if (collision.gameObject.layer == GetComponentInChildren<PlayerPlunger>().layers[i])
+                {
+                    GetComponentInChildren<PlayerPlunger>().Unhook();
+                }
+            }
         }
     }
 }

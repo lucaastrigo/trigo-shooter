@@ -14,9 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public Transform secondHolster;
     public Transform rightHolster;
     public Transform leftHolster;
-    public Transform melee;
-    public Transform rightMelee;
-    public Transform leftMelee;
 
     [HideInInspector] public float xMove;
     [HideInInspector] public float yMove;
@@ -138,13 +135,11 @@ public class PlayerMovement : MonoBehaviour
         {
             holster.transform.position = leftHolster.transform.position;
             secondHolster.transform.position = rightHolster.transform.position;
-            melee.transform.position = leftMelee.transform.position;
         }
         else
         {
             holster.transform.position = rightHolster.transform.position;
             secondHolster.transform.position = leftHolster.transform.position;
-            melee.transform.position = rightMelee.transform.position;
         }
     }
 

@@ -31,6 +31,7 @@ TagManager:
   - Room
   - AA
   - AAT
+  - Coin
   layers:
   - Default
   - TransparentFX

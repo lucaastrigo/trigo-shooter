@@ -35,7 +35,7 @@ public class ChestAmmo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && !open && player.transform.childCount > 0 && weapon.GetComponent<Weapon>().currentAmmo < weapon.GetComponent<Weapon>().maxAmmo)
+        if (collision.gameObject.CompareTag("Player") && !open && player.GetComponentInChildren<Weapon>() != null && weapon.GetComponent<Weapon>().currentAmmo < weapon.GetComponent<Weapon>().maxAmmo)
         {
             Instantiate(openFX, transform.position, Quaternion.identity);
             open = true;

@@ -14,8 +14,10 @@ public class Room : MonoBehaviour
 
     public roomType thisRoom;
 
-    [Header("Player")]
-    public GameObject player;
+    [Header("Loot")]
+    public bool lootable;
+    public float lootDropRate;
+    public GameObject[] loot;
 
     [Header("Enemies")]
     public GameObject[] enemies;
@@ -30,7 +32,7 @@ public class Room : MonoBehaviour
     //public GameObject minimapImage;
 
     [HideInInspector] public int numOfWaves;
-    [HideInInspector] public bool spawned;
+    public bool startedWave, finishedWave, inWave;
     public bool opened;
     bool onTrigger;
     GameObject[] enemiesLeft;
@@ -42,64 +44,127 @@ public class Room : MonoBehaviour
 
     void Update()
     {
-        if(thisRoom != roomType.special)
+        //minimap only shows image when room is already OPENED 
+
+        switch (thisRoom)
         {
-            enemiesLeft = GameObject.FindGameObjectsWithTag("Enemy");
+            case roomType.start:
 
-            if (enemiesLeft.Length == 0)
-            {
-                if (numOfWaves > 0)
-                {
-                    SpawnWave();
-                }
-                else
-                {
-                    for (int i = 0; i < door.Length; i++)
-                    {
-                        door[i].SetActive(false);
-                    }
-
-                    background.SetActive(false);
-                }
-            }
-
-            if (enemiesLeft.Length > 0)
-            {
                 for (int i = 0; i < door.Length; i++)
                 {
-                    door[i].SetActive(true);
+                    door[i].SetActive(false);
                 }
-            }
-        }
-        else
-        {
-            background.SetActive(!onTrigger);
+
+                background.SetActive(false);
+
+                break;
+
+            case roomType.wave:
+
+                for (int i = 0; i < door.Length; i++)
+                {
+                    door[i].SetActive(onTrigger && inWave);
+                }
+
+                background.SetActive(onTrigger && inWave);
+
+                break;
+
+            case roomType.chest:
+
+                for (int i = 0; i < door.Length; i++)
+                {
+                    door[i].SetActive(false);
+                }
+
+                background.SetActive(false);
+
+                break;
+
+            case roomType.special:
+
+                for (int i = 0; i < door.Length; i++)
+                {
+                    door[i].SetActive(onTrigger && inWave);
+                }
+
+                background.SetActive(onTrigger && inWave);
+
+                break;
+
+            case roomType.boss:
+                //
+                break;
         }
 
         if (opened)
         {
-            //minimapImage.SetActive(true);
+            if (thisRoom == roomType.wave || thisRoom == roomType.special)
+            {
+                if (!startedWave)
+                {
+                    SetupWave();
+                }
+            }
         }
-        else
+
+        enemiesLeft = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if(enemiesLeft.Length <= 0 && inWave && numOfWaves > 0)
         {
-            //minimapImage.SetActive(false);
+            StartWave();
+
+        }else if(enemiesLeft.Length <= 0 && numOfWaves <= 0 && !finishedWave && startedWave && inWave)
+        {
+            FinishWave();
         }
     }
 
-    public void SpawnWave()
+    void SetupWave()
     {
-        spawned = true;
-        Instantiate(enemies[Random.Range(0, enemies.Length)], transform.position, Quaternion.identity);
+        numOfWaves = Random.Range(1, 4);
+        startedWave = true;
+
+        for (int i = 0; i < door.Length; i++)
+        {
+            door[i].SetActive(true);
+        }
+
+        background.SetActive(true);
+
+        if (numOfWaves > 0)
+        {
+            StartWave();
+        }
+    }
+
+    public void StartWave()
+    {
+        inWave = true;
         numOfWaves--;
+        Instantiate(enemies[Random.Range(0, enemies.Length)], transform.position, Quaternion.identity);
+    }
+
+    public void FinishWave()
+    {
+        print("finished wave");
+        inWave = false;
+        finishedWave = true;
+        //loot
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if(thisRoom != roomType.special)
+            opened = true;
+
+            if(thisRoom == roomType.wave || thisRoom == roomType.special)
             {
-                background.SetActive(true);
+                if (!startedWave)
+                {
+                    SetupWave();
+                }
             }
         }
     }
@@ -108,10 +173,7 @@ public class Room : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if(thisRoom == roomType.special)
-            {
-                onTrigger = true;
-            }
+            onTrigger = true;
         }
     }
 
@@ -119,10 +181,7 @@ public class Room : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if(thisRoom == roomType.special)
-            {
-                onTrigger = false;
-            }
+            onTrigger = false;
         }
     }
 }

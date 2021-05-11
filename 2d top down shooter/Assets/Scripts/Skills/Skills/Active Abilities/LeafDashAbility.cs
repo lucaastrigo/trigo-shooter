@@ -52,7 +52,7 @@ public class LeafDashAbility : MonoBehaviour
 
                 if (canDash)
                 {
-                    if (Input.GetKey(KeyCode.Mouse1))
+                    if (Input.GetKey(KeyCode.Space))
                     {
                         if (!player.GetComponent<PlayerMovement>().moving)
                         {
