@@ -16,8 +16,7 @@ public class Room : MonoBehaviour
 
     [Header("Loot")]
     public bool lootable;
-    public float lootDropRate;
-    public GameObject[] loot;
+    public GameObject healthLoot, ammoLoot, coinLoot;
 
     [Header("Enemies")]
     public GameObject[] enemies;
@@ -32,7 +31,7 @@ public class Room : MonoBehaviour
     //public GameObject minimapImage;
 
     [HideInInspector] public int numOfWaves;
-    public bool startedWave, finishedWave, inWave;
+    public bool startedWave, finishedWave, inWave, hadWave;
     public bool opened;
     bool onTrigger;
     GameObject[] enemiesLeft;
@@ -135,6 +134,11 @@ public class Room : MonoBehaviour
         if (numOfWaves > 0)
         {
             StartWave();
+            hadWave = true;
+        }
+        else
+        {
+            hadWave = false;
         }
     }
 
@@ -147,10 +151,32 @@ public class Room : MonoBehaviour
 
     public void FinishWave()
     {
-        print("finished wave");
         inWave = false;
         finishedWave = true;
-        //loot
+
+        if (hadWave)
+        {
+            if (lootable)
+            {
+                GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+                GameObject weapon = player.GetComponentInChildren<Weapon>().gameObject;
+
+                if (Random.Range(0, 11) >= player.GetComponent<Player>().currentHealth)
+                {
+                    Instantiate(healthLoot, new Vector2(transform.position.x + 1, transform.position.y), Quaternion.identity);
+
+                }
+
+                if (weapon != null)
+                {
+                    if (Random.Range(0, weapon.GetComponent<Weapon>().maxAmmo) >= weapon.GetComponent<Weapon>().currentAmmo)
+                    {
+                        Instantiate(ammoLoot, new Vector2(transform.position.x - 1, transform.position.y), Quaternion.identity);
+                    }
+                }
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

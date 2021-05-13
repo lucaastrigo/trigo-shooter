@@ -161,11 +161,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisRoom: 1
   lootable: 1
-  lootDropRate: 50
-  loot:
-  - {fileID: 8330182491922915567, guid: bd36ec0ae99ff2e48aa7d741044cc033, type: 3}
-  - {fileID: 1114838512330552965, guid: d6967e40907cfd84ca4260192008dd11, type: 3}
-  - {fileID: 6555891276693612902, guid: 630442be575474743a297449fefcba0a, type: 3}
+  healthLoot: {fileID: 1114838512330552965, guid: d6967e40907cfd84ca4260192008dd11,
+    type: 3}
+  ammoLoot: {fileID: 8330182491922915567, guid: bd36ec0ae99ff2e48aa7d741044cc033,
+    type: 3}
+  coinLoot: {fileID: 6555891276693612902, guid: 630442be575474743a297449fefcba0a,
+    type: 3}
   enemies:
   - {fileID: 4678899246454836219, guid: f5059868c4b35f94ea3befe80a962878, type: 3}
   - {fileID: 4678899246454836219, guid: 570daa1cfd8acb242adaf6d74c7cd3f9, type: 3}

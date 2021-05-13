@@ -70,6 +70,15 @@ public class SkillObject : MonoBehaviour
                     skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().skillOn = false;
                 }
             }
+
+            Destroy(gameObject);
+        }
+        else
+        {
+            for (int i = 0; i < allObjects.Length; i++)
+            {
+                Destroy(allObjects[i]);
+            }
         }
 
         GameObject skill = GameObject.Find(skillName);
@@ -77,11 +86,6 @@ public class SkillObject : MonoBehaviour
         if (skill.GetComponent<Skill>() != null)
         {
             skill.GetComponent<Skill>().skillOn = true;
-        }
-
-        for (int i = 0; i < allObjects.Length; i++)
-        {
-            Destroy(allObjects[i]);
         }
 
         player.GetComponent<Player>().aaplace.GetComponent<Image>().enabled = true;
