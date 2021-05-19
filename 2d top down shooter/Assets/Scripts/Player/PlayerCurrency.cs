@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerCurrency : MonoBehaviour
 {
-    public int coins;
+    [HideInInspector] public int coins;
 
     TextMeshProUGUI text;
 
@@ -21,7 +21,12 @@ public class PlayerCurrency : MonoBehaviour
     {
         ValueStorage.value.coinValue = coins;
 
-        text.text = coins.ToString();
+        text.text = "$" + coins.ToString();
+    }
+
+    public void Purchase(int amount)
+    {
+        coins -= amount;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
