@@ -757,6 +757,7 @@ MonoBehaviour:
   - {fileID: 2573311015201141243, guid: e3cf78e1a37ea214fbe149730c520d81, type: 3}
   - {fileID: 7264571734352300853, guid: 2584c93a34d30ff46b5850431cf6345b, type: 3}
   - {fileID: 1463578926722432902, guid: f5c3e95ca7fda334697ae7516e8533a5, type: 3}
+  - {fileID: 2020227290127469142, guid: 60354e66de085bf438faddd3ec5f9f95, type: 3}
   - {fileID: 7264571734352300853, guid: dd0d5face07833d4db8eb2770c801dfb, type: 3}
   - {fileID: 2573311015201141243, guid: 9c46d3a47398a6f47a15874c7da30eef, type: 3}
   - {fileID: 2020227290127469142, guid: 127ca9feccb667643bb8fac336147c76, type: 3}
@@ -1247,6 +1248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9260f48d9843df048802bd22c7635859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
 --- !u!114 &8043520799737848058
 MonoBehaviour:
   m_ObjectHideFlags: 0

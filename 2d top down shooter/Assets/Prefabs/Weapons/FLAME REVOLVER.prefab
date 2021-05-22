@@ -473,6 +473,7 @@ MonoBehaviour:
   onOff: 0
   ammo: 0
   muzzle: {fileID: 9005917764784846722}
+  ammoBar: {fileID: 0}
   bullet: {fileID: 501064680550823369, guid: c194d315eea4efc4f8aaec5c42f4bf0f, type: 3}
   nameWeapon: {fileID: 237166351307696158}
   fireSound: {fileID: 8300000, guid: 5d8b037b6f5b7734d916439cfb700837, type: 3}

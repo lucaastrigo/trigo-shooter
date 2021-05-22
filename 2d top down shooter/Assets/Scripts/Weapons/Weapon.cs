@@ -25,6 +25,7 @@ public class Weapon : MonoBehaviour
     [HideInInspector] public bool onOff = true;
     [HideInInspector] public bool ammo;
     public Transform muzzle;
+    [HideInInspector] public GameObject ammoBar;
     public GameObject bullet;
     public TextMeshProUGUI nameWeapon;
     public AudioClip fireSound;
@@ -49,6 +50,8 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
+        ammoBar = GameObject.Find("Ammo Bar");
+
         ammoText = GameObject.Find("Ammo Text");
         shots = shotsPerBurst;
         fireTime = fireRate;
@@ -136,6 +139,9 @@ public class Weapon : MonoBehaviour
 
             if (onOff)
             {
+                ammoBar.GetComponent<AmmoBar>().SetAmmo(currentAmmo);
+                ammoBar.GetComponent<AmmoBar>().SetMaxAmmo(maxAmmo);
+
                 if (player.currentHealth <= 0)
                 {
                     ValueStorage.value.weaponValue = "PISTOL";
