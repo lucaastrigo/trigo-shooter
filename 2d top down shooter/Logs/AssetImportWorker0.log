@@ -15,11 +15,11 @@ D:/Lucas/Unity/PROJETOS/Pessoal/trigo-shooter/2d top down shooter
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60761
+54065
 Successfully changed project path to: D:/Lucas/Unity/PROJETOS/Pessoal/trigo-shooter/2d top down shooter
 D:/Lucas/Unity/PROJETOS/Pessoal/trigo-shooter/2d top down shooter
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 61.58 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 66.72 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.6f1 (8a2143876886)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Resources/UnitySubsystems
@@ -36,309 +36,69 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002191 seconds.
+Registered in 0.002237 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 65.27 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 66.13 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.037 seconds
+- Completed reload, in  1.117 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001792 seconds.
+Registered in 0.000939 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 66.56 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 66.44 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.911 seconds
+- Completed reload, in  0.916 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 220.6 MB.
 System memory in use after: 220.8 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3797.
-Total: 2.543900 ms (FindLiveObjects: 0.424100 ms CreateObjectMapping: 0.101200 ms MarkObjects: 1.994100 ms  DeleteObjects: 0.023700 ms)
+Total: 2.329200 ms (FindLiveObjects: 0.363600 ms CreateObjectMapping: 0.096400 ms MarkObjects: 1.846500 ms  DeleteObjects: 0.021900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Art/Game/scenario/mini_blackground.png
-  artifactKey: Guid(29851cb2f936d1b42b992af68720c046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/mini_blackground.png using Guid(29851cb2f936d1b42b992af68720c046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d548f31b155aee26d85ccb1f3374f6e') in 0.143798 seconds
-  Import took 0.148937 seconds .
+  path: Assets/Art/Game/scenario/Store/store_tables.png
+  artifactKey: Guid(19fee57d5a64ad640818d8a73a946e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/scenario/Store/store_tables.png using Guid(19fee57d5a64ad640818d8a73a946e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb6e8398929229ea563b1b0e9256f84') in 0.119134 seconds
+  Import took 0.124767 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Art/Game/scenario/Saloon 1
-  artifactKey: Guid(e7775f43095402344ac0c8688f5c7720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Saloon 1 using Guid(e7775f43095402344ac0c8688f5c7720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33cada9a822ceffca4b3be3665128da') in 0.006020 seconds
-  Import took 0.010412 seconds .
+  Time since last request: 47.480111 seconds.
+  path: Assets/Art/Game/scenario/Store/store_tables.png
+  artifactKey: Guid(19fee57d5a64ad640818d8a73a946e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/scenario/Store/store_tables.png using Guid(19fee57d5a64ad640818d8a73a946e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3eb94eec0105ae702181fc60e3f434a') in 0.022731 seconds
+  Import took 0.028163 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.709506 seconds.
-  path: Assets/Art/Game/scenario/Store
-  artifactKey: Guid(4f697d4dd2de14d47bbf6ba42188564c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store using Guid(4f697d4dd2de14d47bbf6ba42188564c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb25aa4bb9cd474bf6db7389b37a64eb') in 0.005736 seconds
-  Import took 0.011175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.423133 seconds.
-  path: Assets/Art/Game/scenario/Store/store_base.png
-  artifactKey: Guid(781033b879bde694c8d66019ab64dbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_base.png using Guid(781033b879bde694c8d66019ab64dbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a476042ebddae83402b1ec949d7ded17') in 0.010207 seconds
-  Import took 0.015443 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Art/Game/scenario/Store/store_top.png
-  artifactKey: Guid(719d2160b11f1bb429670a13760f3980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_top.png using Guid(719d2160b11f1bb429670a13760f3980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db348917de11887775d0d119e4875457') in 0.014221 seconds
-  Import took 0.019583 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Art/Game/scenario/Store/store_wall.png
-  artifactKey: Guid(a4a921d7f8e3b4a42848e2ed3c6273eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_wall.png using Guid(a4a921d7f8e3b4a42848e2ed3c6273eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c006c24b3494ceebbf470962838a383c') in 0.013896 seconds
-  Import took 0.018549 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Art/Game/scenario/Store/store_sides.png
-  artifactKey: Guid(b3f67960ba0689247a0a89a850713bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_sides.png using Guid(b3f67960ba0689247a0a89a850713bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f9d8612d85ed7121c161cc815882340') in 0.013935 seconds
-  Import took 0.019307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Art/Game/scenario/Store/store_floor.png
-  artifactKey: Guid(eb967d7b71082714c921df7561bb0b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_floor.png using Guid(eb967d7b71082714c921df7561bb0b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8302be85e8a86c43abd7e93a3c7ad731') in 0.018821 seconds
-  Import took 0.024073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.632850 seconds.
-  path: Assets/Art/Game/scenario/Store/store_base.png
-  artifactKey: Guid(781033b879bde694c8d66019ab64dbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_base.png using Guid(781033b879bde694c8d66019ab64dbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a9205dc83fe87d28eb3d1edacdf9da') in 0.010029 seconds
-  Import took 0.015297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003546 seconds.
-  path: Assets/Art/Game/scenario/Store/store_base.png
-  artifactKey: Guid(781033b879bde694c8d66019ab64dbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_base.png using Guid(781033b879bde694c8d66019ab64dbe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a9205dc83fe87d28eb3d1edacdf9da') in 0.011089 seconds
-  Import took 0.016223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Art/Game/scenario/Store/store_top.png
-  artifactKey: Guid(719d2160b11f1bb429670a13760f3980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_top.png using Guid(719d2160b11f1bb429670a13760f3980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f482c3c7b11c64f7bc4b4ad3ad2ebbe7') in 0.008770 seconds
-  Import took 0.013840 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Art/Game/scenario/Store/store_wall.png
-  artifactKey: Guid(a4a921d7f8e3b4a42848e2ed3c6273eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_wall.png using Guid(a4a921d7f8e3b4a42848e2ed3c6273eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0848e348aa57d729ab3710fcb57b24e9') in 0.015887 seconds
-  Import took 0.020775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Art/Game/scenario/Store/store_sides.png
-  artifactKey: Guid(b3f67960ba0689247a0a89a850713bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_sides.png using Guid(b3f67960ba0689247a0a89a850713bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265399d13a40d304344f992c5f7206fe') in 0.006808 seconds
-  Import took 0.011295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Art/Game/scenario/Store/store_floor.png
-  artifactKey: Guid(eb967d7b71082714c921df7561bb0b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_floor.png using Guid(eb967d7b71082714c921df7561bb0b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c748dd9e972377904fbb372dfe6ebdbe') in 0.018076 seconds
-  Import took 0.022748 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 447.914525 seconds.
-  path: Assets/Art/Game/scenario/Store/store_mini_base.png
-  artifactKey: Guid(74a756dde644dfe4ab72b40a75238ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_mini_base.png using Guid(74a756dde644dfe4ab72b40a75238ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f435c4a92817fe333519ce6f4380ca99') in 0.014653 seconds
-  Import took 0.020706 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Art/Game/scenario/Store/store_mini_sides.png
-  artifactKey: Guid(56efe9958dd04994382e86c1e6ef1d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_mini_sides.png using Guid(56efe9958dd04994382e86c1e6ef1d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ff9ca20481972ef2ae53ae011a3f226') in 0.029309 seconds
-  Import took 0.033824 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Art/Game/scenario/Store/store_mini_wall.png
-  artifactKey: Guid(f6aa47cf321d0924882aeb2a68762a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_mini_wall.png using Guid(f6aa47cf321d0924882aeb2a68762a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2def67593ae4921fa354713b6236b046') in 0.016088 seconds
-  Import took 0.020986 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.392615 seconds.
-  path: Assets/Art/Game/scenario/Store/store_mini_base.png
-  artifactKey: Guid(74a756dde644dfe4ab72b40a75238ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_mini_base.png using Guid(74a756dde644dfe4ab72b40a75238ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbcaf0cbb16923a18512a7755d5b41c3') in 0.015011 seconds
-  Import took 0.020342 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Art/Game/scenario/Store/store_wall.png
-  artifactKey: Guid(a4a921d7f8e3b4a42848e2ed3c6273eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_wall.png using Guid(a4a921d7f8e3b4a42848e2ed3c6273eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7da8b5cd82be242db2af195fd3d1a3') in 0.016410 seconds
-  Import took 0.021839 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Art/Game/scenario/Store/store_sides.png
-  artifactKey: Guid(b3f67960ba0689247a0a89a850713bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_sides.png using Guid(b3f67960ba0689247a0a89a850713bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4199481df06a9a651305755b2d732a') in 0.011589 seconds
-  Import took 0.017117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Art/Game/scenario/Store/store_mini_sides.png
-  artifactKey: Guid(56efe9958dd04994382e86c1e6ef1d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_mini_sides.png using Guid(56efe9958dd04994382e86c1e6ef1d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28117fe81b0fc32775a5f685bff1c957') in 0.008945 seconds
-  Import took 0.013974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Art/Game/scenario/Store/store_mini_wall.png
-  artifactKey: Guid(f6aa47cf321d0924882aeb2a68762a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_mini_wall.png using Guid(f6aa47cf321d0924882aeb2a68762a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67984c17c309539bbdf9a37a57885940') in 0.013494 seconds
-  Import took 0.018746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 128.435199 seconds.
-  path: Assets/Art/Game/scenario/Store/store_mini_sides.png
-  artifactKey: Guid(56efe9958dd04994382e86c1e6ef1d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Game/scenario/Store/store_mini_sides.png using Guid(56efe9958dd04994382e86c1e6ef1d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cbfa959ff1a2abe1077abc8d373b599') in 0.018386 seconds
-  Import took 0.023913 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2442.112855 seconds.
-  path: Assets/Prefabs/Map/Store
-  artifactKey: Guid(587be15a6eae4fe45877ff8aee14f40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store using Guid(587be15a6eae4fe45877ff8aee14f40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639ff4c93cafba5f32f3f69e23377a3b') in 0.001803 seconds
-  Import took 0.007893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.756361 seconds.
-  path: Assets/Prefabs/Map/Store/Store Mini Indestructible.prefab
-  artifactKey: Guid(fbb97a0d3ec56b84e8660d50e7960a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store/Store Mini Indestructible.prefab using Guid(fbb97a0d3ec56b84e8660d50e7960a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78bb9e9cb21da2c8b972b17f4ac6e10d') in 0.136397 seconds
-  Import took 0.141881 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.239500 seconds.
-  path: Assets/Prefabs/Map/Store/Store Floor.prefab
-  artifactKey: Guid(ff7b602b53e65dd40a63737eccfc0b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store/Store Floor.prefab using Guid(ff7b602b53e65dd40a63737eccfc0b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64710d4c3b79b40a3714dcb89532ab8') in 0.016769 seconds
-  Import took 0.025372 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.489407 seconds.
-  path: Assets/Prefabs/Map/Store/Store Wall.prefab
-  artifactKey: Guid(c53be9b83ed56c748ae253192da3135c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store/Store Wall.prefab using Guid(c53be9b83ed56c748ae253192da3135c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d6f7a425916dfd917f03d2525ea74d') in 0.014389 seconds
-  Import took 0.020675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.981085 seconds.
-  path: Assets/Prefabs/Map/Store/Store Floor.prefab
-  artifactKey: Guid(ff7b602b53e65dd40a63737eccfc0b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store/Store Floor.prefab using Guid(ff7b602b53e65dd40a63737eccfc0b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86753c54894f9b62446b56c008143400') in 0.007656 seconds
-  Import took 0.013715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Prefabs/Map/Store/Store Mini Indestructible.prefab
-  artifactKey: Guid(fbb97a0d3ec56b84e8660d50e7960a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store/Store Mini Indestructible.prefab using Guid(fbb97a0d3ec56b84e8660d50e7960a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498bbc9e2f3f4f245dc19e580008e1fc') in 0.007964 seconds
-  Import took 0.013409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Prefabs/Map/Store/Store.prefab
-  artifactKey: Guid(9e311a4086f083746939907a9295fff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store/Store.prefab using Guid(9e311a4086f083746939907a9295fff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e3c18ba37d89188dc94c6ec45c50ae') in 0.070407 seconds
-  Import took 0.076343 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Prefabs/Map/Store/Store Wall.prefab
-  artifactKey: Guid(c53be9b83ed56c748ae253192da3135c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store/Store Wall.prefab using Guid(c53be9b83ed56c748ae253192da3135c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a849b9a725b8763d3065c31bba0460') in 0.011989 seconds
-  Import took 0.016763 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.947301 seconds.
-  path: Assets/Scenes/Store.unity
-  artifactKey: Guid(4048882186c1df446bf93085f3c16b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Store.unity using Guid(4048882186c1df446bf93085f3c16b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cddd532cc342b8cd58fc7bd8e9aae186') in 0.005736 seconds
-  Import took 0.011162 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 299.696889 seconds.
-  path: Assets/Prefabs/Map/Store/Store.prefab
-  artifactKey: Guid(9e311a4086f083746939907a9295fff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Map/Store/Store.prefab using Guid(9e311a4086f083746939907a9295fff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ff47d7424f3005ca5bd3f3be7c7df8') in 0.040522 seconds
-  Import took 0.047421 seconds .
+  Time since last request: 39.252883 seconds.
+  path: Assets/Art/Game/scenario/Store/store_tables.png
+  artifactKey: Guid(19fee57d5a64ad640818d8a73a946e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/scenario/Store/store_tables.png using Guid(19fee57d5a64ad640818d8a73a946e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e44ed15e635310d46cb7ac367ad1b9') in 0.034714 seconds
+  Import took 0.040188 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
