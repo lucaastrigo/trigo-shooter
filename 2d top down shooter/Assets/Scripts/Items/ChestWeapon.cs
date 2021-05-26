@@ -18,7 +18,7 @@ public class ChestWeapon : MonoBehaviour
     public GameObject openFX;
 
     bool open;
-    GameObject weaponToDrop;
+    [HideInInspector] public GameObject weaponToDrop;
     SpriteRenderer sprite;
 
     private void Start()
@@ -26,7 +26,7 @@ public class ChestWeapon : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
     }
 
-    void CalculateDrop()
+    public void CalculateDrop()
     {
         int itemWeight = 0;
 

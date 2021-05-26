@@ -173,7 +173,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -5745304988454230880, guid: d4f11b1a1d4e0854f8f3e05ad2a2d5ec,
+  m_Sprite: {fileID: -4493455705313255645, guid: d4f11b1a1d4e0854f8f3e05ad2a2d5ec,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -202,14 +202,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.5}
     newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.75, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &6082138799313130462
 MonoBehaviour:
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeSkillChest: 0
-  openedSprite: {fileID: 5637235256543409201, guid: d4f11b1a1d4e0854f8f3e05ad2a2d5ec,
+  openedSprite: {fileID: 272592845719467861, guid: d4f11b1a1d4e0854f8f3e05ad2a2d5ec,
     type: 3}
   openFX: {fileID: 3375865884550540848, guid: 74b2246fd49445c48aec35a2f28775d0, type: 3}
   skillObjects:

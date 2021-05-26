@@ -14,6 +14,24 @@ TextureImporter:
   - first:
       213: 6005187342836411619
     second: store_tables_3
+  - first:
+      213: -2589824682143640896
+    second: store_tables_4
+  - first:
+      213: -2664618008324667562
+    second: store_tables_5
+  - first:
+      213: 8709310662926888674
+    second: store_tables_6
+  - first:
+      213: -7238727761541048761
+    second: store_tables_7
+  - first:
+      213: -6777988064878133585
+    second: store_tables_8
+  - first:
+      213: 8488427743622423026
+    second: store_tables_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -119,7 +137,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 17
         width: 24
         height: 16
       alignment: 9
@@ -140,7 +158,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 25
-        y: 0
+        y: 17
         width: 24
         height: 16
       alignment: 9
@@ -161,7 +179,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 0
+        y: 17
         width: 24
         height: 16
       alignment: 9
@@ -182,7 +200,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 75
-        y: 0
+        y: 17
         width: 24
         height: 16
       alignment: 9
@@ -194,6 +212,132 @@ TextureImporter:
       bones: []
       spriteID: 3ecaf6b4216b65350800000000000000
       internalID: 6005187342836411619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: store_tables_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 17
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c21a4e4c281f0cd0800000000000000
+      internalID: -2589824682143640896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: store_tables_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65703b70a00650bd0800000000000000
+      internalID: -2664618008324667562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: store_tables_6
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee674e67efadd870800000000000000
+      internalID: 8709310662926888674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: store_tables_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746569b047fda8b90800000000000000
+      internalID: -7238727761541048761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: store_tables_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faef91d24cfbfe1a0800000000000000
+      internalID: -6777988064878133585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: store_tables_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f16f282f04fcc570800000000000000
+      internalID: 8488427743622423026
       vertices: []
       indices: 
       edges: []

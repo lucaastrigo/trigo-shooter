@@ -75,10 +75,15 @@ public class SkillObject : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i < allObjects.Length; i++)
+            for (int i = 0; i <allObjects.Length; i++)
             {
-                Destroy(allObjects[i]);
+                if(allObjects[i].transform.parent != null && allObjects[i].transform.parent == transform.parent && allObjects[i].GetComponentInParent<ChestSkill>() != null)
+                {
+                    Destroy(allObjects[i]);
+                }
             }
+
+            Destroy(gameObject);
         }
 
         GameObject skill = GameObject.Find(skillName);

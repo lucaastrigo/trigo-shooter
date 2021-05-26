@@ -13,7 +13,8 @@ public class ChestSkill : MonoBehaviour
     bool open;
     SpriteRenderer sprite;
     GameObject skillStorage;
-    GameObject s1, s2, s3;
+
+    [HideInInspector] public GameObject randomizedSkill, s1, s2, s3;
 
     private void Start()
     {
@@ -40,7 +41,7 @@ public class ChestSkill : MonoBehaviour
 
     GameObject RandomizeSkill()
     {
-        GameObject randomizedSkill = skillObjects[Random.Range(0, skillObjects.Length)];
+        randomizedSkill = skillObjects[Random.Range(0, skillObjects.Length)];
 
         if (!randomizedSkill.GetComponent<SkillObject>().canUse)
         {
@@ -50,7 +51,7 @@ public class ChestSkill : MonoBehaviour
         return randomizedSkill;
     }
 
-    void CalculateSkill()
+    public void CalculateSkill()
     {
         if (activeSkillChest)
         {
@@ -80,16 +81,24 @@ public class ChestSkill : MonoBehaviour
     {
         if (!activeSkillChest)
         {
-            Instantiate(s1, new Vector2(transform.position.x, transform.position.y + offset.y), Quaternion.identity);
-            Instantiate(s2, new Vector2(transform.position.x - offset.x, transform.position.y + offset.y), Quaternion.identity);
-            Instantiate(s3, new Vector2(transform.position.x + offset.x, transform.position.y + offset.y), Quaternion.identity);
+            GameObject child1 = Instantiate(s1, new Vector2(transform.position.x, transform.position.y + offset.y), Quaternion.identity);
+            GameObject child2 = Instantiate(s2, new Vector2(transform.position.x - offset.x, transform.position.y + offset.y), Quaternion.identity);
+            GameObject child3 = Instantiate(s3, new Vector2(transform.position.x + offset.x, transform.position.y + offset.y), Quaternion.identity);
+
+            child1.transform.parent = transform;
+            child2.transform.parent = transform;
+            child3.transform.parent = transform;
+
             Instantiate(openFX, transform.position, Quaternion.identity);
             open = true;
             sprite.sprite = openedSprite;
         }
         else
         {
-            Instantiate(s1, new Vector2(transform.position.x, transform.position.y + offset.y), Quaternion.identity);
+            GameObject child1 = Instantiate(s1, new Vector2(transform.position.x, transform.position.y + offset.y), Quaternion.identity);
+
+            child1.transform.parent = transform;
+
             Instantiate(openFX, transform.position, Quaternion.identity);
             open = true;
             sprite.sprite = openedSprite;
