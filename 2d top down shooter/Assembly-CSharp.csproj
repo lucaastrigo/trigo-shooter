@@ -129,9 +129,9 @@
     <Compile Include="Assets\Scripts\FX\Rotator.cs" />
     <Compile Include="Assets\Scripts\Level\Room\Destroyer.cs" />
     <Compile Include="Assets\Scripts\Weapons\BulletScript.cs" />
+    <Compile Include="Assets\Scripts\HUD and Menu\AmmoBar.cs" />
     <Compile Include="Assets\Scripts\Items\ChestWeapon.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\FreezeAbility.cs" />
-    <Compile Include="Assets\Scripts\HUD and Menu\AmmoBar.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\EXTRA\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

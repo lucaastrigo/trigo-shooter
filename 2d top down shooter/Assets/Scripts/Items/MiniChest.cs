@@ -55,11 +55,16 @@ public class MiniChest : MonoBehaviour
     {
         if(secondWeaponToDrop != null)
         {
+            weaponToDrop.GetComponent<SpriteRenderer>().sortingOrder = 6;
+            secondWeaponToDrop.GetComponent<SpriteRenderer>().sortingOrder = 6;
+
             Instantiate(weaponToDrop, new Vector2(transform.position.x + 0.4f, transform.position.y + 0.1f), Quaternion.identity);
             Instantiate(secondWeaponToDrop, new Vector2(transform.position.x - 0.4f, transform.position.y + 0.1f), Quaternion.identity);
         }
         else
         {
+            weaponToDrop.GetComponent<SpriteRenderer>().sortingOrder = 6;
+
             Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.1f), Quaternion.identity);
         }
 

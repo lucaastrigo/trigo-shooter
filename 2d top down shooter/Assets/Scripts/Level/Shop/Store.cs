@@ -14,6 +14,7 @@ public class Store : MonoBehaviour
     public itemType _itemType;
 
     public int price;
+    public float tableMatTime;
     public GameObject objectToSell, openFX;
     public TextMeshProUGUI priceText;
     public Transform objectPosition;
@@ -26,6 +27,7 @@ public class Store : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        GetComponentInChildren<Animator>().speed = 0;
     }
 
     void Update()
@@ -51,21 +53,26 @@ public class Store : MonoBehaviour
 
     void Buy()
     {
+        GetComponentInChildren<Animator>().speed = 1;
+
         bought = true;
         player.GetComponent<PlayerCurrency>().Purchase(price);
-        Instantiate(openFX, objectPosition.position, Quaternion.identity);
+        Instantiate(openFX, objectPosition.GetChild(0).position, Quaternion.identity);
         transform.parent.GetComponent<SpriteRenderer>().sprite = openedSprite;
 
         if (_itemType == itemType.ammo || _itemType == itemType.health)
         {
-            Instantiate(objectToSell, objectPosition.position, Quaternion.identity);
+            GameObject child = Instantiate(objectToSell, objectPosition.GetChild(0).position, Quaternion.identity);
+            child.transform.parent = objectPosition.GetChild(0);
         }
         else if(_itemType == itemType.ability)
         {
             if(objectToSell.GetComponent<ChestSkill>() != null)
             {
                 objectToSell.GetComponent<ChestSkill>().CalculateSkill();
-                Instantiate(objectToSell.GetComponent<ChestSkill>().s1, objectPosition.position, Quaternion.identity);
+                objectToSell.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                GameObject child = Instantiate(objectToSell.GetComponent<ChestSkill>().s1, objectPosition.GetChild(0).position, Quaternion.identity);
+                child.transform.parent = objectPosition.GetChild(0);
             }
         }
         else if(_itemType == itemType.skill)
@@ -73,7 +80,9 @@ public class Store : MonoBehaviour
             if (objectToSell.GetComponent<ChestSkill>() != null)
             {
                 objectToSell.GetComponent<ChestSkill>().CalculateSkill();
-                Instantiate(objectToSell.GetComponent<ChestSkill>().s1, objectPosition.position, Quaternion.identity);
+                objectToSell.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                GameObject child = Instantiate(objectToSell.GetComponent<ChestSkill>().s1, objectPosition.GetChild(0).position, Quaternion.identity);
+                child.transform.parent = objectPosition.GetChild(0);
             }
         }
         else if(_itemType == itemType.weapon)
@@ -81,7 +90,9 @@ public class Store : MonoBehaviour
             if(objectToSell.GetComponent<ChestWeapon>() != null)
             {
                 objectToSell.GetComponent<ChestWeapon>().CalculateDrop();
-                Instantiate(objectToSell.GetComponent<ChestWeapon>().weaponToDrop, objectPosition.position, Quaternion.identity);
+                objectToSell.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                GameObject child = Instantiate(objectToSell.GetComponent<ChestWeapon>().weaponToDrop, objectPosition.GetChild(0).position, Quaternion.identity);
+                child.transform.parent = objectPosition.GetChild(0);
             }
         }
     }

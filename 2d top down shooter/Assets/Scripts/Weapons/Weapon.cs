@@ -74,7 +74,7 @@ public class Weapon : MonoBehaviour
         skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
 
         //here
-        if(transform.parent != null)
+        if(GetComponentInParent<PlayerPickup>() != null)
         {
             if (transform.parent.GetComponent<PlayerPickup>().equippedWeapon.name == weaponName || transform.parent.GetComponent<PlayerPickup>().equippedWeapon.name == weaponName + "(Clone)")
             {
