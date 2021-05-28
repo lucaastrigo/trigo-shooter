@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public float indicationTime = 1f;
     GameObject healthText;
     GameObject valueStorage, skillStorage;
-    [HideInInspector] public GameObject aaplace, aatimer;
+    [HideInInspector] public GameObject[] aaplace;
     Rigidbody2D rb;
     Animator anim;
 
@@ -33,8 +33,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        aaplace = GameObject.FindGameObjectWithTag("AA");
-        aatimer = GameObject.FindGameObjectWithTag("AAT");
+        aaplace = GameObject.FindGameObjectsWithTag("AA");
     }
 
     private void Update()
@@ -80,7 +79,20 @@ public class Player : MonoBehaviour
         {
             if (skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().activeSkill && skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().skillOn)
             {
-                aaplace.GetComponent<Image>().sprite = skillStorage.GetComponent<SkillStorage>().skillObjects[i].GetComponent<SpriteRenderer>().sprite;
+                if (skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().hasCooldown)
+                {
+                    aaplace[1].GetComponent<Image>().enabled = true;
+                    aaplace[1].GetComponent<Image>().sprite = skillStorage.GetComponent<SkillStorage>().skillObjects[i].GetComponent<SpriteRenderer>().sprite;
+                }
+
+                aaplace[0].GetComponent<Image>().enabled = true;
+                aaplace[0].GetComponent<Image>().sprite = skillStorage.GetComponent<SkillStorage>().skillObjects[i].GetComponent<SpriteRenderer>().sprite;
+                break;
+            }
+            else
+            {
+                aaplace[0].GetComponent<Image>().enabled = false;
+                aaplace[1].GetComponent<Image>().enabled = false;
             }
         }
     }

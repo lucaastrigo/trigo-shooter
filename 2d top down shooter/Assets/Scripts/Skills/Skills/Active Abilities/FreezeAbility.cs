@@ -20,6 +20,7 @@ public class FreezeAbility : MonoBehaviour
     void Update()
     {
         skill.cooldown = cooltime;
+        skill.maxCooldown = cooldown;
 
         time -= Time.deltaTime;
 

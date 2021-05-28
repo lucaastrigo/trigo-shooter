@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
@@ -7,7 +8,7 @@ public class Skill : MonoBehaviour
 {
     public bool activeSkill, hasCooldown;
     public bool skillOn, skilled, unskilled;
-    [HideInInspector] public float cooldown;
+    [HideInInspector] public float cooldown, maxCooldown;
 
     GameObject player;
 
@@ -18,14 +19,10 @@ public class Skill : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player");
         }
 
-        if (hasCooldown && skillOn)
+        if (hasCooldown && skillOn && activeSkill)
         {
-            player.GetComponent<Player>().aatimer.GetComponent<TMP_Text>().text = cooldown.ToString("F1");
-        }
-
-        if (!hasCooldown && skillOn)
-        {
-            player.GetComponent<Player>().aatimer.GetComponent<TMP_Text>().text = null;
+            float percent = cooldown / maxCooldown;
+            player.GetComponent<Player>().aaplace[1].GetComponent<Image>().fillAmount = percent;
         }
     }
 }

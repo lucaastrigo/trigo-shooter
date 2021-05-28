@@ -93,7 +93,10 @@ public class SkillObject : MonoBehaviour
             skill.GetComponent<Skill>().skillOn = true;
         }
 
-        player.GetComponent<Player>().aaplace.GetComponent<Image>().enabled = true;
+        /*
+        player.GetComponent<Player>().aaplace[0].GetComponent<Image>().enabled = true;
+        player.GetComponent<Player>().aaplace[1].GetComponent<Image>().enabled = true;
+        */
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

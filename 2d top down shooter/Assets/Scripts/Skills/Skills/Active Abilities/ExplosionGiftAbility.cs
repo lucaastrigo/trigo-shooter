@@ -20,6 +20,7 @@ public class ExplosionGiftAbility : MonoBehaviour
     void Update()
     {
         skill.cooldown = cooltime;
+        skill.maxCooldown = cooldown;
 
         if(cooltime <= 0)
         {

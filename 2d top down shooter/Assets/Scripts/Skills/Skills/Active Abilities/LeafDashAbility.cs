@@ -31,6 +31,7 @@ public class LeafDashAbility : MonoBehaviour
     void Update()
     {
         skill.cooldown = dashTime;
+        skill.maxCooldown = dashCooldown;
 
         if (player != null)
         {
