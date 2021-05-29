@@ -6,6 +6,7 @@ public class PlayerPickup : MonoBehaviour
 {
     public Transform holster;
     public Transform secondHolster;
+    public GameObject pickupFX;
 
     [HideInInspector] public bool hasWeapon;
     [HideInInspector] public bool hasTwoWeapons;
@@ -13,8 +14,8 @@ public class PlayerPickup : MonoBehaviour
     [HideInInspector] public string secondEquippedWeaponName;
     [HideInInspector] public string disequippedWeaponName;
     [HideInInspector] public Weapon focusedWeapon;
-    public Weapon equippedWeapon;
-    public Weapon secondEquippedWeapon;
+    [HideInInspector] public Weapon equippedWeapon;
+    [HideInInspector] public Weapon secondEquippedWeapon;
     [HideInInspector] public Weapon disequippedWeapon;
 
     GameObject skillStorage, valueStorage;
@@ -117,6 +118,11 @@ public class PlayerPickup : MonoBehaviour
 
     void EquipWeapon(Weapon weaponToEquip)
     {
+        if(weaponToEquip.transform.parent != transform && weaponToEquip.transform.parent != null)
+        {
+            Destroy(weaponToEquip.transform.parent.gameObject, 0.05f);
+        }
+
         ValueStorage.value.weaponValue = weaponToEquip.name;
         hasWeapon = true;
         equippedWeaponName = weaponToEquip.name;
@@ -127,7 +133,7 @@ public class PlayerPickup : MonoBehaviour
         equippedWeapon.GetComponent<Weapon>().playerWeapon = true;
         equippedWeapon.GetComponent<Weapon>().onOff = true;
         equippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 6;
-
+        Instantiate(pickupFX, transform.position, Quaternion.identity);
 
         equippedWeapon.GetComponent<Weapon>().weaponIndex = gunIndex;
         valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Insert(gunIndex, 1000);

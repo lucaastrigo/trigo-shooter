@@ -1168,8 +1168,8 @@ MonoBehaviour:
   playerIndicator: {fileID: 3416193921835409681}
   time: 0
   indicationTime: 1
-  aaplace: {fileID: 0}
-  aatimer: {fileID: 0}
+  aaplace:
+  - {fileID: 0}
 --- !u!114 &7094962750070918967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,6 +1213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holster: {fileID: 5702406983797488138}
   secondHolster: {fileID: 2684741333038528071}
+  pickupFX: {fileID: 3375865884550540848, guid: bda97e958a6aed44f8650c2cce98b682,
+    type: 3}
   hasWeapon: 0
   hasTwoWeapons: 0
   equippedWeaponName: 

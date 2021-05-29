@@ -53,9 +53,17 @@ public class ChestWeapon : MonoBehaviour
 
     void Drop()
     {
-        weaponToDrop.GetComponent<SpriteRenderer>().sortingOrder = 6;
+        if(weaponToDrop.GetComponent<SpriteRenderer>() != null)
+        {
+            weaponToDrop.GetComponent<SpriteRenderer>().sortingOrder = 6;
+        }
+        else if(weaponToDrop.GetComponentInChildren<SpriteRenderer>() != null)
+        {
+            weaponToDrop.GetComponentInChildren<SpriteRenderer>().sortingOrder = 6;
+        }
 
         Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.1f), Quaternion.identity);
+
         Instantiate(openFX, transform.position, Quaternion.identity);
         open = true;
         sprite.sprite = openedSprite;

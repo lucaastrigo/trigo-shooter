@@ -20,6 +20,12 @@ TextureImporter:
   - first:
       213: 5952100780381781865
     second: h_big_opened_chest
+  - first:
+      213: -6866854564134949376
+    second: props_5_6
+  - first:
+      213: -9022672404565623355
+    second: props_5_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -266,6 +272,48 @@ TextureImporter:
       bones: []
       spriteID: 96f3bf9cf1c1a9250800000000000000
       internalID: 5952100780381781865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_5_6
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e6774f72804b0a0800000000000000
+      internalID: -6866854564134949376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_5_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 12
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd7521904709c280800000000000000
+      internalID: -9022672404565623355
       vertices: []
       indices: 
       edges: []

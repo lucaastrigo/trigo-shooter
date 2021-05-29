@@ -75,7 +75,7 @@ public class SkillObject : MonoBehaviour
         }
         else
         {
-            for (int i = 0; i <allObjects.Length; i++)
+            for (int i = 0; i < allObjects.Length; i++)
             {
                 if(allObjects[i].transform.parent != null && allObjects[i].transform.parent == transform.parent && allObjects[i].GetComponentInParent<ChestSkill>() != null)
                 {
