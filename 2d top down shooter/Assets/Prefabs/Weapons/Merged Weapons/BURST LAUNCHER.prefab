@@ -60,6 +60,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BURST LAUNCHER
       objectReference: {fileID: 0}
+    - target: {fileID: 2593002729300198868, guid: 8392f99ff123e114cba235933e4592e2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2593002729300198871, guid: 8392f99ff123e114cba235933e4592e2,
         type: 3}
       propertyPath: m_RootOrder

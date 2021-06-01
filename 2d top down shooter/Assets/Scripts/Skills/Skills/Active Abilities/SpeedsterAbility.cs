@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class SpeedsterAbility : MonoBehaviour
 {
-    public float newSpeed;
-
-    float speedK = 3.5f;
+    float newSpeed;
+    float speedK;
     float time;
     GameObject player;
     Skill skill;
@@ -14,6 +13,9 @@ public class SpeedsterAbility : MonoBehaviour
     private void Start()
     {
         skill = GetComponent<Skill>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        speedK = player.GetComponent<PlayerMovement>()._speed;
+        newSpeed = speedK * 2;
     }
 
     void Update()
@@ -24,7 +26,6 @@ public class SpeedsterAbility : MonoBehaviour
             {
                 if (!skill.skilled)
                 {
-                    speedK = player.GetComponent<PlayerMovement>().speed;
                     skill.skilled = true;
                 }
 

@@ -1,0 +1,1085 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.6f1 (8a2143876886) revision 9052483'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 16319 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Lucas/Unity/PROJETOS/Pessoal/trigo-shooter/2d top down shooter
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+57263
+Successfully changed project path to: D:/Lucas/Unity/PROJETOS/Pessoal/trigo-shooter/2d top down shooter
+D:/Lucas/Unity/PROJETOS/Pessoal/trigo-shooter/2d top down shooter
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 75.00 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.6f1 (8a2143876886)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Lucas/Unity/PROJETOS/Pessoal/trigo-shooter/2d top down shooter/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.5671
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002252 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 66.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.074 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001285 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 71.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.995 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 220.8 MB.
+System memory in use after: 221.1 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3797.
+Total: 2.554500 ms (FindLiveObjects: 0.379800 ms CreateObjectMapping: 0.088800 ms MarkObjects: 2.056600 ms  DeleteObjects: 0.028000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Art/Game/characters/sheets/player/4-legs/4-legs_walk.png
+  artifactKey: Guid(bf7b99e4f842fb448815129fa729952e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/4-legs/4-legs_walk.png using Guid(bf7b99e4f842fb448815129fa729952e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29fd0e621ceb9f8862a5f135734b0595') in 0.103211 seconds
+  Import took 0.111410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000581 seconds.
+  path: Assets/Art/Game/characters/sheets/player/4-legs/4-legs_idle.png
+  artifactKey: Guid(4a184e36a7cd74648bd30797b31f2c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/4-legs/4-legs_idle.png using Guid(4a184e36a7cd74648bd30797b31f2c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33fd443da1b1f0202ff9ae9467671ed4') in 0.022078 seconds
+  Import took 0.033621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Art/Game/characters/sheets/player/4-legs/4-legs_hurt.png
+  artifactKey: Guid(ede9624f091c0c64a9f7c369ab6fc8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/4-legs/4-legs_hurt.png using Guid(ede9624f091c0c64a9f7c369ab6fc8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db9f4c2979c92b6726315d87d63d588') in 0.046800 seconds
+  Import took 0.054316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.759285 seconds.
+  path: Assets/Art/Game/characters/sheets/player/4-legs/4-legs_idle.png
+  artifactKey: Guid(4a184e36a7cd74648bd30797b31f2c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/4-legs/4-legs_idle.png using Guid(4a184e36a7cd74648bd30797b31f2c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98f6a17dff95d02faecec5ef234243f') in 0.010573 seconds
+  Import took 0.016692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.748224 seconds.
+  path: Assets/Art/Game/characters/sheets/player/4-legs/4-legs_walk.png
+  artifactKey: Guid(bf7b99e4f842fb448815129fa729952e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/4-legs/4-legs_walk.png using Guid(bf7b99e4f842fb448815129fa729952e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8009f286bf92ecc30c46e82cb834acf5') in 0.021488 seconds
+  Import took 0.028677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.335574 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja
+  artifactKey: Guid(53a37cae06c84924b901bbf668fcd7b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja using Guid(53a37cae06c84924b901bbf668fcd7b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7031e52097727357087ca1ebedc7b44') in 0.005475 seconds
+  Import took 0.010839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047441 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_hurt.png
+  artifactKey: Guid(44a2784f40c252841af8b575daea3e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_hurt.png using Guid(44a2784f40c252841af8b575daea3e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55b6f0f3c7f16a12c11958d565d2486c') in 0.043259 seconds
+  Import took 0.050795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_idle.png
+  artifactKey: Guid(9d2ea6a7f47a3e2408bd636dd59bf573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_idle.png using Guid(9d2ea6a7f47a3e2408bd636dd59bf573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30c09ff6e4aec8594d67f39ae09b2f2') in 0.013492 seconds
+  Import took 0.019726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png
+  artifactKey: Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png using Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197a004aae8b7c91d9e7c19b2ea06ce0') in 0.012143 seconds
+  Import took 0.018481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.263113 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_idle.png
+  artifactKey: Guid(9d2ea6a7f47a3e2408bd636dd59bf573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_idle.png using Guid(9d2ea6a7f47a3e2408bd636dd59bf573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d89454189f48f22da2069047aebc43e') in 0.010734 seconds
+  Import took 0.017418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006452 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_hurt.png
+  artifactKey: Guid(44a2784f40c252841af8b575daea3e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_hurt.png using Guid(44a2784f40c252841af8b575daea3e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e690f675f10e1f071d94a4dba442aa56') in 0.008431 seconds
+  Import took 0.014159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png
+  artifactKey: Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png using Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d5c78e5099031919a5fe6e1dcb35aa') in 0.008937 seconds
+  Import took 0.014519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.222304 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_hurt.png
+  artifactKey: Guid(44a2784f40c252841af8b575daea3e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_hurt.png using Guid(44a2784f40c252841af8b575daea3e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffb524e25c598e0522793b9ba6460066') in 0.017336 seconds
+  Import took 0.023241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 884.309862 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_idle.png
+  artifactKey: Guid(9d2ea6a7f47a3e2408bd636dd59bf573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_idle.png using Guid(9d2ea6a7f47a3e2408bd636dd59bf573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7c1d5c7247164ae3dec957cf6494a7') in 0.018694 seconds
+  Import took 0.025026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.801988 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png
+  artifactKey: Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png using Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986ccfd0861aad18a991765f3ebaaac8') in 0.018043 seconds
+  Import took 0.024164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007198 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png
+  artifactKey: Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png using Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986ccfd0861aad18a991765f3ebaaac8') in 0.017903 seconds
+  Import took 0.024043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.238670 seconds.
+  path: Assets/Art/Game/characters/sheets/player/4-legs
+  artifactKey: Guid(9f194124ff3d64e4ebd59691f9261339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/4-legs using Guid(9f194124ff3d64e4ebd59691f9261339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b24a24fb7e231e4485382c65cd5cec53') in 0.005760 seconds
+  Import took 0.012068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.729307 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_idle.png
+  artifactKey: Guid(9d2ea6a7f47a3e2408bd636dd59bf573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_idle.png using Guid(9d2ea6a7f47a3e2408bd636dd59bf573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecea538fe2a04d76fbc4656512b41769') in 0.016479 seconds
+  Import took 0.022906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.062735 seconds.
+  path: Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png
+  artifactKey: Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/ninja/ninja_walk.png using Guid(265e67df85b173d4d8094057a58c058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e0eeed3692959b8c29a46727821b1fb') in 0.017669 seconds
+  Import took 0.024384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.640583 seconds.
+  path: Assets/Art/Game/characters/sheets/player/4-legs/4-legs_idle.png
+  artifactKey: Guid(4a184e36a7cd74648bd30797b31f2c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/4-legs/4-legs_idle.png using Guid(4a184e36a7cd74648bd30797b31f2c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad98ff66587719af7719c3752cfcbbe1') in 0.016292 seconds
+  Import took 0.022227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.014940 seconds.
+  path: Assets/Art/Game/characters/sheets/player/4-legs/4-legs_walk.png
+  artifactKey: Guid(bf7b99e4f842fb448815129fa729952e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/4-legs/4-legs_walk.png using Guid(bf7b99e4f842fb448815129fa729952e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03034128afefd2d1357c7a0471fe25d') in 0.015973 seconds
+  Import took 0.023009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.995258 seconds.
+  path: Assets/Art/Game/characters/sheets/player/explorer
+  artifactKey: Guid(616b0f73ccb45e1438998c580e4440ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/explorer using Guid(616b0f73ccb45e1438998c580e4440ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761b13ab332ce331ccc60ed4d689bf1b') in 0.006496 seconds
+  Import took 0.014798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000692 seconds.
+  path: Assets/Art/Game/characters/sheets/player/explorer
+  artifactKey: Guid(616b0f73ccb45e1438998c580e4440ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sheets/player/explorer using Guid(616b0f73ccb45e1438998c580e4440ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761b13ab332ce331ccc60ed4d689bf1b') in 0.001818 seconds
+  Import took 0.007815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.908947 seconds.
+  path: Assets/Prefabs/Start/=SKILL STORAGE.prefab
+  artifactKey: Guid(3312ebc8d0e988f43950de98fc44c351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/=SKILL STORAGE.prefab using Guid(3312ebc8d0e988f43950de98fc44c351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a6c9a332fb488e68c4a60f62ca3725') in 0.617642 seconds
+  Import took 0.624509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Prefabs/Start/Player.prefab
+  artifactKey: Guid(fa227d2cbcb037c4ca50e2e5e8f8e490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/Player.prefab using Guid(fa227d2cbcb037c4ca50e2e5e8f8e490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a54d1c04e295c66de7f826bb8fb38d') in 1.577622 seconds
+  Import took 1.588111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.625158 seconds.
+  path: Assets/Prefabs/Start/Player.prefab
+  artifactKey: Guid(fa227d2cbcb037c4ca50e2e5e8f8e490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/Player.prefab using Guid(fa227d2cbcb037c4ca50e2e5e8f8e490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bdec476aeec09da43c1210de8bec07') in 0.079204 seconds
+  Import took 0.090764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.567897 seconds.
+  path: Assets/Prefabs/Start/Player.prefab
+  artifactKey: Guid(fa227d2cbcb037c4ca50e2e5e8f8e490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/Player.prefab using Guid(fa227d2cbcb037c4ca50e2e5e8f8e490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df5aeeef0cd41d9c07cf6b9538663c6d') in 0.076711 seconds
+  Import took 0.092614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.790386 seconds.
+  path: Assets/Prefabs/Start/Player.prefab
+  artifactKey: Guid(fa227d2cbcb037c4ca50e2e5e8f8e490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/Player.prefab using Guid(fa227d2cbcb037c4ca50e2e5e8f8e490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b2ef6626d0fe2325aa513af1c8879ba') in 0.066085 seconds
+  Import took 0.075314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Prefabs/Start/The Explorer.prefab
+  artifactKey: Guid(ee19d921c529bbf4eb85bd85b7d37938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Explorer.prefab using Guid(ee19d921c529bbf4eb85bd85b7d37938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d046e35c0849c1abc069f05b786624f') in 0.032401 seconds
+  Import took 0.039835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002770 seconds.
+  path: Assets/Prefabs/Start/The Explorer.prefab
+  artifactKey: Guid(ee19d921c529bbf4eb85bd85b7d37938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Explorer.prefab using Guid(ee19d921c529bbf4eb85bd85b7d37938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d046e35c0849c1abc069f05b786624f') in 0.028086 seconds
+  Import took 0.035862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.345997 seconds.
+  path: Assets/Prefabs/Start/The Explorer.prefab
+  artifactKey: Guid(ee19d921c529bbf4eb85bd85b7d37938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Explorer.prefab using Guid(ee19d921c529bbf4eb85bd85b7d37938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39df99d9c422c5b3560b3b1d79f3ca4d') in 0.039311 seconds
+  Import took 0.050594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.729200 seconds.
+  path: Assets/Prefabs/Start/The Explorer.prefab
+  artifactKey: Guid(ee19d921c529bbf4eb85bd85b7d37938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Explorer.prefab using Guid(ee19d921c529bbf4eb85bd85b7d37938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf32acd8da0d13ab520a667844404fc5') in 0.031794 seconds
+  Import took 0.038678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.688592 seconds.
+  path: Assets/Prefabs/Start/The Explorer 1.prefab
+  artifactKey: Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Explorer 1.prefab using Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2f45c116ac72ec9d6f245c2a214f3d') in 0.031624 seconds
+  Import took 0.038889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.589889 seconds.
+  path: Assets/Prefabs/Start/The Ninja.prefab
+  artifactKey: Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Ninja.prefab using Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ba1e16a33c3879f40aa9ec2765cd50') in 0.040910 seconds
+  Import took 0.050355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002796 seconds.
+  path: Assets/Prefabs/Start/The Ninja.prefab
+  artifactKey: Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Ninja.prefab using Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ba1e16a33c3879f40aa9ec2765cd50') in 0.029330 seconds
+  Import took 0.036860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.626621 seconds.
+  path: Assets/Art/Game/characters/sprites/dead_enemies_5.png
+  artifactKey: Guid(dd4785166a204f74da819bc6412f3b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/dead_enemies_5.png using Guid(dd4785166a204f74da819bc6412f3b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c7900a27f6e286f5cd56c8823e61be3') in 0.062026 seconds
+  Import took 0.069199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005775 seconds.
+  path: Assets/Art/Game/characters/sprites/dead_enemies_5.png
+  artifactKey: Guid(dd4785166a204f74da819bc6412f3b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/dead_enemies_5.png using Guid(dd4785166a204f74da819bc6412f3b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c7900a27f6e286f5cd56c8823e61be3') in 0.022643 seconds
+  Import took 0.032519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 112.613958 seconds.
+  path: Assets/Art/Game/characters/sprites/4-legs.png
+  artifactKey: Guid(56fb37bcd5093914db79b297bcd1daef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/4-legs.png using Guid(56fb37bcd5093914db79b297bcd1daef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd812e5a3ea3636cb62efa4f7e2adc150') in 0.016195 seconds
+  Import took 0.022976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Art/Game/characters/sprites/the_ninja.png
+  artifactKey: Guid(94cec4693c6334d40ac2b606082d37c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/the_ninja.png using Guid(94cec4693c6334d40ac2b606082d37c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1504f75af3ad07e66f10e67990846fd6') in 0.011403 seconds
+  Import took 0.017063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.894785 seconds.
+  path: Assets/Art/Game/characters/sprites/the_4-legs.png
+  artifactKey: Guid(56fb37bcd5093914db79b297bcd1daef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/the_4-legs.png using Guid(56fb37bcd5093914db79b297bcd1daef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee7b603527dfe903df0a0ed03360fa0') in 0.014787 seconds
+  Import took 0.021430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.205580 seconds.
+  path: Assets/Art/Game/characters/sprites/the_exploreer.png
+  artifactKey: Guid(726ffbf0008fb054a9efd69347ee8cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/the_exploreer.png using Guid(726ffbf0008fb054a9efd69347ee8cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ed53c8275a513167ef4cc041eeef6a') in 0.022233 seconds
+  Import took 0.028982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003994 seconds.
+  path: Assets/Art/Game/characters/sprites/the_exploreer.png
+  artifactKey: Guid(726ffbf0008fb054a9efd69347ee8cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/the_exploreer.png using Guid(726ffbf0008fb054a9efd69347ee8cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ed53c8275a513167ef4cc041eeef6a') in 0.009469 seconds
+  Import took 0.015263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.401361 seconds.
+  path: Assets/Art/Game/characters/sprites/the_explorer.png
+  artifactKey: Guid(726ffbf0008fb054a9efd69347ee8cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/the_explorer.png using Guid(726ffbf0008fb054a9efd69347ee8cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3e55b7b9ab416a8fd5438f6f7f6736') in 0.014828 seconds
+  Import took 0.021080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.364461 seconds.
+  path: Assets/Art/Game/characters/sprites/the_4-legs.png
+  artifactKey: Guid(56fb37bcd5093914db79b297bcd1daef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/the_4-legs.png using Guid(56fb37bcd5093914db79b297bcd1daef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae33c019c8e522ed646ae33432e2ef7') in 0.007304 seconds
+  Import took 0.013638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Art/Game/characters/sprites/the_ninja.png
+  artifactKey: Guid(94cec4693c6334d40ac2b606082d37c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/the_ninja.png using Guid(94cec4693c6334d40ac2b606082d37c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6893aca7eb12cf25075b0ffed2c08e71') in 0.009539 seconds
+  Import took 0.015049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Art/Game/characters/sprites/the_4-legs.png
+  artifactKey: Guid(56fb37bcd5093914db79b297bcd1daef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Game/characters/sprites/the_4-legs.png using Guid(56fb37bcd5093914db79b297bcd1daef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae33c019c8e522ed646ae33432e2ef7') in 0.006270 seconds
+  Import took 0.011135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 165.274640 seconds.
+  path: Assets/Animation/Animators/player/player.controller
+  artifactKey: Guid(5da95e74cafc96e45b6ebba2233b2d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animators/player/player.controller using Guid(5da95e74cafc96e45b6ebba2233b2d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03aa9efb6ccf5814d133757166384457') in 0.009905 seconds
+  Import took 0.016182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.327441 seconds.
+  path: Assets/Animation/Animators/player/the_explorer.controller
+  artifactKey: Guid(5da95e74cafc96e45b6ebba2233b2d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animators/player/the_explorer.controller using Guid(5da95e74cafc96e45b6ebba2233b2d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77d7bca1c0104c8932330035ed0cbef') in 0.007089 seconds
+  Import took 0.015547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.316180 seconds.
+  path: Assets/Prefabs/Start/The Ninja.prefab
+  artifactKey: Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Ninja.prefab using Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0937de177daf98a46000bff1ed56240') in 0.032485 seconds
+  Import took 0.039380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000985 seconds.
+  path: Assets/Prefabs/Start/The Ninja.prefab
+  artifactKey: Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Ninja.prefab using Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0937de177daf98a46000bff1ed56240') in 0.045712 seconds
+  Import took 0.060524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.099207 seconds.
+  path: Assets/Prefabs/Start/The Ninja 1.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Ninja 1.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7e980244e5410feb7ccb935a20b79a') in 0.031915 seconds
+  Import took 0.039215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.199887 seconds.
+  path: Assets/Prefabs/Start/The 4 Legs.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The 4 Legs.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745735093573989c6193d1a51d9a8ea1') in 0.036074 seconds
+  Import took 0.044284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.945709 seconds.
+  path: Assets/Prefabs/Start/The 4 Legs.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The 4 Legs.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9bd31417ee223bcf55322801291d649') in 0.036955 seconds
+  Import took 0.046757 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002293 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.875 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3183 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 217.7 MB.
+System memory in use after: 217.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3876.
+Total: 2.681400 ms (FindLiveObjects: 0.411000 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.151300 ms  DeleteObjects: 0.019500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001499 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.876 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3183 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 217.8 MB.
+System memory in use after: 218.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3878.
+Total: 2.823500 ms (FindLiveObjects: 0.641700 ms CreateObjectMapping: 0.104100 ms MarkObjects: 2.054700 ms  DeleteObjects: 0.021300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001358 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.950 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3183 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 217.8 MB.
+System memory in use after: 218.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3880.
+Total: 2.698800 ms (FindLiveObjects: 0.419900 ms CreateObjectMapping: 0.111900 ms MarkObjects: 2.145400 ms  DeleteObjects: 0.020600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 146.217409 seconds.
+  path: Assets/Prefabs/Start/The 4 Legs.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The 4 Legs.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f18ccc77edeccde4725887f4f03da2') in 0.199284 seconds
+  Import took 0.207199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005925 seconds.
+  path: Assets/Prefabs/Start/The 4 Legs.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The 4 Legs.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f18ccc77edeccde4725887f4f03da2') in 0.033348 seconds
+  Import took 0.041070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.747162 seconds.
+  path: Assets/Animation/Animators/player/the_explorer.controller
+  artifactKey: Guid(5da95e74cafc96e45b6ebba2233b2d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animators/player/the_explorer.controller using Guid(5da95e74cafc96e45b6ebba2233b2d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa5875ebd7bbd80d785df210620e29b') in 0.003868 seconds
+  Import took 0.009825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.001275 seconds.
+  path: Assets/Animation/Animators/player
+  artifactKey: Guid(a3b73b02cffc29b4fa43fd824c3fd42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animators/player using Guid(a3b73b02cffc29b4fa43fd824c3fd42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79cf9f56978dc9743b581b37d940057c') in 0.002116 seconds
+  Import took 0.007319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.499520 seconds.
+  path: Assets/Animation/Animations
+  artifactKey: Guid(ff8d68a088b067b4badc52e582501881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations using Guid(ff8d68a088b067b4badc52e582501881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1e83a957839b98275f2535ecde4ac2') in 0.006080 seconds
+  Import took 0.011424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.134004 seconds.
+  path: Assets/Animation/Animations/player
+  artifactKey: Guid(8a9f1130c7aec804db0609f09c4028af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player using Guid(8a9f1130c7aec804db0609f09c4028af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1001f0b73fbdeacc355c8deb8551835c') in 0.002078 seconds
+  Import took 0.007564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.089150 seconds.
+  path: Assets/Animation/Animations/player/player_hurt.anim
+  artifactKey: Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/player_hurt.anim using Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae079e6b178361c1289919e6d90b1148') in 0.007242 seconds
+  Import took 0.012815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.952128 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_hurt.anim
+  artifactKey: Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_hurt.anim using Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbc759198a35fb04b1a89d82f66f760b') in 0.010654 seconds
+  Import took 0.018735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002851 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_hurt.anim
+  artifactKey: Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_hurt.anim using Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbc759198a35fb04b1a89d82f66f760b') in 0.002654 seconds
+  Import took 0.008569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.652955 seconds.
+  path: Assets/Animation/Animations/player/player_walk.anim
+  artifactKey: Guid(9e15ab5904990294082536856b0fa131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/player_walk.anim using Guid(9e15ab5904990294082536856b0fa131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e2581462a2500fd1bb8960ea67f39f') in 0.007325 seconds
+  Import took 0.013763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.635410 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_walk.anim
+  artifactKey: Guid(9e15ab5904990294082536856b0fa131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_walk.anim using Guid(9e15ab5904990294082536856b0fa131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798c0127c1dcfff9e60277e461b313cd') in 0.011048 seconds
+  Import took 0.018870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.084241 seconds.
+  path: Assets/Animation/Animations/player/player_melee.anim
+  artifactKey: Guid(2d9b63a31de4f4c44ada57bec2bcd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/player_melee.anim using Guid(2d9b63a31de4f4c44ada57bec2bcd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '506cf0ed19a3612d3251d24f65454989') in 0.007476 seconds
+  Import took 0.013184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.850638 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_melee.anim
+  artifactKey: Guid(2d9b63a31de4f4c44ada57bec2bcd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_melee.anim using Guid(2d9b63a31de4f4c44ada57bec2bcd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61172a1bbcb0c51d75619cc229d757e8') in 0.011597 seconds
+  Import took 0.019549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.810807 seconds.
+  path: Assets/Animation/Animations/player/player_idle.anim
+  artifactKey: Guid(badac03c1d5c8bd4981b1acf7381c4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/player_idle.anim using Guid(badac03c1d5c8bd4981b1acf7381c4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe67968c85e71a9a949578efa3976f9') in 0.007150 seconds
+  Import took 0.013719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.538448 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_idle.anim
+  artifactKey: Guid(badac03c1d5c8bd4981b1acf7381c4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_idle.anim using Guid(badac03c1d5c8bd4981b1acf7381c4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1692a4b79698183288c54c4ec991a84') in 0.010519 seconds
+  Import took 0.022774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.070480 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_walk 1.anim
+  artifactKey: Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_walk 1.anim using Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88ee9daefffe633ae04233e8a8276a9') in 0.006517 seconds
+  Import took 0.012324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.971969 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_hurt 1.anim
+  artifactKey: Guid(fc7dc31fb7a5a2a439bf805d2658ae2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_hurt 1.anim using Guid(fc7dc31fb7a5a2a439bf805d2658ae2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b3a709a266c7b161efdd20fb5dca94') in 0.006650 seconds
+  Import took 0.013496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.621491 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_hurt.anim
+  artifactKey: Guid(fc7dc31fb7a5a2a439bf805d2658ae2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_hurt.anim using Guid(fc7dc31fb7a5a2a439bf805d2658ae2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d3940f839453c1b1b45d6e3c88fa01') in 0.009941 seconds
+  Import took 0.019463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000941 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_hurt.anim
+  artifactKey: Guid(fc7dc31fb7a5a2a439bf805d2658ae2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_hurt.anim using Guid(fc7dc31fb7a5a2a439bf805d2658ae2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d3940f839453c1b1b45d6e3c88fa01') in 0.002529 seconds
+  Import took 0.009276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.825145 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_walk.anim
+  artifactKey: Guid(9e15ab5904990294082536856b0fa131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_walk.anim using Guid(9e15ab5904990294082536856b0fa131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8404cde25a31c8c6b87ed03accb08545') in 0.002789 seconds
+  Import took 0.008632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000940 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_walk.anim
+  artifactKey: Guid(9e15ab5904990294082536856b0fa131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_walk.anim using Guid(9e15ab5904990294082536856b0fa131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8404cde25a31c8c6b87ed03accb08545') in 0.002961 seconds
+  Import took 0.008830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.370526 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_walk.anim
+  artifactKey: Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_walk.anim using Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384418f05d86b92d96d3c7befb5c3df7') in 0.010287 seconds
+  Import took 0.020085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_walk.anim
+  artifactKey: Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_walk.anim using Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384418f05d86b92d96d3c7befb5c3df7') in 0.002653 seconds
+  Import took 0.008976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.330442 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_melee.anim
+  artifactKey: Guid(2d9b63a31de4f4c44ada57bec2bcd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_melee.anim using Guid(2d9b63a31de4f4c44ada57bec2bcd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27ba402f03e5dd875986ad233bf76a6') in 0.002269 seconds
+  Import took 0.007841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002266 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_melee.anim
+  artifactKey: Guid(2d9b63a31de4f4c44ada57bec2bcd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_melee.anim using Guid(2d9b63a31de4f4c44ada57bec2bcd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27ba402f03e5dd875986ad233bf76a6') in 0.002544 seconds
+  Import took 0.008838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.181755 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_melee 1.anim
+  artifactKey: Guid(cc786b1287e3cf240a980ad295dc8091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_melee 1.anim using Guid(cc786b1287e3cf240a980ad295dc8091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d8392060946b308bb7a0bcdabf0bc4') in 0.006541 seconds
+  Import took 0.012596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.613412 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_melee.anim
+  artifactKey: Guid(cc786b1287e3cf240a980ad295dc8091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_melee.anim using Guid(cc786b1287e3cf240a980ad295dc8091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef1527646a29d7eee41ef49fa2d22a8') in 0.010703 seconds
+  Import took 0.018900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.622750 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_idle.anim
+  artifactKey: Guid(badac03c1d5c8bd4981b1acf7381c4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_idle.anim using Guid(badac03c1d5c8bd4981b1acf7381c4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f755780749b119fa722466ebc4481ef') in 0.003187 seconds
+  Import took 0.009361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002008 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_idle.anim
+  artifactKey: Guid(badac03c1d5c8bd4981b1acf7381c4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_idle.anim using Guid(badac03c1d5c8bd4981b1acf7381c4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f755780749b119fa722466ebc4481ef') in 0.002552 seconds
+  Import took 0.008590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.255713 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_idle 1.anim
+  artifactKey: Guid(43cfa83407c2b294fa5339295fa44ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_idle 1.anim using Guid(43cfa83407c2b294fa5339295fa44ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4eb501497d46029f943413a711ea62') in 0.006800 seconds
+  Import took 0.012108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.182273 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_idle.anim
+  artifactKey: Guid(43cfa83407c2b294fa5339295fa44ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_idle.anim using Guid(43cfa83407c2b294fa5339295fa44ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28a1e0f012b6b34a90962bf8fea9e2f') in 0.012472 seconds
+  Import took 0.024359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.323771 seconds.
+  path: Assets/Animation/Animators/player/the_explorer 1.controller
+  artifactKey: Guid(5623b796ed57b034fb8f3b4ea288c2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animators/player/the_explorer 1.controller using Guid(5623b796ed57b034fb8f3b4ea288c2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b409304a39c6eda58179eb5a65f03d32') in 0.008070 seconds
+  Import took 0.014495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.945659 seconds.
+  path: Assets/Animation/Animators/player/the_ninja.controller
+  artifactKey: Guid(5623b796ed57b034fb8f3b4ea288c2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animators/player/the_ninja.controller using Guid(5623b796ed57b034fb8f3b4ea288c2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e274b29a6b00d666457b71e9d40013cb') in 0.004763 seconds
+  Import took 0.012829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 176.889599 seconds.
+  path: Assets/Animation/Animators/player/the_ninja 1.controller
+  artifactKey: Guid(613f8e4f4328b18439150784ccbcb734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animators/player/the_ninja 1.controller using Guid(613f8e4f4328b18439150784ccbcb734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d0f441fea029d5128701ff1e4472a1') in 0.007438 seconds
+  Import took 0.013652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.819179 seconds.
+  path: Assets/Animation/Animators/player/the_4-legs.controller
+  artifactKey: Guid(613f8e4f4328b18439150784ccbcb734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animators/player/the_4-legs.controller using Guid(613f8e4f4328b18439150784ccbcb734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79406fa516c1b785ba9d552542d899ba') in 0.005820 seconds
+  Import took 0.014603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.823865 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_walk.anim
+  artifactKey: Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_walk.anim using Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab81d39fc16f59471285341987cb5e6') in 0.002513 seconds
+  Import took 0.007813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000541 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_walk.anim
+  artifactKey: Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_walk.anim using Guid(163cfb39259a09242ae9421da9b1af48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab81d39fc16f59471285341987cb5e6') in 0.002438 seconds
+  Import took 0.007147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.497318 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_walk 1.anim
+  artifactKey: Guid(094a3ae0872c4704cb3b120ef68e39c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_walk 1.anim using Guid(094a3ae0872c4704cb3b120ef68e39c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a2815c5dfed153f24dfe08f5face52') in 0.006961 seconds
+  Import took 0.012453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.610791 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_hurt 1.anim
+  artifactKey: Guid(486cd43cfd8ad744698ceb03589f2fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_hurt 1.anim using Guid(486cd43cfd8ad744698ceb03589f2fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1cc387f392f90cf5038afbe0de4366d') in 0.006608 seconds
+  Import took 0.012060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.508796 seconds.
+  path: Assets/Animation/Animations/player/the-4-legs_hurt.anim
+  artifactKey: Guid(486cd43cfd8ad744698ceb03589f2fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-4-legs_hurt.anim using Guid(486cd43cfd8ad744698ceb03589f2fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3491d6966c59dd0db8501b99a1a5ad9') in 0.009839 seconds
+  Import took 0.017833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.360401 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_hurt.anim
+  artifactKey: Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_hurt.anim using Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e9b7539000029985bf1551e6a301dd') in 0.002427 seconds
+  Import took 0.007895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000896 seconds.
+  path: Assets/Animation/Animations/player/the-explorer_hurt.anim
+  artifactKey: Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-explorer_hurt.anim using Guid(dc5a0e4c8fa91f349b1bc3a2645a5c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e9b7539000029985bf1551e6a301dd') in 0.002425 seconds
+  Import took 0.007829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.578755 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_hurt.anim
+  artifactKey: Guid(fc7dc31fb7a5a2a439bf805d2658ae2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_hurt.anim using Guid(fc7dc31fb7a5a2a439bf805d2658ae2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e304b4605735038940a6aa59d78820fb') in 0.002433 seconds
+  Import took 0.008438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039296 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_idle 1.anim
+  artifactKey: Guid(e57cf70a26cd03c4a8bd21240ffa2e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_idle 1.anim using Guid(e57cf70a26cd03c4a8bd21240ffa2e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627593af8f0f4e0c045682531252772b') in 0.006811 seconds
+  Import took 0.012467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013190 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_idle.anim
+  artifactKey: Guid(43cfa83407c2b294fa5339295fa44ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_idle.anim using Guid(43cfa83407c2b294fa5339295fa44ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdc99008c064e89cd4bc4aea86954ca') in 0.002681 seconds
+  Import took 0.009083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010259 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_idle.anim
+  artifactKey: Guid(43cfa83407c2b294fa5339295fa44ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_idle.anim using Guid(43cfa83407c2b294fa5339295fa44ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdc99008c064e89cd4bc4aea86954ca') in 0.002639 seconds
+  Import took 0.008321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.057984 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_melee 1.anim
+  artifactKey: Guid(aef10a940d347914cade40dc5270bf1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_melee 1.anim using Guid(aef10a940d347914cade40dc5270bf1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a124a857d988ea43ba16926444691b') in 0.006232 seconds
+  Import took 0.012047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022144 seconds.
+  path: Assets/Animation/Animations/player/the-ninja_melee.anim
+  artifactKey: Guid(cc786b1287e3cf240a980ad295dc8091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-ninja_melee.anim using Guid(cc786b1287e3cf240a980ad295dc8091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abd425eee811849f03a9c2e6a6601b7') in 0.002514 seconds
+  Import took 0.008984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.196868 seconds.
+  path: Assets/Animation/Animations/player/the-4-legs_idle.anim
+  artifactKey: Guid(e57cf70a26cd03c4a8bd21240ffa2e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-4-legs_idle.anim using Guid(e57cf70a26cd03c4a8bd21240ffa2e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed61df6ff4a137e3817eea10f93a52e') in 0.010048 seconds
+  Import took 0.020970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.884077 seconds.
+  path: Assets/Animation/Animations/player/the-4-legs_melee.anim
+  artifactKey: Guid(aef10a940d347914cade40dc5270bf1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-4-legs_melee.anim using Guid(aef10a940d347914cade40dc5270bf1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d87fdf95302fe6c785946953894b35') in 0.008827 seconds
+  Import took 0.016238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.688782 seconds.
+  path: Assets/Animation/Animations/player/the-4-legs_walk.anim
+  artifactKey: Guid(094a3ae0872c4704cb3b120ef68e39c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Animations/player/the-4-legs_walk.anim using Guid(094a3ae0872c4704cb3b120ef68e39c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a948bcc7871ad28f45dee6cc0f8ede') in 0.009546 seconds
+  Import took 0.017394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.996958 seconds.
+  path: Assets/Prefabs/Start/The Ninja.prefab
+  artifactKey: Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Ninja.prefab using Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cf0997b29041fe1a7ff7ff68c51db5') in 0.027803 seconds
+  Import took 0.034369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022385 seconds.
+  path: Assets/Prefabs/Start/The Ninja.prefab
+  artifactKey: Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The Ninja.prefab using Guid(6f1360d2024b82c41865f1b30e87223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cf0997b29041fe1a7ff7ff68c51db5') in 0.029453 seconds
+  Import took 0.036153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 192.031111 seconds.
+  path: Assets/Prefabs/Start/The 4 Legs.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The 4 Legs.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07860504b9b909dff6f5044e9e4d1f80') in 0.030715 seconds
+  Import took 0.037263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006102 seconds.
+  path: Assets/Prefabs/Start/The 4 Legs.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The 4 Legs.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07860504b9b909dff6f5044e9e4d1f80') in 0.030555 seconds
+  Import took 0.036985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.256691 seconds.
+  path: Assets/Prefabs/Start/The 4 Legs.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The 4 Legs.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3badfd2d4538adad3e429696d0abc898') in 0.034987 seconds
+  Import took 0.043833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.946635 seconds.
+  path: Assets/Prefabs/Start/The 4 Legs.prefab
+  artifactKey: Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Start/The 4 Legs.prefab using Guid(cce2f7c353c998f44bedb653681218ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fd4f8a752cf704b0907c4e492085ba') in 0.029028 seconds
+  Import took 0.036977 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001716 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.847 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3183 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 218.0 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3918.
+Total: 2.998800 ms (FindLiveObjects: 0.383500 ms CreateObjectMapping: 0.098100 ms MarkObjects: 2.486500 ms  DeleteObjects: 0.029400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001486 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.067 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3183 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 218.0 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3920.
+Total: 3.421400 ms (FindLiveObjects: 0.631600 ms CreateObjectMapping: 0.105300 ms MarkObjects: 2.660500 ms  DeleteObjects: 0.022700 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

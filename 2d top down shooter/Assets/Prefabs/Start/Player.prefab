@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 7145542872096955232}
   - component: {fileID: 1526272014931599824}
   m_Layer: 12
-  m_Name: Player
+  m_Name: The Explorer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1195,6 +1195,7 @@ MonoBehaviour:
   secondHolster: {fileID: 2684741333038528071}
   rightHolster: {fileID: 7757895971402710421}
   leftHolster: {fileID: 4423069820094186633}
+  _speed: 0
   xMove: 0
   yMove: 0
   moving: 0

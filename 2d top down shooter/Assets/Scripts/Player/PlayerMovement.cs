@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform secondHolster;
     public Transform rightHolster;
     public Transform leftHolster;
-
+    [HideInInspector] public float _speed;
     [HideInInspector] public float xMove;
     [HideInInspector] public float yMove;
     float friction = 1;
@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        _speed = speed;
     }
 
     void FixedUpdate()
