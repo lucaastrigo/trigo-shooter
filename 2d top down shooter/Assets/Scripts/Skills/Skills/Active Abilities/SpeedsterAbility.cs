@@ -14,7 +14,7 @@ public class SpeedsterAbility : MonoBehaviour
     {
         skill = GetComponent<Skill>();
         player = GameObject.FindGameObjectWithTag("Player");
-        speedK = player.GetComponent<PlayerMovement>()._speed;
+        speedK = player.GetComponent<PlayerMovement>().speed;
         newSpeed = speedK * 2;
     }
 

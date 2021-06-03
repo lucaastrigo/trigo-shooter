@@ -15,7 +15,7 @@ public class EnemyMelee : MonoBehaviour
     {
         if(player == null)
         {
-            player = GameObject.Find("Player");
+            player = GameObject.FindGameObjectWithTag("Player");
         }
 
         if (attackTime <= 0)

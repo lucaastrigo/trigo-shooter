@@ -27,12 +27,10 @@ public class Portal : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 time += Time.deltaTime;
-                Camera.main.GetComponent<CameraScript>().Shake(time / 500, 0.05f);
             }
             else
             {
                 time -= Time.deltaTime;
-                Camera.main.GetComponent<CameraScript>().StopShake();
             }
 
             //portalHUD.transform.position = Camera.main.WorldToScreenPoint(player.transform.position);

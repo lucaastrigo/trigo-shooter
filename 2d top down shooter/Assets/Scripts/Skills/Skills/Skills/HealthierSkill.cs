@@ -7,13 +7,15 @@ public class HealthierSkill : MonoBehaviour
     public int newHealth;
     public GameObject bigHealthChest;
 
-    int healthK = 10;
+    int healthK;
     GameObject player;
     Skill skill;
 
     private void Start()
     {
         skill = GetComponent<Skill>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        healthK = player.GetComponent<Player>().health;
     }
 
     void Update()

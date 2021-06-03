@@ -470,8 +470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemType: 3
-  price: 30
-  tableMatTime: 0
+  priceMin: 34
+  priceMax: 45
   objectToSell: {fileID: 6082138799313130463, guid: b609d5c5bc206cf4a9807eb7eede1231,
     type: 3}
   openFX: {fileID: 3375865884550540848, guid: d0f05014f30dd0d49ab3d0684201fb9a, type: 3}

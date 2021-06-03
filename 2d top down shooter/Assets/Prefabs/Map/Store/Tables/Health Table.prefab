@@ -340,7 +340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemType: 2
-  price: 10
+  priceMin: 7
+  priceMax: 12
   tableMatTime: 0
   objectToSell: {fileID: 1114838512330552965, guid: b5cd7d11a7286904d87b150f5bab4b98,
     type: 3}

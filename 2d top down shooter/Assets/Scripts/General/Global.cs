@@ -5,9 +5,5 @@ using UnityEngine;
 public class Global : MonoBehaviour
 {
     public static float globalSpeed = 1;
-
-    private void Update()
-    {
-        //
-    }
+    public static GameObject playerSelected;
 }

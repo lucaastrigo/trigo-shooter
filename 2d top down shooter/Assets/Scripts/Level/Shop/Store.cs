@@ -13,14 +13,14 @@ public class Store : MonoBehaviour
 
     public itemType _itemType;
 
-    public int price;
-    public float tableMatTime;
+    public int priceMin, priceMax;
     public GameObject objectToSell, openFX;
     public TextMeshProUGUI priceText;
     public Transform objectPosition;
     public Sprite openedSprite;
     public Vector3 offset;
 
+    int price;
     bool triggered, bought;
     GameObject player;
 
@@ -28,6 +28,7 @@ public class Store : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         GetComponentInChildren<Animator>().speed = 0;
+        price = Random.Range(priceMin, priceMax);
     }
 
     void Update()

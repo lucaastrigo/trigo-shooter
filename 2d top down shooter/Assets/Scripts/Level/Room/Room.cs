@@ -9,7 +9,7 @@ public class Room : MonoBehaviour
     
     public enum roomType
     {
-        start, wave, boss, chest, special
+        start, wave, chest, special
     }
 
     public roomType thisRoom;
@@ -89,10 +89,6 @@ public class Room : MonoBehaviour
 
                 background.SetActive(onTrigger && inWave);
 
-                break;
-
-            case roomType.boss:
-                //
                 break;
         }
 
@@ -175,6 +171,8 @@ public class Room : MonoBehaviour
                         Instantiate(ammoLoot, new Vector2(transform.position.x - 1, transform.position.y), Quaternion.identity);
                     }
                 }
+
+                //drop money
             }
         }
     }

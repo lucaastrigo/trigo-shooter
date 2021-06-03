@@ -5,10 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    public float dashSpeed;
-    public float dashCooldown;
-    public LayerMask hitLayer;
-    public GameObject dashFX;
     public GameObject sprintFX;
     public Transform holster;
     public Transform secondHolster;

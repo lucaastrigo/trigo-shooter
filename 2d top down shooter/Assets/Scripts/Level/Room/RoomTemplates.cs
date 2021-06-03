@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoomTemplates : MonoBehaviour 
 {
+    public GameObject portal;
     public static int skillRooms, weaponRooms;
     public static int maxRooms;
 
@@ -19,7 +20,6 @@ public class RoomTemplates : MonoBehaviour
 	public List<GameObject> rooms;
 
     float waitTime = 2;
-    bool setBossRoom;
 
     private void Start()
     {
@@ -30,20 +30,29 @@ public class RoomTemplates : MonoBehaviour
 
     private void Update()
     {
-        if(waitTime <= 0 && !setBossRoom)
+        if(waitTime <= 0)
         {
-            for (int i = 0; i < rooms.Count; i++)
+            if (allWavesFinished())
             {
-                if(i == rooms.Count - 1)
-                {
-                    //Instantiate(boss, rooms[i].transform.position, Quaternion.identity);
-                    setBossRoom = true;
-                }
+                Instantiate(portal, new Vector2(rooms[0].gameObject.transform.position.x, rooms[0].gameObject.transform.position.y + 3), Quaternion.identity);
             }
         }
         else
         {
             waitTime -= Time.deltaTime;
         }
+    }
+
+    bool allWavesFinished()
+    {
+        for (int i = 0; i < rooms.Count; i++)
+        {
+            if (rooms[i].GetComponent<Room>().thisRoom == Room.roomType.wave && !rooms[i].GetComponent<Room>().finishedWave)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

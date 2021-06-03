@@ -7,6 +7,8 @@ public class ValueStorage : MonoBehaviour
 {
     public static ValueStorage value;
 
+    public string characterValue;
+
     public string weaponValue;
     public string secondWeaponValue;
 
