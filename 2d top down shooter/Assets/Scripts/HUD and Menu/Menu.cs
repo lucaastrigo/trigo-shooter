@@ -21,6 +21,7 @@ public class Menu : MonoBehaviour
         ValueStorage.value.healthValue = 10;
         ValueStorage.value.maxHealthValue = 10;
         ValueStorage.value.weaponValue = "PISTOL";
+        ValueStorage.value.coinValue = 0;
 
         for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
         {
@@ -43,6 +44,7 @@ public class Menu : MonoBehaviour
         ValueStorage.value.healthValue = 10;
         ValueStorage.value.maxHealthValue = 10;
         ValueStorage.value.weaponValue = "PISTOL";
+        ValueStorage.value.coinValue = 0;
 
         for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
         {

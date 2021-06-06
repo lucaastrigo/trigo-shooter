@@ -5,6 +5,7 @@ using UnityEngine;
 public class ChestHealth : MonoBehaviour
 {
     public int healthKit;
+    public bool destroyAfter;
     public Sprite opened;
     public GameObject openFX;
 
@@ -25,7 +26,14 @@ public class ChestHealth : MonoBehaviour
             Instantiate(openFX, transform.position, Quaternion.identity);
             open = true;
             player.GetComponent<Player>().MoreHealth(healthKit);
-            sprite.sprite = opened;
+            if (destroyAfter)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                sprite.sprite = opened;
+            }
         }
     }
 }

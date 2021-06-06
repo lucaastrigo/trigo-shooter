@@ -32,11 +32,13 @@ TagManager:
   - AA
   - AAT
   - Coin
+  - Minimap
+  - MinimapCamera
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Minimap
   - Water
   - UI
   - 

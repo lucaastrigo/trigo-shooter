@@ -77,9 +77,12 @@ public class SkillObject : MonoBehaviour
         {
             for (int i = 0; i < allObjects.Length; i++)
             {
-                if(allObjects[i].transform.parent != null && allObjects[i].transform.parent == transform.parent && allObjects[i].GetComponentInParent<ChestSkill>() != null)
+                if(allObjects[i].transform.parent != null && allObjects[i].GetComponentInParent<ChestSkill>() != null)
                 {
-                    Destroy(allObjects[i]);
+                    if(allObjects[i].transform.parent == transform.parent)
+                    {
+                        Destroy(allObjects[i]);
+                    }
                 }
             }
 

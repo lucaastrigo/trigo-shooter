@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7343997505647444522}
   - component: {fileID: 7343997505647444523}
   - component: {fileID: 7343997505647444524}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: LEFT DOOR
-  m_TagString: Untagged
+  m_TagString: Indestructible Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

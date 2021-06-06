@@ -19,7 +19,7 @@ public class WeaponEnemy : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         parent = transform.parent.gameObject;
         audioSource = GetComponent<AudioSource>();
     }

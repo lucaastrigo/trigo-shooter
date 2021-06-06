@@ -41,7 +41,7 @@ public class Store : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if(player.GetComponent<PlayerCurrency>().coins >= price)
+                if(player.GetComponent<Player>().coins >= price)
                 {
                     if (!bought)
                     {
@@ -57,7 +57,7 @@ public class Store : MonoBehaviour
         GetComponentInChildren<Animator>().speed = 1;
 
         bought = true;
-        player.GetComponent<PlayerCurrency>().Purchase(price);
+        player.GetComponent<Player>().Purchase(price);
         Instantiate(openFX, objectPosition.GetChild(0).position, Quaternion.identity);
         transform.parent.GetComponent<SpriteRenderer>().sprite = openedSprite;
 

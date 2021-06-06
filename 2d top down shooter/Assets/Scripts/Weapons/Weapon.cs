@@ -27,7 +27,8 @@ public class Weapon : MonoBehaviour
     public Transform muzzle;
     [HideInInspector] public GameObject ammoBar;
     public GameObject bullet;
-    public TextMeshProUGUI nameWeapon;
+    public TextMeshProUGUI weaponDescription;
+    //public TextMeshProUGUI nameWeapon;
     public AudioClip fireSound;
 
     public int weaponIndex;
@@ -58,13 +59,26 @@ public class Weapon : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         audioSource = GetComponent<AudioSource>();
 
-        if(weaponIndex < 0)
+        if (weaponIndex < 0)
         {
             currentAmmo = ValueStorage.value.WeaponAmmo[weaponIndex + 1];
         }
         else
         {
             currentAmmo = ValueStorage.value.WeaponAmmo[weaponIndex];
+        }
+
+
+
+        weaponDescription.GetComponent<TMP_Text>().enabled = false;
+
+        if (bullet.GetComponentInChildren<BulletScript>() != null)
+        {
+            weaponDescription.GetComponent<TMP_Text>().text = weaponName + ": damage " + bullet.GetComponentInChildren<BulletScript>().damage.ToString() + " - fire rate " + fireRate.ToString() + " - accuracy " + accuracy.ToString();
+        }
+        else if(bullet.GetComponent<BulletScript>() != null)
+        {
+            weaponDescription.GetComponent<TMP_Text>().text = weaponName + ": damage " + bullet.GetComponent<BulletScript>().damage.ToString() + " - fire rate " + fireRate.ToString() + " - accuracy " + accuracy.ToString();
         }
     }
 
@@ -74,7 +88,7 @@ public class Weapon : MonoBehaviour
         skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
 
         //here
-        if(GetComponentInParent<PlayerPickup>() != null)
+        if (GetComponentInParent<PlayerPickup>() != null)
         {
             if (transform.parent.GetComponent<PlayerPickup>().equippedWeapon.name == weaponName || transform.parent.GetComponent<PlayerPickup>().equippedWeapon.name == weaponName + "(Clone)")
             {
@@ -109,7 +123,7 @@ public class Weapon : MonoBehaviour
                 {
                     if (!fastHandsOn)
                     {
-                        if(skillStorage.GetComponentInChildren<FastHandsSkill>() != null)
+                        if (skillStorage.GetComponentInChildren<FastHandsSkill>() != null)
                         {
                             skillStorage.GetComponentInChildren<FastHandsSkill>().weapon = this.gameObject;
                             skillStorage.GetComponentInChildren<FastHandsSkill>().Activate();
@@ -134,7 +148,7 @@ public class Weapon : MonoBehaviour
                 }
             }
 
-            nameWeapon.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 1, 0));
+            //nameWeapon.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 1, 0));
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (onOff)
@@ -219,7 +233,7 @@ public class Weapon : MonoBehaviour
             }
         }
 
-        if(accuracy >= 1)
+        if (accuracy >= 1)
         {
             accuracy = 1;
         }
@@ -276,7 +290,8 @@ public class Weapon : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            nameWeapon.enabled = !onOff;
+            //nameWeapon.enabled = !onOff;
+            weaponDescription.enabled = !onOff;
         }
     }
 
@@ -284,7 +299,8 @@ public class Weapon : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            nameWeapon.enabled = false;
+            //nameWeapon.enabled = false;
+            weaponDescription.enabled = false;
         }
     }
 

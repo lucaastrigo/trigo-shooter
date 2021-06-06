@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public GameObject healthBar;
     public TextMeshProUGUI playerIndicator;
 
+    [HideInInspector] public int coins;
     [HideInInspector] public float time;
     [HideInInspector] public float indicationTime = 1f;
     GameObject healthText;
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public GameObject[] aaplace;
     Rigidbody2D rb;
     Animator anim;
+    TextMeshProUGUI text;
 
     private void Start()
     {
@@ -32,6 +34,10 @@ public class Player : MonoBehaviour
         healthText = GameObject.Find("Health Text");
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        coins = ValueStorage.value.coinValue;
+
+        text = GameObject.Find("text money").GetComponent<TextMeshProUGUI>();
 
         aaplace = GameObject.FindGameObjectsWithTag("AA");
     }
@@ -50,6 +56,9 @@ public class Player : MonoBehaviour
 
         ValueStorage.value.healthValue = currentHealth;
         ValueStorage.value.maxHealthValue = health;
+        ValueStorage.value.coinValue = coins;
+
+        text.text = "$" + coins.ToString();
 
         healthText.GetComponent<TMP_Text>().text = currentHealth.ToString() + "/" + health.ToString();
 
@@ -99,13 +108,13 @@ public class Player : MonoBehaviour
 
     public void MoreHealth(int healthAmount)
     {
-        time = indicationTime;
-
         currentHealth += healthAmount;
 
         healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
 
-        if(currentHealth >= health)
+        time = indicationTime;
+
+        if (currentHealth >= health)
         {
             playerIndicator.GetComponent<TMP_Text>().text = "full health";
         }
@@ -124,11 +133,26 @@ public class Player : MonoBehaviour
         anim.SetTrigger("hurt");
     }
 
+    public void Purchase(int price)
+    {
+        coins -= price;
+    }
+
+    public void Receive(int coinAmount)
+    {
+        coins += coinAmount;
+
+        time = indicationTime;
+
+        playerIndicator.GetComponent<TMP_Text>().text = "+ " + coinAmount.ToString() + " coins";
+    }
+
     public void Die()
     {
         ValueStorage.value.healthValue = 10;
         ValueStorage.value.maxHealthValue = 10;
         ValueStorage.value.weaponValue = "PISTOL";
+        ValueStorage.value.coinValue = 0;
 
         for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
         {

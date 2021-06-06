@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Boss : MonoBehaviour
 {
     public int health;
+    public GameObject healthBar, healthText;
     public GameObject bigHealthChest;
     public GameObject bigAmmoKit;
     public GameObject deathFX;
@@ -30,15 +32,21 @@ public class Boss : MonoBehaviour
     {
         dead = false;
         canBeHurt = true;
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         colli = GetComponent<BoxCollider2D>();
         mat = GetComponent<SpriteRenderer>().material;
+
+        healthBar.GetComponent<HealthBar>().SetMaxHealth(health);
+        healthText.GetComponent<TMP_Text>().text = health.ToString() + "/" + health.ToString();
     }
 
     void Update()
     {
+        healthBar.GetComponent<HealthBar>().SetHealth(health);
+        healthText.GetComponent<TMP_Text>().text = health.ToString() + "/" + _health.ToString();
+
         if (skillStorage == null)
         {
             skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
@@ -135,7 +143,14 @@ public class Boss : MonoBehaviour
         sprite.sprite = deadSprite;
 
         //disable everything
-        anim.enabled = false;
-        colli.enabled = false;
+        if(anim != null)
+        {
+            anim.enabled = false;
+        }
+
+        if (colli != null)
+        {
+            colli.enabled = false;
+        }
     }
 }

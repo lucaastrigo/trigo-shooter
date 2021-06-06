@@ -8,16 +8,6 @@ public class DiegeticButton : MonoBehaviour
 {
     [SerializeField] UnityEvent _event;
 
-    void Start()
-    {
-        //
-    }
-
-    void Update()
-    {
-        //
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<BulletScript>() != null)

@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     AudioSource audioSource;
     GameObject skillStorage;
+    SpriteRenderer sprite;
 
     void Start()
     {
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (!PauseMenu.paused)
         {
-            mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (xMove != 0 || yMove != 0)
             {

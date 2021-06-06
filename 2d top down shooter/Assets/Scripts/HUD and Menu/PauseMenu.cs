@@ -13,10 +13,13 @@ public class PauseMenu : MonoBehaviour
 
     GameObject player, valueStorage;
 
-    void Update()
+    private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+    }
 
+    void Update()
+    {
         if (valueStorage == null)
         {
             valueStorage = GameObject.FindGameObjectWithTag("Value Storage");
@@ -69,6 +72,7 @@ public class PauseMenu : MonoBehaviour
         ValueStorage.value.healthValue = 10;
         ValueStorage.value.maxHealthValue = 10;
         ValueStorage.value.weaponValue = "PISTOL";
+        ValueStorage.value.coinValue = 0;
 
         for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
         {

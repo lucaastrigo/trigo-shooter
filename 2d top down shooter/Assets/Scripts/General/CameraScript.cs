@@ -20,9 +20,12 @@ public class CameraScript : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
 
-        mousePos = CaptureMousePos();
-        target = UpdateTargetPos();
-        UpdateCameraPosition();
+        if(player != null)
+        {
+            mousePos = CaptureMousePos();
+            target = UpdateTargetPos();
+            UpdateCameraPosition();
+        }
     }
 
     private void Update()

@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         dead = false;
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         colli = GetComponent<Collider2D>();

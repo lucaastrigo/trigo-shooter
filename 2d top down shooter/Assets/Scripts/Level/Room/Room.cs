@@ -15,36 +15,37 @@ public class Room : MonoBehaviour
     public roomType thisRoom;
 
     [Header("Loot")]
+    [Range(0, 100)] public int healthLootChance, ammoLootChance, coinLootChance;
     public bool lootable;
-    public GameObject healthLoot, ammoLoot, coinLoot;
+    public GameObject healthLoot, ammoLoot, coinChestLoot;
 
     [Header("Enemies")]
     public GameObject[] enemies;
 
     [Header("Map")]
+    public GameObject minimapImages;
     public GameObject weaponChest;
     public GameObject healthChest;
     public GameObject ammoChest;
     public GameObject skillChest;
     public GameObject[] door;
     public GameObject background;
-    //public GameObject minimapImage;
 
-    [HideInInspector] public int numOfWaves;
-    public bool startedWave, finishedWave, inWave, hadWave;
-    public bool opened;
+    [HideInInspector] public int numOfWaves, _numOfWaves;
+    [HideInInspector] public bool startedWave, finishedWave, inWave, hadWave;
+    [HideInInspector] public bool opened;
     bool onTrigger;
     GameObject[] enemiesLeft;
+    Camera minimapCamera;
 
     private void Start()
     {
-        //
+        minimapCamera = GameObject.FindGameObjectWithTag("MinimapCamera").GetComponent<Camera>();
+        minimapImages.SetActive(false);
     }
 
     void Update()
     {
-        //minimap only shows image when room is already OPENED 
-
         switch (thisRoom)
         {
             case roomType.start:
@@ -118,6 +119,7 @@ public class Room : MonoBehaviour
     void SetupWave()
     {
         numOfWaves = Random.Range(1, 4);
+        _numOfWaves = numOfWaves;
         startedWave = true;
 
         for (int i = 0; i < door.Length; i++)
@@ -156,23 +158,20 @@ public class Room : MonoBehaviour
             {
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-                GameObject weapon = player.GetComponentInChildren<Weapon>().gameObject;
-
-                if (Random.Range(0, 11) >= player.GetComponent<Player>().currentHealth)
+                if (Random.Range(0, 100) <= healthLootChance)
                 {
                     Instantiate(healthLoot, new Vector2(transform.position.x + 1, transform.position.y), Quaternion.identity);
-
                 }
 
-                if (weapon != null)
+                if (Random.Range(0, 100) <= ammoLootChance)
                 {
-                    if (Random.Range(0, weapon.GetComponent<Weapon>().maxAmmo) >= weapon.GetComponent<Weapon>().currentAmmo)
-                    {
-                        Instantiate(ammoLoot, new Vector2(transform.position.x - 1, transform.position.y), Quaternion.identity);
-                    }
+                    Instantiate(ammoLoot, new Vector2(transform.position.x - 1, transform.position.y), Quaternion.identity);
                 }
 
-                //drop money
+                if (Random.Range(0, 100) <= coinLootChance)
+                {
+                    Instantiate(coinChestLoot, transform.position, Quaternion.identity);
+                }
             }
         }
     }
@@ -181,9 +180,13 @@ public class Room : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            minimapCamera.transform.localPosition = transform.position;
+
             opened = true;
 
-            if(thisRoom == roomType.wave || thisRoom == roomType.special)
+            minimapImages.SetActive(true);
+
+            if (thisRoom == roomType.wave || thisRoom == roomType.special)
             {
                 if (!startedWave)
                 {

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7696118762364364706}
   - component: {fileID: 2934583225357184619}
   m_Layer: 0
-  m_Name: 'Graveyard Start Floor '
+  m_Name: Graveyard 1 Start Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,6 +46,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

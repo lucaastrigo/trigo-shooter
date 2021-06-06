@@ -242,3 +242,7 @@ MonoBehaviour:
   - {fileID: 7990835958755640288, guid: f9fe5a94c8890fc468892ddfd2a4a9a7, type: 3}
   - {fileID: 6712742023171517578, guid: 785ee4f465f7acb4faf92954eeec4029, type: 3}
   offset: {x: 2, y: 1}
+  randomizedSkill: {fileID: 0}
+  s1: {fileID: 0}
+  s2: {fileID: 0}
+  s3: {fileID: 0}

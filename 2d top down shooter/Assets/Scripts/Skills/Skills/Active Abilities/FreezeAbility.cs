@@ -24,7 +24,7 @@ public class FreezeAbility : MonoBehaviour
 
         time -= Time.deltaTime;
 
-        if(time <= 0)
+        if (time <= 0)
         {
             time = 0;
             Global.globalSpeed = 1;
@@ -34,7 +34,7 @@ public class FreezeAbility : MonoBehaviour
             Global.globalSpeed = 0;
         }
 
-        if(cooltime <= 0)
+        if (cooltime <= 0)
         {
             cooltime = 0;
             can = true;

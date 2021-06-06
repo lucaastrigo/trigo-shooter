@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ChestAmmo : MonoBehaviour
 {
-    public int ammoAmount;
+    [HideInInspector] public int ammoAmount;
+    public bool destroyAfter;
     public Sprite opened;
     public GameObject openFX;
 
@@ -40,7 +41,15 @@ public class ChestAmmo : MonoBehaviour
             Instantiate(openFX, transform.position, Quaternion.identity);
             open = true;
             weapon.GetComponent<Weapon>().MoreAmmo(ammoAmount);
-            sprite.sprite = opened;
+
+            if (destroyAfter)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                sprite.sprite = opened;
+            }
         }
     }
 }

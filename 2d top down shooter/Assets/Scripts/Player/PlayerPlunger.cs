@@ -31,7 +31,7 @@ public class PlayerPlunger : MonoBehaviour
             {
                 RaycastHit2D hit = Physics2D.Linecast(Camera.main.ScreenToWorldPoint(Input.mousePosition), transform.parent.position);
 
-                if(hit.collider != null)
+                if (hit.collider != null)
                 {
                     for (int i = 0; i < layers.Length; i++)
                     {
@@ -59,7 +59,7 @@ public class PlayerPlunger : MonoBehaviour
 
         if (dj.enabled)
         {
-            if(Vector2.Distance(transform.position, transform.parent.position) <= dj.distance + minDistance)
+            if (Vector2.Distance(transform.position, transform.parent.position) <= dj.distance + minDistance)
             {
                 Unhook();
             }

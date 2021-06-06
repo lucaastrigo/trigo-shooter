@@ -23,11 +23,6 @@ public class PlayerPickup : MonoBehaviour
     public int gunIndex;
     bool equip, secEquip, subEquip;
 
-    private void Start()
-    {
-        //
-    }
-
     void Update()
     {
         if (skillStorage == null)
@@ -65,7 +60,7 @@ public class PlayerPickup : MonoBehaviour
                 }
 
                 EquipWeapon(focusedWeapon);
-            }            
+            }
         }
 
         if (equippedWeapon != null)
@@ -113,7 +108,6 @@ public class PlayerPickup : MonoBehaviour
                 SwitchWeapon(secondEquippedWeapon, equippedWeapon);
             }
         }
-
     }
 
     void EquipWeapon(Weapon weaponToEquip)

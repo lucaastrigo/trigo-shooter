@@ -57,7 +57,7 @@ public class LeafDashAbility : MonoBehaviour
                     {
                         if (!player.GetComponent<PlayerMovement>().moving)
                         {
-                            RaycastHit2D dashHit = Physics2D.Raycast(player.transform.position, mousePos, dashSpeed, hitLayer);
+                            RaycastHit2D dashHit = Physics2D.Linecast(player.transform.position, mousePos, hitLayer);
 
                             if (dashHit.collider)
                             {
@@ -70,7 +70,7 @@ public class LeafDashAbility : MonoBehaviour
                         }
                         else
                         {
-                            RaycastHit2D dashHit = Physics2D.Raycast(player.transform.position, mousePos, dashSpeed, hitLayer);
+                            RaycastHit2D dashHit = Physics2D.Linecast(player.transform.position, player.GetComponent<PlayerMovement>().dashDirection, hitLayer);
 
                             if (dashHit.collider)
                             {

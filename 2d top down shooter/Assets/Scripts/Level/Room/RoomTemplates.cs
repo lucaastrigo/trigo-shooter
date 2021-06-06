@@ -14,7 +14,6 @@ public class RoomTemplates : MonoBehaviour
 	public GameObject[] bottom;
 	public GameObject[] right;
 	public GameObject[] left;
-    public GameObject tsecret, bsecret, rsecret, lsecret;
 	public GameObject closedRoom;
     public GameObject skillRoom, weaponRoom;
 	public List<GameObject> rooms;
