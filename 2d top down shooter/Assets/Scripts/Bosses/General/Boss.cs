@@ -5,11 +5,12 @@ using TMPro;
 
 public class Boss : MonoBehaviour
 {
-    public int health;
-    public GameObject healthBar, healthText;
+    public int health, secondStageHP;
+    public GameObject healthBar;
     public GameObject bigHealthChest;
     public GameObject bigAmmoKit;
     public GameObject deathFX;
+    public GameObject stairs;
     public Sprite deadSprite;
     public LayerMask wallLayer;
 
@@ -39,13 +40,11 @@ public class Boss : MonoBehaviour
         mat = GetComponent<SpriteRenderer>().material;
 
         healthBar.GetComponent<HealthBar>().SetMaxHealth(health);
-        healthText.GetComponent<TMP_Text>().text = health.ToString() + "/" + health.ToString();
     }
 
     void Update()
     {
         healthBar.GetComponent<HealthBar>().SetHealth(health);
-        healthText.GetComponent<TMP_Text>().text = health.ToString() + "/" + _health.ToString();
 
         if (skillStorage == null)
         {
@@ -63,17 +62,10 @@ public class Boss : MonoBehaviour
         }
 
         //STATE MACHINE
-        if(health <= 150)
+        if(health <= secondStageHP)
         {
             if (!secondStage)
             {
-                Collider2D[] hitWall = Physics2D.OverlapCircleAll(transform.position, 3, wallLayer);
-
-                foreach (Collider2D wall in hitWall)
-                {
-                    Destroy(wall.gameObject);
-                }
-
                 secondStage = true;
                 anim.SetTrigger("second stage");
             }
@@ -129,15 +121,11 @@ public class Boss : MonoBehaviour
 
         dead = true;
 
-        if (GetComponent<SpawnerEnemy>() != null)
-        {
-            GetComponent<SpawnerEnemy>().Spawn();
-        }
-
         Instantiate(bigHealthChest, new Vector2(transform.position.x - 0.4f, transform.position.y + 0.3f), Quaternion.identity);
         Instantiate(bigAmmoKit, new Vector2(transform.position.x + 0.4f, transform.position.y + 0.3f), Quaternion.identity);
 
         Instantiate(deathFX, transform.position, Quaternion.identity);
+        Instantiate(stairs, new Vector2(transform.position.x, transform.position.y + 2.5f), Quaternion.identity);
 
         //change sprite to dead sprite
         sprite.sprite = deadSprite;

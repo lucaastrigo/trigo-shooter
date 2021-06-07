@@ -28,7 +28,6 @@ public class Weapon : MonoBehaviour
     [HideInInspector] public GameObject ammoBar;
     public GameObject bullet;
     public TextMeshProUGUI weaponDescription;
-    //public TextMeshProUGUI nameWeapon;
     public AudioClip fireSound;
 
     public int weaponIndex;
@@ -61,7 +60,9 @@ public class Weapon : MonoBehaviour
 
         if (weaponIndex < 0)
         {
-            currentAmmo = ValueStorage.value.WeaponAmmo[weaponIndex + 1];
+            //currentAmmo = ValueStorage.value.WeaponAmmo[weaponIndex + 1]; SWITCH TO 1000
+
+            currentAmmo = 10000;
         }
         else
         {

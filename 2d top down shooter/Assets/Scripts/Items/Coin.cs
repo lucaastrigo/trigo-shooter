@@ -6,6 +6,7 @@ public class Coin : MonoBehaviour
 {
     public int coinMin, coinMax;
     public Sprite openedSprite;
+    public GameObject openFX, minimapImage;
 
     bool opened;
 
@@ -19,6 +20,13 @@ public class Coin : MonoBehaviour
                 {
                     collision.gameObject.GetComponent<Player>().Receive(Random.Range(coinMin, coinMax));
                     GetComponent<SpriteRenderer>().sprite = openedSprite;
+                    Instantiate(openFX, transform.position, Quaternion.identity);
+
+                    if (minimapImage != null)
+                    {
+                        Destroy(minimapImage);
+                    }
+
                     opened = true;
                 }
             }

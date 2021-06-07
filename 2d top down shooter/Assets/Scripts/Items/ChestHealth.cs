@@ -7,7 +7,7 @@ public class ChestHealth : MonoBehaviour
     public int healthKit;
     public bool destroyAfter;
     public Sprite opened;
-    public GameObject openFX;
+    public GameObject openFX, minimapImage;
 
     bool open;
     GameObject player;
@@ -26,6 +26,12 @@ public class ChestHealth : MonoBehaviour
             Instantiate(openFX, transform.position, Quaternion.identity);
             open = true;
             player.GetComponent<Player>().MoreHealth(healthKit);
+
+            if (minimapImage != null)
+            {
+                Destroy(minimapImage);
+            }
+
             if (destroyAfter)
             {
                 Destroy(gameObject);

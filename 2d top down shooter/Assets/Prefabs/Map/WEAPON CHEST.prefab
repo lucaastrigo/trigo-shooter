@@ -124,33 +124,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DropTable:
-  - dropRate: 1
+  - dropRate: 10
     weapon: {fileID: 7264571734352300853, guid: dd0d5face07833d4db8eb2770c801dfb,
       type: 3}
-  - dropRate: 2
+  - dropRate: 15
     weapon: {fileID: 6245984252482959309, guid: e048be04abc198f44afde40ec67e260a,
       type: 3}
-  - dropRate: 3
+  - dropRate: 12
     weapon: {fileID: 4584471507376663557, guid: a701316b2aa61b849943abee42751fd2,
       type: 3}
-  - dropRate: 4
+  - dropRate: 7
     weapon: {fileID: 1463578926722432902, guid: 99aea703975b67e4b974316fc2a5f1f4,
       type: 3}
   - dropRate: 5
     weapon: {fileID: 9100624887838506853, guid: 73bdebe2fc3b79f4999e6bbd5d58d06b,
       type: 3}
-  - dropRate: 6
+  - dropRate: 3
     weapon: {fileID: 583370887922547907, guid: 49106127c545508449583e23e46c687c, type: 3}
   - dropRate: 7
     weapon: {fileID: 7264571734352300853, guid: 2584c93a34d30ff46b5850431cf6345b,
       type: 3}
-  - dropRate: 8
+  - dropRate: 6
     weapon: {fileID: 9005917764086581269, guid: bf41c9d7a5fbf5047a99bdcd50d57c94,
       type: 3}
-  - dropRate: 9
+  - dropRate: 2
     weapon: {fileID: 4584471507376663557, guid: 34d83beea1d47b34593650f661482162,
       type: 3}
-  - dropRate: 10
+  - dropRate: 1
     weapon: {fileID: 6245984252482959309, guid: eefaa45f07dc20f429bd998662e3773d,
       type: 3}
   openedSprite: {fileID: 3790330820646863013, guid: c9ec2f3356763544d96f5afb513fbdeb,

@@ -210,3 +210,4 @@ MonoBehaviour:
   destroyAfter: 0
   opened: {fileID: 5952100780381781865, guid: c9ec2f3356763544d96f5afb513fbdeb, type: 3}
   openFX: {fileID: 3375865884550540848, guid: 4eeb25b0b41e78a46b0ce2d3ddf651a2, type: 3}
+  minimapImage: {fileID: 1439605619152174162}

@@ -20,7 +20,7 @@ public class PlayerPickup : MonoBehaviour
 
     GameObject skillStorage, valueStorage;
 
-    public int gunIndex;
+    public int gunIndex = 1;
     bool equip, secEquip, subEquip;
 
     void Update()
@@ -129,18 +129,13 @@ public class PlayerPickup : MonoBehaviour
         equippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 6;
         Instantiate(pickupFX, transform.position, Quaternion.identity);
 
-        equippedWeapon.GetComponent<Weapon>().weaponIndex = gunIndex;
-        valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Insert(gunIndex, 1000);
-        gunIndex++;
+        valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Insert(gunIndex, 10000);
 
-        /*
         if (equippedWeapon.GetComponent<Weapon>().weaponIndex == -1)
         {
             equippedWeapon.GetComponent<Weapon>().weaponIndex = gunIndex;
-            valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Insert(gunIndex, 1000);
             gunIndex++;
         }
-        */
     }
 
     void DisequipWeapon(Weapon weaponToDisequip)

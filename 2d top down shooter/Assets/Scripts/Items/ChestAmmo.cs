@@ -7,7 +7,7 @@ public class ChestAmmo : MonoBehaviour
     [HideInInspector] public int ammoAmount;
     public bool destroyAfter;
     public Sprite opened;
-    public GameObject openFX;
+    public GameObject openFX, minimapImage;
 
     [Range(0, 1)]
     public float ammo;
@@ -41,6 +41,11 @@ public class ChestAmmo : MonoBehaviour
             Instantiate(openFX, transform.position, Quaternion.identity);
             open = true;
             weapon.GetComponent<Weapon>().MoreAmmo(ammoAmount);
+
+            if (minimapImage != null)
+            {
+                Destroy(minimapImage);
+            }
 
             if (destroyAfter)
             {

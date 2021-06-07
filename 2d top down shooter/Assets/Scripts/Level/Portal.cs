@@ -6,6 +6,7 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     public string scene;
+    public bool scenePlus;
 
     GameObject player;
     Animator anim;
@@ -25,7 +26,14 @@ public class Portal : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(scene);
+        if (scenePlus)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            SceneManager.LoadScene(scene);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -46,14 +46,14 @@ public class Menu : MonoBehaviour
         ValueStorage.value.weaponValue = "PISTOL";
         ValueStorage.value.coinValue = 0;
 
-        for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
-        {
-            ValueStorage.value.WeaponAmmo[i] = 1000;
-        }
-
         for (int i = valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i > 0; i--)
         {
             ValueStorage.value.WeaponAmmo.RemoveAt(i);
+        }
+
+        for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
+        {
+            ValueStorage.value.WeaponAmmo[i] = 10000;
         }
 
         //reset skills

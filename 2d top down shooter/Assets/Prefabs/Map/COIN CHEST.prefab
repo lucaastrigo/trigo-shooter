@@ -210,3 +210,5 @@ MonoBehaviour:
   coinMax: 17
   openedSprite: {fileID: -6230872875096814733, guid: 7fb072a646b03a240860283ba153d59e,
     type: 3}
+  openFX: {fileID: 3375865884550540848, guid: a3a92fee71b46b3428a0b533e8a3600e, type: 3}
+  minimapImage: {fileID: 440858124627070306}

@@ -407,7 +407,7 @@ MonoBehaviour:
   bullet: {fileID: 1435640752681886300, guid: 48baeec82ad4af14a8e5b6d6e61a99ee, type: 3}
   weaponDescription: {fileID: 6667472005211666486}
   fireSound: {fileID: 8300000, guid: 45618cf90a80b7d4bbca93bea3f1ee37, type: 3}
-  weaponIndex: 0
+  weaponIndex: -1
   _fireRate: 0.75
   _accuracy: 0.93
 --- !u!1 &3607660796028063680

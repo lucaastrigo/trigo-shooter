@@ -151,7 +151,7 @@ MonoBehaviour:
   flame: 0
   electric: 0
   ice: 0
-  damage: 5
+  damage: 8
   fireDamage: 0
   speed: 15
   speedMod: 1
@@ -160,13 +160,14 @@ MonoBehaviour:
   explosionRange: 0
   shakeMag: 0
   shakeDur: 0
+  freezePercent: 0
   changeSpeed: 0
   hitFX: {fileID: 3375865884550540848, guid: 7a5290fd9d694ef42ae767fb032d7618, type: 3}
   explosionFX: {fileID: 3375865884550540848, guid: 7a5290fd9d694ef42ae767fb032d7618,
     type: 3}
   mat: {fileID: 2100000, guid: 6a2f85da9823e6e4a9207b782c568852, type: 2}
   color: {r: 1, g: 1, b: 1, a: 1}
-  _damage: 5
+  _damage: 8
 --- !u!96 &5856470964608000417
 TrailRenderer:
   serializedVersion: 2

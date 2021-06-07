@@ -518,7 +518,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisRoom: 1
-  lootChance: 75
+  healthLootChance: 33
+  ammoLootChance: 75
+  coinLootChance: 50
   lootable: 1
   healthLoot: {fileID: 1114838512330552965, guid: d6967e40907cfd84ca4260192008dd11,
     type: 3}

@@ -15,7 +15,7 @@ public class ChestWeapon : MonoBehaviour
 
     [Header("Image Setting")]
     public Sprite openedSprite;
-    public GameObject openFX;
+    public GameObject openFX, minimapImage;
 
     bool open;
     [HideInInspector] public GameObject weaponToDrop;
@@ -63,6 +63,12 @@ public class ChestWeapon : MonoBehaviour
         }
 
         Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.1f), Quaternion.identity);
+        Instantiate(openFX, transform.position, Quaternion.identity);
+
+        if (minimapImage != null)
+        {
+            Destroy(minimapImage);
+        }
 
         Instantiate(openFX, transform.position, Quaternion.identity);
         open = true;

@@ -227,6 +227,7 @@ MonoBehaviour:
   openedSprite: {fileID: 4927013233382581577, guid: a822e44ab4f9b5044a88353b3a56ed0c,
     type: 3}
   openFX: {fileID: 3375865884550540848, guid: 74b2246fd49445c48aec35a2f28775d0, type: 3}
+  minimapImage: {fileID: 0}
   skillObjects:
   - {fileID: 4197416677724741537, guid: fb0d29f3201937c4da6a862ae3766258, type: 3}
   - {fileID: 4197416677724741537, guid: 11a08619d7663fe47a7c46391d80dc96, type: 3}

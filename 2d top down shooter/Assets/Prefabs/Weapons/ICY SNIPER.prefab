@@ -419,7 +419,7 @@ MonoBehaviour:
   bullet: {fileID: 2425624021902696673, guid: c577f813c4d5b154b851b6bfb6e62757, type: 3}
   weaponDescription: {fileID: 6531986879913697745}
   fireSound: {fileID: 8300000, guid: 5138dfac9d2dcd7479173fab53590752, type: 3}
-  weaponIndex: 0
+  weaponIndex: -1
   _fireRate: 1.35
   _accuracy: 1
 --- !u!114 &6137161531035888694

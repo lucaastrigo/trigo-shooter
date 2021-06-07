@@ -128,7 +128,8 @@ MonoBehaviour:
   destroyAfter: 0
   opened: {fileID: 5636385807315364443, guid: f73c3116cc1d91d4580a6939adc413a5, type: 3}
   openFX: {fileID: 3375865884550540848, guid: 1342a147e7b083a4db1032f4567e1b1b, type: 3}
-  ammo: 0.5
+  minimapImage: {fileID: 8747930801907914287}
+  ammo: 0.2
 --- !u!1 &8747930801907914287
 GameObject:
   m_ObjectHideFlags: 0

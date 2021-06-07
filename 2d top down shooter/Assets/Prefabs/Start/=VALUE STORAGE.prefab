@@ -44,13 +44,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281a760a2ee31bb48be48e760b840c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterValue: 
   weaponValue: PISTOL
   secondWeaponValue: PISTOL
   firstIndex: 0
   secondIndex: 0
   healthValue: 10
   maxHealthValue: 10
-  WeaponAmmo: e8030000
+  coinValue: 0
+  WeaponAmmo: 10270000
 --- !u!114 &2278649115362100960
 MonoBehaviour:
   m_ObjectHideFlags: 0

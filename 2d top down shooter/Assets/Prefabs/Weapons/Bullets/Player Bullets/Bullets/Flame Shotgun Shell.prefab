@@ -248,12 +248,17 @@ PrefabInstance:
     - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
         type: 3}
       propertyPath: damage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
         type: 3}
       propertyPath: _damage
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
+        type: 3}
+      propertyPath: fireDamage
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c194d315eea4efc4f8aaec5c42f4bf0f, type: 3}
@@ -478,12 +483,17 @@ PrefabInstance:
     - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
         type: 3}
       propertyPath: damage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
         type: 3}
       propertyPath: _damage
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
+        type: 3}
+      propertyPath: fireDamage
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c194d315eea4efc4f8aaec5c42f4bf0f, type: 3}
@@ -708,12 +718,17 @@ PrefabInstance:
     - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
         type: 3}
       propertyPath: damage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
         type: 3}
       propertyPath: _damage
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387479565026978333, guid: c194d315eea4efc4f8aaec5c42f4bf0f,
+        type: 3}
+      propertyPath: fireDamage
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c194d315eea4efc4f8aaec5c42f4bf0f, type: 3}
