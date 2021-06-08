@@ -36,7 +36,7 @@ public class Menu : MonoBehaviour
 
     public void Feedback()
     {
-        Application.OpenURL("https://forms.gle/jymwKBw6ZF5uGNXG7");
+        Application.OpenURL("https://forms.gle/aAXk1c1PKSdmVzNK6");
     }
 
     public void MainMenu()

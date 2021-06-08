@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class PlayerSkills : MonoBehaviour
 {
-    public GameObject bubbleShield;
+    public GameObject bubbleShield, plunger;
 }

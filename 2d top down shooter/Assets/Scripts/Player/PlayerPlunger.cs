@@ -27,7 +27,7 @@ public class PlayerPlunger : MonoBehaviour
     {
         if (fireTime <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse1))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 RaycastHit2D hit = Physics2D.Linecast(Camera.main.ScreenToWorldPoint(Input.mousePosition), transform.parent.position);
 

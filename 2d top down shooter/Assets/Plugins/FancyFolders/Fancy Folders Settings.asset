@@ -371,9 +371,6 @@ MonoBehaviour:
       _guid: 2298ed9effe0d6b49a96206b6b5d5bd1
   - _formatString: 
     _guid:
-      _guid: 22a94eb8816a61441a33f4a0c01c7db3
-  - _formatString: 
-    _guid:
       _guid: 232f4ea718683654ea06faab46916894
   - _formatString: 
     _guid:
@@ -594,9 +591,6 @@ MonoBehaviour:
   - _formatString: 
     _guid:
       _guid: 3b5bb5ec1b537c042b2961ef7cc13b98
-  - _formatString: 
-    _guid:
-      _guid: 3b783dfa54c4d7e48b20fcc64460942c
   - _formatString: 
     _guid:
       _guid: 3bb2c43b41d39204d962cb4cf4b24f00
@@ -1490,9 +1484,6 @@ MonoBehaviour:
       _guid: 8dd1a676e08ea264db9361067705eb9c
   - _formatString: 
     _guid:
-      _guid: 8df3fa98a46c91844b4b17f66bd298a1
-  - _formatString: 
-    _guid:
       _guid: 8dfdd6ed5862ef947a4546f2a5c5aedb
   - _formatString: 
     _guid:
@@ -1904,6 +1895,9 @@ MonoBehaviour:
       _guid: b67f712c02dfa2f43a1dfe954f4ca735
   - _formatString: 
     _guid:
+      _guid: b6dbc5923eb3d6b40940ea421d9fcc2f
+  - _formatString: 
+    _guid:
       _guid: b7143b78c5519c647a157cf171ef479b
   - _formatString: 
     _guid:
@@ -2069,9 +2063,6 @@ MonoBehaviour:
       _guid: c3b4ed99a683f9844becdbc33a8c2064
   - _formatString: 
     _guid:
-      _guid: c3e8fde17fd560744aaec76ea59decda
-  - _formatString: 
-    _guid:
       _guid: c407e02065893674d97a391d33634436
   - _formatString: 
     _guid:
@@ -2082,6 +2073,9 @@ MonoBehaviour:
   - _formatString: 
     _guid:
       _guid: c427c9e1d782b36439746e55ba3eeab8
+  - _formatString: 
+    _guid:
+      _guid: c42b8bc279c645745a183a039472e3c7
   - _formatString: 
     _guid:
       _guid: c462c542eb5c37d45b3fd31f72186134
@@ -2261,6 +2255,9 @@ MonoBehaviour:
       _guid: d0f05014f30dd0d49ab3d0684201fb9a
   - _formatString: 
     _guid:
+      _guid: d1057e77ad75a054eba6c2b158198d39
+  - _formatString: 
+    _guid:
       _guid: d105e04886d81214884ab44c701d4fda
   - _formatString: 
     _guid:
@@ -2343,9 +2340,6 @@ MonoBehaviour:
   - _formatString: 
     _guid:
       _guid: d614e476543b0a748a826b72c61a0ef7
-  - _formatString: 
-    _guid:
-      _guid: d6405f6f2ebbbe445b3852a25b16fd8a
   - _formatString: 
     _guid:
       _guid: d6967e40907cfd84ca4260192008dd11
@@ -3155,19 +3149,6 @@ MonoBehaviour:
     _fb: 1
     _fa: 1
     _overlayIcon: 14
-    _customOverlayIconId: 
-  - _formatString: 
-    _guid:
-      _guid: 3454b4209f82c9c4da5e6c68ae52d62b
-    _r: 0.45490196
-    _g: 0.5176471
-    _b: 0.5176471
-    _a: 1
-    _fr: 1
-    _fg: 1
-    _fb: 1
-    _fa: 1
-    _overlayIcon: 0
     _customOverlayIconId: 
   - _formatString: 
     _guid:
@@ -4549,19 +4530,6 @@ MonoBehaviour:
     _customOverlayIconId: 
   - _formatString: 
     _guid:
-      _guid: c3e8fde17fd560744aaec76ea59decda
-    _r: 0.45490196
-    _g: 0.5176471
-    _b: 0.5176471
-    _a: 1
-    _fr: 1
-    _fg: 1
-    _fb: 1
-    _fa: 1
-    _overlayIcon: 0
-    _customOverlayIconId: 
-  - _formatString: 
-    _guid:
       _guid: c3f8cc9aeeab6f44fb7f3ca834e58660
     _r: 0.45490196
     _g: 0.5176471
@@ -4949,19 +4917,6 @@ MonoBehaviour:
     _fb: 1
     _fa: 1
     _overlayIcon: 11
-    _customOverlayIconId: 
-  - _formatString: 
-    _guid:
-      _guid: f7dda3ba441e547419e31d48064acffd
-    _r: 0.45490196
-    _g: 0.5176471
-    _b: 0.5176471
-    _a: 1
-    _fr: 1
-    _fg: 1
-    _fb: 1
-    _fa: 1
-    _overlayIcon: 0
     _customOverlayIconId: 
   - _formatString: 
     _guid:
