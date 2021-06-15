@@ -60,8 +60,6 @@ public class Weapon : MonoBehaviour
 
         if (weaponIndex < 0)
         {
-            //currentAmmo = ValueStorage.value.WeaponAmmo[weaponIndex + 1]; SWITCH TO 1000
-
             currentAmmo = 10000;
         }
         else
@@ -180,7 +178,7 @@ public class Weapon : MonoBehaviour
                 angle = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.Euler(0, 0, angle + offset);
 
-                if (currentAmmo > 0)
+                if (currentAmmo > 0 && !Minimap.mapped)
                 {
                     if (fireTime <= 0)
                     {
@@ -193,11 +191,6 @@ public class Weapon : MonoBehaviour
                                     if (shots > 0)
                                     {
                                         ShootBurst();
-                                    }
-                                    else
-                                    {
-                                        fireTime = fireRate;
-                                        Invoke("ResetBurst", fireRate);
                                     }
                                 }
                             }
@@ -264,11 +257,17 @@ public class Weapon : MonoBehaviour
         {
             Invoke("ShootBurst", burstRate);
         }
+
+        if(shots == 0)
+        {
+            ResetBurst();
+        }
     }
 
     void ResetBurst()
     {
         shots = shotsPerBurst;
+        fireTime = fireRate;
     }
 
     public void MoreAmmo(int ammo)

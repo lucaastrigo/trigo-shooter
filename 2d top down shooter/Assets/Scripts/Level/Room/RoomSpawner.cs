@@ -103,6 +103,40 @@ public class RoomSpawner : MonoBehaviour
 						}
 					}
 				}
+				else if(RoomTemplates.abilityRooms > 0)
+                {
+					if (Random.Range(0, 100) <= 15)
+					{
+						Instantiate(templates.abilityRoom, transform.position, templates.abilityRoom.transform.rotation);
+						RoomTemplates.abilityRooms--;
+					}
+					else
+					{
+						if (openingDirection == 1)
+						{
+							rand = Random.Range(0, templates.top.Length);
+							Instantiate(templates.top[rand], transform.position, templates.top[rand].transform.rotation);
+
+						}
+						else if (openingDirection == 2)
+						{
+							rand = Random.Range(0, templates.bottom.Length);
+							Instantiate(templates.bottom[rand], transform.position, templates.bottom[rand].transform.rotation);
+
+						}
+						else if (openingDirection == 3)
+						{
+							rand = Random.Range(0, templates.right.Length);
+							Instantiate(templates.right[rand], transform.position, templates.right[rand].transform.rotation);
+
+						}
+						else if (openingDirection == 4)
+						{
+							rand = Random.Range(0, templates.left.Length);
+							Instantiate(templates.left[rand], transform.position, templates.left[rand].transform.rotation);
+						}
+					}
+				}
 				else
 				{
 					if (openingDirection == 1)

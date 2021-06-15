@@ -392,7 +392,7 @@ MonoBehaviour:
   currentAmmo: 150
   shotsPerBurst: 4
   burstRate: 0.085
-  fireRate: 0.2
+  fireRate: 0.3
   accuracy: 0.96
   offset: -90
   shakeDur: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
   ammo: 0
   muzzle: {fileID: 1686077212815463318}
   ammoBar: {fileID: 0}
-  bullet: {fileID: 2425624021902696673, guid: 187f13bf9f7398f4bb9cc09c3727abd1, type: 3}
+  bullet: {fileID: 2425624021902696673, guid: 2957096a8a959884e9d1e409a7b79bef, type: 3}
   weaponDescription: {fileID: 7886177489250821911}
   fireSound: {fileID: 8300000, guid: 4f172cce9f2aa9a428bd13645d71abec, type: 3}
   weaponIndex: -1

@@ -5,17 +5,17 @@ using UnityEngine;
 public class RoomTemplates : MonoBehaviour 
 {
     public GameObject portal;
-    public static int skillRooms, weaponRooms;
+    public static int skillRooms, abilityRooms, weaponRooms;
     public static int maxRooms;
 
-    public int _skillRooms, _weaponRooms;
+    public int _skillRooms, _abilityRooms, _weaponRooms;
     public int _maxRooms;
     public GameObject[] top;
 	public GameObject[] bottom;
 	public GameObject[] right;
 	public GameObject[] left;
 	public GameObject closedRoom;
-    public GameObject skillRoom, weaponRoom;
+    public GameObject skillRoom, abilityRoom, weaponRoom;
 	public List<GameObject> rooms;
 
     float waitTime = 2;
@@ -23,6 +23,7 @@ public class RoomTemplates : MonoBehaviour
     private void Start()
     {
         skillRooms = _skillRooms;
+        abilityRooms = _abilityRooms;
         weaponRooms = _weaponRooms;
         maxRooms = _maxRooms;
     }

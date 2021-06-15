@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4887991819798507834}
   m_Layer: 3
   m_Name: minimap
-  m_TagString: Minimap
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,7 +163,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: bf248b21171353f418c83cf743febb3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 726ffbf0008fb054a9efd69347ee8cb8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

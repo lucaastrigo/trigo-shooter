@@ -256,7 +256,7 @@ MonoBehaviour:
   currentAmmo: 30
   shotsPerBurst: 3
   burstRate: 0.175
-  fireRate: 0.85
+  fireRate: 1.3
   accuracy: 0.9
   offset: -90
   shakeDur: 0

@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\LeafDashAbility.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Skills\SharpshooterSkill.cs" />
     <Compile Include="Assets\Scripts\Items\ChestAmmo.cs" />
+    <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\PlungerAbility.cs" />
     <Compile Include="Assets\Scripts\Weapons\ExplosionRange.cs" />
     <Compile Include="Assets\Scripts\Bosses\Bosses\BossTheSpider.cs" />
     <Compile Include="Assets\Scripts\Weapons\ContinuousDamage.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Assets\Scripts\Bosses\General\MovementBoss.cs" />
     <Compile Include="Assets\Scripts\General\Global.cs" />
     <Compile Include="Assets\Scripts\Level\Room\Room.cs" />
+    <Compile Include="Assets\Scripts\General\MapCamera.cs" />
     <Compile Include="Assets\Scripts\Items\Coin.cs" />
     <Compile Include="Assets\Scripts\General\ValueStorage.cs" />
     <Compile Include="Assets\Scripts\Traps\CannonTrap.cs" />
@@ -128,11 +130,12 @@
     <Compile Include="Assets\Scripts\Skills\General\SkillObject.cs" />
     <Compile Include="Assets\Scripts\FX\Rotator.cs" />
     <Compile Include="Assets\Scripts\Level\Room\Destroyer.cs" />
+    <Compile Include="Assets\Scripts\HUD and Menu\Minimap.cs" />
     <Compile Include="Assets\Scripts\Weapons\BulletScript.cs" />
     <Compile Include="Assets\Scripts\HUD and Menu\AmmoBar.cs" />
     <Compile Include="Assets\Scripts\Items\ChestWeapon.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\FreezeAbility.cs" />
-    <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\PlungerAbility.cs" />
+    <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\BouncyGrenadeAbility.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\EXTRA\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

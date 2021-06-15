@@ -41,7 +41,7 @@ public class ExplosionGiftAbility : MonoBehaviour
                 {
                     if (can)
                     {
-                        Instantiate(explosionGift, player.transform.position, Quaternion.identity);
+                        Instantiate(explosionGift, player.GetComponent<TrailFX>().feet.transform.position, Quaternion.identity);
                         cooltime = cooldown;
                     }
                 }

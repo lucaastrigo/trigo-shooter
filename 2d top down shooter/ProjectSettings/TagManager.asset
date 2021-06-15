@@ -34,6 +34,8 @@ TagManager:
   - Coin
   - Minimap
   - MinimapCamera
+  - MapCamera
+  - Map
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2425624021902696673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2004183933773385712}
+  m_Layer: 14
+  m_Name: Double Electric
+  m_TagString: Bullet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2004183933773385712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2425624021902696673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1959539256417813790}
+  - {fileID: 3567321843225141946}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &63582803680037614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2004183933773385712}
+    m_Modifications:
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.999962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.008726558
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425624021902696673, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_Name
+      value: Electric Rifle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2957096a8a959884e9d1e409a7b79bef, type: 3}
+--- !u!4 &1959539256417813790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+    type: 3}
+  m_PrefabInstance: {fileID: 63582803680037614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3049472391336340810
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2004183933773385712}
+    m_Modifications:
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.999962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.008726465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2425624021902696673, guid: 2957096a8a959884e9d1e409a7b79bef,
+        type: 3}
+      propertyPath: m_Name
+      value: Electric Rifle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2957096a8a959884e9d1e409a7b79bef, type: 3}
+--- !u!4 &3567321843225141946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2004183933773385712, guid: 2957096a8a959884e9d1e409a7b79bef,
+    type: 3}
+  m_PrefabInstance: {fileID: 3049472391336340810}
+  m_PrefabAsset: {fileID: 0}

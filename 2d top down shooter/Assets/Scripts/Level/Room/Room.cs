@@ -142,6 +142,8 @@ public class Room : MonoBehaviour
 
     public void StartWave()
     {
+        Minimap.minimap.SetActive(false);
+        Minimap.map.transform.GetChild(0).gameObject.SetActive(false);
         inWave = true;
         numOfWaves--;
         Instantiate(enemies[Random.Range(0, enemies.Length)], transform.position, Quaternion.identity);
@@ -149,6 +151,7 @@ public class Room : MonoBehaviour
 
     public void FinishWave()
     {
+        Minimap.minimap.SetActive(true);
         inWave = false;
         finishedWave = true;
 
@@ -160,12 +163,12 @@ public class Room : MonoBehaviour
 
                 if (Random.Range(0, 100) <= healthLootChance)
                 {
-                    Instantiate(healthLoot, new Vector2(transform.position.x + 1, transform.position.y), Quaternion.identity);
+                    Instantiate(healthLoot, new Vector2(transform.position.x + 3, transform.position.y), Quaternion.identity);
                 }
 
                 if (Random.Range(0, 100) <= ammoLootChance)
                 {
-                    Instantiate(ammoLoot, new Vector2(transform.position.x - 1, transform.position.y), Quaternion.identity);
+                    Instantiate(ammoLoot, new Vector2(transform.position.x - 3, transform.position.y), Quaternion.identity);
                 }
 
                 if (Random.Range(0, 100) <= coinLootChance)
