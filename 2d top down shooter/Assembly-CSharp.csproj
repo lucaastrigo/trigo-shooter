@@ -71,7 +71,6 @@
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\PlungerAbility.cs" />
     <Compile Include="Assets\Scripts\Weapons\ExplosionRange.cs" />
     <Compile Include="Assets\Scripts\Bosses\Bosses\BossTheSpider.cs" />
-    <Compile Include="Assets\Scripts\Weapons\ContinuousDamage.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Skills\ExtraHolsterSkill.cs" />
     <Compile Include="Assets\Scripts\Traps\FrictionFloor.cs" />
     <Compile Include="Assets\Scripts\Bosses\General\Boss.cs" />
@@ -102,6 +101,7 @@
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Weapons\Explosive.cs" />
     <Compile Include="Assets\Scripts\Enemies\General\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\BouncyGrenadeAbility.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerPlunger.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Skills\ExposedSkill.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy Bullets &amp; Weapons\EnemyBullet.cs" />
@@ -135,7 +135,6 @@
     <Compile Include="Assets\Scripts\HUD and Menu\AmmoBar.cs" />
     <Compile Include="Assets\Scripts\Items\ChestWeapon.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\FreezeAbility.cs" />
-    <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\BouncyGrenadeAbility.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\EXTRA\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
