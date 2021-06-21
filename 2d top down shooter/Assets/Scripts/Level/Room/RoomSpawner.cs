@@ -105,7 +105,7 @@ public class RoomSpawner : MonoBehaviour
 				}
 				else if(RoomTemplates.abilityRooms > 0)
                 {
-					if (Random.Range(0, 100) <= 15)
+					if (Random.Range(0, 100) <= 20)
 					{
 						Instantiate(templates.abilityRoom, transform.position, templates.abilityRoom.transform.rotation);
 						RoomTemplates.abilityRooms--;

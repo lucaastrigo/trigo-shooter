@@ -7,6 +7,32 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+    //
+
+
+    //RESET AMMO ON DEATH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //
+
     public int health; 
     public int currentHealth;
     [HideInInspector] public GameObject healthBar;
@@ -154,14 +180,14 @@ public class Player : MonoBehaviour
         ValueStorage.value.weaponValue = "PISTOL";
         ValueStorage.value.coinValue = 0;
 
-        for (int i = valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i > 0; i--)
+        for (int i = valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i >= 0; i--)
         {
             ValueStorage.value.WeaponAmmo.RemoveAt(i);
         }
 
-        for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
+        if (ValueStorage.value.WeaponAmmo.Count == 0)
         {
-            ValueStorage.value.WeaponAmmo[i] = 1000;
+            ValueStorage.value.WeaponAmmo.Add(10000);
         }
 
         //reset skills
@@ -172,7 +198,7 @@ public class Player : MonoBehaviour
             SkillStorage.value.skills[i].unskilled = false;
         }
 
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("Main Menu");
     }
 
     private void OnTriggerExit2D(Collider2D collision)

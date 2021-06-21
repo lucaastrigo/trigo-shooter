@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour
     public bool singleShot;
     public bool burst;
     [HideInInspector] public bool onOff = true;
-    [HideInInspector] public bool ammo;
+    [HideInInspector] public bool ammo, cantDrop;
     public Transform muzzle;
     [HideInInspector] public GameObject ammoBar;
     public GameObject bullet;
@@ -91,7 +91,7 @@ public class Weapon : MonoBehaviour
         {
             if (transform.parent.GetComponent<PlayerPickup>().equippedWeapon.name == weaponName || transform.parent.GetComponent<PlayerPickup>().equippedWeapon.name == weaponName + "(Clone)")
             {
-                valueStorage.GetComponent<ValueStorage>().WeaponAmmo[weaponIndex] = currentAmmo;
+                //valueStorage.GetComponent<ValueStorage>().WeaponAmmo[weaponIndex] = currentAmmo;
             }
         }
 
@@ -162,6 +162,7 @@ public class Weapon : MonoBehaviour
                 else
                 {
                     ValueStorage.value.weaponValue = weaponName;
+                    ValueStorage.value.WeaponAmmo[weaponIndex] = currentAmmo;
                 }
 
                 if (mousePos.x < transform.position.x)

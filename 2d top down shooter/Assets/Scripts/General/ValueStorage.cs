@@ -44,7 +44,7 @@ public class ValueStorage : MonoBehaviour
 
         for (int i = 0; i <= WeaponAmmo.Count - 1; i++)
         {
-            value.WeaponAmmo[i] = 1000;
+            value.WeaponAmmo[i] = 10000;
         }
 
         for (int i = WeaponAmmo.Count - 1; i > 0; i--)

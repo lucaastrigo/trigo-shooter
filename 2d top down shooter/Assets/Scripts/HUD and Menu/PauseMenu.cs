@@ -62,36 +62,13 @@ public class PauseMenu : MonoBehaviour
     {
         Continue();
 
-        player.GetComponent<Player>().TakeDamage(100);
+        player.GetComponent<Player>().TakeDamage(1000);
     }
 
     public void ReturnToMenu()
     {
         Continue();
 
-        ValueStorage.value.healthValue = 10;
-        ValueStorage.value.maxHealthValue = 10;
-        ValueStorage.value.weaponValue = "PISTOL";
-        ValueStorage.value.coinValue = 0;
-
-        for (int i = valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i > 0; i--)
-        {
-            ValueStorage.value.WeaponAmmo.RemoveAt(i);
-        }
-
-        for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
-        {
-            ValueStorage.value.WeaponAmmo[i] = 1000;
-        }
-
-        //reset skills
-        for (int i = 0; i < SkillStorage.value.skills.Length; i++)
-        {
-            SkillStorage.value.skills[i].skillOn = false;
-            SkillStorage.value.skills[i].skilled = false;
-            SkillStorage.value.skills[i].unskilled = false;
-        }
-
-        SceneManager.LoadScene("Main Menu");
+        player.GetComponent<Player>().TakeDamage(1000);
     }
 }

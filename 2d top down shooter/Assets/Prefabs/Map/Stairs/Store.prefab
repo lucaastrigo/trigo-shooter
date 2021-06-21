@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 774307120700053995}
   - component: {fileID: 5831020513167253912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 2673977853090313619}
   - component: {fileID: 2673977853090313618}
   - component: {fileID: 8362747211165345313}
-  m_Layer: 0
-  m_Name: =
+  m_Layer: 9
+  m_Name: Store
   m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

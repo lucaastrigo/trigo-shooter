@@ -12,8 +12,8 @@ public class MiniChest : MonoBehaviour
     public Sprite openedSprite;
 
     bool open;
-    GameObject weaponToDrop;
-    GameObject secondWeaponToDrop;
+    public GameObject weaponToDrop;
+    public GameObject secondWeaponToDrop;
     SpriteRenderer sprite;
 
     GameObject skillStorage;
@@ -22,6 +22,11 @@ public class MiniChest : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
 
+        if (skillStorage == null)
+        {
+            skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
+        }
+
         for (int i = 0; i < weapons.Length; i++)
         {
             if(ValueStorage.value.weaponValue == weapons[i].name)
@@ -29,11 +34,19 @@ public class MiniChest : MonoBehaviour
                 weaponToDrop = weapons[i];
                 weaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.firstIndex;
             }
-            
-            if(ValueStorage.value.secondWeaponValue == weapons[i].name)
+
+            if (ValueStorage.value.secondWeaponValue == weapons[i].name || ValueStorage.value.secondWeaponValue == weapons[i].name + "(Clone)")
             {
-                secondWeaponToDrop = weapons[i];
-                secondWeaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.secondIndex;
+                if (skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
+                {
+                    secondWeaponToDrop = weapons[i];
+                    secondWeaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.secondIndex;
+                    print(secondWeaponToDrop);
+                }
+                else
+                {
+                    secondWeaponToDrop = null;
+                }
             }
         }
     }
@@ -45,10 +58,12 @@ public class MiniChest : MonoBehaviour
             skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
         }
 
+        /*
         if (!skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
         {
             secondWeaponToDrop = null;
         }
+        */
     }
 
     void Drop()

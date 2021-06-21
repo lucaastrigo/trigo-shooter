@@ -227,6 +227,7 @@ MonoBehaviour:
   openedSprite: {fileID: 272592845719467861, guid: d4f11b1a1d4e0854f8f3e05ad2a2d5ec,
     type: 3}
   openFX: {fileID: 3375865884550540848, guid: 74b2246fd49445c48aec35a2f28775d0, type: 3}
+  minimapImage: {fileID: 0}
   skillObjects:
   - {fileID: 7592976019122312856, guid: d088926ca8d23434fab2a2e222deb2c3, type: 3}
   - {fileID: 7908886960632513410, guid: aa5158ca7de7ba646afcb2973ee456d1, type: 3}
@@ -235,7 +236,6 @@ MonoBehaviour:
   - {fileID: 650496808253319970, guid: a3bbd64af4792cd48b530f1ce68c45e9, type: 3}
   - {fileID: 6712742023171517578, guid: 000f30a247525c644900289d9810c040, type: 3}
   - {fileID: 3426070610673491461, guid: edabc0357a68b464099ab9aa784b9a26, type: 3}
-  - {fileID: 5622235740085437349, guid: afb34d1b151280140bc778fdc5ac1897, type: 3}
   - {fileID: 6712742023171517578, guid: ee40393913573954f9c80bb6b11bc9d9, type: 3}
   - {fileID: 1483375155137206047, guid: 0cb9ca21fed2f1c409f56a67dd00e928, type: 3}
   - {fileID: 6712742023171517578, guid: 8c214abebb1bc794b81aa024c7419f6a, type: 3}

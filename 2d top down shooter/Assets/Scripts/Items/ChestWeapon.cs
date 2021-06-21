@@ -20,10 +20,30 @@ public class ChestWeapon : MonoBehaviour
     bool open;
     [HideInInspector] public GameObject weaponToDrop;
     SpriteRenderer sprite;
+    GameObject player;
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    private void Update()
+    {
+        if(player.GetComponentInChildren<Weapon>() != null)
+        {
+            for (int i = 0; i < DropTable.Count; i++)
+            {
+                if (DropTable[i].weapon.GetComponent<Weapon>().weaponName == player.GetComponentInChildren<Weapon>().weaponName)
+                {
+                    DropTable[i].weapon.GetComponent<Weapon>().cantDrop = true;
+                }
+                else
+                {
+                    DropTable[i].weapon.GetComponent<Weapon>().cantDrop = false;
+                }
+            }
+        }
     }
 
     public void CalculateDrop()
@@ -32,21 +52,21 @@ public class ChestWeapon : MonoBehaviour
 
         for (int i = 0; i < DropTable.Count; i++)
         {
-            itemWeight += DropTable[i].dropRate; //item weight equal to number of weapons in chest
+            itemWeight += DropTable[i].dropRate;
         }
 
-        int randomValue = Random.Range(0, itemWeight); //generates a random value between 0 and number of weapons
+        int randomValue = Random.Range(0, itemWeight);
 
         for (int j = 0; j < DropTable.Count; j++)
         {
-            if (randomValue <= DropTable[j].dropRate) //check if random value is equal or less than weapon 'j' drop rate 
+            if (randomValue <= DropTable[j].dropRate && !DropTable[j].weapon.GetComponent<Weapon>().cantDrop)
             {
-                weaponToDrop = DropTable[j].weapon; //set weaponToDrop to the weapon 'j'
-                break; //stops random value from subtracting
+                weaponToDrop = DropTable[j].weapon;
+                break;
             }
-            else //but if random value is bigger
+            else
             {
-                randomValue -= DropTable[j].dropRate; //subtract the previous weapon drop rate from random value 
+                randomValue -= DropTable[j].dropRate;
             }
         }
     }
