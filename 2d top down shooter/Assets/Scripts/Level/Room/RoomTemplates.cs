@@ -19,6 +19,7 @@ public class RoomTemplates : MonoBehaviour
 	public List<GameObject> rooms;
 
     float waitTime = 2;
+    bool portalSpawned;
 
     private void Start()
     {
@@ -32,9 +33,10 @@ public class RoomTemplates : MonoBehaviour
     {
         if(waitTime <= 0)
         {
-            if (allWavesFinished())
+            if (allWavesFinished() && !portalSpawned)
             {
                 Instantiate(portal, new Vector2(rooms[0].gameObject.transform.position.x, rooms[0].gameObject.transform.position.y + 3), Quaternion.identity);
+                portalSpawned = true;
             }
         }
         else

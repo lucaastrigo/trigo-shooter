@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 4401727570437269503}
   - component: {fileID: 4401727570437269488}
   m_Layer: 9
-  m_Name: ACTIVE CHEST
+  m_Name: ABILITY CHEST STORE
   m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,10 +227,16 @@ MonoBehaviour:
   openedSprite: {fileID: 300936212304620859, guid: a822e44ab4f9b5044a88353b3a56ed0c,
     type: 3}
   openFX: {fileID: 3375865884550540848, guid: 74b2246fd49445c48aec35a2f28775d0, type: 3}
+  minimapImage: {fileID: 0}
   skillObjects:
   - {fileID: 4197416677724741537, guid: fb0d29f3201937c4da6a862ae3766258, type: 3}
   - {fileID: 4197416677724741537, guid: 11a08619d7663fe47a7c46391d80dc96, type: 3}
-  - {fileID: 6376425279983719997, guid: b45f6baa90fc9964ba3000e30b74107b, type: 3}
+  - {fileID: 4197416677724741537, guid: 1ae03a0a9d73c5d4799159bd173cac26, type: 3}
   - {fileID: 4197416677724741537, guid: 1f56248b8f493064a923424e2754dbc1, type: 3}
+  - {fileID: 4197416677724741537, guid: d1057e77ad75a054eba6c2b158198d39, type: 3}
   - {fileID: 6376425279983719997, guid: 11db7d2e820157d4f8ab536a9c2fe100, type: 3}
   offset: {x: 2, y: 1}
+  randomizedSkill: {fileID: 0}
+  s1: {fileID: 0}
+  s2: {fileID: 0}
+  s3: {fileID: 0}

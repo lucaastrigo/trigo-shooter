@@ -124,36 +124,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DropTable:
-  - dropRate: 10
+  - dropRate: 12
     weapon: {fileID: 7264571734352300853, guid: dd0d5face07833d4db8eb2770c801dfb,
       type: 3}
-  - dropRate: 15
+  - dropRate: 10
     weapon: {fileID: 6245984252482959309, guid: e048be04abc198f44afde40ec67e260a,
       type: 3}
-  - dropRate: 12
+  - dropRate: 8
     weapon: {fileID: 4584471507376663557, guid: a701316b2aa61b849943abee42751fd2,
       type: 3}
   - dropRate: 7
     weapon: {fileID: 1463578926722432902, guid: 99aea703975b67e4b974316fc2a5f1f4,
       type: 3}
+  - dropRate: 2
+    weapon: {fileID: 6245984252482959309, guid: eefaa45f07dc20f429bd998662e3773d,
+      type: 3}
   - dropRate: 5
     weapon: {fileID: 9100624887838506853, guid: 73bdebe2fc3b79f4999e6bbd5d58d06b,
       type: 3}
-  - dropRate: 3
-    weapon: {fileID: 583370887922547907, guid: 49106127c545508449583e23e46c687c, type: 3}
   - dropRate: 7
-    weapon: {fileID: 7264571734352300853, guid: 2584c93a34d30ff46b5850431cf6345b,
+    weapon: {fileID: 2020227290127469142, guid: 80961fb2e282a7747a723230255d5797,
       type: 3}
   - dropRate: 6
+    weapon: {fileID: 7264571734352300853, guid: 2584c93a34d30ff46b5850431cf6345b,
+      type: 3}
+  - dropRate: 7
     weapon: {fileID: 9005917764086581269, guid: bf41c9d7a5fbf5047a99bdcd50d57c94,
       type: 3}
   - dropRate: 2
     weapon: {fileID: 4584471507376663557, guid: 34d83beea1d47b34593650f661482162,
       type: 3}
-  - dropRate: 1
-    weapon: {fileID: 6245984252482959309, guid: eefaa45f07dc20f429bd998662e3773d,
+  - dropRate: 3
+    weapon: {fileID: 7264571734352300853, guid: 57a62af8e542e3349876cb14036fe994,
+      type: 3}
+  - dropRate: 4
+    weapon: {fileID: 1974073138192513578, guid: a47ef526e8b3aa8479d592b971d02d28,
+      type: 3}
+  - dropRate: 3
+    weapon: {fileID: 6410125691785896610, guid: 08cc8fd4a345386468c16a577f384f32,
+      type: 3}
+  - dropRate: 5
+    weapon: {fileID: 8258760453900753337, guid: 8920e4f96a3f5484eb97415e94782aa9,
+      type: 3}
+  - dropRate: 7
+    weapon: {fileID: 4798121836918349475, guid: 8d384e00bc59e5f4789003be7c5f962b,
       type: 3}
   openedSprite: {fileID: 3790330820646863013, guid: c9ec2f3356763544d96f5afb513fbdeb,
     type: 3}
   openFX: {fileID: 3375865884550540848, guid: e6f0578fe48308540a2d00370bc7dd93, type: 3}
+  minimapImage: {fileID: 0}
   weaponToDrop: {fileID: 0}

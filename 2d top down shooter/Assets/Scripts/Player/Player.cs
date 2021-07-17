@@ -7,36 +7,12 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
-    //
-
-
-    //RESET AMMO ON DEATH
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //
-
     public int health; 
     public int currentHealth;
     [HideInInspector] public GameObject healthBar;
-    public TextMeshProUGUI playerIndicator;
+    public GameObject indicator;
+    public Transform canvas;
+    public Color green, red, yellow;
 
     [HideInInspector] public int coins;
     [HideInInspector] public float time;
@@ -98,18 +74,6 @@ public class Player : MonoBehaviour
             Die();
         }
 
-        playerIndicator.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 1, 0));
-
-        if (time <= 0)
-        {
-            playerIndicator.enabled = false;
-        }
-        else
-        {
-            playerIndicator.enabled = true;
-            time -= Time.deltaTime;
-        }
-
         for (int i = 0; i < skillStorage.GetComponent<SkillStorage>().skills.Length; i++)
         {
             if (skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().activeSkill && skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().skillOn)
@@ -138,16 +102,14 @@ public class Player : MonoBehaviour
 
         healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
 
-        time = indicationTime;
+        Vector3 indicatorPos = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 1, 0));
+        GameObject ind;
 
-        if (currentHealth >= health)
-        {
-            playerIndicator.GetComponent<TMP_Text>().text = "full health";
-        }
-        else
-        {
-            playerIndicator.GetComponent<TMP_Text>().text = "+ " + healthAmount.ToString() + " health";
-        }
+        ind = Instantiate(indicator, indicatorPos, Quaternion.identity);
+        ind.transform.SetParent(canvas);
+        ind.GetComponent<Animator>().SetTrigger("active");
+        ind.GetComponent<TMP_Text>().color = green;
+        ind.GetComponent<TMP_Text>().text = healthAmount.ToString();
     }
 
     public void TakeDamage(int damage)
@@ -157,6 +119,15 @@ public class Player : MonoBehaviour
         healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
 
         anim.SetTrigger("hurt");
+
+        Vector3 indicatorPos = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 1, 0));
+        GameObject ind;
+
+        ind = Instantiate(indicator, indicatorPos, Quaternion.identity);
+        ind.transform.SetParent(canvas);
+        ind.GetComponent<Animator>().SetTrigger("active");
+        ind.GetComponent<TMP_Text>().color = red;
+        ind.GetComponent<TMP_Text>().text = damage.ToString();
     }
 
     public void Purchase(int price)
@@ -168,9 +139,14 @@ public class Player : MonoBehaviour
     {
         coins += coinAmount;
 
-        time = indicationTime;
+        Vector3 indicatorPos = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 1, 0));
+        GameObject ind;
 
-        playerIndicator.GetComponent<TMP_Text>().text = "+ " + coinAmount.ToString() + " coins";
+        ind = Instantiate(indicator, indicatorPos, Quaternion.identity);
+        ind.transform.SetParent(canvas);
+        ind.GetComponent<Animator>().SetTrigger("active");
+        ind.GetComponent<TMP_Text>().color = yellow;
+        ind.GetComponent<TMP_Text>().text = coinAmount.ToString();
     }
 
     public void Die()
@@ -199,15 +175,6 @@ public class Player : MonoBehaviour
         }
 
         SceneManager.LoadScene("Main Menu");
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Portal"))
-        {
-            time = 0;
-            playerIndicator.GetComponent<TMP_Text>().text = null;
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

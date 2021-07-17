@@ -136,11 +136,6 @@ public class BulletScript : MonoBehaviour
                 thing.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
             }
 
-            if(thing.GetComponent<Boss>() != null)
-            {
-                thing.GetComponent<Boss>().TakeDamage(damage, mat, colorTime);
-            }
-
             if (ice)
             {
                 iceHit = thing.gameObject;
@@ -174,12 +169,6 @@ public class BulletScript : MonoBehaviour
                 flameHit.GetComponent<Enemy>().TakeDamage(fireDamage, mat, colorTime / 2);
                 Instantiate(hitFX, flameHit.transform.position, Quaternion.identity);
             }
-
-            if (flameHit.GetComponent<Boss>() != null)
-            {
-                flameHit.GetComponent<Boss>().TakeDamage(fireDamage, mat, colorTime / 2);
-                Instantiate(hitFX, flameHit.transform.position, Quaternion.identity);
-            }
         }
 
         Destroy(gameObject);
@@ -192,11 +181,6 @@ public class BulletScript : MonoBehaviour
             if (iceHit.GetComponent<Enemy>() != null)
             {
                 iceHit.GetComponent<Enemy>().Frost(colorTime, freezePercent);
-            }
-
-            if (iceHit.GetComponent<MovementBoss>() != null)
-            {
-                iceHit.GetComponent<MovementBoss>().Frost(colorTime, freezePercent);
             }
         }
 
@@ -217,11 +201,6 @@ public class BulletScript : MonoBehaviour
             if (electricHit.GetComponent<Enemy>() != null)
             {
                 electricHit.GetComponent<Enemy>().Frost(colorTime, freezePercent);
-            }
-
-            if (electricHit.GetComponent<MovementBoss>() != null)
-            {
-                electricHit.GetComponent<MovementBoss>().Frost(colorTime, freezePercent);
             }
         }
 
@@ -259,23 +238,6 @@ public class BulletScript : MonoBehaviour
                         Invoke("Explode", lifetime);
                     }
                 }
-
-                if (other.GetComponent<Boss>() != null)
-                {
-                    if (!explosive)
-                    {
-                        other.GetComponent<Boss>().TakeDamage(damage, mat, colorTime);
-
-                        if (!skillStorage.GetComponentInChildren<GhostBulletsSkill>().skill.GetComponent<Skill>().skillOn)
-                        {
-                            Destroy(gameObject, lifetime);
-                        }
-                    }
-                    else
-                    {
-                        Invoke("Explode", lifetime);
-                    }
-                }
             }
             else
             {
@@ -284,18 +246,6 @@ public class BulletScript : MonoBehaviour
                     if (!explosive)
                     {
                         other.GetComponent<Enemy>().TakeColor(damage, color, colorTime);
-                    }
-                    else
-                    {
-                        Invoke("Explode", lifetime);
-                    }
-                }
-
-                if (other.GetComponent<Boss>() != null)
-                {
-                    if (!explosive)
-                    {
-                        other.GetComponent<Boss>().TakeColor(damage, color, colorTime);
                     }
                     else
                     {
@@ -323,11 +273,6 @@ public class BulletScript : MonoBehaviour
                         other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
                     }
 
-                    if (other.GetComponent<Boss>() != null)
-                    {
-                        other.GetComponent<Boss>().TakeDamage(damage, mat, colorTime);
-                    }
-
                     Instantiate(hitFX, transform.position, Quaternion.identity);
 
                     if (!skillStorage.GetComponentInChildren<GhostBulletsSkill>().skill.GetComponent<Skill>().skillOn)
@@ -353,18 +298,6 @@ public class BulletScript : MonoBehaviour
                         else
                         {
                             other.GetComponent<Enemy>().TakeColor(damage, color, colorTime);
-                        }
-                    }
-
-                    if (other.GetComponent<Boss>() != null)
-                    {
-                        if (electric)
-                        {
-                            other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
-                        }
-                        else
-                        {
-                            other.GetComponent<Boss>().TakeColor(damage, color, colorTime);
                         }
                     }
 

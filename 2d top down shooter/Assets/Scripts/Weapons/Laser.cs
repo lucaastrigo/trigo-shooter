@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
+    public GameObject weapon;
     public LayerMask hitable;
 
     LineRenderer line;
@@ -21,6 +22,20 @@ public class Laser : MonoBehaviour
 
             line.SetPosition(0, transform.position);
             line.SetPosition(1, hit.point);
+        }
+    }
+
+    public void ShootLaser()
+    {
+        if(weapon.GetComponent<WeaponEnemy>() != null)
+        {
+            weapon.GetComponent<WeaponEnemy>().Shoot();
+
+            if(weapon.GetComponentInParent<Enemy>() != null)
+            {
+                weapon.GetComponentInParent<Enemy>().speed = weapon.GetComponentInParent<Enemy>().speedK;
+                weapon.GetComponentInParent<Enemy>().anim.SetBool("walk", true);
+            }
         }
     }
 }

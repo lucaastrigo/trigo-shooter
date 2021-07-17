@@ -24,6 +24,7 @@ public class EnemyMelee : MonoBehaviour
         }
         else
         {
+            canAttack = false;
             attackTime -= Time.deltaTime;
         }
     }

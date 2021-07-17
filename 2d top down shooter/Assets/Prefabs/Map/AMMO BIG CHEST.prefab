@@ -212,4 +212,4 @@ MonoBehaviour:
   opened: {fileID: -1723796463850551671, guid: c9ec2f3356763544d96f5afb513fbdeb, type: 3}
   openFX: {fileID: 3375865884550540848, guid: 1342a147e7b083a4db1032f4567e1b1b, type: 3}
   minimapImage: {fileID: 3970106228022719478}
-  ammo: 0.4
+  ammo: 0.6

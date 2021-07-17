@@ -151,13 +151,13 @@ MonoBehaviour:
   flame: 0
   electric: 0
   ice: 0
-  damage: 10
+  damage: 13
   fireDamage: 0
   speed: 0
   speedMod: 0
   lifetime: 2
   colorTime: 0
-  explosionRange: 1.5
+  explosionRange: 2.5
   shakeMag: 0.01
   shakeDur: 0.05
   freezePercent: 0
@@ -182,5 +182,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionArea: {fileID: 1562086375212030144, guid: cc2001556ac0b9440bd80a56376cebc7,
     type: 3}
-  color: {r: 0.054901965, g: 0.13333334, b: 0.49411768, a: 0.7294118}
-  size: 1.5

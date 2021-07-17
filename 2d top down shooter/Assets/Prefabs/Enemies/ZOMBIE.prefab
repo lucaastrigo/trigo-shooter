@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -5056893988996256282, guid: 6f2b030b6bad21140a3e17f78812f39c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -169,11 +169,13 @@ MonoBehaviour:
   patrolRange: 4
   followRange: 6
   stopFollowRange: 0
+  follower: 1
   followThrough: 1
   retreat: 0
   hitableLayers:
     serializedVersion: 2
     m_Bits: 67895
+  distToPlayer: 0
   nextPatrolPoint: {x: 0, y: 0, z: 0}
 --- !u!114 &1834029084034238095
 MonoBehaviour:

@@ -23,6 +23,7 @@ public class Room : MonoBehaviour
     public GameObject[] enemies;
 
     [Header("Map")]
+    public int waveMax;
     public GameObject minimapImages;
     public GameObject weaponChest;
     public GameObject healthChest;
@@ -120,7 +121,7 @@ public class Room : MonoBehaviour
 
     void SetupWave()
     {
-        numOfWaves = Random.Range(1, 4);
+        numOfWaves = Random.Range(1, waveMax);
         _numOfWaves = numOfWaves;
         startedWave = true;
 

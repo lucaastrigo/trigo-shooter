@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &775327763751150271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775327763751150269}
+  - component: {fileID: 775327763751150268}
+  m_Layer: 0
+  m_Name: Room Generator - Graveyard
+  m_TagString: Rooms
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &775327763751150269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775327763751150271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775327763751150268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775327763751150271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1691e24b05d3b340b96d092c4bdaf01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portal: {fileID: 2673977853090313617, guid: 2a6a1106796ec2440974186d7587d981, type: 3}
+  _skillRooms: 1
+  _abilityRooms: 1
+  _weaponRooms: 1
+  _maxRooms: 12
+  top: []
+  bottom: []
+  right: []
+  left: []
+  closedRoom: {fileID: 2346919774647793453, guid: a3adfa2901f78d543ad62c30d60fad07,
+    type: 3}
+  skillRoom: {fileID: 4678899246454836219, guid: d416c8eeb3a4e764ea68018010b6b749,
+    type: 3}
+  abilityRoom: {fileID: 4678899246454836219, guid: c65da4f3eea017d4eabc26035e324216,
+    type: 3}
+  weaponRoom: {fileID: 4678899246454836219, guid: f62c8d091adc2ed46aaa38fff49899de,
+    type: 3}
+  rooms: []

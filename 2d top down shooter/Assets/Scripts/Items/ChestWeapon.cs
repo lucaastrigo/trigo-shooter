@@ -13,7 +13,7 @@ public class ChestWeapon : MonoBehaviour
 
     public List<DropItem> DropTable = new List<DropItem>();
 
-    [Header("Image Setting")]
+    public bool mergedChest;
     public Sprite openedSprite;
     public GameObject openFX, minimapImage;
 
@@ -30,17 +30,20 @@ public class ChestWeapon : MonoBehaviour
 
     private void Update()
     {
-        if(player.GetComponentInChildren<Weapon>() != null)
+        if (!mergedChest)
         {
-            for (int i = 0; i < DropTable.Count; i++)
+            if (player.GetComponentInChildren<Weapon>() != null)
             {
-                if (DropTable[i].weapon.GetComponent<Weapon>().weaponName == player.GetComponentInChildren<Weapon>().weaponName)
+                for (int i = 0; i < DropTable.Count; i++)
                 {
-                    DropTable[i].weapon.GetComponent<Weapon>().cantDrop = true;
-                }
-                else
-                {
-                    DropTable[i].weapon.GetComponent<Weapon>().cantDrop = false;
+                    if (DropTable[i].weapon.GetComponent<Weapon>().weaponName == player.GetComponentInChildren<Weapon>().weaponName)
+                    {
+                        DropTable[i].weapon.GetComponent<Weapon>().cantDrop = true;
+                    }
+                    else
+                    {
+                        DropTable[i].weapon.GetComponent<Weapon>().cantDrop = false;
+                    }
                 }
             }
         }
@@ -59,14 +62,29 @@ public class ChestWeapon : MonoBehaviour
 
         for (int j = 0; j < DropTable.Count; j++)
         {
-            if (randomValue <= DropTable[j].dropRate && !DropTable[j].weapon.GetComponent<Weapon>().cantDrop)
+            if (!mergedChest)
             {
-                weaponToDrop = DropTable[j].weapon;
-                break;
+                if (randomValue <= DropTable[j].dropRate && !DropTable[j].weapon.GetComponent<Weapon>().cantDrop)
+                {
+                    weaponToDrop = DropTable[j].weapon;
+                    break;
+                }
+                else
+                {
+                    randomValue -= DropTable[j].dropRate;
+                }
             }
             else
             {
-                randomValue -= DropTable[j].dropRate;
+                if (randomValue <= DropTable[j].dropRate) // && !DropTable[j].weapon.GetComponent<Weapon>().cantDrop
+                {
+                    weaponToDrop = DropTable[j].weapon;
+                    break;
+                }
+                else
+                {
+                    randomValue -= DropTable[j].dropRate;
+                }
             }
         }
     }

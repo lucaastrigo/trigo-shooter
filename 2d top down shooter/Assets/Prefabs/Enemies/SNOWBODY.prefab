@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -4349602977071498420, guid: a36758ae51a5c6e46bcfabc7c36b310b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56cb052321e76445a0fee4da483d389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 4
   speed: 2.25
   healthChestDropRate: 7
   healthChest: {fileID: 1114838512330552965, guid: d6967e40907cfd84ca4260192008dd11,
@@ -167,13 +167,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolRange: 4
-  followRange: 5
+  followRange: 6
   stopFollowRange: 0
+  follower: 1
   followThrough: 1
   retreat: 0
   hitableLayers:
     serializedVersion: 2
     m_Bits: 67895
+  distToPlayer: 0
   nextPatrolPoint: {x: 0, y: 0, z: 0}
 --- !u!114 &1834029084034238095
 MonoBehaviour:

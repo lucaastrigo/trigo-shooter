@@ -35,7 +35,7 @@ public class PlayerPickup : MonoBehaviour
             valueStorage = GameObject.FindGameObjectWithTag("Value Storage");
         }
 
-        if (focusedWeapon != null && Input.GetKeyDown(KeyCode.Q))
+        if (focusedWeapon != null && Input.GetKeyDown(KeyCode.E))
         {
             if (skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
             {
@@ -163,6 +163,7 @@ public class PlayerPickup : MonoBehaviour
         secondEquippedWeapon.GetComponent<Weapon>().playerWeapon = false;
         secondEquippedWeapon.GetComponent<Weapon>().onOff = false;
         secondEquippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 4;
+        ValueStorage.value.secondIndex = secondEquippedWeapon.GetComponent<Weapon>().weaponIndex;
     }
 
     void SwitchWeapon(Weapon toEquip, Weapon toDisequip)

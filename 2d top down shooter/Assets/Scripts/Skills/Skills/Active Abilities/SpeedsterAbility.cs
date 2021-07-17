@@ -31,6 +31,7 @@ public class SpeedsterAbility : MonoBehaviour
 
                 if (Input.GetKey(KeyCode.Space))
                 {
+                    print(newSpeed);
                     player.GetComponent<PlayerMovement>().speed = newSpeed;
 
                     if (player.GetComponent<PlayerMovement>().moving)

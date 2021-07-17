@@ -16,9 +16,10 @@ public class Enemy : MonoBehaviour
     float time, _frostTime;
     [HideInInspector] public float speedK;
     [HideInInspector] public bool dead, frost;
+    [HideInInspector] public bool canBeHurt = true;
     GameObject player;
     SpriteRenderer sprite;
-    Animator anim;
+    [HideInInspector] public Animator anim;
     Collider2D colli;
     GameObject skillStorage;
     Material mat;
@@ -126,9 +127,12 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage, Material material, float colorT)
     {
-        health -= damage;
-        sprite.material = material;
-        StartCoroutine(MaterialBack(colorT));
+        if (canBeHurt)
+        {
+            health -= damage;
+            sprite.material = material;
+            StartCoroutine(MaterialBack(colorT));
+        }
     }
 
     IEnumerator MaterialBack(float time)
@@ -139,9 +143,12 @@ public class Enemy : MonoBehaviour
 
     public void TakeColor(int damage, Color color, float colorT)
     {
-        health -= damage;
-        sprite.color = color;
-        StartCoroutine(ColorBack(colorT));
+        if (canBeHurt)
+        {
+            health -= damage;
+            sprite.color = color;
+            StartCoroutine(ColorBack(colorT));
+        }
     }
 
     IEnumerator ColorBack(float time)
@@ -157,7 +164,10 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        StartCoroutine(Destroyed());
+        if(GetComponent<TwoStages>() == null)
+        {
+            StartCoroutine(Destroyed());
+        }
 
         dead = true;
 

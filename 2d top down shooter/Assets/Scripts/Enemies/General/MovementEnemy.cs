@@ -7,11 +7,12 @@ public class MovementEnemy : MonoBehaviour
     public float patrolRange;
     public float followRange;
     public float stopFollowRange;
+    public bool follower;
     public bool followThrough;
     public bool retreat;
     public LayerMask hitableLayers;
 
-    float distToPlayer;
+    [HideInInspector] public float distToPlayer;
     float speedK;
     bool righted = true;
     bool patrolling;
@@ -23,6 +24,11 @@ public class MovementEnemy : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
 
     void Update()
@@ -37,11 +43,30 @@ public class MovementEnemy : MonoBehaviour
             if (!GetComponent<Enemy>().dead)
             {
                 distToPlayer = Vector2.Distance(transform.position, player.transform.position);
+
+                RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position, hitableLayers);
+
                 if (distToPlayer <= followRange)
                 {
-                    if (canFollow())
+                    if (canFollow() && follower)
                     {
                         Follow();
+                    }
+                    else
+                    {
+                        if (!patrolling)
+                        {
+                            FindPatrolPoint();
+                        }
+
+                        if (canPatrol())
+                        {
+                            Patrol();
+                        }
+                        else
+                        {
+                            FindPatrolPoint();
+                        }
                     }
                 }
                 else
@@ -50,14 +75,16 @@ public class MovementEnemy : MonoBehaviour
                     {
                         FindPatrolPoint();
                     }
-
-                    if (canPatrol())
-                    {
-                        Patrol();
-                    }
                     else
                     {
-                        FindPatrolPoint();
+                        if (canPatrol())
+                        {
+                            Patrol();
+                        }
+                        else
+                        {
+                            FindPatrolPoint();
+                        }
                     }
                 }
             }
@@ -115,8 +142,7 @@ public class MovementEnemy : MonoBehaviour
                 {
                     transform.position = Vector2.MoveTowards(transform.position, player.transform.position, GetComponent<Enemy>().speed * Time.deltaTime * Global.globalSpeed);
                 }
-
-                if (retreat)
+                else if (retreat)
                 {
                     transform.position = Vector2.MoveTowards(transform.position, player.transform.position, -GetComponent<Enemy>().speed * Time.deltaTime * Global.globalSpeed);
                 }
@@ -161,11 +187,11 @@ public class MovementEnemy : MonoBehaviour
         return can;
     }
 
-    bool canFollow()
+    public bool canFollow()
     {
         bool can = false;
 
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, nextPatrolPoint, hitableLayers);
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position, hitableLayers);
         if (hit.collider)
         {
             can = false;

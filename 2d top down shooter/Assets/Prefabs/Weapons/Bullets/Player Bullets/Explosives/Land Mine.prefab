@@ -151,13 +151,13 @@ MonoBehaviour:
   flame: 0
   electric: 0
   ice: 0
-  damage: 15
+  damage: 10
   fireDamage: 0
   speed: 0
   speedMod: 0
   lifetime: 20
   colorTime: 0
-  explosionRange: 2.25
+  explosionRange: 1.75
   shakeMag: 0.01
   shakeDur: 0.05
   freezePercent: 0

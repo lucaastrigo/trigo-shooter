@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class WeaponEnemy : MonoBehaviour
 {
+    public float fireRange;
     public float fireRate;
     public float secondStageFireRate;
     public GameObject bullet;
+    public GameObject laser;
     public AudioClip fireSound; 
     public Transform muzzle;
 
@@ -16,12 +18,18 @@ public class WeaponEnemy : MonoBehaviour
     GameObject player;
     GameObject parent;
     AudioSource audioSource;
+    Animator laserAnim;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         parent = transform.parent.gameObject;
         audioSource = GetComponent<AudioSource>();
+
+        if(laser != null)
+        {
+            laserAnim = laser.GetComponent<Animator>();
+        }
     }
 
     void Update()
@@ -31,7 +39,7 @@ public class WeaponEnemy : MonoBehaviour
             if (!parent.GetComponent<Enemy>().dead)
             {
                 float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-                if (distanceToPlayer <= parent.GetComponent<MovementEnemy>().followRange)
+                if (distanceToPlayer <= fireRange && parent.GetComponent<MovementEnemy>().canFollow())
                 {
                     //it points towards the player
                     Vector3 difference = player.transform.position - transform.position;
@@ -42,7 +50,16 @@ public class WeaponEnemy : MonoBehaviour
                     {
                         if (canShoot())
                         {
-                            Shoot();
+                            if (laser != null)
+                            {
+                                laserAnim.SetTrigger("shoot");
+
+                                GetComponentInParent<Enemy>().speed = 0;
+                            }
+                            else
+                            {
+                                Shoot();
+                            }
                         }
                     }
                 }
@@ -52,43 +69,6 @@ public class WeaponEnemy : MonoBehaviour
                     Vector3 difference = parent.GetComponent<MovementEnemy>().nextPatrolPoint - transform.position;
                     angle = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
                     transform.rotation = Quaternion.Euler(0, 0, angle - 90);
-                }
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
-
-        if (parent.GetComponent<Boss>() != null)
-        {
-            if (!parent.GetComponent<Boss>().dead)
-            {
-                if (!parent.GetComponent<Boss>().secondStage)
-                {
-                    float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-                    if (distanceToPlayer <= parent.GetComponent<MovementBoss>().followRange)
-                    {
-                        //it points towards the player
-                        Vector3 difference = player.transform.position - transform.position;
-                        angle = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-                        transform.rotation = Quaternion.Euler(0, 0, angle - 90);
-
-                        if (Global.globalSpeed > 0)
-                        {
-                            if (canShoot())
-                            {
-                                Shoot();
-                            }
-                        }
-                    }
-                    else
-                    {
-                        //it points towards the next patrol point
-                        Vector3 difference = parent.GetComponent<MovementBoss>().nextPatrolPoint - transform.position;
-                        angle = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-                        transform.rotation = Quaternion.Euler(0, 0, angle - 90);
-                    }
                 }
             }
             else

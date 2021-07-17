@@ -45,7 +45,11 @@ public class ChestSkill : MonoBehaviour
 
         if (!randomizedSkill.GetComponent<SkillObject>().canUse)
         {
-            RandomizeSkill();
+             RandomizeSkill();
+        }
+        else
+        {
+            return randomizedSkill;
         }
 
         return randomizedSkill;

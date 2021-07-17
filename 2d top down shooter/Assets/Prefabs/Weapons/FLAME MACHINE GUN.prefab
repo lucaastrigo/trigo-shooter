@@ -105,7 +105,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: -2123462439228595696, guid: 111cca7b7730ed745bdd15b924d9da51,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -267,12 +267,13 @@ MonoBehaviour:
   burst: 0
   onOff: 0
   ammo: 0
+  cantDrop: 1
   muzzle: {fileID: 1974073136676160957}
   ammoBar: {fileID: 0}
   bullet: {fileID: 501064680550823369, guid: c194d315eea4efc4f8aaec5c42f4bf0f, type: 3}
   weaponDescription: {fileID: 385584168893067755}
   fireSound: {fileID: 8300000, guid: 4f172cce9f2aa9a428bd13645d71abec, type: 3}
-  weaponIndex: -1
+  weaponIndex: 0
   _fireRate: 0.2
   _accuracy: 0.93
 --- !u!1 &2193660149191662196

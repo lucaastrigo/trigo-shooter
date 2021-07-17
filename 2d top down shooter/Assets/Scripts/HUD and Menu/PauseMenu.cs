@@ -31,6 +31,10 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
             }
+            else
+            {
+                Continue();
+            }
         }
     }
 

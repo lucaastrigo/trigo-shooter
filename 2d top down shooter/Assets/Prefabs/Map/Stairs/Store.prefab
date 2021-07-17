@@ -206,7 +206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d130a8cefab92654d8dd7bff5e8e6722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 
+  firstLevel: Graveyard
+  nextLevel: Graveyard
   scenePlus: 1
 --- !u!95 &8362747211165345313
 Animator:

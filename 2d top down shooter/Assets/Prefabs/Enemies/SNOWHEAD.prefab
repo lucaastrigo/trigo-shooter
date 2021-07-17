@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 6456959567285500905, guid: a36758ae51a5c6e46bcfabc7c36b310b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56cb052321e76445a0fee4da483d389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 4
   speed: 1.5
   healthChestDropRate: 7
   healthChest: {fileID: 1114838512330552965, guid: d6967e40907cfd84ca4260192008dd11,
@@ -167,13 +167,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolRange: 3
-  followRange: 1.5
-  stopFollowRange: 0.5
+  followRange: 6
+  stopFollowRange: 1.75
+  follower: 1
   followThrough: 0
-  retreat: 0
+  retreat: 1
   hitableLayers:
     serializedVersion: 2
     m_Bits: 67895
+  distToPlayer: 0
   nextPatrolPoint: {x: 0, y: 0, z: 0}
 --- !u!95 &1834029084034238098
 Animator:
@@ -445,8 +447,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353ee8e94cb3dc4498eb4ec7499f15ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRange: 5
   fireRate: 1
   secondStageFireRate: 0
   bullet: {fileID: 2425624021902696673, guid: 6854ded2984c4e542afe7ebe143e86ce, type: 3}
+  laser: {fileID: 0}
   fireSound: {fileID: 8300000, guid: 4f172cce9f2aa9a428bd13645d71abec, type: 3}
   muzzle: {fileID: 69629182892725555}

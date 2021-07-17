@@ -144,7 +144,9 @@ MonoBehaviour:
   - dropRate: 7
     weapon: {fileID: 2095156212232165053, guid: ac9141faaa3382e418741f7467967351,
       type: 3}
+  mergedChest: 1
   openedSprite: {fileID: -9022672404565623355, guid: c9ec2f3356763544d96f5afb513fbdeb,
     type: 3}
   openFX: {fileID: 3375865884550540848, guid: e6f0578fe48308540a2d00370bc7dd93, type: 3}
+  minimapImage: {fileID: 0}
   weaponToDrop: {fileID: 0}

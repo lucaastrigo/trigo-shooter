@@ -7,8 +7,6 @@ public class ValueStorage : MonoBehaviour
 {
     public static ValueStorage value;
 
-    public string characterValue;
-
     public string weaponValue;
     public string secondWeaponValue;
 
@@ -40,6 +38,8 @@ public class ValueStorage : MonoBehaviour
         value.maxHealthValue = 10;
         value.weaponValue = "PISTOL";
         value.secondWeaponValue = "PISTOL";
+        value.firstIndex = 0;
+        value.secondIndex = 0;
         value.coinValue = 0;
 
         for (int i = 0; i <= WeaponAmmo.Count - 1; i++)

@@ -68,7 +68,6 @@ public class Weapon : MonoBehaviour
         }
 
 
-
         weaponDescription.GetComponent<TMP_Text>().enabled = false;
 
         if (bullet.GetComponentInChildren<BulletScript>() != null)
@@ -163,6 +162,8 @@ public class Weapon : MonoBehaviour
                 {
                     ValueStorage.value.weaponValue = weaponName;
                     ValueStorage.value.WeaponAmmo[weaponIndex] = currentAmmo;
+
+                    //ValueStorage.value.firstIndex = weaponIndex;
                 }
 
                 if (mousePos.x < transform.position.x)
@@ -273,18 +274,24 @@ public class Weapon : MonoBehaviour
 
     public void MoreAmmo(int ammo)
     {
-        player.time = player.indicationTime;
+        Vector3 indicatorPos = Camera.main.WorldToScreenPoint(player.transform.position + new Vector3(0, 1, 0));
+        GameObject ind;
 
-        currentAmmo += ammo;
+        ind = Instantiate(player.indicator, indicatorPos, Quaternion.identity);
+        ind.transform.SetParent(player.canvas);
+        ind.GetComponent<Animator>().SetTrigger("active");
+        ind.GetComponent<TMP_Text>().color = Color.white;
 
-        if (currentAmmo >= maxAmmo)
+        if(currentAmmo + ammo >= maxAmmo)
         {
-            player.playerIndicator.GetComponent<TMP_Text>().text = "full ammo";
+            ind.GetComponent<TMP_Text>().text = "full ammo";
         }
         else
         {
-            player.playerIndicator.GetComponent<TMP_Text>().text = "+ " + ammo.ToString() + " ammo";
+            ind.GetComponent<TMP_Text>().text = ammo.ToString();
         }
+
+        currentAmmo += ammo;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

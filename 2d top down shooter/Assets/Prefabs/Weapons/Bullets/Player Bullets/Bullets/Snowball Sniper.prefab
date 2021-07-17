@@ -151,7 +151,7 @@ MonoBehaviour:
   flame: 0
   electric: 0
   ice: 1
-  damage: 7
+  damage: 10
   fireDamage: 0
   speed: 15
   speedMod: 1

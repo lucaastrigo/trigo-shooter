@@ -37,15 +37,18 @@ public class MiniChest : MonoBehaviour
 
             if (ValueStorage.value.secondWeaponValue == weapons[i].name || ValueStorage.value.secondWeaponValue == weapons[i].name + "(Clone)")
             {
-                if (skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
+                if(skillStorage != null && skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill != null)
                 {
-                    secondWeaponToDrop = weapons[i];
-                    secondWeaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.secondIndex;
-                    print(secondWeaponToDrop);
-                }
-                else
-                {
-                    secondWeaponToDrop = null;
+                    if (skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
+                    {
+                        secondWeaponToDrop = weapons[i];
+                        secondWeaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.secondIndex;
+                        print(secondWeaponToDrop);
+                    }
+                    else
+                    {
+                        secondWeaponToDrop = null;
+                    }
                 }
             }
         }

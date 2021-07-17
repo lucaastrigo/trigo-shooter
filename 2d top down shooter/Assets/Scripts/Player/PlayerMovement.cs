@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public float _speed;
     [HideInInspector] public float xMove;
     [HideInInspector] public float yMove;
-    float friction = 1;
+    [HideInInspector] public float friction = 1;
     bool rightFaced;
     [HideInInspector] public bool moving;
     Vector2 mousePos;

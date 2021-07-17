@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2673977853090313618}
   - component: {fileID: 2874923991341639628}
   m_Layer: 9
-  m_Name: G2 - G2 Boss
+  m_Name: Graveyard 2
   m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,8 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d130a8cefab92654d8dd7bff5e8e6722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Graveyard 2 Boss
-  scenePlus: 0
+  firstLevel: Graveyard
+  nextLevel: Store
+  scenePlus: 1
 --- !u!95 &2874923991341639628
 Animator:
   serializedVersion: 3

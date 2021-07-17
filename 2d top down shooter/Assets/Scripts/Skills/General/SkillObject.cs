@@ -46,7 +46,7 @@ public class SkillObject : MonoBehaviour
         {
             skillTitle.transform.position = Camera.main.WorldToScreenPoint(transform.position + new Vector3(0, 1, 0));
 
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 ActivateSkill();
             }
