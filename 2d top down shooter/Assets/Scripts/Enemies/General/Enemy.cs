@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public GameObject bigHealthChest;
     public GameObject ammoKit;
     public GameObject deathFX;
-    public Sprite deadSprite;
+    public GameObject deadSprite;
 
     float time, _frostTime;
     [HideInInspector] public float speedK;
@@ -102,27 +102,49 @@ public class Enemy : MonoBehaviour
 
         if (frost)
         {
-            if(speed <= 0)
-            {
-                speed = 0;
-            }
+            speed = 0;
         }
     }
 
     public void Frost(float frostT, float frostP) //color time and freeze percent
     {
-        _frostTime = frostT;
+        anim.speed = 0;
 
-        frostP *= speedK;
-        speed -= frostP;
+        if(_frostTime <= 7.5f)
+        {
+            _frostTime += frostT;
+        }
+
+        speed = 0;
 
         frost = true;
+
+        if(GetComponentInChildren<WeaponEnemy>() != null)
+        {
+            GetComponentInChildren<WeaponEnemy>().enabled = false;
+        }
     }
 
     void Unfrost()
     {
+        anim.speed = 1;
+
         speed = speedK;
         frost = false;
+
+        if (GetComponentInChildren<WeaponEnemy>() != null)
+        {
+            GetComponentInChildren<WeaponEnemy>().enabled = true;
+
+            GameObject enemyWeapon = GetComponentInChildren<WeaponEnemy>().gameObject;
+
+            if (enemyWeapon.transform.GetChild(0).GetComponentInChildren<Laser>() != null)
+            {
+                enemyWeapon.transform.GetChild(0).GetComponentInChildren<Laser>().enabled = true;
+            }
+        }
+
+        MaterialBack(0);
     }
 
     public void TakeDamage(int damage, Material material, float colorT)
@@ -131,7 +153,17 @@ public class Enemy : MonoBehaviour
         {
             health -= damage;
             sprite.material = material;
-            StartCoroutine(MaterialBack(colorT));
+
+            if (GetComponentInChildren<WeaponEnemy>() != null)
+            {
+                GameObject enemyWeapon = GetComponentInChildren<WeaponEnemy>().gameObject;
+                enemyWeapon.GetComponent<SpriteRenderer>().material = material;
+            }
+
+            if (!frost)
+            {
+                StartCoroutine(MaterialBack(colorT));
+            }
         }
     }
 
@@ -139,23 +171,29 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         sprite.material = mat;
-    }
 
-    public void TakeColor(int damage, Color color, float colorT)
-    {
-        if (canBeHurt)
+        if (GetComponentInChildren<WeaponEnemy>() != null)
         {
-            health -= damage;
-            sprite.color = color;
-            StartCoroutine(ColorBack(colorT));
+            GameObject enemyWeapon = GetComponentInChildren<WeaponEnemy>().gameObject;
+            enemyWeapon.GetComponent<SpriteRenderer>().material = mat;
         }
     }
 
-    IEnumerator ColorBack(float time)
-    {
-        yield return new WaitForSeconds(time);
-        sprite.color = Color.white;
-    }
+    //public void TakeColor(int damage, Color color, float colorT)
+    //{
+    //    if (canBeHurt)
+    //    {
+    //        health -= damage;
+    //        sprite.color = color;
+    //        StartCoroutine(ColorBack(colorT));
+    //    }
+    //}
+
+    //IEnumerator ColorBack(float time)
+    //{
+    //    yield return new WaitForSeconds(time);
+    //    sprite.color = Color.white;
+    //}
 
     public void Shock(float dazedTime)
     {
@@ -167,6 +205,11 @@ public class Enemy : MonoBehaviour
         if(GetComponent<TwoStages>() == null)
         {
             StartCoroutine(Destroyed());
+        }
+        else
+        {
+            //change sprite to dead sprite
+            sprite.sprite = deadSprite.GetComponent<SpriteRenderer>().sprite;
         }
 
         dead = true;
@@ -191,9 +234,6 @@ public class Enemy : MonoBehaviour
         }
 
         Instantiate(deathFX, transform.position, Quaternion.identity);
-
-        //change sprite to dead sprite
-        sprite.sprite = deadSprite;
 
         //disable everything
         anim.enabled = false;
@@ -223,8 +263,9 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Destroyed()
     {
+        sprite.sprite = null;
+        Instantiate(deadSprite, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1);
-        Instantiate(deathFX, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

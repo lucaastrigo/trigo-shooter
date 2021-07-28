@@ -166,8 +166,7 @@ MonoBehaviour:
   hitFX: {fileID: 3375865884550540848, guid: 7a5290fd9d694ef42ae767fb032d7618, type: 3}
   explosionFX: {fileID: 3375865884550540848, guid: b823a68863bf1344eacee87549d47f97,
     type: 3}
-  mat: {fileID: 2100000, guid: 6a2f85da9823e6e4a9207b782c568852, type: 2}
-  color: {r: 1, g: 1, b: 1, a: 1}
+  mat: {fileID: 2100000, guid: 1243057040accc644848d5364b52bf31, type: 2}
   _damage: 8
 --- !u!114 &2457315678657679400
 MonoBehaviour:

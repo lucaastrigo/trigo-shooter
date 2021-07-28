@@ -57,10 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemies\Enemy Bullets &amp; Weapons\WeaponEnemy.cs" />
+    <Compile Include="Assets\Scripts\Bosses\Bosses\TwoStages.cs" />
     <Compile Include="Assets\Scripts\Enemies\General\SpawnerEnemy.cs" />
     <Compile Include="Assets\Scripts\FX\TrailFX.cs" />
     <Compile Include="Assets\Scripts\Items\ChestHealth.cs" />
     <Compile Include="Assets\Scripts\Items\ChestSkill.cs" />
+    <Compile Include="Assets\Scripts\Items\ExtraLife.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerSkills.cs" />
     <Compile Include="Assets\Scripts\HUD and Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\Weapons\Laser.cs" />
@@ -69,9 +71,9 @@
     <Compile Include="Assets\Scripts\Skills\Skills\Skills\SharpshooterSkill.cs" />
     <Compile Include="Assets\Scripts\Items\ChestAmmo.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\PlungerAbility.cs" />
+    <Compile Include="Assets\Scripts\Traps\TriggerDamage.cs" />
     <Compile Include="Assets\Scripts\Weapons\ExplosionRange.cs" />
     <Compile Include="Assets\Scripts\Weapons\ContinuousDamage.cs" />
-    <Compile Include="Assets\Scripts\Skills\Skills\Skills\ExtraHolsterSkill.cs" />
     <Compile Include="Assets\Scripts\Traps\FrictionFloor.cs" />
     <Compile Include="Assets\Scripts\Bosses\General\Boss.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Skills\BloodlustSkill.cs" />
@@ -80,16 +82,15 @@
     <Compile Include="Assets\Scripts\Level\Portal.cs" />
     <Compile Include="Assets\Scripts\HUD and Menu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Level\Room\RoomTemplates.cs" />
-    <Compile Include="Assets\Scripts\Skills\Skills\Skills\LongLegsSkill.cs" />
     <Compile Include="Assets\Scripts\General\MusicStorage.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\ExplosionGiftAbility.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerSelector.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\SpeedsterAbility.cs" />
     <Compile Include="Assets\Scripts\HUD and Menu\DiegeticButton.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Skills\ReinforcedBarrelSkill.cs" />
     <Compile Include="Assets\Scripts\TESTE.cs" />
     <Compile Include="Assets\Scripts\Traps\Spike.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy Bullets &amp; Weapons\MuzzleEnemy.cs" />
+    <Compile Include="Assets\Scripts\Items\Rotate.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerPickup.cs" />
     <Compile Include="Assets\Scripts\FX\StepsFX.cs" />
@@ -117,7 +118,6 @@
     <Compile Include="Assets\Scripts\Enemies\Enemy Types\EnemyGhost.cs" />
     <Compile Include="Assets\Scripts\Items\MiniChest.cs" />
     <Compile Include="Assets\Scripts\Level\Room\AddRoom.cs" />
-    <Compile Include="Assets\Scripts\Skills\Skills\Skills\HealthierSkill.cs" />
     <Compile Include="Assets\Scripts\General\Global.cs" />
     <Compile Include="Assets\Scripts\Level\Room\Room.cs" />
     <Compile Include="Assets\Scripts\General\MapCamera.cs" />
@@ -137,9 +137,6 @@
     <Compile Include="Assets\Scripts\HUD and Menu\AmmoBar.cs" />
     <Compile Include="Assets\Scripts\Items\ChestWeapon.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\FreezeAbility.cs" />
-    <Compile Include="Assets\Scripts\Items\Rotate.cs" />
-    <Compile Include="Assets\Scripts\Traps\TriggerDamage.cs" />
-    <Compile Include="Assets\Scripts\Bosses\Bosses\TwoStages.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\EXTRA\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

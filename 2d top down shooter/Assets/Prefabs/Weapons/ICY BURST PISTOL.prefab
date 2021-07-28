@@ -265,6 +265,7 @@ MonoBehaviour:
   playerWeapon: 0
   singleShot: 1
   burst: 1
+  touched: 0
   onOff: 0
   ammo: 0
   cantDrop: 1

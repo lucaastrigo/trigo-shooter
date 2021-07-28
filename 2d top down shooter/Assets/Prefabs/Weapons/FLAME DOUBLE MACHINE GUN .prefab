@@ -265,8 +265,10 @@ MonoBehaviour:
   playerWeapon: 0
   singleShot: 0
   burst: 0
+  touched: 0
   onOff: 0
   ammo: 0
+  cantDrop: 0
   muzzle: {fileID: 1883136668645063546}
   ammoBar: {fileID: 0}
   bullet: {fileID: 2425624021902696673, guid: 054b05e4567596b4d84eb9ac43e0ce6d, type: 3}

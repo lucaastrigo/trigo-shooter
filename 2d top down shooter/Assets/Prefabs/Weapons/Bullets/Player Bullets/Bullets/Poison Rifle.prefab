@@ -165,8 +165,7 @@ MonoBehaviour:
   hitFX: {fileID: 3464780211757320673, guid: 94c50d6c4654c544eadb1089efadf109, type: 3}
   explosionFX: {fileID: 3464780211757320673, guid: 94c50d6c4654c544eadb1089efadf109,
     type: 3}
-  mat: {fileID: 2100000, guid: 6a2f85da9823e6e4a9207b782c568852, type: 2}
-  color: {r: 0.85490197, g: 0, b: 1, a: 1}
+  mat: {fileID: 2100000, guid: 863c8ceee14028e4284f864ca75d45b8, type: 2}
   _damage: 4
 --- !u!96 &2625293004736450629
 TrailRenderer:

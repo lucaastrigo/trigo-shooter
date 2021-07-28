@@ -265,6 +265,7 @@ MonoBehaviour:
   playerWeapon: 0
   singleShot: 0
   burst: 0
+  touched: 0
   onOff: 0
   ammo: 0
   cantDrop: 1
@@ -273,7 +274,7 @@ MonoBehaviour:
   bullet: {fileID: 501064680550823369, guid: c194d315eea4efc4f8aaec5c42f4bf0f, type: 3}
   weaponDescription: {fileID: 385584168893067755}
   fireSound: {fileID: 8300000, guid: 4f172cce9f2aa9a428bd13645d71abec, type: 3}
-  weaponIndex: 0
+  weaponIndex: -1
   _fireRate: 0.2
   _accuracy: 0.93
 --- !u!1 &2193660149191662196

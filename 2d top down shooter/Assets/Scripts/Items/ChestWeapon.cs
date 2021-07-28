@@ -100,7 +100,7 @@ public class ChestWeapon : MonoBehaviour
             weaponToDrop.GetComponentInChildren<SpriteRenderer>().sortingOrder = 6;
         }
 
-        Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.1f), Quaternion.identity);
+        Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.5f), Quaternion.identity);
         Instantiate(openFX, transform.position, Quaternion.identity);
 
         if (minimapImage != null)

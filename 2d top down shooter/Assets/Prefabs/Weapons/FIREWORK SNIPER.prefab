@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d048b1072b32f64aad9556a76784ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
   hitable:
     serializedVersion: 2
     m_Bits: 76087
@@ -412,6 +413,7 @@ MonoBehaviour:
   playerWeapon: 0
   singleShot: 0
   burst: 0
+  touched: 0
   onOff: 0
   ammo: 0
   cantDrop: 0

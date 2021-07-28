@@ -147,11 +147,13 @@ MonoBehaviour:
     type: 3}
   ammoKit: {fileID: 8330182491922915567, guid: bd36ec0ae99ff2e48aa7d741044cc033, type: 3}
   deathFX: {fileID: 3375865884550540848, guid: 7686798adc432db4e831d579eaf392f3, type: 3}
-  deadSprite: {fileID: 8411023213506421780, guid: 776c60e170e319845a859d6682a24315,
+  deadSprite: {fileID: 1834029084034238099, guid: 12ec3bfbc276ae547a086e12728b042a,
     type: 3}
   speedK: 0
   dead: 0
   frost: 0
+  canBeHurt: 1
+  anim: {fileID: 0}
   _health: 5
   _dropRate: 7
 --- !u!114 &559362086295331962

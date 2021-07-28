@@ -76,11 +76,13 @@
     <Compile Include="Assets\Plugins\FancyFolders\Editor\FileSystem\IFileSystemItem.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Settings\Icons\IconType.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Main.cs" />
+    <Compile Include="Assets\Plugins\AllIn1SpriteShader\Editor\AllIn1ShaderGradientDrawer.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Settings\Icons\IconSetEditor.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Settings\Icons\Icon.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Renderer\StringFormatting\StringFormatter.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\FileSystem\AssetModificationMonitor.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\FileSystem\AssetGuid.cs" />
+    <Compile Include="Assets\Plugins\AllIn1SpriteShader\Editor\AllIn1SpriteShaderStencil.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Serialization\SerializableStringIconPair.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Settings\FileSettings.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\FileSystem\DirectoryItem.cs" />
@@ -91,7 +93,9 @@
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Compiler\CompilerMonitor.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\UI\Windows\BasePopupWindow.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\UI\Windows\BaseWindow.cs" />
+    <Compile Include="Assets\Plugins\AllIn1SpriteShader\Editor\AllIn1ShaderScriptEditor.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Settings\BaseAssetSettings.cs" />
+    <Compile Include="Assets\Plugins\AllIn1SpriteShader\Editor\AllIn1UrpShader.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\UI\Styles.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\FileSystem\ProjectFileSystem.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\VersionControl\Git\GitVcs.cs" />
@@ -99,6 +103,7 @@
     <Compile Include="Assets\Plugins\FancyFolders\Editor\UI\Properties\IconDrawer.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\Renderer\Textures\ColoredTexture.cs" />
     <Compile Include="Assets\Plugins\FancyFolders\Editor\UI\Windows\DirectoryConfigWindow.cs" />
+    <Compile Include="Assets\Plugins\AllIn1SpriteShader\Editor\AllIn1SpriteShader.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -6,24 +6,31 @@ using UnityEngine;
 public class TwoStages : MonoBehaviour
 {
     public float vulnerableTime;
+    public GameObject hitlessReward;
+    public GameObject[] enemyWaves;
 
+    int playerInitialHealth;
     float time;
     bool vulnerablized, finalized;
     Enemy enemy;
+    Player player;
     GameObject[] enemies;
+
+    GameObject rays;
 
     public UnityEvent vulnerabling, invulnerabling, finalize;
 
     void Start()
     {
         enemy = GetComponent<Enemy>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+
+        playerInitialHealth = player.currentHealth;
     }
 
     void Update()
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        print(enemies.Length);
-
 
         if(!enemy.dead)
         {
@@ -51,9 +58,26 @@ public class TwoStages : MonoBehaviour
         {
             if (!finalized)
             {
+                if (!hitDetect())
+                {
+                    Hitless();
+                }
+
                 finalize.Invoke();
                 finalized = true;
             }
+        }
+    }
+
+    bool hitDetect()
+    {
+        if(player.currentHealth < playerInitialHealth)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
@@ -73,8 +97,30 @@ public class TwoStages : MonoBehaviour
         vulnerablized = false;
     }
 
-    public void SpawnEnemies(GameObject enemies)
+    public void SpawnStairs(GameObject stairs)
     {
-        Instantiate(enemies, Vector3.zero, Quaternion.identity);
+        Instantiate(stairs, new Vector3(transform.position.x, transform.position.y + 3, 0), Quaternion.identity);
+    }
+
+    public void SpawnEnemies()
+    {
+        int i = Random.Range(0, enemyWaves.Length - 1);
+        Instantiate(enemyWaves[i], Vector3.zero, Quaternion.identity);
+    }
+
+    public void ActivateRays(GameObject boneRays)
+    {
+        GameObject raysToDestroy = Instantiate(boneRays, transform.position, Quaternion.identity);
+        rays = raysToDestroy;
+    }
+
+    public void DeactivateRays()
+    {
+        Destroy(rays);
+    }
+
+    void Hitless()
+    {
+        Instantiate(hitlessReward, new Vector3(transform.position.x, transform.position.y - 3, 0), Quaternion.identity);
     }
 }

@@ -37,30 +37,18 @@ public class PlayerPickup : MonoBehaviour
 
         if (focusedWeapon != null && Input.GetKeyDown(KeyCode.E))
         {
-            if (skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
+            if (hasTwoWeapons)
             {
-                if (hasTwoWeapons)
-                {
-                    DisequipWeapon(equippedWeapon);
-                    SecondWeapon(secondEquippedWeapon); //maybe this line is not necessary
-                }
-
-                if (hasWeapon && !hasTwoWeapons)
-                {
-                    SecondWeapon(equippedWeapon);
-                }
-
-                EquipWeapon(focusedWeapon);
+                DisequipWeapon(equippedWeapon);
+                SecondWeapon(secondEquippedWeapon); //maybe this line is not necessary
             }
-            else
+
+            if (hasWeapon && !hasTwoWeapons)
             {
-                if (hasWeapon)
-                {
-                    DisequipWeapon(equippedWeapon);
-                }
-
-                EquipWeapon(focusedWeapon);
+                SecondWeapon(equippedWeapon);
             }
+
+            EquipWeapon(focusedWeapon);
         }
 
         if (equippedWeapon != null)
@@ -69,21 +57,10 @@ public class PlayerPickup : MonoBehaviour
 
             equippedWeapon.transform.position = holster.transform.position;
 
-            if (skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
+            if (subEquip)
             {
-                if (subEquip)
-                {
-                    equippedWeapon.LoadData();
-                    subEquip = false;
-                }
-            }
-            else
-            {
-                if (!equip)
-                {
-                    equippedWeapon.LoadData();
-                    equip = true;
-                }
+                equippedWeapon.LoadData();
+                subEquip = false;
             }
         }
 

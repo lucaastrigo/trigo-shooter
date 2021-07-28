@@ -207,6 +207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8679533771739192145, guid: 21afae76d83cd4a459ece2ba30fb837c,
         type: 3}
+      propertyPath: mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 1243057040accc644848d5364b52bf31, type: 2}
+    - target: {fileID: 8679533771739192145, guid: 21afae76d83cd4a459ece2ba30fb837c,
+        type: 3}
       propertyPath: damage
       value: 3
       objectReference: {fileID: 0}
@@ -397,6 +402,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8679533771739192145, guid: 21afae76d83cd4a459ece2ba30fb837c,
         type: 3}
+      propertyPath: mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 1243057040accc644848d5364b52bf31, type: 2}
+    - target: {fileID: 8679533771739192145, guid: 21afae76d83cd4a459ece2ba30fb837c,
+        type: 3}
       propertyPath: damage
       value: 3
       objectReference: {fileID: 0}
@@ -585,6 +595,11 @@ PrefabInstance:
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].outWeight
       value: 0.24734497
       objectReference: {fileID: 0}
+    - target: {fileID: 8679533771739192145, guid: 21afae76d83cd4a459ece2ba30fb837c,
+        type: 3}
+      propertyPath: mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 1243057040accc644848d5364b52bf31, type: 2}
     - target: {fileID: 8679533771739192145, guid: 21afae76d83cd4a459ece2ba30fb837c,
         type: 3}
       propertyPath: damage

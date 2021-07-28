@@ -13,6 +13,7 @@ public class LeafDashAbility : MonoBehaviour
     public Vector2 leafRange;
     public GameObject leafFX;
     public GameObject dashFX;
+    public Material mat;
 
     float dashTime;
     bool canDash;
@@ -107,7 +108,7 @@ public class LeafDashAbility : MonoBehaviour
         {
             if (enemiesToDamage1[i].GetComponent<Enemy>() != null)
             {
-                enemiesToDamage1[i].GetComponent<Enemy>().TakeColor(leafDashDamage, Color.green, 0.2f);
+                enemiesToDamage1[i].GetComponent<Enemy>().TakeDamage(leafDashDamage, mat, 0.2f);
             }
         }
 
@@ -119,7 +120,7 @@ public class LeafDashAbility : MonoBehaviour
         {
             if (enemiesToDamage2[i].GetComponent<Enemy>() != null)
             {
-                enemiesToDamage2[i].GetComponent<Enemy>().TakeColor(leafDashDamage, Color.green, 0.2f);
+                enemiesToDamage2[i].GetComponent<Enemy>().TakeDamage(leafDashDamage, mat, 0.2f);
             }
         }
 
@@ -139,7 +140,7 @@ public class LeafDashAbility : MonoBehaviour
         {
             if (enemiesToDamage1[i].GetComponent<Enemy>() != null)
             {
-                enemiesToDamage1[i].GetComponent<Enemy>().TakeColor(leafDashDamage, Color.green, 0.2f);
+                enemiesToDamage1[i].GetComponent<Enemy>().TakeDamage(leafDashDamage, mat, 0.2f);
             }
         }
 
@@ -151,7 +152,7 @@ public class LeafDashAbility : MonoBehaviour
         {
             if (enemiesToDamage2[i].GetComponent<Enemy>() != null)
             {
-                enemiesToDamage2[i].GetComponent<Enemy>().TakeColor(leafDashDamage, Color.green, 0.2f);
+                enemiesToDamage2[i].GetComponent<Enemy>().TakeDamage(leafDashDamage, mat, 0.2f);
             }
         }
 

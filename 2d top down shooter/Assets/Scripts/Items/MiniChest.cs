@@ -29,7 +29,7 @@ public class MiniChest : MonoBehaviour
 
         for (int i = 0; i < weapons.Length; i++)
         {
-            if(ValueStorage.value.weaponValue == weapons[i].name)
+            if(ValueStorage.value.weaponValue == weapons[i].name || ValueStorage.value.weaponValue == weapons[i].name + "(Clone)")
             {
                 weaponToDrop = weapons[i];
                 weaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.firstIndex;
@@ -37,18 +37,14 @@ public class MiniChest : MonoBehaviour
 
             if (ValueStorage.value.secondWeaponValue == weapons[i].name || ValueStorage.value.secondWeaponValue == weapons[i].name + "(Clone)")
             {
-                if(skillStorage != null && skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill != null)
+                if((ValueStorage.value.weaponValue == "PISTOL" || ValueStorage.value.weaponValue == "PISTOL(Clone)") && (ValueStorage.value.secondWeaponValue == "PISTOL" || ValueStorage.value.secondWeaponValue == "PISTOL(Clone)"))
                 {
-                    if (skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
-                    {
-                        secondWeaponToDrop = weapons[i];
-                        secondWeaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.secondIndex;
-                        print(secondWeaponToDrop);
-                    }
-                    else
-                    {
-                        secondWeaponToDrop = null;
-                    }
+                    secondWeaponToDrop = null;
+                }
+                else
+                {
+                    secondWeaponToDrop = weapons[i];
+                    secondWeaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.secondIndex;
                 }
             }
         }
@@ -76,14 +72,14 @@ public class MiniChest : MonoBehaviour
             weaponToDrop.GetComponent<SpriteRenderer>().sortingOrder = 6;
             secondWeaponToDrop.GetComponent<SpriteRenderer>().sortingOrder = 6;
 
-            Instantiate(weaponToDrop, new Vector2(transform.position.x + 0.4f, transform.position.y + 0.1f), Quaternion.identity);
-            Instantiate(secondWeaponToDrop, new Vector2(transform.position.x - 0.4f, transform.position.y + 0.1f), Quaternion.identity);
+            Instantiate(weaponToDrop, new Vector2(transform.position.x + 0.4f, transform.position.y + 0.5f), Quaternion.identity);
+            Instantiate(secondWeaponToDrop, new Vector2(transform.position.x - 0.4f, transform.position.y + 0.5f), Quaternion.identity);
         }
         else
         {
             weaponToDrop.GetComponent<SpriteRenderer>().sortingOrder = 6;
 
-            Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.1f), Quaternion.identity);
+            Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.5f), Quaternion.identity);
         }
 
         Instantiate(openFX, transform.position, Quaternion.identity);

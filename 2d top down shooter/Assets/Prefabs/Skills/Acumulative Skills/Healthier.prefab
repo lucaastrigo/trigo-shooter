@@ -301,7 +301,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: speedster
+  m_text: healthier
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d48602fd5e023e547b01bba0f4e1be0b, type: 2}
   m_sharedMaterial: {fileID: -5820928002062287341, guid: d48602fd5e023e547b01bba0f4e1be0b,
@@ -382,8 +382,8 @@ GameObject:
   - component: {fileID: 3426070610673491705}
   - component: {fileID: 3426070610673491462}
   - component: {fileID: -709273520989577752}
-  - component: {fileID: 3426070610673491460}
-  - component: {fileID: -430501400009159205}
+  - component: {fileID: -2131451998603091592}
+  - component: {fileID: -4494058307317424227}
   m_Layer: 9
   m_Name: Healthier
   m_TagString: Skill Object
@@ -484,7 +484,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4375, y: 0.375}
   m_EdgeRadius: 0
---- !u!114 &3426070610673491460
+--- !u!114 &-2131451998603091592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -502,7 +502,7 @@ MonoBehaviour:
   skillTitle: {fileID: 3426070610640635755}
   description: {fileID: 3426070610137866396}
   skillFX: {fileID: 3375865884550540848, guid: a53bcc38a7220df47a7fca62c0940a2a, type: 3}
---- !u!114 &-430501400009159205
+--- !u!114 &-4494058307317424227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -22,7 +22,6 @@ public class BulletScript : MonoBehaviour
     public bool changeSpeed;
     public GameObject hitFX, explosionFX;
     public Material mat;
-    public Color color;
 
     GameObject flameHit, iceHit, electricHit;
     GameObject skillStorage;
@@ -181,6 +180,18 @@ public class BulletScript : MonoBehaviour
             if (iceHit.GetComponent<Enemy>() != null)
             {
                 iceHit.GetComponent<Enemy>().Frost(colorTime, freezePercent);
+
+                if (iceHit.GetComponentInChildren<WeaponEnemy>() != null)
+                {
+                    iceHit.GetComponentInChildren<WeaponEnemy>().enabled = false;
+
+                    GameObject enemyWeapon = iceHit.GetComponentInChildren<WeaponEnemy>().gameObject;
+
+                    if(enemyWeapon.transform.GetChild(0).GetComponentInChildren<Laser>() != null)
+                    {
+                        enemyWeapon.transform.GetChild(0).GetComponentInChildren<Laser>().enabled = false;
+                    }
+                }
             }
         }
 
@@ -245,7 +256,7 @@ public class BulletScript : MonoBehaviour
                 {
                     if (!explosive)
                     {
-                        other.GetComponent<Enemy>().TakeColor(damage, color, colorTime);
+                        other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
                     }
                     else
                     {
@@ -291,14 +302,7 @@ public class BulletScript : MonoBehaviour
                 {
                     if (other.GetComponent<Enemy>() != null)
                     {
-                        if (electric)
-                        {
-                            other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
-                        }
-                        else
-                        {
-                            other.GetComponent<Enemy>().TakeColor(damage, color, colorTime);
-                        }
+                        other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
                     }
 
                     Instantiate(hitFX, transform.position, Quaternion.identity);

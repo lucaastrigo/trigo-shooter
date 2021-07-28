@@ -502,6 +502,9 @@ MonoBehaviour:
   skillTitle: {fileID: 7592976018075947613}
   description: {fileID: 7592976018965404518}
   skillFX: {fileID: 3375865884550540848, guid: 72a6ce95115239a44917863751f947c4, type: 3}
+  skillEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1843272828397536597
 MonoBehaviour:
   m_ObjectHideFlags: 0

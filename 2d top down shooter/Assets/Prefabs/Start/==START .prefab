@@ -4180,7 +4180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75bb3629a85e85448c28a775f12eb68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frameRate: 0.35
+  frameRate: 0.4
   sprite:
   - {fileID: 2800000, guid: c9c9046702e129b45aebfcb1ba8b0803, type: 3}
   - {fileID: 2800000, guid: bf598e609b839674888e2bd18daf77d8, type: 3}

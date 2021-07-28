@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: b38fad3f665e00646b84bb7ce62dd9a0
   - enabled: 1
-    path: Assets/Scenes/Graveyard 2.unity
+    path: Assets/Scenes/Graveyard 1.unity
     guid: c479c180b6e172540bbf4f428a2b39e0
+  - enabled: 1
+    path: Assets/Scenes/Graveyard 1 Boss.unity
+    guid: 56e8a0964a55e684dae3fd80851be173
   - enabled: 1
     path: Assets/Scenes/Store.unity
     guid: 4048882186c1df446bf93085f3c16b21

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 889807431351308183}
   - component: {fileID: 889807431351308182}
   - component: {fileID: 8675609449155256799}
+  - component: {fileID: 4417124653860053120}
   m_Layer: 9
   m_Name: WEAPON CHEST
   m_TagString: Chest
@@ -52,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c963eda0d5be73e4ca011659ba68bb7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -169,8 +170,28 @@ MonoBehaviour:
   - dropRate: 7
     weapon: {fileID: 4798121836918349475, guid: 8d384e00bc59e5f4789003be7c5f962b,
       type: 3}
+  mergedChest: 0
   openedSprite: {fileID: 3790330820646863013, guid: c9ec2f3356763544d96f5afb513fbdeb,
     type: 3}
   openFX: {fileID: 3375865884550540848, guid: e6f0578fe48308540a2d00370bc7dd93, type: 3}
   minimapImage: {fileID: 0}
   weaponToDrop: {fileID: 0}
+--- !u!95 &4417124653860053120
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889807431351308184}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fac895e5288ac1b49abe97f609a01423, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
