@@ -13,6 +13,19 @@ public class SixthSenseSkill : MonoBehaviour
     private void Start()
     {
         skill = GetComponent<Skill>();
+    }
+
+    private void Update()
+    {
+        if (skill.skillOn && !skill.skilled)
+        {
+            ActivateSkill();
+        }
+    }
+
+    void ActivateSkill()
+    {
+        skill.skilled = true;
         _speedDecrease = 1 - speedDecrease;
     }
 }

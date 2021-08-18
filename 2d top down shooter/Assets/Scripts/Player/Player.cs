@@ -154,17 +154,8 @@ public class Player : MonoBehaviour
         ValueStorage.value.healthValue = 10;
         ValueStorage.value.maxHealthValue = 10;
         ValueStorage.value.weaponValue = "PISTOL";
+        ValueStorage.value.secondWeaponValue = null;
         ValueStorage.value.coinValue = 0;
-
-        for (int i = valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i >= 0; i--)
-        {
-            ValueStorage.value.WeaponAmmo.RemoveAt(i);
-        }
-
-        if (ValueStorage.value.WeaponAmmo.Count == 0)
-        {
-            ValueStorage.value.WeaponAmmo.Add(10000);
-        }
 
         //reset skills
         for (int i = 0; i < SkillStorage.value.skills.Length; i++)

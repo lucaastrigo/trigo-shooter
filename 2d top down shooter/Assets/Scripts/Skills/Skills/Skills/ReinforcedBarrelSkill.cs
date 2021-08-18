@@ -9,10 +9,26 @@ public class ReinforcedBarrelSkill : MonoBehaviour
 
     [HideInInspector] public float _damageIncreased;
     [HideInInspector] public Skill skill;
+    GameObject player;
 
     private void Start()
     {
         skill = GetComponent<Skill>();
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    private void Update()
+    {
+        if (skill.skillOn && !skill.skilled)
+        {
+            ActivateSkill();
+        }
+    }
+
+    void ActivateSkill()
+    {
+        skill.skilled = true;
+
         _damageIncreased = 1 + damageIncreased;
     }
 }

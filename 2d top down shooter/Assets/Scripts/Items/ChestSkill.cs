@@ -6,7 +6,6 @@ public class ChestSkill : MonoBehaviour
 {
     public bool activeSkillChest;
     public Sprite openedSprite;
-    public GameObject openFX, minimapImage;
     public GameObject[] skillObjects;
     public Vector2 offset;
 
@@ -93,7 +92,7 @@ public class ChestSkill : MonoBehaviour
             child2.transform.parent = transform;
             child3.transform.parent = transform;
 
-            Instantiate(openFX, transform.position, Quaternion.identity);
+            Instantiate(Resources.Load("Particle FX/SkillChestFX"), transform.position, Quaternion.identity);
             open = true;
             sprite.sprite = openedSprite;
         }
@@ -103,14 +102,9 @@ public class ChestSkill : MonoBehaviour
 
             child1.transform.parent = transform;
 
-            Instantiate(openFX, transform.position, Quaternion.identity);
+            Instantiate(Resources.Load("Particle FX/SkillChestFX"), transform.position, Quaternion.identity);
             open = true;
             sprite.sprite = openedSprite;
-        }
-
-        if (minimapImage != null)
-        {
-            Destroy(minimapImage);
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoomTemplates : MonoBehaviour 
 {
+    public GameObject[] enemies;
     public GameObject portal;
     public static int skillRooms, abilityRooms, weaponRooms;
     public static int maxRooms;

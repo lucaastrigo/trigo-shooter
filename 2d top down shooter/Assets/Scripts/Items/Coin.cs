@@ -5,10 +5,33 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public int coinMin, coinMax;
+    public float timeToDestroy;
+    public bool timeDestroy, destroyAfter;
     public Sprite openedSprite;
-    public GameObject openFX, minimapImage;
 
     bool opened;
+    Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+
+        Invoke("DestroyThisCoin", timeToDestroy);
+    }
+
+    void DestroyThisCoin()
+    {
+        if(anim != null)
+        {
+            anim.SetTrigger("vanish");
+        }
+    }
+
+    public void DestroyThis()
+    {
+        Instantiate(Resources.Load("Particle FX/CoinChestFX"), transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,14 +43,18 @@ public class Coin : MonoBehaviour
                 {
                     collision.gameObject.GetComponent<Player>().Receive(Random.Range(coinMin, coinMax));
                     GetComponent<SpriteRenderer>().sprite = openedSprite;
-                    Instantiate(openFX, transform.position, Quaternion.identity);
-
-                    if (minimapImage != null)
-                    {
-                        Destroy(minimapImage);
-                    }
+                    Instantiate(Resources.Load("Particle FX/CoinChestFX"), transform.position, Quaternion.identity);
 
                     opened = true;
+
+                    if (destroyAfter)
+                    {
+                        Destroy(gameObject);
+                    }
+                    else
+                    {
+                        GetComponent<SpriteRenderer>().sprite = openedSprite;
+                    }
                 }
             }
         }

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CursorManager : MonoBehaviour 
 {
+    public bool noCursor;
+
     public static CursorManager Instance { get; private set; }
 
     public float frameRate;
@@ -14,6 +16,20 @@ public class CursorManager : MonoBehaviour
     int frameCount;
     int currentFrame;
     float frameTimer;
+
+    private void Start()
+    {
+        if (noCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+    }
 
     void Awake() 
     {

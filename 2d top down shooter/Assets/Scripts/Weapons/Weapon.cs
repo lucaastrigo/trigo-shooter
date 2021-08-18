@@ -23,6 +23,7 @@ public class Weapon : MonoBehaviour
     public bool singleShot;
     public bool burst;
     [HideInInspector] public bool onOff = true;
+    [HideInInspector] public bool withPlayer;
     [HideInInspector] public bool ammo, cantDrop;
     public Transform muzzle;
     [HideInInspector] public GameObject ammoBar;
@@ -58,16 +59,6 @@ public class Weapon : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         audioSource = GetComponent<AudioSource>();
 
-        if (weaponIndex < 0)
-        {
-            currentAmmo = 10000;
-        }
-        else
-        {
-            currentAmmo = ValueStorage.value.WeaponAmmo[weaponIndex];
-        }
-
-
         weaponDescription.GetComponent<TMP_Text>().enabled = false;
 
         if (bullet.GetComponentInChildren<BulletScript>() != null)
@@ -84,15 +75,6 @@ public class Weapon : MonoBehaviour
     {
         valueStorage = GameObject.FindGameObjectWithTag("Value Storage");
         skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
-
-        //here
-        if (GetComponentInParent<PlayerPickup>() != null)
-        {
-            if (transform.parent.GetComponent<PlayerPickup>().equippedWeapon.name == weaponName || transform.parent.GetComponent<PlayerPickup>().equippedWeapon.name == weaponName + "(Clone)")
-            {
-                //valueStorage.GetComponent<ValueStorage>().WeaponAmmo[weaponIndex] = currentAmmo;
-            }
-        }
 
         if (!PauseMenu.paused)
         {
@@ -153,18 +135,6 @@ public class Weapon : MonoBehaviour
             {
                 ammoBar.GetComponent<AmmoBar>().SetAmmo(currentAmmo);
                 ammoBar.GetComponent<AmmoBar>().SetMaxAmmo(maxAmmo);
-
-                if (player.currentHealth <= 0)
-                {
-                    ValueStorage.value.weaponValue = "PISTOL";
-                }
-                else
-                {
-                    ValueStorage.value.weaponValue = weaponName;
-                    ValueStorage.value.WeaponAmmo[weaponIndex] = currentAmmo;
-
-                    //ValueStorage.value.firstIndex = weaponIndex;
-                }
 
                 if (mousePos.x < transform.position.x)
                 {
@@ -233,6 +203,18 @@ public class Weapon : MonoBehaviour
         {
             accuracy = 1;
         }
+
+        if (withPlayer)
+        {
+            if (onOff)
+            {
+                //ValueStorage.value.weaponValue = weaponName;
+            }
+            else
+            {
+                //ValueStorage.value.secondWeaponValue = weaponName;
+            }
+        }
     }
 
     void Shoot()
@@ -298,7 +280,6 @@ public class Weapon : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //nameWeapon.enabled = !onOff;
             weaponDescription.enabled = !onOff;
         }
     }
@@ -307,16 +288,55 @@ public class Weapon : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //nameWeapon.enabled = false;
             weaponDescription.enabled = false;
+        }
+    }
+
+    void OnDestroy()
+    {
+        SaveData();
+    }
+
+    void SaveData()
+    {
+        //save the current ammo value of this weapon
+
+        if(player.currentHealth > 0)
+        {
+            if (withPlayer)
+            {
+                if (onOff)
+                {
+                    ValueStorage.value.firstAmmo = currentAmmo;
+                    ValueStorage.value.weaponValue = weaponName;
+                }
+                else
+                {
+                    ValueStorage.value.secondAmmo = currentAmmo;
+                    ValueStorage.value.secondWeaponValue = weaponName;
+                }
+            }
+        }
+        else
+        {
+            ValueStorage.value.weaponValue = "PISTOL";
+            ValueStorage.value.firstAmmo = 10000;
+
+            ValueStorage.value.secondWeaponValue = null;
+            ValueStorage.value.secondAmmo = 10000;
         }
     }
 
     public void LoadData()
     {
-        if(transform.parent.GetComponent<PlayerPickup>().equippedWeaponName == weaponName)
+        //load the ammo value to this weapon
+        if(weaponName == ValueStorage.value.weaponValue)
         {
-            currentAmmo = valueStorage.GetComponent<ValueStorage>().WeaponAmmo[weaponIndex];
+            currentAmmo = ValueStorage.value.firstAmmo;
+        }
+        else if(weaponName == ValueStorage.value.secondWeaponValue)
+        {
+            currentAmmo = ValueStorage.value.secondAmmo;
         }
     }
 }

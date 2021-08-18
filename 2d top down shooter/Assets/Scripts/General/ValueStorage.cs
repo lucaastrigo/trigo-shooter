@@ -10,15 +10,13 @@ public class ValueStorage : MonoBehaviour
     public string weaponValue;
     public string secondWeaponValue;
 
-    public int firstIndex;
-    public int secondIndex;
+    public int firstAmmo;
+    public int secondAmmo;
 
     public int healthValue;
     public int maxHealthValue;
 
     public int coinValue;
-
-    public List<int> WeaponAmmo = new List<int>();
 
     private void Awake()
     {
@@ -37,20 +35,7 @@ public class ValueStorage : MonoBehaviour
         value.healthValue = 10;
         value.maxHealthValue = 10;
         value.weaponValue = "PISTOL";
-        value.secondWeaponValue = "PISTOL";
-        value.firstIndex = 0;
-        value.secondIndex = 0;
         value.coinValue = 0;
-
-        for (int i = 0; i <= WeaponAmmo.Count - 1; i++)
-        {
-            value.WeaponAmmo[i] = 10000;
-        }
-
-        for (int i = WeaponAmmo.Count - 1; i > 0; i--)
-        {
-            value.WeaponAmmo.RemoveAt(i);
-        }
 
         SceneManager.LoadScene("Lobby");
     }

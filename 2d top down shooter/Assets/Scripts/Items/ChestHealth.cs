@@ -5,32 +5,46 @@ using UnityEngine;
 public class ChestHealth : MonoBehaviour
 {
     public int healthKit;
+    public float timeToDestroy;
+    public bool timeDestroy;
     public bool destroyAfter;
     public Sprite opened;
-    public GameObject openFX, minimapImage;
 
     bool open;
     GameObject player;
     SpriteRenderer sprite;
+    Animator anim;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+
+        Invoke("DestroyThisHeart", timeToDestroy);
+    }
+
+    void DestroyThisHeart()
+    {
+        if (anim != null)
+        {
+            anim.SetTrigger("vanish");
+        }
+    }
+
+    public void DestroyThis()
+    {
+        Instantiate(Resources.Load("Particle FX/HealthChestFX"), transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && !open && player.GetComponent<Player>().currentHealth < player.GetComponent<Player>().health)
         {
-            Instantiate(openFX, transform.position, Quaternion.identity);
+            Instantiate(Resources.Load("Particle FX/HealthChestFX"), transform.position, Quaternion.identity);
             open = true;
             player.GetComponent<Player>().MoreHealth(healthKit);
-
-            if (minimapImage != null)
-            {
-                Destroy(minimapImage);
-            }
 
             if (destroyAfter)
             {

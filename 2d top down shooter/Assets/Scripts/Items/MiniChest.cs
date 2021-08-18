@@ -6,7 +6,6 @@ public class MiniChest : MonoBehaviour
 {
     [Header("Chest Setting")]
     public GameObject[] weapons;
-    public GameObject openFX;
 
     [Header("Image Setting")]
     public Sprite openedSprite;
@@ -32,7 +31,7 @@ public class MiniChest : MonoBehaviour
             if(ValueStorage.value.weaponValue == weapons[i].name || ValueStorage.value.weaponValue == weapons[i].name + "(Clone)")
             {
                 weaponToDrop = weapons[i];
-                weaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.firstIndex;
+                weaponToDrop.GetComponent<Weapon>().LoadData();
             }
 
             if (ValueStorage.value.secondWeaponValue == weapons[i].name || ValueStorage.value.secondWeaponValue == weapons[i].name + "(Clone)")
@@ -44,7 +43,7 @@ public class MiniChest : MonoBehaviour
                 else
                 {
                     secondWeaponToDrop = weapons[i];
-                    secondWeaponToDrop.GetComponent<Weapon>().weaponIndex = ValueStorage.value.secondIndex;
+                    secondWeaponToDrop.GetComponent<Weapon>().LoadData();
                 }
             }
         }
@@ -82,7 +81,7 @@ public class MiniChest : MonoBehaviour
             Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.5f), Quaternion.identity);
         }
 
-        Instantiate(openFX, transform.position, Quaternion.identity);
+        Instantiate(Resources.Load("Particle FX/WeaponChestFX"), transform.position, Quaternion.identity);
         open = true;
         sprite.sprite = openedSprite;
     }

@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Items\ExtraLife.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerSkills.cs" />
     <Compile Include="Assets\Scripts\HUD and Menu\Menu.cs" />
+    <Compile Include="Assets\Scripts\HUD and Menu\StartButton.cs" />
     <Compile Include="Assets\Scripts\Weapons\Laser.cs" />
     <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\LeafDashAbility.cs" />
@@ -75,7 +76,6 @@
     <Compile Include="Assets\Scripts\Weapons\ExplosionRange.cs" />
     <Compile Include="Assets\Scripts\Weapons\ContinuousDamage.cs" />
     <Compile Include="Assets\Scripts\Traps\FrictionFloor.cs" />
-    <Compile Include="Assets\Scripts\Bosses\General\Boss.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Skills\BloodlustSkill.cs" />
     <Compile Include="Assets\Scripts\Skills\General\SkillStorage.cs" />
     <Compile Include="Assets\Scripts\Level\Shop\Store.cs" />
@@ -119,6 +119,7 @@
     <Compile Include="Assets\Scripts\Items\MiniChest.cs" />
     <Compile Include="Assets\Scripts\Level\Room\AddRoom.cs" />
     <Compile Include="Assets\Scripts\General\Global.cs" />
+    <Compile Include="Assets\Scripts\Props\Prop.cs" />
     <Compile Include="Assets\Scripts\Level\Room\Room.cs" />
     <Compile Include="Assets\Scripts\General\MapCamera.cs" />
     <Compile Include="Assets\Scripts\Items\Coin.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Assets\Scripts\HUD and Menu\AmmoBar.cs" />
     <Compile Include="Assets\Scripts\Items\ChestWeapon.cs" />
     <Compile Include="Assets\Scripts\Skills\Skills\Active Abilities\FreezeAbility.cs" />
+    <Compile Include="Assets\Scripts\Bosses\General\BossHealth.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\EXTRA\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

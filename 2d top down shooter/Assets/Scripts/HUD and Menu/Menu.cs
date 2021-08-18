@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Menu : MonoBehaviour
@@ -15,6 +16,11 @@ public class Menu : MonoBehaviour
         }
     }
 
+    public void Print(string namee)
+    {
+        print(namee);
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -22,21 +28,11 @@ public class Menu : MonoBehaviour
         ValueStorage.value.maxHealthValue = 10;
         ValueStorage.value.weaponValue = "PISTOL";
         ValueStorage.value.coinValue = 0;
-
-        for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
-        {
-            ValueStorage.value.WeaponAmmo[i] = 1000;
-        }
-
-        for (int i = valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i > 0; i--)
-        {
-            ValueStorage.value.WeaponAmmo.RemoveAt(i);
-        }
     }
 
     public void Feedback()
     {
-        Application.OpenURL("https://forms.gle/aAXk1c1PKSdmVzNK6");
+        Application.OpenURL("https://youtube.com");
     }
 
     public void MainMenu()
@@ -45,16 +41,6 @@ public class Menu : MonoBehaviour
         ValueStorage.value.maxHealthValue = 10;
         ValueStorage.value.weaponValue = "PISTOL";
         ValueStorage.value.coinValue = 0;
-
-        for (int i = valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i > 0; i--)
-        {
-            ValueStorage.value.WeaponAmmo.RemoveAt(i);
-        }
-
-        for (int i = 0; i <= valueStorage.GetComponent<ValueStorage>().WeaponAmmo.Count - 1; i++)
-        {
-            ValueStorage.value.WeaponAmmo[i] = 10000;
-        }
 
         //reset skills
         for (int i = 0; i < SkillStorage.value.skills.Length; i++)

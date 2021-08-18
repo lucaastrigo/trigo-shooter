@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    // IF THE ROOM IS ACTIVE, CLOSE DOORS AND CREATE A BLACK PANEL AROUND 
-    // PUBLIC BOOL TO SEE IF A ROOM WAS ALREADY ENTERED BY THE PLAYER
-    
     public enum roomType
     {
         start, wave, chest, special
@@ -18,9 +15,6 @@ public class Room : MonoBehaviour
     [Range(0, 100)] public int healthLootChance, ammoLootChance, coinLootChance;
     public bool lootable;
     public GameObject healthLoot, ammoLoot, coinChestLoot;
-
-    [Header("Enemies")]
-    public GameObject[] enemies;
 
     [Header("Map")]
     public int waveMax;
@@ -39,10 +33,14 @@ public class Room : MonoBehaviour
     GameObject[] enemiesLeft;
     Camera minimapCamera;
 
+    RoomTemplates templates;
+
     private void Start()
     {
         minimapCamera = GameObject.FindGameObjectWithTag("MinimapCamera").GetComponent<Camera>();
         minimapImages.SetActive(false);
+
+        templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
     }
 
     void Update()
@@ -149,7 +147,7 @@ public class Room : MonoBehaviour
         Minimap.map.transform.GetChild(0).gameObject.SetActive(false);
         inWave = true;
         numOfWaves--;
-        Instantiate(enemies[Random.Range(0, enemies.Length)], transform.position, Quaternion.identity);
+        Instantiate(templates.enemies[Random.Range(0, templates.enemies.Length)], transform.position, Quaternion.identity);
     }
 
     public void FinishWave()
@@ -162,21 +160,9 @@ public class Room : MonoBehaviour
         {
             if (lootable)
             {
-                GameObject player = GameObject.FindGameObjectWithTag("Player");
-
-                if (Random.Range(0, 100) <= healthLootChance)
-                {
-                    Instantiate(healthLoot, new Vector2(transform.position.x + 3, transform.position.y), Quaternion.identity);
-                }
-
                 if (Random.Range(0, 100) <= ammoLootChance)
                 {
-                    Instantiate(ammoLoot, new Vector2(transform.position.x - 3, transform.position.y), Quaternion.identity);
-                }
-
-                if (Random.Range(0, 100) <= coinLootChance)
-                {
-                    Instantiate(coinChestLoot, transform.position, Quaternion.identity);
+                    Instantiate(Resources.Load("Items/MINI AMMO"), transform.position, Quaternion.identity);
                 }
             }
         }

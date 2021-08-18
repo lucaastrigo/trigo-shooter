@@ -672,7 +672,7 @@ PrefabInstance:
     - target: {fileID: 775327763751150271, guid: 52cc43e055ce6614a853b4e6d8ce8b56,
         type: 3}
       propertyPath: m_Name
-      value: Room Generator - Graveyard 1
+      value: Room Generator - Graveyard 2
       objectReference: {fileID: 0}
     - target: {fileID: 775327763751150271, guid: 52cc43e055ce6614a853b4e6d8ce8b56,
         type: 3}

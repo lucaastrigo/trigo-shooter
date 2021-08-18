@@ -9,6 +9,7 @@ public class Portal : MonoBehaviour
     public bool scenePlus;
 
     int sceneNo;
+    bool inTrigger;
     GameObject player;
     Animator anim;
 
@@ -25,6 +26,17 @@ public class Portal : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
+
+        if(inTrigger && Input.GetKeyDown(KeyCode.Q))
+        {
+            Stairs();
+        }
+    }
+
+    void Stairs()
+    {
+        anim.SetTrigger("play");
+        player.SetActive(false);
     }
 
     public void LoadScene()
@@ -60,8 +72,15 @@ public class Portal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            anim.SetTrigger("play");    //load scene in animation end
-            collision.gameObject.SetActive(false);
+            inTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            inTrigger = false;
         }
     }
 }

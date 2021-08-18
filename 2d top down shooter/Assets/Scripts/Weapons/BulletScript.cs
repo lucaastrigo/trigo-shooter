@@ -151,6 +151,11 @@ public class BulletScript : MonoBehaviour
             {
                 Destroy(thing.gameObject);
             }
+
+            if(thing.gameObject.GetComponent<Prop>() != null)
+            {
+                thing.gameObject.GetComponent<Prop>().DestroyProp();
+            }
         }
 
         Instantiate(explosionFX, transform.position, Quaternion.identity);

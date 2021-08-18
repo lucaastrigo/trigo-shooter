@@ -13,19 +13,21 @@ public class BloodlustSkill : MonoBehaviour
     private void Start()
     {
         skill = GetComponent<Skill>();
-
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void Update()
+    private void Update()
     {
-        if (skill.skillOn)
+        if (skill.skillOn && !skill.skilled)
         {
-            _healthUpRate = healthUpRate;
+            ActivateSkill();
         }
-        else
-        {
-            _healthUpRate = 0;
-        }
+    }
+
+    void ActivateSkill()
+    {
+        skill.skilled = true;
+
+        _healthUpRate = healthUpRate;
     }
 }

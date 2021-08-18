@@ -13,6 +13,19 @@ public class WiderMuzzleSkill : MonoBehaviour
     private void Start()
     {
         skill = GetComponent<Skill>();
+    }
+
+    private void Update()
+    {
+        if(skill.skillOn && !skill.skilled)
+        {
+            ActivateSkill();
+        }
+    }
+
+    void ActivateSkill()
+    {
+        skill.skilled = true;
         _sizeIncrease = 1 + sizeIncrease;
     }
 }

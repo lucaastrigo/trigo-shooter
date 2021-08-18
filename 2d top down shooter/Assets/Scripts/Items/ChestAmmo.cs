@@ -5,23 +5,27 @@ using UnityEngine;
 public class ChestAmmo : MonoBehaviour
 {
     [HideInInspector] public int ammoAmount;
+    public float timeToDestroy;
+    public bool timeDestroy;
     public bool destroyAfter;
     public Sprite opened;
-    public GameObject openFX, minimapImage;
 
     [Range(0, 1)]
     public float ammo;
 
     bool open;
     GameObject player;
-    GameObject child;
     Weapon weapon;
     SpriteRenderer sprite;
+    Animator anim;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+
+        Invoke("DestroyThisAmmo", timeToDestroy);
     }
 
     private void Update()
@@ -34,18 +38,27 @@ public class ChestAmmo : MonoBehaviour
         }
     }
 
+    void DestroyThisAmmo()
+    {
+        if (anim != null)
+        {
+            anim.SetTrigger("vanish");
+        }
+    }
+
+    public void DestroyThis()
+    {
+        Instantiate(Resources.Load("Particle FX/AmmoChestFX"), transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && !open && player.GetComponentInChildren<Weapon>() != null && weapon.GetComponent<Weapon>().currentAmmo < weapon.GetComponent<Weapon>().maxAmmo)
         {
-            Instantiate(openFX, transform.position, Quaternion.identity);
+            Instantiate(Resources.Load("Particle FX/AmmoChestFX"), transform.position, Quaternion.identity);
             open = true;
             weapon.GetComponent<Weapon>().MoreAmmo(ammoAmount);
-
-            if (minimapImage != null)
-            {
-                Destroy(minimapImage);
-            }
 
             if (destroyAfter)
             {
