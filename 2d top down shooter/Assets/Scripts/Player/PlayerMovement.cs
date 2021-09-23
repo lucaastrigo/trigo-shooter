@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 moving = true;
                 anim.SetBool("walk", true);
-                if (!audioSource.isPlaying)
+                if (!audioSource.isPlaying && !PauseMenu.paused)
                 {
                     audioSource.Play();
                 }

@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     public float speed;
-    public float healthChestDropRate, coinDropRate, ammoDropRate;
+    public float dropRate;
     public GameObject deadSprite;
 
     float time, _frostTime;
@@ -17,15 +17,10 @@ public class Enemy : MonoBehaviour
     SpriteRenderer sprite;
     [HideInInspector] public Animator anim;
     Collider2D colli;
-    GameObject skillStorage;
     Material mat;
 
     [Header("Skill Related")]
     public float _health;
-    public float _dropRate;
-
-    bool exposed;
-    bool scavenger;
 
     void Start()
     {
@@ -37,39 +32,28 @@ public class Enemy : MonoBehaviour
         mat = GetComponent<SpriteRenderer>().material;
 
         speedK = speed;
+
+
+        //skills
+        if(SkillStorage.value.exposed > 0 && SkillStorage.value.exposed < 1)
+        {
+            _health *= 1 - SkillStorage.value.exposed;
+            health = Mathf.RoundToInt(_health);
+        }
+        else if(SkillStorage.value.exposed >= 1)
+        {
+            _health *= 0.95f;
+            health = Mathf.RoundToInt(_health);
+        }
+
+        if (SkillStorage.value.scavenger > 0)
+        {
+            dropRate += SkillStorage.value.scavenger;
+        }
     }
 
     void Update()
     {
-        if(skillStorage == null)
-        {
-            skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
-        }
-
-        if (skillStorage.GetComponentInChildren<ExposedSkill>().skill.GetComponent<Skill>().skillOn)
-        {
-            if (!exposed)
-            {
-                _health *= skillStorage.GetComponentInChildren<ExposedSkill>()._healthDecrease;
-                health = Mathf.RoundToInt(_health);
-                exposed = true;
-            }
-        }
-
-        if (skillStorage.GetComponentInChildren<ScavengerSkill>().skill.GetComponent<Skill>().skillOn)
-        {
-            if (!scavenger)
-            {
-                skillStorage.GetComponentInChildren<ScavengerSkill>().increase = healthChestDropRate * skillStorage.GetComponentInChildren<ScavengerSkill>().dropRateIncrease;
-                healthChestDropRate += skillStorage.GetComponentInChildren<ScavengerSkill>().increase;
-                scavenger = true;
-            }
-        }
-        else
-        {
-            healthChestDropRate = _dropRate;
-        }
-
         if (health <= 0 && !dead)
         {
             Die();
@@ -175,22 +159,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    //public void TakeColor(int damage, Color color, float colorT)
-    //{
-    //    if (canBeHurt)
-    //    {
-    //        health -= damage;
-    //        sprite.color = color;
-    //        StartCoroutine(ColorBack(colorT));
-    //    }
-    //}
-
-    //IEnumerator ColorBack(float time)
-    //{
-    //    yield return new WaitForSeconds(time);
-    //    sprite.color = Color.white;
-    //}
-
     public void Shock(float dazedTime)
     {
         time = dazedTime;
@@ -217,39 +185,51 @@ public class Enemy : MonoBehaviour
 
 
         //rewards
-        if (Random.Range(0, 100) <= ammoDropRate)
+        if (Random.Range(0, 100) <= dropRate)
         {
-            if (scavenger)
+            switch(Random.Range(0, 3))
             {
-                Instantiate(Resources.Load("Items/MINI HEALTH"), new Vector2(transform.position.x + 0.3f, transform.position.y + 0.3f), Quaternion.identity);
-                Instantiate(Resources.Load("Items/AMMO CHEST"), new Vector2(transform.position.x - 0.3f, transform.position.y - 0.3f), Quaternion.identity);
-            }
-            else
-            {
-                Instantiate(Resources.Load("Items/MINI AMMO"), transform.position, Quaternion.identity);
-            }
-        }
-        else if (Random.Range(0, 100) <= healthChestDropRate)
-        {
-            if (scavenger)
-            {
-                Instantiate(Resources.Load("Items/HEALTH CHEST"), new Vector2(transform.position.x + 0.3f, transform.position.y + 0.3f), Quaternion.identity);
-                Instantiate(Resources.Load("Items/MINI AMMO"), new Vector2(transform.position.x - 0.3f, transform.position.y - 0.3f), Quaternion.identity);
-            }
-            else
-            {
-                Instantiate(Resources.Load("Items/MINI HEALTH"), transform.position, Quaternion.identity);
-            }
-        }
-        else if (Random.Range(0, 100) <= coinDropRate)
-        {
-            if (scavenger)
-            {
-                Instantiate(Resources.Load("Items/COIN CHEST"), transform.position, Quaternion.identity);
-            }
-            else
-            {
-                Instantiate(Resources.Load("Items/MINI COIN"), transform.position, Quaternion.identity);
+                case 0:
+                    //ammo
+
+                    if (SkillStorage.value.scavenger > 0)
+                    {
+                        Instantiate(Resources.Load("Items/MINI HEALTH"), new Vector2(transform.position.x + 0.3f, transform.position.y - 0.3f), Quaternion.identity);
+                        Instantiate(Resources.Load("Items/AMMO CHEST"), new Vector2(transform.position.x - 0.3f, transform.position.y - 0.3f), Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(Resources.Load("Items/MINI AMMO"), new Vector2(transform.position.x, transform.position.y - 0.3f), Quaternion.identity);
+                    }
+
+                    break;
+                case 1:
+                    //health
+
+                    if (SkillStorage.value.scavenger > 0)
+                    {
+                        Instantiate(Resources.Load("Items/MINI AMMO"), new Vector2(transform.position.x + 0.3f, transform.position.y - 0.3f), Quaternion.identity);
+                        Instantiate(Resources.Load("Items/HEALTH CHEST"), new Vector2(transform.position.x - 0.3f, transform.position.y - 0.3f), Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(Resources.Load("Items/MINI HEALTH"), new Vector2(transform.position.x, transform.position.y - 0.3f), Quaternion.identity);
+                    }
+
+                    break;
+                case 2:
+                    //coin
+
+                    if (SkillStorage.value.scavenger > 0)
+                    {
+                        Instantiate(Resources.Load("Items/COIN CHEST"), new Vector2(transform.position.x, transform.position.y - 0.3f), Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(Resources.Load("Items/MINI COIN"), new Vector2(transform.position.x, transform.position.y - 0.3f), Quaternion.identity);
+                    }
+
+                    break;
             }
         }
 
@@ -261,21 +241,15 @@ public class Enemy : MonoBehaviour
 
 
         //bloodlust skill
-        if (skillStorage.GetComponentInChildren<BloodlustSkill>().skill.GetComponent<Skill>().skillOn)
+        if(Random.Range(0, 100) <= SkillStorage.value.bloodlust)
         {
-            if (Random.Range(0, 100) <= skillStorage.GetComponentInChildren<BloodlustSkill>()._healthUpRate)
-            {
-                player.GetComponent<Player>().MoreHealth(1);
-            }
+            player.GetComponent<Player>().MoreHealth(1);
         }
 
         //ammo expert skill
-        if (skillStorage.GetComponentInChildren<AmmoExpertSkill>().skill.GetComponent<Skill>().skillOn)
+        if(Random.Range(0, 100) <= SkillStorage.value.ammoExpert)
         {
-            if (Random.Range(0, 100) <= skillStorage.GetComponentInChildren<AmmoExpertSkill>()._ammoUpRate)
-            {
-                player.GetComponentInChildren<Weapon>().MoreAmmo(player.GetComponentInChildren<Weapon>().maxAmmo / 10);
-            }
+            player.GetComponentInChildren<Weapon>().MoreAmmo(player.GetComponentInChildren<Weapon>().maxAmmo / 10);
         }
     }
 

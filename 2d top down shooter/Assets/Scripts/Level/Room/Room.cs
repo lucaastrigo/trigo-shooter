@@ -24,6 +24,7 @@ public class Room : MonoBehaviour
     public GameObject ammoChest;
     public GameObject skillChest;
     public GameObject[] door;
+    public GameObject bossDoor;
     public GameObject firstground, background;
 
     [HideInInspector] public int numOfWaves, _numOfWaves;

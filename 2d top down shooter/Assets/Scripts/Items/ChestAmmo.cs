@@ -9,6 +9,7 @@ public class ChestAmmo : MonoBehaviour
     public bool timeDestroy;
     public bool destroyAfter;
     public Sprite opened;
+    public AudioClip clip;
 
     [Range(0, 1)]
     public float ammo;
@@ -18,12 +19,16 @@ public class ChestAmmo : MonoBehaviour
     Weapon weapon;
     SpriteRenderer sprite;
     Animator anim;
+    AudioSource aud;
+    Collider2D coll;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        aud = GetComponent<AudioSource>();
+        coll = GetComponent<Collider2D>();
 
         Invoke("DestroyThisAmmo", timeToDestroy);
     }
@@ -49,7 +54,11 @@ public class ChestAmmo : MonoBehaviour
     public void DestroyThis()
     {
         Instantiate(Resources.Load("Particle FX/AmmoChestFX"), transform.position, Quaternion.identity);
-        Destroy(gameObject);
+
+        sprite.enabled = false;
+        coll.enabled = false;
+
+        Destroy(gameObject, 2);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,6 +66,7 @@ public class ChestAmmo : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && !open && player.GetComponentInChildren<Weapon>() != null && weapon.GetComponent<Weapon>().currentAmmo < weapon.GetComponent<Weapon>().maxAmmo)
         {
             Instantiate(Resources.Load("Particle FX/AmmoChestFX"), transform.position, Quaternion.identity);
+            aud.PlayOneShot(clip);
             open = true;
             weapon.GetComponent<Weapon>().MoreAmmo(ammoAmount);
 

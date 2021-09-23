@@ -4,51 +4,52 @@ using UnityEngine;
 
 public class ChestSkill : MonoBehaviour
 {
-    public bool activeSkillChest;
+    public bool itemChest;
     public Sprite openedSprite;
-    public GameObject[] skillObjects;
     public Vector2 offset;
+    public AudioClip clip;
 
     bool open;
     SpriteRenderer sprite;
-    GameObject skillStorage;
+    AudioSource aud;
 
     [HideInInspector] public GameObject randomizedSkill, s1, s2, s3;
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
-    }
-
-    private void Update()
-    {
-        for (int i = 0; i < skillStorage.GetComponent<SkillStorage>().skills.Length; i++)
-        {
-            for (int j = 0; j < skillObjects.Length; j++)
-            {
-                if (skillStorage.GetComponent<SkillStorage>().skills[i].name == skillObjects[j].GetComponent<SkillObject>().skillName)
-                {
-                    if (!skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().skillOn)
-                    {
-                        skillObjects[j].GetComponent<SkillObject>().canUse = true;
-                    }
-                }
-            }
-        }
+        aud = GetComponent<AudioSource>();
     }
 
     GameObject RandomizeSkill()
     {
-        randomizedSkill = skillObjects[Random.Range(0, skillObjects.Length)];
-
-        if (!randomizedSkill.GetComponent<SkillObject>().canUse)
+        if (itemChest)
         {
-             RandomizeSkill();
+            int randomized = Random.Range(0, SkillStorage.value.items.Length);
+            randomizedSkill = SkillStorage.value.items[randomized];
+
+            if (SkillStorage.value.active[randomized])
+            {
+                RandomizeSkill();
+            }
+            else
+            {
+                return randomizedSkill;
+            }
         }
         else
         {
-            return randomizedSkill;
+            int randomized = Random.Range(0, SkillStorage.value.skills.Length);
+            randomizedSkill = SkillStorage.value.skills[randomized];
+
+            if (SkillStorage.value.activeSkills[randomized])
+            {
+                RandomizeSkill();
+            }
+            else
+            {
+                return randomizedSkill;
+            }
         }
 
         return randomizedSkill;
@@ -56,7 +57,7 @@ public class ChestSkill : MonoBehaviour
 
     public void CalculateSkill()
     {
-        if (activeSkillChest)
+        if (itemChest)
         {
             s1 = RandomizeSkill();
         }
@@ -71,7 +72,7 @@ public class ChestSkill : MonoBehaviour
 
     void Calculate()
     {
-        if (!activeSkillChest)
+        if (!itemChest)
         {
             if (s1 == s2 || s1 == s3 || s2 == s3)
             {
@@ -82,7 +83,7 @@ public class ChestSkill : MonoBehaviour
 
     void Drop()
     {
-        if (!activeSkillChest)
+        if (!itemChest)
         {
             GameObject child1 = Instantiate(s1, new Vector2(transform.position.x, transform.position.y + offset.y), Quaternion.identity);
             GameObject child2 = Instantiate(s2, new Vector2(transform.position.x - offset.x, transform.position.y + offset.y), Quaternion.identity);
@@ -93,6 +94,7 @@ public class ChestSkill : MonoBehaviour
             child3.transform.parent = transform;
 
             Instantiate(Resources.Load("Particle FX/SkillChestFX"), transform.position, Quaternion.identity);
+            aud.PlayOneShot(clip);
             open = true;
             sprite.sprite = openedSprite;
         }
@@ -103,6 +105,7 @@ public class ChestSkill : MonoBehaviour
             child1.transform.parent = transform;
 
             Instantiate(Resources.Load("Particle FX/SkillChestFX"), transform.position, Quaternion.identity);
+            aud.PlayOneShot(clip);
             open = true;
             sprite.sprite = openedSprite;
         }

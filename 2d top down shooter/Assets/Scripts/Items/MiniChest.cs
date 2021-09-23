@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MiniChest : MonoBehaviour
 {
+    public AudioClip clip;
+
     [Header("Chest Setting")]
     public GameObject[] weapons;
 
@@ -14,12 +16,13 @@ public class MiniChest : MonoBehaviour
     public GameObject weaponToDrop;
     public GameObject secondWeaponToDrop;
     SpriteRenderer sprite;
-
+    AudioSource aud;
     GameObject skillStorage;
 
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        aud = GetComponent<AudioSource>();
 
         if (skillStorage == null)
         {
@@ -55,13 +58,6 @@ public class MiniChest : MonoBehaviour
         {
             skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
         }
-
-        /*
-        if (!skillStorage.GetComponentInChildren<ExtraHolsterSkill>().skill.GetComponent<Skill>().skillOn)
-        {
-            secondWeaponToDrop = null;
-        }
-        */
     }
 
     void Drop()
@@ -82,6 +78,7 @@ public class MiniChest : MonoBehaviour
         }
 
         Instantiate(Resources.Load("Particle FX/WeaponChestFX"), transform.position, Quaternion.identity);
+        aud.PlayOneShot(clip);
         open = true;
         sprite.sprite = openedSprite;
     }

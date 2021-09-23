@@ -141,9 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   speed: 2.75
-  healthChestDropRate: 10
-  coinDropRate: 25
-  ammoDropRate: 20
+  dropRate: 15
   deadSprite: {fileID: 1834029084034238099, guid: 2fd67047afedbf649a5190104ffd1d60,
     type: 3}
   speedK: 0
@@ -152,7 +150,7 @@ MonoBehaviour:
   canBeHurt: 1
   anim: {fileID: 0}
   _health: 10
-  _dropRate: 10
+  _dropRate: 15
 --- !u!114 &559362086295331962
 MonoBehaviour:
   m_ObjectHideFlags: 0

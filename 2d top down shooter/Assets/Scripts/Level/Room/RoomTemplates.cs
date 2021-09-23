@@ -36,6 +36,7 @@ public class RoomTemplates : MonoBehaviour
         {
             if (allWavesFinished() && !portalSpawned)
             {
+                //open locked door on starter room
                 Instantiate(portal, new Vector2(rooms[0].gameObject.transform.position.x, rooms[0].gameObject.transform.position.y + 3), Quaternion.identity);
                 portalSpawned = true;
             }

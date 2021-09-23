@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1322626530216312247}
   - component: {fileID: 1322626530216312246}
   - component: {fileID: 9139409576465813464}
-  - component: {fileID: 1322626530216312248}
+  - component: {fileID: -3552446045870478676}
+  - component: {fileID: -9048415040566145787}
   - component: {fileID: 5377863767484267189}
   m_Layer: 9
   m_Name: Exposed
@@ -113,7 +114,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4375, y: 0.375}
   m_EdgeRadius: 0
---- !u!114 &1322626530216312248
+--- !u!114 &-3552446045870478676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,15 +123,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1322626530216312251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6561707b75063f04e898095392bf9760, type: 3}
+  m_Script: {fileID: 11500000, guid: b08a6e52eb6d7014a954a966b1b3813f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillName: Exposed
-  activeSkill: 0
-  canUse: 1
-  skillTitle: {fileID: 1322626530855071042}
+  title: {fileID: 1322626530855071042}
   description: {fileID: 1322626530605455358}
-  skillFX: {fileID: 3375865884550540848, guid: 63ba0c3c51fea6349b656410f8d0eced, type: 3}
+  increaseValue: 0.015
+--- !u!114 &-9048415040566145787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322626530216312251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33665b4b348da30439021ffa250ff0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5377863767484267189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +156,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7125794, g: 0, b: 0.8018868, a: 1}
   m_Intensity: 2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -473,7 +483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: speedster
+  m_text: exposed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d48602fd5e023e547b01bba0f4e1be0b, type: 2}
   m_sharedMaterial: {fileID: -5820928002062287341, guid: d48602fd5e023e547b01bba0f4e1be0b,

@@ -7,6 +7,8 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+    public static bool hasKey;
+
     public int health; 
     public int currentHealth;
     [HideInInspector] public GameObject healthBar;
@@ -46,7 +48,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(valueStorage == null)
+        healthBar.GetComponent<HealthBar>().SetHealth(currentHealth);
+        healthBar.GetComponent<HealthBar>().SetMaxHealth(health);
+
+        if (valueStorage == null)
         {
             valueStorage = GameObject.FindGameObjectWithTag("Value Storage");
         }
@@ -74,6 +79,7 @@ public class Player : MonoBehaviour
             Die();
         }
 
+        /*
         for (int i = 0; i < skillStorage.GetComponent<SkillStorage>().skills.Length; i++)
         {
             if (skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().activeSkill && skillStorage.GetComponent<SkillStorage>().skills[i].GetComponent<Skill>().skillOn)
@@ -94,6 +100,7 @@ public class Player : MonoBehaviour
                 aaplace[1].GetComponent<Image>().enabled = false;
             }
         }
+        */
     }
 
     public void MoreHealth(int healthAmount)
@@ -157,13 +164,7 @@ public class Player : MonoBehaviour
         ValueStorage.value.secondWeaponValue = null;
         ValueStorage.value.coinValue = 0;
 
-        //reset skills
-        for (int i = 0; i < SkillStorage.value.skills.Length; i++)
-        {
-            SkillStorage.value.skills[i].skillOn = false;
-            SkillStorage.value.skills[i].skilled = false;
-            SkillStorage.value.skills[i].unskilled = false;
-        }
+        SkillStorage.value.DeactivateItems();
 
         SceneManager.LoadScene("Main Menu");
     }

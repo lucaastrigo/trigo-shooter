@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class TwoStages : MonoBehaviour
 {
-    public float vulnerableTime;
+    public float vulnerableTime, delay;
     public GameObject hitlessReward;
     public GameObject[] enemyWaves;
 
     int playerInitialHealth;
-    float time;
-    bool vulnerablized, finalized;
+    float time, delayTime;
+    bool vulnerablized;
+    bool finalized;
     Enemy enemy;
     Player player;
     GameObject[] enemies;
-
     GameObject rays;
 
     public UnityEvent vulnerabling, invulnerabling, finalize;
@@ -34,24 +34,31 @@ public class TwoStages : MonoBehaviour
 
         if(!enemy.dead)
         {
-            if (enemies.Length == 1)
+            if(delayTime >= delay)
             {
-                if (!vulnerablized)
+                if (enemies.Length == 1)
                 {
-                    Vulnerablizing();
+                    if (!vulnerablized)
+                    {
+                        Vulnerablizing();
+                    }
                 }
-            }
 
-            if (time <= 0)
-            {
-                if (vulnerablized)
+                if (time <= 0)
                 {
-                    Invulnerablizing();
+                    if (vulnerablized)
+                    {
+                        Invulnerablizing();
+                    }
+                }
+                else
+                {
+                    time -= Time.deltaTime;
                 }
             }
             else
             {
-                time -= Time.deltaTime;
+                delayTime += Time.deltaTime;
             }
         }
         else if(enemy.dead)

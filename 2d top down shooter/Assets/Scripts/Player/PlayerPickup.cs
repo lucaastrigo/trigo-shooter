@@ -16,18 +16,26 @@ public class PlayerPickup : MonoBehaviour
     [HideInInspector] public Weapon secondEquippedWeapon;
     [HideInInspector] public Weapon disequippedWeapon;
 
-    GameObject skillStorage, valueStorage;
-
     private void Start()
     {
-        if (skillStorage == null)
+        for (int i = 0; i < WeaponStorage.value.weapons.Length; i++)
         {
-            skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
-        }
+            if(ValueStorage.value.weaponValue == WeaponStorage.value.weapons[i].name || ValueStorage.value.weaponValue == WeaponStorage.value.weapons[i].name + "(Clone)")
+            {
+                GameObject weaponToEquip = Instantiate(WeaponStorage.value.weapons[i], transform.position, Quaternion.identity);
+                EquipWeapon(weaponToEquip.GetComponent<Weapon>());
+                weaponToEquip.GetComponent<Weapon>().LoadData();
+            }
 
-        if (valueStorage == null)
-        {
-            valueStorage = GameObject.FindGameObjectWithTag("Value Storage");
+            if(ValueStorage.value.secondWeaponValue == WeaponStorage.value.weapons[i].name || ValueStorage.value.secondWeaponValue == WeaponStorage.value.weapons[i].name + "(Clone)")
+            {
+                if(!((ValueStorage.value.weaponValue == "PISTOL" || ValueStorage.value.weaponValue == "PISTOL(Clone)") && (ValueStorage.value.secondWeaponValue == "PISTOL" || ValueStorage.value.secondWeaponValue == "PISTOL(Clone)")))
+                {
+                    GameObject secondWeaponToEquip = Instantiate(WeaponStorage.value.weapons[i], transform.position, Quaternion.identity);
+                    SecondWeapon(secondWeaponToEquip.GetComponent<Weapon>());
+                    secondWeaponToEquip.GetComponent<Weapon>().LoadData();
+                }
+            }
         }
     }
 
@@ -79,14 +87,14 @@ public class PlayerPickup : MonoBehaviour
         hasWeapon = true;
         equippedWeapon = weaponToEquip;
         equippedWeapon.transform.position = holster.transform.position;
-        equippedWeapon.transform.parent = transform;
+        equippedWeapon.transform.parent = transform; //
         equippedWeapon.transform.localRotation = Quaternion.identity;
         equippedWeapon.GetComponent<BoxCollider2D>().enabled = false;
         equippedWeapon.GetComponent<Weapon>().playerWeapon = true;
         equippedWeapon.GetComponent<Weapon>().onOff = true;
         equippedWeapon.GetComponent<Weapon>().withPlayer = true;
         equippedWeapon.GetComponent<SpriteRenderer>().sortingOrder = 6;
-        Instantiate(pickupFX, transform.position, Quaternion.identity);
+        //Instantiate(pickupFX, transform.position, Quaternion.identity);
     }
 
     void DisequipWeapon(Weapon weaponToDisequip)
@@ -106,7 +114,7 @@ public class PlayerPickup : MonoBehaviour
         hasTwoWeapons = true;
         secondEquippedWeapon = secondWeapon;
         secondEquippedWeapon.transform.position = secondHolster.transform.position;
-        secondEquippedWeapon.transform.parent = transform;
+        secondEquippedWeapon.transform.parent = transform; //
         secondEquippedWeapon.transform.localRotation = Quaternion.identity;
         secondEquippedWeapon.GetComponent<BoxCollider2D>().enabled = true;
         secondEquippedWeapon.GetComponent<Weapon>().playerWeapon = false;

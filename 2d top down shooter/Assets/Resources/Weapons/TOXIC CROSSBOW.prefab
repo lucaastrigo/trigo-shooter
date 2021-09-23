@@ -471,8 +471,8 @@ MonoBehaviour:
   playerWeapon: 0
   singleShot: 0
   burst: 0
-  touched: 0
   onOff: 0
+  withPlayer: 0
   ammo: 0
   cantDrop: 0
   muzzle: {fileID: 7788989051891875375}
@@ -481,8 +481,6 @@ MonoBehaviour:
   weaponDescription: {fileID: 8415818535686011180}
   fireSound: {fileID: 8300000, guid: 90fd44db81f35df43ae9d9a0f2d507c3, type: 3}
   weaponIndex: -1
-  _fireRate: 1.2
-  _accuracy: 0.97
 --- !u!1 &7788989051891875360
 GameObject:
   m_ObjectHideFlags: 0

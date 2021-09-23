@@ -44,6 +44,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         UI.SetActive(false);
         Time.timeScale = 0f;
+        AudioListener.pause = true;
 
         player.GetComponent<Player>().enabled = false;
         player.GetComponent<PlayerMovement>().enabled = false;
@@ -56,6 +57,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         UI.SetActive(true);
         Time.timeScale = 1f;
+        AudioListener.pause = false;
 
         player.GetComponent<Player>().enabled = true;
         player.GetComponent<PlayerMovement>().enabled = true;

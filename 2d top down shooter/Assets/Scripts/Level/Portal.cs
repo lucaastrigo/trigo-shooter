@@ -26,11 +26,6 @@ public class Portal : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
-
-        if(inTrigger && Input.GetKeyDown(KeyCode.Q))
-        {
-            Stairs();
-        }
     }
 
     void Stairs()
@@ -72,15 +67,7 @@ public class Portal : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            inTrigger = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            inTrigger = false;
+            Stairs();
         }
     }
 }

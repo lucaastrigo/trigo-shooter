@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 889807431351308180}
   - component: {fileID: 889807431351308183}
+  - component: {fileID: -3215672400934038995}
   - component: {fileID: 889807431351308182}
   - component: {fileID: 8675609449155256799}
   - component: {fileID: 4417124653860053120}
@@ -86,6 +87,102 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &-3215672400934038995
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889807431351308184}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ec56b1823fa96e749873016f12b832dc, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 0.85
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!61 &889807431351308182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,9 +234,6 @@ MonoBehaviour:
   - dropRate: 7
     weapon: {fileID: 1463578926722432902, guid: 99aea703975b67e4b974316fc2a5f1f4,
       type: 3}
-  - dropRate: 2
-    weapon: {fileID: 6245984252482959309, guid: eefaa45f07dc20f429bd998662e3773d,
-      type: 3}
   - dropRate: 5
     weapon: {fileID: 9100624887838506853, guid: 73bdebe2fc3b79f4999e6bbd5d58d06b,
       type: 3}
@@ -161,18 +255,10 @@ MonoBehaviour:
   - dropRate: 4
     weapon: {fileID: 1974073138192513578, guid: a47ef526e8b3aa8479d592b971d02d28,
       type: 3}
-  - dropRate: 3
-    weapon: {fileID: 6410125691785896610, guid: 08cc8fd4a345386468c16a577f384f32,
-      type: 3}
-  - dropRate: 5
-    weapon: {fileID: 8258760453900753337, guid: 8920e4f96a3f5484eb97415e94782aa9,
-      type: 3}
-  - dropRate: 7
-    weapon: {fileID: 4798121836918349475, guid: 8d384e00bc59e5f4789003be7c5f962b,
-      type: 3}
   mergedChest: 0
   openedSprite: {fileID: 3790330820646863013, guid: c9ec2f3356763544d96f5afb513fbdeb,
     type: 3}
+  clip: {fileID: 8300000, guid: 0ff2d7db2ea82784ca2695384060ac06, type: 3}
   weaponToDrop: {fileID: 0}
 --- !u!95 &4417124653860053120
 Animator:

@@ -22,7 +22,7 @@ public class Weapon : MonoBehaviour
     public bool playerWeapon;
     public bool singleShot;
     public bool burst;
-    [HideInInspector] public bool onOff = true;
+    public bool onOff;
     [HideInInspector] public bool withPlayer;
     [HideInInspector] public bool ammo, cantDrop;
     public Transform muzzle;
@@ -35,19 +35,11 @@ public class Weapon : MonoBehaviour
     int shots;
     float fireTime;
     float angle;
+    float _accuracy, _fireRate;
     Vector2 mousePos;
     GameObject ammoText;
-    GameObject valueStorage;
-    GameObject skillStorage;
     Player player;
     AudioSource audioSource;
-
-    [Header("Skill Related")]
-    public float _fireRate;
-    public float _accuracy;
-
-    bool sharpshooterOn;
-    bool fastHandsOn;
 
     void Start()
     {
@@ -69,53 +61,30 @@ public class Weapon : MonoBehaviour
         {
             weaponDescription.GetComponent<TMP_Text>().text = weaponName + ": damage " + bullet.GetComponent<BulletScript>().damage.ToString() + " - fire rate " + fireRate.ToString() + " - accuracy " + accuracy.ToString();
         }
+
+
+        _accuracy = accuracy;
+        _fireRate = fireRate;
+
+
+        //skills
+        if(SkillStorage.value.sharpshooter > 0)
+        {
+            accuracy += SkillStorage.value.sharpshooter * _accuracy;
+        }
+
+        if(SkillStorage.value.fastHands > 0)
+        {
+            fireRate -= SkillStorage.value.fastHands * _fireRate;
+        }
     }
 
     void Update()
     {
-        valueStorage = GameObject.FindGameObjectWithTag("Value Storage");
-        skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
-
         if (!PauseMenu.paused)
         {
             if (playerWeapon && gameObject.activeInHierarchy)
             {
-                //sharpshooter
-                if (skillStorage.GetComponentInChildren<SharpshooterSkill>().skill.GetComponent<Skill>().skillOn)
-                {
-                    if (!sharpshooterOn)
-                    {
-                        if (skillStorage.GetComponentInChildren<SharpshooterSkill>() != null)
-                        {
-                            skillStorage.GetComponentInChildren<SharpshooterSkill>().weapon = this.gameObject;
-                            skillStorage.GetComponentInChildren<SharpshooterSkill>().Activate();
-                            sharpshooterOn = true;
-                        }
-                    }
-                }
-                else
-                {
-                    skillStorage.GetComponentInChildren<SharpshooterSkill>().Deactivate();
-                }
-
-                //fast hands
-                if (skillStorage.GetComponentInChildren<FastHandsSkill>().skill.GetComponent<Skill>().skillOn)
-                {
-                    if (!fastHandsOn)
-                    {
-                        if (skillStorage.GetComponentInChildren<FastHandsSkill>() != null)
-                        {
-                            skillStorage.GetComponentInChildren<FastHandsSkill>().weapon = this.gameObject;
-                            skillStorage.GetComponentInChildren<FastHandsSkill>().Activate();
-                            fastHandsOn = true;
-                        }
-                    }
-                }
-                else
-                {
-                    skillStorage.GetComponentInChildren<FastHandsSkill>().Deactivate();
-                }
-
                 if (currentAmmo > 0)
                 {
                     ammoText.GetComponent<TMP_Text>().text = currentAmmo.ToString() + "/" + maxAmmo.ToString();

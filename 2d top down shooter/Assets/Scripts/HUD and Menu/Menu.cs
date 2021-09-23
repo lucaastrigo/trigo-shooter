@@ -42,13 +42,7 @@ public class Menu : MonoBehaviour
         ValueStorage.value.weaponValue = "PISTOL";
         ValueStorage.value.coinValue = 0;
 
-        //reset skills
-        for (int i = 0; i < SkillStorage.value.skills.Length; i++)
-        {
-            SkillStorage.value.skills[i].skillOn = false;
-            SkillStorage.value.skills[i].skilled = false;
-            SkillStorage.value.skills[i].unskilled = false;
-        }
+        SkillStorage.value.DeactivateItems();
 
         SceneManager.LoadScene("Main Menu");
     }

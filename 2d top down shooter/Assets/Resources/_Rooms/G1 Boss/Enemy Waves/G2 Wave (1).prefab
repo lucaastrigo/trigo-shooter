@@ -103,6 +103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4133010122248847771, guid: bd0d1497fd09cac4893696216da80ff5,
         type: 3}
+      propertyPath: dropRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133010122248847771, guid: bd0d1497fd09cac4893696216da80ff5,
+        type: 3}
       propertyPath: _dropRate
       value: 0
       objectReference: {fileID: 0}
@@ -185,6 +190,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MUMMY
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133010122248847771, guid: 8d3da8998f3125746bc6077d44f7bff4,
+        type: 3}
+      propertyPath: dropRate
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4133010122248847771, guid: 8d3da8998f3125746bc6077d44f7bff4,
         type: 3}
@@ -273,6 +283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4133010122248847771, guid: d614e476543b0a748a826b72c61a0ef7,
         type: 3}
+      propertyPath: dropRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133010122248847771, guid: d614e476543b0a748a826b72c61a0ef7,
+        type: 3}
       propertyPath: _dropRate
       value: 0
       objectReference: {fileID: 0}
@@ -355,6 +370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ZOMBIE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133010122248847771, guid: bd0d1497fd09cac4893696216da80ff5,
+        type: 3}
+      propertyPath: dropRate
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4133010122248847771, guid: bd0d1497fd09cac4893696216da80ff5,
         type: 3}

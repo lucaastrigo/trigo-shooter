@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: speedster
+  m_text: scavenger
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d48602fd5e023e547b01bba0f4e1be0b, type: 2}
   m_sharedMaterial: {fileID: -5820928002062287341, guid: d48602fd5e023e547b01bba0f4e1be0b,
@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278231265
-  m_fontColor: {r: 0.882353, g: 0.627451, b: 0, a: 1}
+    rgba: 4278208993
+  m_fontColor: {r: 0.88235295, g: 0.28433555, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -146,7 +146,8 @@ GameObject:
   - component: {fileID: 1483375155137206043}
   - component: {fileID: 1483375155137206042}
   - component: {fileID: -6362697168028909762}
-  - component: {fileID: 1483375155137206044}
+  - component: {fileID: 674369785575216824}
+  - component: {fileID: -6842867806077861282}
   - component: {fileID: -4807512712610649711}
   m_Layer: 9
   m_Name: Scavenger
@@ -248,7 +249,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.625, y: 0.375}
   m_EdgeRadius: 0
---- !u!114 &1483375155137206044
+--- !u!114 &674369785575216824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,15 +258,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1483375155137206047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6561707b75063f04e898095392bf9760, type: 3}
+  m_Script: {fileID: 11500000, guid: d297889ca57d4dd4b9cdb813716c3133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillName: Scavenger
-  activeSkill: 0
-  canUse: 1
-  skillTitle: {fileID: 1483375155097984700}
+  title: {fileID: 1483375155097984700}
   description: {fileID: 1483375156515786855}
-  skillFX: {fileID: 3375865884550540848, guid: 72a6ce95115239a44917863751f947c4, type: 3}
+  increasedValue: 2.5
+--- !u!114 &-6842867806077861282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483375155137206047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33665b4b348da30439021ffa250ff0cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-4807512712610649711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +291,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.3016967, b: 0.033018887, a: 1}
   m_Intensity: 2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000

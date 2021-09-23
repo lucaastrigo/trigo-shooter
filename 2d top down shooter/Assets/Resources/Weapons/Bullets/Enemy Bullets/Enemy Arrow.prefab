@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
-  speed: 5.75
+  speed: 5
   destroyEffect: {fileID: 3375865884550540848, guid: 5b78ed0a993e98f4c814494de98f61b8,
     type: 3}
 --- !u!114 &2871077090809961498

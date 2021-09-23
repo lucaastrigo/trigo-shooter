@@ -24,15 +24,13 @@ public class BulletScript : MonoBehaviour
     public Material mat;
 
     GameObject flameHit, iceHit, electricHit;
-    GameObject skillStorage;
     SpriteRenderer sprite;
     Rigidbody2D rb;
     Vector2 moveDir;
 
     bool reinforced, ghosted, wided;
     float iSpeed;
-
-    public float _damage;
+    float _damage;
 
     void Start()
     {
@@ -57,27 +55,20 @@ public class BulletScript : MonoBehaviour
             }
         }
 
-        skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
+
+        _damage = damage;
+
 
         if (_bulletType != bulletType.mine)
         {
-            if (skillStorage.GetComponentInChildren<ReinforcedBarrelSkill>().skill.GetComponent<Skill>().skillOn)
+            if(SkillStorage.value.reinforcedBarrel > 0)
             {
-                if (!reinforced)
-                {
-                    _damage *= skillStorage.GetComponentInChildren<ReinforcedBarrelSkill>()._damageIncreased;
-                    damage = Mathf.RoundToInt(_damage);
-                    reinforced = true;
-                }
+                damage += Mathf.RoundToInt(SkillStorage.value.reinforcedBarrel * _damage);
             }
 
-            if (skillStorage.GetComponentInChildren<WiderMuzzleSkill>().skill.GetComponent<Skill>().skillOn)
+            if(SkillStorage.value.widerMuzzle > 0)
             {
-                if (!wided)
-                {
-                    transform.localScale *= skillStorage.GetComponentInChildren<WiderMuzzleSkill>()._sizeIncrease;
-                    wided = true;
-                }
+                transform.localScale *= SkillStorage.value.widerMuzzle + 1;
             }
         }
 
@@ -106,11 +97,6 @@ public class BulletScript : MonoBehaviour
             {
                 speed -= Time.deltaTime * speedMod;
             }
-        }
-
-        if(skillStorage != null)
-        {
-            skillStorage = GameObject.FindGameObjectWithTag("Skill Storage");
         }
     }
 
@@ -170,7 +156,7 @@ public class BulletScript : MonoBehaviour
         {
             if(flameHit.GetComponent<Enemy>() != null)
             {
-                flameHit.GetComponent<Enemy>().TakeDamage(fireDamage, mat, colorTime / 2);
+                flameHit.GetComponent<Enemy>().TakeDamage(fireDamage, Resources.Load("Materials/Special Materials/standard MAT") as Material, colorTime / 2);
                 Instantiate(hitFX, flameHit.transform.position, Quaternion.identity);
             }
         }
@@ -244,7 +230,7 @@ public class BulletScript : MonoBehaviour
                     {
                         other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
 
-                        if (!skillStorage.GetComponentInChildren<GhostBulletsSkill>().skill.GetComponent<Skill>().skillOn)
+                        if (!SkillStorage.value.activeSkills[GhostBullets.ID]) //ghost bullets
                         {
                             Destroy(gameObject, lifetime);
                         }
@@ -261,7 +247,14 @@ public class BulletScript : MonoBehaviour
                 {
                     if (!explosive)
                     {
-                        other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
+                        if(other.GetComponent<BossHealth>() == null)
+                        {
+                            other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
+                        }
+                        else
+                        {
+                            other.GetComponent<Enemy>().TakeDamage(damage, Resources.Load("Materials/Special Materials/standard MAT") as Material, 0.2f);
+                        }
                     }
                     else
                     {
@@ -291,7 +284,7 @@ public class BulletScript : MonoBehaviour
 
                     Instantiate(hitFX, transform.position, Quaternion.identity);
 
-                    if (!skillStorage.GetComponentInChildren<GhostBulletsSkill>().skill.GetComponent<Skill>().skillOn)
+                    if (!SkillStorage.value.activeSkills[GhostBullets.ID]) //ghost bullets
                     {
                         Destroy(gameObject);
                     }
@@ -301,13 +294,20 @@ public class BulletScript : MonoBehaviour
             {
                 if (explosive)
                 {
-                    Explode(); //
+                    Explode();
                 }
                 else
                 {
                     if (other.GetComponent<Enemy>() != null)
                     {
-                        other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
+                        if (other.GetComponent<BossHealth>() == null)
+                        {
+                            other.GetComponent<Enemy>().TakeDamage(damage, mat, colorTime);
+                        }
+                        else
+                        {
+                            other.GetComponent<Enemy>().TakeDamage(damage, Resources.Load("Materials/Special Materials/standard MAT") as Material, 0.2f);
+                        }
                     }
 
                     Instantiate(hitFX, transform.position, Quaternion.identity);
@@ -326,9 +326,16 @@ public class BulletScript : MonoBehaviour
         {
             flameHit = collision.gameObject;
 
-            StartCoroutine(Burn());
+            if(collision.GetComponent<BossHealth>() == null)
+            {
+                StartCoroutine(Burn());
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
 
-            if (!skillStorage.GetComponentInChildren<GhostBulletsSkill>().skill.GetComponent<Skill>().skillOn)
+            if (!SkillStorage.value.activeSkills[GhostBullets.ID]) //ghost bullets
             {
                 speed = 0;
 
@@ -350,33 +357,16 @@ public class BulletScript : MonoBehaviour
         {
             iceHit = collision.gameObject;
 
-            Freeze();
-
-            if (!skillStorage.GetComponentInChildren<GhostBulletsSkill>().skill.GetComponent<Skill>().skillOn)
+            if(collision.GetComponent<BossHealth>() == null)
             {
-                speed = 0;
-
-                if(_bulletType == bulletType.bullet)
-                {
-                    gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                }
-
-                gameObject.GetComponent<Collider2D>().enabled = false;
-
-                if(GetComponent<TrailRenderer>() != null)
-                {
-                    gameObject.GetComponent<TrailRenderer>().enabled = false;
-                }
+                Freeze();
             }
-        }
+            else
+            {
+                Destroy(gameObject);
+            }
 
-        if (electric)
-        {
-            electricHit = collision.gameObject;
-
-            Shock();
-
-            if (!skillStorage.GetComponentInChildren<GhostBulletsSkill>().skill.GetComponent<Skill>().skillOn)
+            if (!SkillStorage.value.activeSkills[GhostBullets.ID]) //ghost bullets
             {
                 speed = 0;
 
@@ -394,7 +384,38 @@ public class BulletScript : MonoBehaviour
             }
         }
 
-        if(other.CompareTag("Indestructible Wall") || other.CompareTag("Door"))
+        if (electric)
+        {
+            electricHit = collision.gameObject;
+
+            if(collision.GetComponent<BossHealth>() == null)
+            {
+                Shock();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+
+            if (!SkillStorage.value.activeSkills[GhostBullets.ID]) //ghost bullets
+            {
+                speed = 0;
+
+                if (_bulletType == bulletType.bullet)
+                {
+                    gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                }
+
+                gameObject.GetComponent<Collider2D>().enabled = false;
+
+                if (GetComponent<TrailRenderer>() != null)
+                {
+                    gameObject.GetComponent<TrailRenderer>().enabled = false;
+                }
+            }
+        }
+
+        if (other.CompareTag("Indestructible Wall") || other.CompareTag("Door"))
         {
             if(_bulletType == bulletType.bullet)
             {

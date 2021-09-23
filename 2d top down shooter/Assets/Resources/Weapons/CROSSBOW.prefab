@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699861474842920404}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: CROSSBOW
   maxAmmo: 60
-  currentAmmo: 60
+  currentAmmo: 55
   shotsPerBurst: 0
   burstRate: 0
   fireRate: 1
@@ -235,8 +235,8 @@ MonoBehaviour:
   playerWeapon: 0
   singleShot: 0
   burst: 0
-  touched: 0
   onOff: 0
+  withPlayer: 1
   ammo: 0
   cantDrop: 0
   muzzle: {fileID: 699861475469949507}
@@ -245,8 +245,6 @@ MonoBehaviour:
   weaponDescription: {fileID: 6954457364831852181}
   fireSound: {fileID: 8300000, guid: e41f8928a608dc945af1f4e1a5068bbc, type: 3}
   weaponIndex: -1
-  _fireRate: 1
-  _accuracy: 0.97
 --- !u!1 &699861475469949516
 GameObject:
   m_ObjectHideFlags: 0

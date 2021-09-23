@@ -17,14 +17,7 @@ public class EnemyBullet : MonoBehaviour
 
     void Update()
     {
-        if (skillStorage.GetComponentInChildren<SixthSenseSkill>().skill.GetComponent<Skill>().skillOn)
-        {
-            transform.Translate(Vector2.up * speed * Time.deltaTime * skillStorage.GetComponentInChildren<SixthSenseSkill>()._speedDecrease * Global.globalSpeed);
-        }
-        else
-        {
-            transform.Translate(Vector2.up * speed * Time.deltaTime * Global.globalSpeed);
-        }
+        transform.Translate(Vector2.up * speed * Time.deltaTime * SkillStorage.value.sixthSense * Global.globalSpeed);
     }
 
     void OnTriggerEnter2D(Collider2D collision)

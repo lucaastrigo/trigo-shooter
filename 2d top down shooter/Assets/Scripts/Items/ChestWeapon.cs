@@ -15,16 +15,19 @@ public class ChestWeapon : MonoBehaviour
 
     public bool mergedChest;
     public Sprite openedSprite;
+    public AudioClip clip;
 
     bool open;
     [HideInInspector] public GameObject weaponToDrop;
     SpriteRenderer sprite;
     GameObject player;
+    AudioSource aud;
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
+        aud = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -101,6 +104,7 @@ public class ChestWeapon : MonoBehaviour
 
         Instantiate(weaponToDrop, new Vector2(transform.position.x, transform.position.y + 0.5f), Quaternion.identity);
         Instantiate(Resources.Load("Particle FX/WeaponChestFX"), transform.position, Quaternion.identity);
+        aud.PlayOneShot(clip);
 
         open = true;
         sprite.sprite = openedSprite;
